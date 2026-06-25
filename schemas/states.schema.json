@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://esa-cci.github.io/xcube-cci-registry/schemas/states.schema.json",
+  "title": "xcube-cci states file",
+  "type": "object",
+  "description": "Mapping from store-specific data ID to xcube-cci state entry.",
+  "additionalProperties": {
+    "$ref": "state-entry.schema.json"
+  }
+}

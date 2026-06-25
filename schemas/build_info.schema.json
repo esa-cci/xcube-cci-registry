@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://esa-cci.github.io/xcube-cci-registry/schemas/build_info.schema.json",
+  "title": "xcube-cci metadata build info",
+  "type": "object",
+  "required": ["generated_at", "builder", "outputs"],
+  "properties": {
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "builder": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "xcube_cci": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "xcube": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    }
+  },
+  "additionalProperties": true
+}

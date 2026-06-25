@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-25T00:00:00Z",
+  "builder": {
+    "name": "manual-scaffold"
+  },
+  "xcube_cci": {
+    "version": null
+  },
+  "outputs": {
+    "registry": "registry.json",
+    "states": "states/",
+    "descriptors": "descriptors/"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://esa-cci.github.io/xcube-cci-registry/schemas/state-entry.schema.json",
+  "title": "xcube-cci state entry",
+  "type": "object",
+  "required": ["data_type", "verification_flags", "title"],
+  "properties": {
+    "data_type": {
+      "type": "string",
+      "enum": ["dataset", "datatree", "geodataframe", "vectordatacube"]
+    },
+    "verification_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "title": {
+      "type": "string"
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "var_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pattern": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
