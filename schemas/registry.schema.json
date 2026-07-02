@@ -17,10 +17,15 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["canonical_id", "representations"],
+        "required": ["canonical_id", "collection_id", "representations"],
         "properties": {
           "canonical_id": {
-            "type": "string"
+            "type": "string",
+            "description": "Stable identifier for this logical dataset entry, including the dataset version where applicable."
+          },
+          "collection_id": {
+            "type": "string",
+            "description": "Stable identifier for the product collection or dataset family that groups related dataset versions and variants."
           },
           "title": {
             "type": "string"
@@ -30,6 +35,18 @@
           },
           "version": {
             "type": "string"
+          },
+          "supersedes": {
+            "type": "array",
+            "description": "Canonical IDs of older dataset entries superseded by this entry.",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "superseded_by": {
+            "description": "Canonical ID of the newer dataset entry that supersedes this entry, if known.",
+            "type": ["string", "null"]
           },
           "representations": {
             "type": "array",
