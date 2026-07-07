@@ -20,7 +20,8 @@ not the builder implementation.
 registry.json
   Current registry artifact that maps canonical CCI dataset IDs to available
   store-specific representations. Published snapshots are represented by
-  GitHub tags/releases.
+  GitHub tags/releases. Reference-based representations such as Kerchunk may
+  include their reference path directly in the representation metadata.
 
 descriptors/
   Stored xcube DataDescriptor artifacts for the xcube-cci version named in
