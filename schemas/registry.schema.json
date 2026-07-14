@@ -36,6 +36,11 @@
           "version": {
             "type": "string"
           },
+          "catalog_url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL of the dataset entry in the CEDA catalogue."
+          },
           "supersedes": {
             "type": "array",
             "description": "Canonical IDs of older dataset entries superseded by this entry.",
