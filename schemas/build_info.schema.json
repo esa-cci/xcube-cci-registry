@@ -3,7 +3,15 @@
   "$id": "https://esa-cci.github.io/xcube-cci-registry/schemas/build_info.schema.json",
   "title": "xcube-cci metadata build info",
   "type": "object",
-  "required": ["generated_at", "builder", "outputs"],
+  "required": [
+    "generated_at",
+    "builder",
+    "xcube_cci",
+    "xcube",
+    "source",
+    "outputs",
+    "counts"
+  ],
   "properties": {
     "generated_at": {
       "type": "string",
@@ -11,14 +19,27 @@
     },
     "builder": {
       "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"}
+      },
       "additionalProperties": true
     },
     "xcube_cci": {
       "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {"type": "string"}
+      },
       "additionalProperties": true
     },
     "xcube": {
       "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {"type": "string"}
+      },
       "additionalProperties": true
     },
     "source": {

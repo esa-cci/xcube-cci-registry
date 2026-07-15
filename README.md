@@ -35,7 +35,8 @@ schemas/
   JSON Schemas for registry, states, and build info.
 
 build_info.json
-  Machine-readable provenance for the current generated artifacts.
+  Machine-readable provenance for the current generated artifacts, including
+  the builder, xcube-cci, and xcube versions plus artifact counts.
 
 reports/
   Human-readable reports for reviewing builder output.
