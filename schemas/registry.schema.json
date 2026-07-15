@@ -41,6 +41,28 @@
             "format": "uri",
             "description": "URL of the dataset entry in the CEDA catalogue."
           },
+          "bbox": {
+            "type": "array",
+            "description": "Spatial extent as [west, south, east, north].",
+            "prefixItems": [
+              {"type": "number"},
+              {"type": "number"},
+              {"type": "number"},
+              {"type": "number"}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "time_range": {
+            "type": "array",
+            "description": "Temporal extent as [start, end].",
+            "prefixItems": [
+              {"type": ["string", "null"]},
+              {"type": ["string", "null"]}
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          },
           "supersedes": {
             "type": "array",
             "description": "Canonical IDs of older dataset entries superseded by this entry.",
@@ -77,6 +99,28 @@
                 "reference_path": {
                   "type": "string",
                   "description": "Optional path or URL to a Kerchunk reference file for reference-based representations such as esa-cci-kc."
+                },
+                "bbox": {
+                  "type": "array",
+                  "description": "Representation-specific spatial extent overriding the canonical dataset extent.",
+                  "prefixItems": [
+                    {"type": "number"},
+                    {"type": "number"},
+                    {"type": "number"},
+                    {"type": "number"}
+                  ],
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "time_range": {
+                  "type": "array",
+                  "description": "Representation-specific temporal extent overriding the canonical dataset extent.",
+                  "prefixItems": [
+                    {"type": ["string", "null"]},
+                    {"type": ["string", "null"]}
+                  ],
+                  "minItems": 2,
+                  "maxItems": 2
                 }
               },
               "additionalProperties": true
