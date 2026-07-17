@@ -1,0 +1,301 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "cdm_data_type": "Grid",
+    "comment": "These data were produced as part of the ESA Fire_cci programme.",
+    "creator_email": "emilio.chuvieco@uah.es",
+    "creator_name": "University of Alcala",
+    "creator_url": "www.esa-fire-cci.org",
+    "date_created": "20181129T210313Z",
+    "doi": "10.5285/3628cb2fdba443588155e15dee8e5352",
+    "geospatial_lat_max": "90",
+    "geospatial_lat_min": "-90",
+    "geospatial_lat_resolution": "0.25",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180",
+    "geospatial_lon_min": "-180",
+    "geospatial_lon_resolution": "0.25",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0",
+    "geospatial_vertical_min": "0",
+    "history": "Created on 2018-11-29 21:03:13; zarr created on 2025-08-21",
+    "institution": "University of Alcala",
+    "keywords": "Burned Area, Fire Disturbance, Climate Change, ESA, GCOS",
+    "keywords_vocabulary": "none",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "org.esa-fire-cci",
+    "platform": "Terra",
+    "product_version": "v5.1",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "See www.esa-fire-cci.org",
+    "sensor": "MODIS",
+    "source": "MODIS MOD09GQ Collection 6, MODIS MOD09GA Collection 6, MODIS MCD14ML Collection 6, ESA CCI Land Cover dataset v2.0.7",
+    "spatial_resolution": "0.25 degrees",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention",
+    "summary": "The grid product is the result of summing up burned area pixels and their attributes, as extracted from their original sinusoidal projection, within each cell of 0.25 degrees in a regular grid covering the whole Earth in monthly composites. The attributes stored are sum of burned area, standard error, fraction of burnable area, fraction of observed area, number of patches and the burned area for 18 land cover classes of Land Cover CCI.",
+    "time_coverage_end": "20221231T000000Z",
+    "time_coverage_start": "20010101T000000Z",
+    "title": "Fire_cci Gridded MODIS Burned Area product",
+    "tracking_id": "1209b4b8-32a1-4957-a80f-5b36913cac5b"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "bounds": "lat_bnds",
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "bounds": "lon_bnds",
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "vegetation_class": {
+      "attrs": {
+        "long_name": "vegetation class number",
+        "units": "1"
+      },
+      "dims": [
+        "vegetation_class"
+      ],
+      "dtype": "int32",
+      "name": "vegetation_class"
+    }
+  },
+  "data_id": "ESACCI-L4_FIRE-BA-MODIS-2001-2022-fv5.1.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "burned_area": {
+      "attrs": {
+        "cell_methods": "time: sum",
+        "long_name": "total burned_area",
+        "standard_name": "burned_area",
+        "units": "m2"
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "burned_area"
+    },
+    "burned_area_in_vegetation_class": {
+      "attrs": {
+        "cell_methods": "time: sum",
+        "comment": "Burned area by land cover classes; land cover classes are from CCI Land Cover, http://www.esa-landcover-cci.org/",
+        "long_name": "burned area in vegetation class",
+        "standard_name": "burned area in vegetation class",
+        "units": "m2"
+      },
+      "chunks": [
+        1,
+        18,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "vegetation_class",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "burned_area_in_vegetation_class"
+    },
+    "fraction_of_burnable_area": {
+      "attrs": {
+        "comment": "The fraction of burnable area is the fraction of the cell that corresponds to vegetated land covers that could burn. The land cover classes are those from CCI Land Cover, http://www.esa-landcover-cci.org/",
+        "long_name": "fraction of burnable area",
+        "standard_name": "fraction of burnable area",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fraction_of_burnable_area"
+    },
+    "fraction_of_observed_area": {
+      "attrs": {
+        "comment": "The fraction of the total burnable area in the cell (fraction_of_burnable_area variable of this file) that was observed during the time interval, and was not marked as unsuitable/not observable. The latter refers to the area where it was not possible to obtain observational burned area information for the whole time interval because of lack of input data (non-existing data for that location and period).",
+        "long_name": "fraction of observed area",
+        "standard_name": "fraction of observed area",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fraction_of_observed_area"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "long_name": "Latitude Bounds",
+        "standard_name": "latitude bounds",
+        "units": "degree_north"
+      },
+      "chunks": [
+        720,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float32",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "long_name": "Longitude Bounds",
+        "standard_name": "longitude bounds",
+        "units": "degree_east"
+      },
+      "chunks": [
+        1440,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float32",
+      "name": "lon_bnds"
+    },
+    "number_of_patches": {
+      "attrs": {
+        "comment": "Number of contiguous groups of burned pixels.",
+        "long_name": "number of burn patches",
+        "standard_name": "number of patches",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "number_of_patches"
+    },
+    "standard_error": {
+      "attrs": {
+        "long_name": "standard error of the estimation of burned area",
+        "standard_name": "standard error",
+        "units": "m2"
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "standard_error"
+    },
+    "time_bnds": {
+      "attrs": {
+        "long_name": "Time Bounds",
+        "standard_name": "time bounds"
+      },
+      "chunks": [
+        261,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    },
+    "vegetation_class_name": {
+      "attrs": {
+        "long_name": "vegetation class name",
+        "standard_name": "vegetation class name",
+        "units": "1"
+      },
+      "chunks": [
+        18
+      ],
+      "dims": [
+        "vegetation_class"
+      ],
+      "dtype": "|S150",
+      "name": "vegetation_class_name"
+    }
+  },
+  "dims": {
+    "lat": 720,
+    "lon": 1440,
+    "nv": 2,
+    "time": 261,
+    "vegetation_class": 18
+  },
+  "spatial_res": 0.25,
+  "time_range": [
+    "2001-01-01",
+    "2022-12-31"
+  ]
+}

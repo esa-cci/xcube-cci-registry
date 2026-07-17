@@ -1,0 +1,427 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "grid",
+    "comment": "These data were produced as part of the ESA LST CCI project.",
+    "creator_email": "djg20@le.ac.uk",
+    "creator_name": "University of Leicester Surface Temperature Group",
+    "creator_url": "https://climate.esa.int/en/projects/land-surface-temperature",
+    "date_created": "",
+    "doi": "10.5285/5f66a881adf846bfaad58b0e6068f0ea",
+    "format_version": "CCI Data Standards v2.2",
+    "geospatial_lat_max": "",
+    "geospatial_lat_min": "",
+    "geospatial_lat_resolution": 0.009999999776482582,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "",
+    "geospatial_lon_min": "",
+    "geospatial_lon_resolution": 0.009999999776482582,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": "Created using software developed at University of Leicester\nKerchunk file created on 02/28/24",
+    "id": "",
+    "institution": "University of Leicester",
+    "kerchunk_creation_date": "280224T104046",
+    "kerchunk_revision": 1,
+    "key_variables": "land_surface_temperature",
+    "keywords": "Earth Science; Land Surface; Land Temperature; Land Surface Temperature",
+    "keywords_vocabulary": "NASA Global change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "le.ac.uk",
+    "platform": "Sentinel-3B",
+    "product_version": "3.00",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "https://climate.esa.int/en/projects/land-surface-temperature",
+    "sensor": "SLSTR",
+    "source": "ESA LST CCI SLSTRB L3U V3.0",
+    "spatial_resolution": "0.01 degree",
+    "standard_name_vocabulary": "CF Standard Name Table v71",
+    "summary": "This file contains level L3C global land surface temperatures from SLSTR. L3C data are derived from multiple orbits of single sensor L3U data combined onto a space and/or time grid.",
+    "time_coverage_duration": "PT04M18S",
+    "time_coverage_end": "20201231T141239",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "20181117T154555",
+    "title": "ESA LST CCI land surface temperature data at product level L3C from Sea and Land Surface Temperature Radiometer B."
+  },
+  "bbox": [
+    -179.99999511705187,
+    -90.00000274631076,
+    179.99999511705187,
+    89.9999874875217
+  ],
+  "coords": {
+    "channel": {
+      "attrs": {
+        "long_name": "channel wavelength in microns",
+        "units": "microns",
+        "valid_max": 15000,
+        "valid_min": 0
+      },
+      "dims": [
+        "channel"
+      ],
+      "dtype": "float64",
+      "name": "channel"
+    },
+    "lat": {
+      "attrs": {
+        "long_name": "latitude_coordinates",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude_coordinates",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "reference time of file",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-LST-L3C-LST-SLSTRB-0.01deg_1DAILY_DAY-20181117-20201231-fv3.00_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "dtime": {
+      "attrs": {
+        "long_name": "time difference from reference time",
+        "units": "seconds",
+        "valid_max": 86400.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "dtime"
+    },
+    "lcc": {
+      "attrs": {
+        "flag_meanings": "cropland_rainfed cropland_rainfed_herbaceous_cover cropland_rainfed_tree_or_shrub_cover cropland_irrigated mosaic_cropland mosaic_natural_vegetation tree_broadleaved_evergreen_closed_to_open tree_broadleaved_deciduous_closed_to_open tree_broadleaved_deciduous_closed tree_broadleaved_deciduous_open tree_needleleaved_evergreen_closed_to_open tree_needleleaved_evergreen_closed tree_needleleaved_evergreen_open tree_needleleaved_deciduous_closed_to_open tree_needleleaved_deciduous_closed tree_needleleaved_deciduous_open tree_mixed mosaic_tree_and_shrub mosaic_herbaceous shrubland shrubland_evergreen shrubland_deciduous grassland lichens_and_mosses sparse_vegetation sparse_tree sparse_shrub sparse_herbaceous tree_cover_flooded_fresh_or_brakish_water tree_cover_flooded_saline_water shrub_or_herbaceous_cover_flooded urban Bare_areas_of_soil_types_not_contained_in_biomes_21_to_25 Unconsolidated_bare_areas_of_soil_types_not_contained_in_biomes_21_to_25 Consolidated_bare_areas_of_soil_types_not_contained_in_biomes_21_to_25 Bare_areas_of_soil_type_Entisols_Orthents Bare_areas_of_soil_type_Shifting_sand Bare_areas_of_soil_type_Aridisols_Calcids Bare_areas_of_soil_type_Aridisols_Cambids Bare_areas_of_soil_type_Gelisols_Orthels water snow_and_ice Sea_ice",
+        "flag_values": [
+          10,
+          11,
+          12,
+          20,
+          30,
+          40,
+          50,
+          60,
+          61,
+          62,
+          70,
+          71,
+          72,
+          80,
+          81,
+          82,
+          90,
+          100,
+          110,
+          120,
+          121,
+          122,
+          130,
+          140,
+          150,
+          151,
+          152,
+          153,
+          160,
+          170,
+          180,
+          190,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          210,
+          220,
+          230
+        ],
+        "long_name": "land cover class",
+        "units": "1",
+        "valid_max": 230,
+        "valid_min": 10
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lcc"
+    },
+    "lst": {
+      "attrs": {
+        "long_name": "land surface temperature",
+        "units": "kelvin",
+        "valid_max": 7685,
+        "valid_min": -8315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst"
+    },
+    "lst_unc_loc_atm": {
+      "attrs": {
+        "long_name": "uncertainty from locally correlated errors on atmospheric scales",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_loc_atm"
+    },
+    "lst_unc_loc_sfc": {
+      "attrs": {
+        "long_name": "uncertainty from locally correlated errors on surface scales",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_loc_sfc"
+    },
+    "lst_unc_ran": {
+      "attrs": {
+        "long_name": "uncertainty from uncorrelated errors",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_ran"
+    },
+    "lst_unc_sys": {
+      "attrs": {
+        "long_name": "uncertainty from large-scale systematic errors",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1
+      ],
+      "dims": [
+        "length_scale"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_sys"
+    },
+    "lst_uncertainty": {
+      "attrs": {
+        "long_name": "land surface temperature total uncertainty",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_uncertainty"
+    },
+    "qual_flag": {
+      "attrs": {
+        "flag_masks": 1,
+        "flag_meanings": "observation_proximity_to_local_time-1_is_closest_observation",
+        "long_name": "Quality Flags",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "qual_flag"
+    },
+    "sataz": {
+      "attrs": {
+        "long_name": "satellite azimuth angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "sataz"
+    },
+    "satze": {
+      "attrs": {
+        "long_name": "satellite zenith angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "satze"
+    },
+    "solaz": {
+      "attrs": {
+        "long_name": "solar azimuth angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "solaz"
+    },
+    "solze": {
+      "attrs": {
+        "long_name": "solar zenith angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "solze"
+    }
+  },
+  "dims": {
+    "channel": 2,
+    "lat": 18000,
+    "length_scale": 1,
+    "lon": 36000,
+    "time": 736
+  },
+  "time_range": [
+    "2018-11-17",
+    "2020-12-31"
+  ]
+}

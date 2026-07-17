@@ -1,0 +1,326 @@
+{
+  "attrs": {
+    "abstract": "As part of the European Space Agency's (ESA) Sea Level Climate Change Initiative (CCI) project, a number of oceanic indicators of mean sea level changes have been produced from merging satellite altimetry measurements of sea level anomalies.  The oceanic indicators dataset consists of static files covering the whole altimeter period, describing the evolution of the project's monthly sea level anomaly gridded product (see separate dataset record).\n\nThe oceanic indicators that are provided are: \n1) the temporal evolution of the global Mean Sea Level (MSL) DOI: 10.5270/esa-sea_level_cci-IND_MSL_MERGED-1993_2015-v_2.0-201612 ;\n2) the geographic distribution of Mean Sea Level changes (MSLTR) DOI: 10.5270/esa-sea_level_cci-IND_MSLTR_MERGED-1993_2015-v_2.0-201612 ;\n3) Maps of the amplitude and phase of the annual cycle (MSLAMPH) DOI: 10.5270/esa-sea_level_cci-IND_MSLAMPH_MERGED-1993_2015-v_2.0-201612.\n\nThe complete collection of v2.0 products from the Sea Level CCI project can be referenced using the following  DOI: 10.5270/esa-sea_level_cci-1993_2015-v_2.0-201612.\n\nWhen using or referring to the SL_cci products, please mention the associated DOIs and also use the following citation where a detailed description of the SL_cci project and products can be found:\n\nAblain, M., Cazenave, A., Larnicol, G., Balmaseda, M., Cipollini, P., Faug\u00e8re, Y., Fernandes, M. J., Henry, O., Johannessen, J. A., Knudsen, P., Andersen, O., Legeais, J., Meyssignac, B., Picot, N., Roca, M., Rudenko, S., Scharffenberg, M. G., Stammer, D., Timms, G., and Benveniste, J.: Improved sea level record over the satellite altimetry era (1993\u20132010) from the Climate Change Initiative project, Ocean Sci., 11, 67-82, doi:10.5194/os-11-67-2015, 2015.\n\nFor further information on the Sea Level CCI products, and to register for these products please email: info-sealevel@esa-sealevel-cci.org\n\n",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/3ac333b828b54e3495c7749f5bce2fe3",
+    "cci_project": "SEALEVEL",
+    "comment": "These data were produced at CLS as part of the ESA Sea Level CCI project.",
+    "data_type": "MSLAMPH",
+    "ecv": "SEALEVEL",
+    "history": "2016-12-02 00:00:00 : creation",
+    "platform_id": "multi-platform",
+    "processing_level": "IND",
+    "product_string": "MERGED",
+    "product_version": "2-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2017-01-24T17:41:04",
+    "references": "http://www.esa-sealevel-cci.org/products",
+    "sensor_id": "multi-sensor",
+    "source": "ERS-1 Phase C OPR V6, ERS-1 Phase E OPR V3, ERS-1 Phase F OPR V3, ERS-1 Phase G OPR V6, ERS-2 OPR V6, Envisat V2.1, TOPEX/Poseidon MGDR, Jason-1 GDR-C, Jason-2 GDR-D, GFO GDR NOAA, CryoSat-2 CCP CNES, SARAL GDR-T patch 2",
+    "title": "ESA Sea Level Climate Change Initiative (Sea_Level_cci): Oceanic Indicators of Mean Sea Level Changes,  Version 2.0",
+    "uuid": "3ac333b828b54e3495c7749f5bce2fe3"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": [
+          720
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": [
+          720
+        ],
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          720
+        ],
+        "size": 720,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.875,
+        "valid_min": -89.875
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": [
+          1440
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1440
+        ],
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          1440
+        ],
+        "size": 1440,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 359.875,
+        "valid_min": 0.125
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "period": {
+      "attrs": {
+        "chunk_sizes": [
+          2
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "period"
+        ],
+        "file_chunk_sizes": [
+          2
+        ],
+        "file_dimensions": [
+          "period"
+        ],
+        "fill_value": null,
+        "long_name": "Period of signal",
+        "orig_data_type": "float32",
+        "shape": [
+          2
+        ],
+        "size": 2,
+        "standard_name": "harmonic_period",
+        "units": "year"
+      },
+      "dims": [
+        "period"
+      ],
+      "dtype": "float32",
+      "name": "period"
+    },
+    "time": {
+      "attrs": {
+        "chunk_sizes": [
+          276
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          276
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          276
+        ],
+        "size": "276",
+        "standard_name": "time",
+        "units": "days since 1950-01-01"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.SEALEVEL.unspecified.IND.MSLAMPH.multi-sensor.multi-platform.MERGED.2-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "ampl": {
+      "attrs": {
+        "chunk_sizes": [
+          720,
+          1440,
+          2
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "lat",
+          "lon",
+          "period"
+        ],
+        "file_chunk_sizes": [
+          720,
+          1440,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon",
+          "period"
+        ],
+        "fill_value": 1.8446744e+19,
+        "long_name": "Geographical distribution of mean sea level amplitude",
+        "orig_data_type": "float32",
+        "shape": [
+          720,
+          1440,
+          2
+        ],
+        "size": 2073600,
+        "standard_name": "amplitude_of_global_average_sea_level_change",
+        "units": "m"
+      },
+      "dims": [
+        "time",
+        "period",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ampl"
+    },
+    "phase": {
+      "attrs": {
+        "chunk_sizes": [
+          720,
+          1440,
+          2
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "lat",
+          "lon",
+          "period"
+        ],
+        "file_chunk_sizes": [
+          720,
+          1440,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon",
+          "period"
+        ],
+        "fill_value": 1.8446744e+19,
+        "long_name": "Geographical distribution of mean sea level phase",
+        "orig_data_type": "float32",
+        "shape": [
+          720,
+          1440,
+          2
+        ],
+        "size": 2073600,
+        "standard_name": "phase_of_global_average_sea_level_change",
+        "units": "degrees"
+      },
+      "dims": [
+        "time",
+        "period",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "phase"
+    }
+  },
+  "dims": {
+    "lat": 720,
+    "lon": 1440,
+    "period": 2,
+    "time": 276
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2015-12-31",
+            "minDate": "1993-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2015-12-31",
+            "minDate": "1993-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "ampl",
+            "phase"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.25,
+  "time_range": [
+    "1993-01-01",
+    "2015-12-31"
+  ]
+}

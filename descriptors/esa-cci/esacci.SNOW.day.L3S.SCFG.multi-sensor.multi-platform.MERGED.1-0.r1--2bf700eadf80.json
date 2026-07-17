@@ -1,0 +1,438 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains the CryoClim Daily Snow Cover Fraction (snow on ground) product, produced by the Snow project of the ESA Climate Change Initiative programme.\n\nFractional snow cover (FSC) on the ground indicates the area of snow observed from space on land surfaces, in forested areas compensated for the effect of trees hiding the ground surface snow cover under the forest canopy. The FSC is given in percentage (%) per grid cell. \n\nThe global snow_cci CryoClim fractional snow cover (FSC) product is available at 0.05\u00b0 grid size (about 5 km) for all land areas, excluding Antarctica and Greenland ice sheet. The coastal zones of Greenland are included. \n\nThe CryoClim FSC time series provides daily products for the period 1982 \u2013 2019. \n\nThe CryoClim FSC product is based on a multi-sensor time-series fusion algorithm combining observations by optical and passive microwave radiometer (PMR) data. The product combines an historical record of AVHRR sensor data with PMR data from the SMMR, SSM/I and SSMIS sensors. \n\nThe overall aim of the CryoClim FSC climate data record is to provide one of the longest snow cover extent time series available with global coverage and without hindrance from clouds and polar night. This has been achieved by utilising the best features of optical and passive microwave radiometer observations of snow using a sensor-fusion algorithm generating a consistent time series of global FSC products (Solberg et al. 2014, 2015; Rudjord et al. 2015). \n\nThe snow_cci project has advanced the original CryoClim binary product to an FSC product. The thematic variable represents snow on the ground (SCFG). \n\nAVHRR sensors aboard the satellites NOAA-7, -9, -11, -14, -16, -18, -19 have been used as the optical data source, and SMMR, SSM/I and SSMIS sensors aboard the Nimbus-7, DMSP F8, DMSP F10, DMSP F11, DMSP F13, DMSP F14, DMSP F15, DMSP F16, DMSP F17 and DMSP F18 satellites, respectively, have been used as PMR data source. To have the best possible input data quality, we have used fundamental climate data records (FCDRs) developed by EUMETSAT CM SAF for AVHRR (Karlson et al. 2020) and PMR (Fenning et al. 2017).\n\nThe optical algorithm component processes all available swaths from AVHRR GAC. The calculations are based on a Bayesian approach using a set of signatures (instrument channel combinations) and statistical coefficients. For each pixel of the swath, the probabilities for the surface classes snow, bare ground and cloud are estimated. The statistical coefficients are based on pre-knowledge of the typical behaviour of the surface classes in the different parts of the electromagnetic spectrum.\n\nThe algorithm for PMR is also based on a Bayesian estimation approach. For SSM/I and SSMIS four snow classes were defined to model the snow surface state. For SMMR two classes were considered. The algorithm estimates the probability for each snow class given the PMR measurements. Land cover data are included to improve the performance of the Bayesian algorithm. This made it possible to construct a Bayesian estimator for each land cover regime. \n\nThe multi-sensor multi-temporal fusion algorithm (Rudjord et al. 2015; Solberg et al. 2017) is based on a hidden Markov model (HMM) simulating the snow states based on observations with PMR and optical sensors. The basic idea is to simulate the states the snow surface goes through during the snow season with a state model. The states are not directly observable, but the remote sensing observations give data describing the snow conditions, which are related to the snow states. The HMM solution represents not only a multi-sensor model but also a multi-temporal model. The sequence of states over time is conditioned to follow certain optimisation criteria.\n\nThe advancement from binary to fractional snow cover carried out by snow_cci has followed two main paths: First, we introduced more HMM states to be able to classify the snow cover into 10% FSC intervals. However, introducing 100 primary states to obtain 1% FSC intervals would not give a stable model. For obtaining higher precision, we have interpolated between HMM states using a secondary Viterbi sequence. The two probabilities are used as weights to estimate the FSC.\n\nPermanent snow and ice, and water areas are masked based on the Land Cover CCI data set of the year 2000. Both classes were separately aggregated to the grid size of the FSC product. Water areas are masked if more than 30% of the grid cell is classified as water, permanent snow and ice areas are masked if more than 50% is identified as such areas in the aggregated map. The product uncertainty for observed land areas is provided as unbiased root mean square error (RMSE) per grid cell in the ancillary variable.\n\nThe FSC product aims to serve the needs of users working with the cryosphere and climate research and monitoring activities, including the assessment of variability and trends, climate modelling and aspects of hydrology, meteorology, and biology.\n\nThe Norwegian Computing Center (Norsk Regnesentral, NR) is together with the Norwegian Meteorological Institute (MET Norway) responsible for the FSC product development and generation from satellite data. ENVEO IT GmbH developed and prepared all auxiliary data sets used for the product generation.\n\nFor the whole time series, there are 27 days with neither optical nor PMR retrieval. These are individual days and not series of days in a row. The multi-sensor time-series algorithm handles this by making a best estimate of snow cover, based on days both prior to and following after the lack of data. This will not reduce the quality of the snow maps much for days without data as long as they are just individual days.\nThe algorithm estimating the uncertainty associated with the FSC maps needs observations of covariates from the same day as the time stamp of the FSC product. These covariates are partly based on data from PMR sensors. Hence, estimates of uncertainty could not be produced for days lacking PMR acquisitions. Most days lacking PMR are in the period 1982-1988 (53 days), and there are only two cases after that (in 2008).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/f4654030223445b0bac63a23aaa60620",
+    "cci_project": "SNOW",
+    "comment": "The following auxiliary data set is used for product generation: ESA GlobCoverVersion 2.2. PMR data is stratified into groups based on these land-cover classesfor generation of probability density functions. A land mask is also derived fromthese data. Lakes smaller than the 300 m in extent have been removed in theoriginal data. Resampling to 5 km spatial resolution removed water bodies ofextent less than 5 km. Water bodies and permanent snow and ice areas are maskedbased on this dataset. The optical component algorithm needs model surfacetemperature, which is retrieved from ECMWF ERA.",
+    "data_type": "SCFG",
+    "ecv": "SNOW",
+    "history": "2022-06-23: CryoClim processing chain SCE, version 1.0",
+    "institute": "Norwegian Computing Center",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "MERGED",
+    "product_version": "1-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2023-08-08T13:15:33",
+    "references": "http://snow-cci.enveo.at/",
+    "sensor_id": "multi-sensor",
+    "source": "EUMETSAT CM SAF FCDRs for AVHRR and SMMR+SSM/I+SSMIS",
+    "title": "ESA Snow Climate Change Initiative (Snow_cci): Fractional Snow Cover in CryoClim, v1.0",
+    "uuid": "f4654030223445b0bac63a23aaa60620"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "actual_range": [
+          -89.97499999998976,
+          89.975
+        ],
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "chunk_sizes": [
+          3600
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": [
+          3600
+        ],
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 latitude coordinates, center of pixel",
+        "orig_data_type": "float64",
+        "shape": [
+          3600
+        ],
+        "size": 3600,
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          3600,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          3600,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          3600,
+          2
+        ],
+        "size": 7200
+      },
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon": {
+      "attrs": {
+        "actual_range": [
+          -179.975,
+          179.97500000008185
+        ],
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "chunk_sizes": [
+          7200
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          7200
+        ],
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 longitude coordinates, center of pixel",
+        "orig_data_type": "float64",
+        "shape": [
+          7200
+        ],
+        "size": 7200,
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          7200,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          7200,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          7200,
+          2
+        ],
+        "size": 14400
+      },
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float64",
+        "shape": [
+          13695
+        ],
+        "size": "13695",
+        "standard_name": "time",
+        "units": "hours since 1950-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.SNOW.day.L3S.SCFG.multi-sensor.multi-platform.MERGED.1-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "scfg": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_range": [
+          0,
+          100
+        ],
+        "ancillary_variables": "scfg_unc",
+        "chunk_sizes": [
+          1,
+          1200,
+          2400
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1200,
+          2400
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "flag_meanings": "Cloud Polar_Night_or_Night Water Permanent_Snow_and_Ice Classification_failed Input_Data_Error No_Satellite_Acquisition",
+        "flag_values": [
+          -51,
+          -50,
+          -46,
+          -41,
+          -4,
+          -3,
+          -2
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "Fractional Snow Cover",
+        "orig_data_type": "uint8",
+        "shape": [
+          13695,
+          3600,
+          7200
+        ],
+        "size": "354974400000",
+        "standard_name": "surface_snow_area_fraction",
+        "units": "percent",
+        "valid_range": [
+          0,
+          -2
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "scfg"
+    },
+    "scfg_unc": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_range": [
+          0,
+          100
+        ],
+        "chunk_sizes": [
+          1,
+          1200,
+          2400
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1200,
+          2400
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "flag_meanings": "Cloud Polar_Night_or_Night Water Permanent_Snow_and_Ice Classification_failed Input_Data_Error No_Satellite_Acquisition",
+        "flag_values": [
+          -51,
+          -50,
+          -46,
+          -41,
+          -4,
+          -3,
+          -2
+        ],
+        "grid_mapping": "spatial_ref",
+        "key_variables": "scfg",
+        "long_name": "Unbiased Root Mean Square Error for Snow Cover Fraction on Ground",
+        "orig_data_type": "uint8",
+        "shape": [
+          13695,
+          3600,
+          7200
+        ],
+        "size": "354974400000",
+        "standard_name": "surface_snow_area_fraction standard_error",
+        "units": "percent",
+        "valid_range": [
+          0,
+          -2
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "scfg_unc"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "-180.0 0.05000000000001137 0.0 89.99999999999999 0.0 -0.04999999999999715",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "longitude_of_prime_meridian": 0.0,
+        "orig_data_type": "int32",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCRS[\\\"WGS 84\\\",DATUM[\\\"World Geodetic System 1984\\\",ELLIPSOID[\\\"WGS 84\\\",6378137,298.257223563,LENGTHUNIT[\\\"metre\\\",1]]],PRIMEM[\\\"Greenwich\\\",0,ANGLEUNIT[\\\"degree\\\",0.0174532925199433]],CS[ellipsoidal,2],AXIS[\\\"geodetic latitude (Lat)\\\",north,ORDER[1],ANGLEUNIT[\\\"degree\\\",0.0174532925199433]],AXIS[\\\"geodetic longitude (Lon)\\\",east,ORDER[2],ANGLEUNIT[\\\"degree\\\",0.0174532925199433]],ID[\\\"EPSG\\\",4326]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "spatial_ref"
+    }
+  },
+  "dims": {
+    "lat": 3600,
+    "lon": 7200,
+    "nv": 2,
+    "time": 13695
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2019-06-30",
+            "minDate": "1982-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2019-06-30",
+            "minDate": "1982-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "scfg",
+            "scfg_unc",
+            "spatial_ref"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.05,
+  "time_period": "1D",
+  "time_range": [
+    "1982-01-01",
+    "2019-06-30"
+  ]
+}

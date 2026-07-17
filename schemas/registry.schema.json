@@ -98,6 +98,16 @@
                 "descriptor_hash": {
                   "type": "string"
                 },
+                "descriptor_omitted_reason": {
+                  "type": "string",
+                  "enum": ["size_limit"],
+                  "description": "Reason why this representation intentionally has no bundled descriptor."
+                },
+                "descriptor_size": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "Original descriptor size in bytes when the descriptor is intentionally omitted."
+                },
                 "reference_path": {
                   "type": "string",
                   "description": "Optional path or URL to a Kerchunk reference file for reference-based representations such as esa-cci-kc."

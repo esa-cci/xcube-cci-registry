@@ -1,0 +1,206 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.7",
+    "EPSG": "4326",
+    "cdm_data_type": "INT",
+    "comment": "These data were produced at ESA CCI as part of the ESA Biomass CCI project.",
+    "creator_email": "santoro@gamma-rs.ch",
+    "creator_name": "GAMMA Remote Sensing",
+    "creator_url": "www.gamma-rs.ch",
+    "date_created": "19-Dec-2025 15:33:26",
+    "format_version": "CCI Data Standards v2.1",
+    "geospatial_lat_max": "90",
+    "geospatial_lat_min": "-90",
+    "geospatial_lat_resolution": "0.5",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180",
+    "geospatial_lon_min": "-180",
+    "geospatial_lon_resolution": "0.5",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "AGB estimation with BIOMASAR-L,v202509, AGB estimation with BIOMASAR-C,v202509, Merging of AGB estimates,v202509",
+    "id": "ESACCI-BIOMASS-L4-AGB-MERGED-50000m-fv7.0.nc",
+    "institution": "GAMMA Remote Sensing",
+    "key_variables": "agb",
+    "keywords": "satellite, observation, forest, biomass",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming authority": "ch.gamma-rs",
+    "platform": "ALOS-1, ALOS-2, ENVISAT,Sentinel-1A, Sentinel-1B",
+    "product_version": "7.0",
+    "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/biomass",
+    "sensor": "PALSAR-1, PALSAR-2, ASAR, SAR-C",
+    "source": "ALOS-2 PALSAR-2 FB and WB mosaics, Sentinel-1 GRD",
+    "spatial_resolution": "50000 m",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 67",
+    "summary": "This dataset contains global maps of above-ground biomass of the epochs 2005  2006  2007  2008  2009  2010  2011  2012  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024 obtained from L-and C-band spaceborne SAR backscatter, placed onto a regular grid.",
+    "time_coverage_duration": "P20Y",
+    "time_coverage_end": "20241231T235959Z",
+    "time_coverage_resolution": "P1Y",
+    "time_coverage_start": "20050101T000000Z",
+    "title": "ESA CCI above-ground biomass product level 4, year 2005  2006  2007  2008  2009  2010  2011  2012  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024",
+    "tracking_id": "1AA9B124-65A9-46A2-88E3-BF7C60E381E7"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "bounds": "lat_bnds",
+        "long_name": "WGS84 latitude coordinate",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "bounds": "lon_bnds",
+        "long_name": "WGS84 longitude coordinate",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "Map Year (time refers to January 1st)",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-BIOMASS-L4-AGB-MERGED-50000m-fv7.0-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "agb": {
+      "attrs": {
+        "grid_mapping": "crs",
+        "long_name": "Above-ground biomass",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        18,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "agb"
+    },
+    "agb_sd": {
+      "attrs": {
+        "grid_mapping": "crs",
+        "long_name": "Above-ground biomass standard_deviation",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        18,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "agb_sd"
+    },
+    "crs": {
+      "attrs": {
+        "GeoTransform": "-180                0.5                  0                 90                  0               -0.5",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "long_name": "CRS definition",
+        "longitude_of_prime_meridian": 0.0,
+        "semi_major_axis": 6378137.0,
+        "spatial_ref": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433],AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "dims": [],
+      "dtype": "object",
+      "name": "crs"
+    },
+    "lat_bnds": {
+      "chunks": [
+        360,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "chunks": [
+        720,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time_bnds": {
+      "chunks": [
+        18,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "lat": 360,
+    "lon": 720,
+    "nv": 2,
+    "time": 18
+  },
+  "spatial_res": 0.5,
+  "time_range": [
+    "2005-01-01",
+    "2024-12-31"
+  ]
+}

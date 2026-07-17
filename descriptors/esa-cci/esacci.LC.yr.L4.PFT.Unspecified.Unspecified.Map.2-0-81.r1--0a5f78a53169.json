@@ -1,0 +1,1053 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains Global Plant Functional Types (PFT) data, from the ESA Medium Resolution Land Cover (MRLC) Climate Change Initiative project.   The data provides yearly data, and initially covers the time period from 1992 to 2020.   It is anticipated that the dataset will be updated annually going forward.\n\nThis version of the data is v2.0.81, which corrects an issue found with a file in v2.0.8.\n\nThe PFT v2.0.81 global dataset has 14 layers, each describing the percentage cover (0-100%) of a plant functional type at a spatial resolution of 300 m: broadleaved evergreen trees, broadleaved deciduous trees, needleleaved evergreen trees, needleleaved deciduous trees, broadleaved evergreen shrubs, broadleaved deciduous shrubs, needleleaved evergreen shrubs, needleleaved deciduous shrubs, natural grasses, herbaceous cropland (i.e., managed grasses), built, water, bare areas, and snow and ice.\n\n\"Plant Functional Types\u201d (PFTs) refer to globally representative and similarly behaving plant types. PFTs can be related to physiognomy and phenology, climate (which defines the geographical ranges in which a plant type can grow and reproduce under natural conditions, and physiological activity (e.g., C3/C4 photosynthetic pathways).\n\nAll terrestrial zones of the Earth between the parallels 90\u00b0N and 90\u00b0S are covered. The PFT dataset has a regular latitude-longitude grid with a grid spacing of 0.002777777777778\u00b0, corresponding to ~300 m at the equator and ~200 m in the midlatitudes.    The Coordinate Reference System used for the global land cover database is a geographic coordinate system (GCS) based on the World Geodetic System 84 (WGS84) reference ellipsoid.\n\nThe plant functional type (PFT) distribution was created by combining auxiliary data products with the CCI MRLC map series. The LC classification provides the broad characteristics of the 300 m pixel, including the expected vegetation form(s) (tree, shrub, grass) and/or abiotic land type(s) (water, bare area, snow and ice, built-up) in the pixel. For some classes, the class legend specifies an expected range for the fractional covers of the contributing PFTs and broadly differentiates between natural and cultivated vegetation. We used a quantitative, globally consistent method that fuses the 300-metre MRLC product with a suite of existing high-resolution datasets to develop spatially explicit annual maps of PFT fractional composition at 300 metres. The new PFT product exhibits intraclass spatial variability in PFT fractional cover at the 300-metre pixel level and is complementary to the MRLC maps since the derived PFT fractions maintain consistency with the original LC class legend. \n\nThis dataset was generated to reduce the cross-walking component of uncertainty by adding spatial variability to the PFT composition within a LC class. This work moved beyond fine-tuning the cross-walking approach for specific LC classes or regions and, instead, separately quantifies the PFT fractional composition for each 300 m pixel globally. The result is a dataset representing the cover fractions of 14 PFTs at 300 m for each year within the time range, consistent with the CCI MRLC LC maps for the corresponding year.\n\nThis study was carried out with the continued support of the European Space Agency Climate Change Initiative under the contract ESA/No.4000126564 Land_Cover_cci.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/313854aedcb04a5eb56f711401a87396",
+    "cci_project": "LC",
+    "data_type": "PFT",
+    "ecv": "LC",
+    "history": "lc-classification-1.0,pft-classification-1.0,lc-user-tools-4.6",
+    "institute": "Universite Catholique de Louvain",
+    "platform_id": "Unspecified",
+    "processing_level": "L4",
+    "product_string": "Map",
+    "product_version": "2-0-81",
+    "project": "Medium Resolution Land Cover - Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-09-30T11:01:48",
+    "references": "https://maps.elie.ucl.ac.be/CCI/viewer/download.php, https://climate.esa.int/fr/projects/land-cover/about/, https://catalogue.ceda.ac.uk/uuid/26a0f46c95ee4c29b5c650b129aab788",
+    "sensor_id": "Unspecified",
+    "source": "ESA CCI land cover maps, auxiliary derived satellite data products",
+    "title": "ESA Land Cover Climate Change Initiative (Land_Cover_cci):  Global Plant Functional Types (PFT) Dataset, v2.0.81",
+    "uuid": "313854aedcb04a5eb56f711401a87396"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bounds",
+        "chunk_sizes": 64800,
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 64800,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float64",
+        "shape": [
+          64800
+        ],
+        "size": 64800,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90,
+        "valid_min": -90
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          64800,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat",
+          "bounds"
+        ],
+        "file_chunk_sizes": [
+          64800,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "bounds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          64800,
+          2
+        ],
+        "size": 129600
+      },
+      "dims": [
+        "lat",
+        "bounds"
+      ],
+      "dtype": "float64",
+      "name": "lat_bounds"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bounds",
+        "chunk_sizes": 129600,
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 129600,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float64",
+        "shape": [
+          129600
+        ],
+        "size": 129600,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180,
+        "valid_min": -180
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          129600,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon",
+          "bounds"
+        ],
+        "file_chunk_sizes": [
+          129600,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "bounds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          129600,
+          2
+        ],
+        "size": 259200
+      },
+      "dims": [
+        "lon",
+        "bounds"
+      ],
+      "dtype": "float64",
+      "name": "lon_bounds"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bounds",
+        "calendar": "standard",
+        "chunk_sizes": [
+          29
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float64",
+        "shape": [
+          29
+        ],
+        "size": "29",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    },
+    "time_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          29,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "bounds"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "bounds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          29,
+          2
+        ],
+        "size": "58"
+      },
+      "dims": [
+        "time",
+        "bounds"
+      ],
+      "dtype": "float64",
+      "name": "time_bounds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.LC.yr.L4.PFT.Unspecified.Unspecified.Map.2-0-81.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "BARE": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of bare soil in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Bare",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "BARE"
+    },
+    "BUILT": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of built (artificial impervious area, e.g., buildings) in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Built",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "BUILT"
+    },
+    "GRASS-MAN": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of managed grasses (i.e., herbaceous crops) in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Managed grasses",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "GRASS-MAN"
+    },
+    "GRASS-NAT": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of natural grasses in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Natural grasses",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "GRASS-NAT"
+    },
+    "LAND": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of land(no ocean and permanent inland water bodies) in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Land",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "LAND"
+    },
+    "SHRUBS-BD": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of broadleaved deciduous shrubs in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Broadleaved deciduous shrubs",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "SHRUBS-BD"
+    },
+    "SHRUBS-BE": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of broadleaved evergreen shrubs in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Broadleaved evergreen shrubs",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "SHRUBS-BE"
+    },
+    "SHRUBS-ND": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of needleleaved deciduous shrubs in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Needleleaved deciduous shrubs",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "SHRUBS-ND"
+    },
+    "SHRUBS-NE": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of needleleaved evergreen shrubs in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Needleleaved evergreen shrubs",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "SHRUBS-NE"
+    },
+    "SNOWICE": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover permanent snow and ice in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Permanent snow and ice",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "SNOWICE"
+    },
+    "TREES-BD": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of broadleaved deciduous trees in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Broadleaved deciduous trees",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "TREES-BD"
+    },
+    "TREES-BE": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of broadleaved evergreen trees in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Broadleaved evergreen trees",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "TREES-BE"
+    },
+    "TREES-ND": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of needleleaved deciduous trees in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Needleleaved deciduous trees",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "TREES-ND"
+    },
+    "TREES-NE": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of needleleaved evergreen trees in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Needleleaved evergreen trees",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "TREES-NE"
+    },
+    "WATER": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of surface water (ocean and permanent inland water bodies) in the 300 m pixel.",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Water",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "WATER"
+    },
+    "WATER_INLAND": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of permanent inland water bodies in the 300 m pixel. Excludes ocean (i.e., ocean pixels are set to 0% cover in this file).",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Inland Water",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "WATER_INLAND"
+    },
+    "WATER_OCEAN": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "data_type": "uint16",
+        "description": "Percentage cover of ocean in the 300 m pixel. Excludes inland water (i.e., inland water pixels are set to 0% cover in this file).",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2025,
+          2025
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Oceanic water",
+        "orig_data_type": "uint8",
+        "shape": [
+          29,
+          64800,
+          129600
+        ],
+        "size": "243544320000"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "WATER_OCEAN"
+    }
+  },
+  "dims": {
+    "bounds": 2,
+    "lat": 64800,
+    "lon": 129600,
+    "time": 29
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2020-12-31",
+            "minDate": "1992-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2020-12-31",
+            "minDate": "1992-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "WATER",
+            "BARE",
+            "BUILT",
+            "GRASS-MAN",
+            "GRASS-NAT",
+            "SHRUBS-BD",
+            "SHRUBS-BE",
+            "SHRUBS-ND",
+            "SHRUBS-NE",
+            "WATER_INLAND",
+            "SNOWICE",
+            "TREES-BD",
+            "TREES-BE",
+            "TREES-ND",
+            "TREES-NE",
+            "LAND",
+            "WATER_OCEAN"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 2777777777778.0,
+  "time_period": "1Y",
+  "time_range": [
+    "1992-01-01",
+    "2020-12-31"
+  ]
+}

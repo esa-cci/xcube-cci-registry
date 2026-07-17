@@ -1,0 +1,697 @@
+{
+  "attrs": {
+    "abstract": "This dataset consists of daily total column water vapour (TCWV) over land, at a 0.5 degree resolution, observed by various satellite instruments.   It has been produced by the European Space Agency Water Vapour Climate Change Initiative (Water_Vapour_cci), and forms part of their TCVW over land Climate Data Record -1  (TCWV-land (CDR-1).\n\nThis version of the data is v3.2. This is an updated dataset, which fixes an issue with the filtering of the v3.1 data.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/5bd687c7ea624e3aa68c51e242ae828a",
+    "cci_project": "WATERVAPOUR",
+    "comment": "These data were produced in the frame of the Water Vapour ECV (Water_Vapour_cci) of the ESA Climate Change Initiative Extension (CCI+) Phase 1.",
+    "data_type": "TCWV",
+    "ecv": "WATERVAPOUR",
+    "history": "python nc-compliance-py-process.py /hd4/yarn/local/usercache/olaf/appcache/application_1640808937980_14939/container_1640808937980_14939_01_000002/l3_tcwv_meris_05deg_2002-07-03_2002-07-03.nc",
+    "institute": "European Space Agency",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "TCWV_land_05deg",
+    "product_version": "3-2",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2022-02-21T16:55:06",
+    "references": "WV_cci D2.2: ATBD Part 1 - MERIS-MODIS-OLCI L2 Products, Issue 2.1, 21 January 2021; WV_cci D4.2: CRDP Issue 3.0, 11 August 2021 ",
+    "sensor_id": "multi-sensor",
+    "source": "Near-infrared Level 3 data over land from Brockmann Consult and Spectral Earth",
+    "title": "ESA Water Vapour Climate Change Initiative (Water_Vapour_cci): Total Column Water Vapour daily gridded data over land at 0.5 degree resolution, version 3.2",
+    "uuid": "5bd687c7ea624e3aa68c51e242ae828a"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "chunk_sizes": 360,
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 360,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude",
+        "orig_data_type": "float64",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "latitude",
+        "units": "degrees_north ",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          360,
+          2
+        ],
+        "comment": "Contains the northern and southern boundaries of the grid cells.",
+        "data_type": "float32",
+        "dimensions": [
+          "lat",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          360,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "nv"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude cell boundaries",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          360,
+          2
+        ],
+        "size": 720,
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float32",
+      "name": "lat_bnds"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "chunk_sizes": 720,
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 720,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude",
+        "orig_data_type": "float64",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          720
+        ],
+        "size": 720,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          720,
+          2
+        ],
+        "comment": "Contains the eastern and western boundaries of the grid cells.",
+        "data_type": "float32",
+        "dimensions": [
+          "lon",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          720,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "nv"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude cell boundaries",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          720,
+          2
+        ],
+        "size": 1440,
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float32",
+      "name": "lon_bnds"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bnds",
+        "calendar": "gregorian",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "Product dataset time given as days since 1970-01-01",
+        "orig_data_type": "int32",
+        "shape": [
+          5663
+        ],
+        "size": "5663",
+        "standard_name": "time",
+        "units": "days since 1970-01-01"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          2
+        ],
+        "comment": "Contains the start and end times for the time period the data represent.",
+        "data_type": "int64",
+        "dimensions": [
+          "time",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "nv"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "Time cell boundaries",
+        "orig_data_type": "int32",
+        "shape": [
+          5663,
+          2
+        ],
+        "size": "11326"
+      },
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.WATERVAPOUR.day.L3S.TCWV.multi-sensor.multi-platform.TCWV_land_05deg.3-2.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "comment": "A coordinate reference system (CRS) defines how the georeferenced spatial data relates to real locations on the Earth's surface ",
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "i2m": "0.5,0.0,0.0,-0.5,-180.0,90.0",
+        "long_name": "Coordinate Reference System ",
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "wkt": "GEOGCS[\\\"WGS84(DD)\\\", \n  DATUM[\\\"WGS84\\\", \n    SPHEROID[\\\"WGS84\\\", 6378137.0, 298.257223563]], \n  PRIMEM[\\\"Greenwich\\\", 0.0], \n  UNIT[\\\"degree\\\", 0.017453292519943295], \n  AXIS[\\\"Geodetic longitude\\\", EAST], \n  AXIS[\\\"Geodetic latitude\\\", NORTH]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "num_obs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -1,
+        "long_name": "Number of Total Column of Water Vapour retrievals contributing to L3 grid cell",
+        "orig_data_type": "int32",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "units": " "
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "num_obs"
+    },
+    "stdv": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Standard deviation of Total Column of Water Vapour",
+        "orig_data_type": "float32",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "units": "kg/m2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "stdv"
+    },
+    "surface_type_flag": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "flag_meanings": "LAND OCEAN CLOUD_OVER_LAND HEAVY_PRECIP_OVER_OCEAN SEA_ICE COAST PARTLY_CLOUDY_OVER_LAND PARTLY_SEA_ICE",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "long_name": "Surface type flag",
+        "orig_data_type": "uint8",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "standard_name": "status_flag ",
+        "units": " ",
+        "valid_range": [
+          0,
+          7
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "surface_type_flag"
+    },
+    "tcwv": {
+      "attrs": {
+        "actual_range": [
+          0.6718382,
+          69.18
+        ],
+        "ancillary_variables": "stdv num_obs",
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Total Column of Water",
+        "orig_data_type": "float32",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "standard_name": "atmosphere_water_vapor_content ",
+        "units": "kg/m2",
+        "valid_range": [
+          0.0,
+          70.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv"
+    },
+    "tcwv_err": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Average retrieval uncertainty",
+        "orig_data_type": "float32",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "units": "kg/m2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv_err"
+    },
+    "tcwv_quality_flag": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "flag_meanings": "TCWV_OK HIGH_COST_FUNCTION_1 HIGH_COST_FUNCTION_2 TCWV_INVALID",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "Quality flag of Total Column of Water Vapour",
+        "orig_data_type": "uint8",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "standard_name": "status_flag ",
+        "units": " ",
+        "valid_range": [
+          0,
+          3
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "tcwv_quality_flag"
+    },
+    "tcwv_ran": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          360,
+          720
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Propagated retrieval uncertainty",
+        "orig_data_type": "float32",
+        "shape": [
+          5663,
+          360,
+          720
+        ],
+        "size": "1467849600",
+        "units": "kg/m2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv_ran"
+    }
+  },
+  "dims": {
+    "lat": 360,
+    "lon": 720,
+    "nv": 2,
+    "time": 5663
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2017-12-31",
+            "minDate": "2002-07-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2017-12-31",
+            "minDate": "2002-07-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "tcwv_quality_flag",
+            "surface_type_flag",
+            "num_obs",
+            "tcwv",
+            "stdv",
+            "tcwv_err",
+            "tcwv_ran",
+            "crs"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.5,
+  "time_period": "1D",
+  "time_range": [
+    "2002-07-01",
+    "2017-12-31"
+  ]
+}

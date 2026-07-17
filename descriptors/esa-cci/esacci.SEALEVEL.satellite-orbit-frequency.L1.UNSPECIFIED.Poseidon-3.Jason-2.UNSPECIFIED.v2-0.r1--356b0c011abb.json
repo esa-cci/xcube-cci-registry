@@ -1,0 +1,270 @@
+{
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "crs": "WGS84",
+  "data_id": "esacci.SEALEVEL.satellite-orbit-frequency.L1.UNSPECIFIED.Poseidon-3.Jason-2.UNSPECIFIED.v2-0.r1",
+  "data_type": "geodataframe",
+  "feature_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "TimeDay": {
+        "properties": {},
+        "type": "object"
+      },
+      "TimeMicroSec": {
+        "properties": {},
+        "type": "object"
+      },
+      "TimeSec": {
+        "properties": {},
+        "type": "object"
+      },
+      "alt": {
+        "properties": {},
+        "type": "object"
+      },
+      "alt_flag_oper": {
+        "properties": {},
+        "type": "object"
+      },
+      "alt_surf_type": {
+        "properties": {},
+        "type": "object"
+      },
+      "bathymetry": {
+        "properties": {},
+        "type": "object"
+      },
+      "corssh": {
+        "properties": {},
+        "type": "object"
+      },
+      "cycle": {
+        "properties": {},
+        "type": "object"
+      },
+      "dry_tropo_corr": {
+        "properties": {},
+        "type": "object"
+      },
+      "dyn_atmosph_corr": {
+        "properties": {},
+        "type": "object"
+      },
+      "geometry": {
+        "pattern": "POINT(* *)",
+        "type": "string"
+      },
+      "global_bias": {
+        "properties": {},
+        "type": "object"
+      },
+      "gpd_wet_tropo_corr": {
+        "properties": {},
+        "type": "object"
+      },
+      "ice_flag": {
+        "properties": {},
+        "type": "object"
+      },
+      "iono_corr": {
+        "properties": {},
+        "type": "object"
+      },
+      "loading_tide": {
+        "properties": {},
+        "type": "object"
+      },
+      "mean_sea_surface": {
+        "properties": {},
+        "type": "object"
+      },
+      "model_wet_tropo_corr": {
+        "properties": {},
+        "type": "object"
+      },
+      "ocean_tide": {
+        "properties": {},
+        "type": "object"
+      },
+      "off_nadir_angle": {
+        "properties": {},
+        "type": "object"
+      },
+      "pass": {
+        "properties": {},
+        "type": "object"
+      },
+      "pole_tide": {
+        "properties": {},
+        "type": "object"
+      },
+      "rad_qual_interp_flag": {
+        "properties": {},
+        "type": "object"
+      },
+      "rad_surf_type": {
+        "properties": {},
+        "type": "object"
+      },
+      "rad_wet_tropo_corr": {
+        "properties": {},
+        "type": "object"
+      },
+      "range": {
+        "properties": {},
+        "type": "object"
+      },
+      "range_numval": {
+        "properties": {},
+        "type": "object"
+      },
+      "range_rms": {
+        "properties": {},
+        "type": "object"
+      },
+      "regional_bias": {
+        "properties": {},
+        "type": "object"
+      },
+      "sea_state_bias": {
+        "properties": {},
+        "type": "object"
+      },
+      "sigma0": {
+        "properties": {},
+        "type": "object"
+      },
+      "sigma0_numval": {
+        "properties": {},
+        "type": "object"
+      },
+      "sigma0_rms": {
+        "properties": {},
+        "type": "object"
+      },
+      "solid_earth_tide": {
+        "properties": {},
+        "type": "object"
+      },
+      "swh": {
+        "properties": {},
+        "type": "object"
+      },
+      "time": {
+        "format": "date",
+        "type": "string"
+      },
+      "validation_flag": {
+        "properties": {},
+        "type": "object"
+      },
+      "wind_speed_alt": {
+        "properties": {},
+        "type": "object"
+      }
+    },
+    "type": "object"
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2015-12-31",
+            "minDate": "1993-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2015-12-31",
+            "minDate": "1993-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "cycle",
+            "pass",
+            "TimeDay",
+            "TimeSec",
+            "TimeMicroSec",
+            "corssh",
+            "alt",
+            "range",
+            "sea_state_bias",
+            "iono_corr",
+            "gpd_wet_tropo_corr",
+            "alt_flag_oper",
+            "bathymetry",
+            "dyn_atmosph_corr",
+            "dry_tropo_corr",
+            "rad_wet_tropo_corr",
+            "model_wet_tropo_corr",
+            "mean_sea_surface",
+            "ocean_tide",
+            "loading_tide",
+            "pole_tide",
+            "sigma0",
+            "solid_earth_tide",
+            "swh",
+            "range_numval",
+            "range_rms",
+            "sigma0_numval",
+            "sigma0_rms",
+            "validation_flag",
+            "rad_surf_type",
+            "regional_bias",
+            "global_bias",
+            "alt_surf_type",
+            "ice_flag",
+            "rad_qual_interp_flag",
+            "off_nadir_angle",
+            "wind_speed_alt"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "1993-01-01",
+    "2015-12-31"
+  ]
+}

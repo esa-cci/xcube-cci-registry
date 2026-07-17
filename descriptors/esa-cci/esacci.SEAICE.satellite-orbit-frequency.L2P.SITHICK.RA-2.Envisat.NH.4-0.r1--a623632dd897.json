@@ -1,0 +1,525 @@
+{
+  "attrs": {
+    "abstract": "This dataset provides a Climate Data Record of Sea Ice Thickness for the northern hemisphere polar region, derived from the RA-2 (Radar Altimeter -2) instrument on the Envisat satellite. This product was generated in the context of the ESA Climate Change Initiative Programme (ESA CCI) by the Sea Ice CCI (Sea_Ice_cci) project.\n\nIt provides daily sea ice thickness data for the winter months of October to April annually on the satellite measurement grid (Level 2P) at the full sensor resolution for the period October 2002 to March 2012.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/5e58f03c4d664b2b9e4e16f2d12e0c4f",
+    "cci_project": "SEAICE",
+    "comment": "Northern hemisphere sea ice thickness coverage is limited to the winter month between October and April due to negative effect of surface melt on the retrieval of freeboard. Please consult the Product User Guide (PUG) for more information.",
+    "data_type": "SITHICK",
+    "ecv": "SEAICE",
+    "history": "20250616T141811Z - Product generated with pysiral version 0.11, 2025-10-15T18:04:34.030237 - Fixed error in global attributes",
+    "institute": "Alfred-Wegener-Institut Helmholtz-Zentrum f\u00fcr Polar- und Meeresforschung",
+    "platform_id": "Envisat",
+    "processing_level": "L2P",
+    "product_string": "NH",
+    "product_version": "4-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-11-20T12:09:47",
+    "references": "CCI+ Sea Ice ECV - Sea Ice Thickness Algorithm Theoretical Basis Document (ATBD) v2.0; CCI+ Sea Ice ECV - Sea Ice Thickness Product User Guide (PUG) v2.0",
+    "sensor_id": "RA-2",
+    "source": "Altimetry: Envisat SGDR (final v9.3p5), Snow depth: Monthly climatology based on regional merging of Warren Climatology with 50% reduction for first-year sea ice in the central Arctic and AMSR-2 based snow depth from IUP Bremen in remaining ice-covered regions, Mean Sea Surface: DTU21 global mean sea surface, Sea ice Concentration: C3S Sea Ice Concentration CDR/ICDR v3.0, Sea ice type: C3S Sea Ice Type CDR/ICDR v3.0, Region code: NSIDC regional mask for Arctic sea ice trends and climatologies (J. Scott Stewart and Walter N. Meier (2021), NSIDC)",
+    "title": "ESA Sea Ice Climate Change Initiative (Sea_Ice_cci): Northern hemisphere sea ice thickness from Envisat on the satellite swath (L2P), v4.0",
+    "uuid": "5e58f03c4d664b2b9e4e16f2d12e0c4f"
+  },
+  "bbox": [
+    -180.0,
+    50.0,
+    180.0,
+    81.45
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": 37250,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "units": "seconds since 1970-01-01"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.SEAICE.satellite-orbit-frequency.L2P.SITHICK.RA-2.Envisat.NH.4-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "flag_miz": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": 37250,
+        "comment": "indicates potential freeboard/thickness bias by surface waves the marginal ice zone",
+        "coordinates": "time",
+        "data_type": "uint16",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 65535,
+        "flag_meanings": "not_in_miz miz_no_bias_detected miz_bias_detected",
+        "flag_values": [
+          0,
+          1,
+          2
+        ],
+        "long_name": "marginal ice zone flag",
+        "orig_data_type": "uint8",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "units": "1",
+        "valid_max": 2,
+        "valid_min": 0
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "uint16",
+      "name": "flag_miz"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "coordinate",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "latitude of satellite nadir measurement point",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "coordinate",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "longitude of satellite nadir measurement point",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "radar_freeboard": {
+      "attrs": {
+        "ancillary_variables": "radar_freeboard_uncertainty, region_code, flag_miz",
+        "chunk_sizes": 37250,
+        "comment": "radar freeboard is defined as the elevation based on the assumption of vacuum light speed without a snow propagation or range penetration correction",
+        "coordinates": "time",
+        "coverage_content_type": "physicalMeasurement",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "radar freeboard",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "radar_freeboard"
+    },
+    "radar_freeboard_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "qualityInformation",
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "uncertainty associated with radar freeboard",
+        "orig_data_type": "float32",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "radar_freeboard_uncertainty"
+    },
+    "region_code": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": 37250,
+        "comment": "Region code from A new regional mask for Arctic sea ice trends and climatologies (J. Scott Stewart and Walter N. Meier, NSIDC)",
+        "coordinates": "time",
+        "data_type": "uint16",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 65535,
+        "flag_meanings": "undefined_region central_arctic beaufort_sea chukchi_sea east_siberian_sea laptev_sea kara_sea barents_sea east_greenland_sea baffin_bay_and_labrador_sea gulf_of_st_lawrence hudson_bay canadian_archipelago bering_sea sea_of_okhotsk sea_of_japan bohai_sea baltic_sea gulf_of_alaska",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "long_name": "region code",
+        "orig_data_type": "uint8",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "units": "1",
+        "valid_max": 20,
+        "valid_min": 0
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "uint16",
+      "name": "region_code"
+    },
+    "sea_ice_freeboard": {
+      "attrs": {
+        "ancillary_variables": "sea_ice_freeboard_uncertainty, region_code, flag_miz",
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "physicalMeasurement",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "sea ice freeboard",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "sea_ice_freeboard",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "sea_ice_freeboard"
+    },
+    "sea_ice_freeboard_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "qualityInformation",
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "uncertainty associated with radar freeboard",
+        "orig_data_type": "float32",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "sea_ice_freeboard standard_error",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_freeboard_uncertainty"
+    },
+    "sea_ice_thickness": {
+      "attrs": {
+        "ancillary_variables": "sea_ice_thickness_uncertainty, region_code, flag_miz",
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "sea ice thickness",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "sea_ice_thickness",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "sea_ice_thickness"
+    },
+    "sea_ice_thickness_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "uncertainty associated with sea ice thickness",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "sea_ice_thickness standard_error",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "sea_ice_thickness_uncertainty"
+    },
+    "snow_depth": {
+      "attrs": {
+        "ancillary_variables": "snow_depth_uncertainty, region_code, flag_miz",
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "auxiliaryInformation",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "thickness of the snow layer",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "surface_snow_thickness_where_sea_ice",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "snow_depth"
+    },
+    "snow_depth_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 37250,
+        "coordinates": "time",
+        "coverage_content_type": "qualityInformation",
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 37250,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "uncertainty associated to the thickness of the snow layer",
+        "orig_data_type": "float64",
+        "shape": [
+          77293750
+        ],
+        "size": "77293750",
+        "standard_name": "surface_snow_thickness_where_sea_ice standard_error",
+        "units": "m"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "snow_depth_uncertainty"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 77293750
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 81.45,
+            "minimum": 50.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 81.45,
+            "minimum": 50.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-03-31",
+            "minDate": "2002-10-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-03-31",
+            "minDate": "2002-10-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "flag_miz",
+            "lat",
+            "lon",
+            "radar_freeboard",
+            "radar_freeboard_uncertainty",
+            "region_code",
+            "sea_ice_freeboard",
+            "sea_ice_freeboard_uncertainty",
+            "sea_ice_thickness",
+            "sea_ice_thickness_uncertainty",
+            "snow_depth",
+            "snow_depth_uncertainty"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 300.0,
+  "time_range": [
+    "2002-10-01",
+    "2012-03-31"
+  ]
+}

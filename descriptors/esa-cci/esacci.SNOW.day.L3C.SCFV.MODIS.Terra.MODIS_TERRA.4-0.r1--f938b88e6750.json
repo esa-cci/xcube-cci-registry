@@ -1,0 +1,543 @@
+{
+  "attrs": {
+    "abstract": "This dataset provides daily Snow Cover Fraction Viewable from above (SCFV) derived from Terra MODIS observations, produced within the ESA Climate Change Initiative Snow project.\n\nSCFV expresses the proportion of land area within each about 1 km x 1 km pixel that is covered by snow. SCFV represents snow viewable from above, whether on the forest canopy or on the ground in clear-cut or non-forested areas. The SCFV is given in percentage (%) per pixel.\n\nThis SCFV product is available at about 1 km pixel size for global land areas except the Antarctica and Greenland ice sheets and permanent snow and ice areas. The coastal zones of Greenland are included. The SCFV time series spans 24 February 2000 to 31 December 2023.\n\nThis SCFV product is based on Moderate resolution Imaging Spectroradiometer (MODIS) data on-board the Terra satellite. For the SCFV product generation from MODIS, multiple reflective and emissive spectral bands are used. In a first step, clouds are masked using an adapted version of the Simple Cloud Detection Algorithm (SCDA) (Mets\u00e4m\u00e4ki et al., 2015).   For all remaining pixels, the snow_cci SCFV retrieval method is applied, using spectral bands centred at about 0.55 \u00b5m and 1.6 \u00b5m, and an emissive band centred at about 11 \u00b5m. The snow_cci snow cover mapping algorithm is a two-step approach that first identifies pixels which are assessed as snow free, followed by SCFV retrieval for remaining pixels. \nPermanent snow/ice and water bodies are masked using the Land Cover CCI 2000 dataset, supplemented by a manually mapped salt-lake mask.    Per-pixel uncertainty is provided in the ancillary variable as an unbiased Root Mean Square Error (RMSE) for all observed land pixels.\n\nCompared with SCFV CRDP v3.0 (https://catalogue.ceda.ac.uk/uuid/e955813b0e1a4eb7af971f923010b4a3/), the SCFV CRDP v4.0 includes the following improvements: \n\u2022\tmore permissive pre-classification allowing more pixels to enter the SCFV retrieval; \n\u2022\tcorrection function applied to spectral reflectance for improved SCFV retrieval at low solar illumination conditions;\n\u2022\tupdated spectral reflectance layers for snow free ground and snow free forest to improve SCFV retrieval;\n\u2022\tupdated uncertainty estimation to account for the changes in the SCFV retrieval;\n\u2022\timproved merging method for generating daily global SCFV products;\n\u2022\tupdated salt lake mask;\n\u2022\textended time series, to December 2023.\n\nThere are several days with no MODIS acquisitions in the years 2000, 2001, 2002, 2003, 2008, 2016 and 2022. In addition, on multiple days between 2000 and 2006 and in 2023, as well as on single days in 2012, 2015 and 2016, 2018, and 2020, the available MODIS data exhibit either limited spatial coverage, or corruption during data download. SCFV products are provided for all of these days, but they contain data gaps.\n\nThe SCFV product is aimed to support cryosphere and climate research applications, including variability and trend analyses, climate modelling and studies in hydrology, meteorology, and ecology.\nENVEO leads the SCFV product development and product generation from MODIS data, with contributions on the product development from Syke.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/bc13bb02a958449aac139853c4638f32",
+    "cci_project": "SNOW",
+    "comment": "The following auxiliary data set is used for product generation: i) ESA CCI Land Cover from 2000; water bodies and permanent snow and ice areas are masked based on this dataset. Both classes were separately aggregated to the pixel spacing of the SCF product. Water areas are masked if more than 30 percent of the pixel is classified as water, permanent snow and ice areas are masked if more than 50 percent are identified as such areas in the aggregated map. ii) Salt lakes are manually mapped and masked in the product.",
+    "data_type": "SCFV",
+    "ecv": "SNOW",
+    "history": "2025-08-19: ESA snow_cci processing line SCFV, version 4.0",
+    "institute": "ENVironmental Earth Observation IT GmbH",
+    "platform_id": "Terra",
+    "processing_level": "L3C",
+    "product_string": "MODIS_TERRA",
+    "product_version": "4-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-12-03T17:12:36",
+    "references": "http://snow-cci.enveo.at/",
+    "sensor_id": "MODIS",
+    "source": "TERRA MODIS, Collection 6.1: calibrated radiances 5-min L1B swath data, 1 km (MOD021KM) and geolocation fields 5-min L1A swath data, 1 km (MOD03)",
+    "title": "ESA Snow Climate Change Initiative (Snow_cci): Daily global Snow Cover Fraction - viewable snow (SCFV) from MODIS (2000 - 2023), version 4.0",
+    "uuid": "bc13bb02a958449aac139853c4638f32"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "actual_range": [
+          -89.995,
+          89.995
+        ],
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "chunk_sizes": 18000,
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 18000,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 latitude coordinates, center of pixel",
+        "orig_data_type": "float64",
+        "shape": [
+          18000
+        ],
+        "size": 18000,
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          18000,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          18000,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          18000,
+          2
+        ],
+        "size": 36000
+      },
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon": {
+      "attrs": {
+        "actual_range": [
+          -179.995,
+          179.995
+        ],
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "chunk_sizes": 36000,
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 36000,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 longitude coordinates, center of pixel",
+        "orig_data_type": "float64",
+        "shape": [
+          36000
+        ],
+        "size": 36000,
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          36000,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          36000,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          36000,
+          2
+        ],
+        "size": 72000
+      },
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          8642
+        ],
+        "size": "8642",
+        "standard_name": "time",
+        "units": "hours since 1950-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.SNOW.day.L3C.SCFV.MODIS.Terra.MODIS_TERRA.4-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "satzen": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_range": [
+          0,
+          6568
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          2000
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          2000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9999,
+        "grid_mapping": "spatial_ref",
+        "long_name": "Sensor Zenith Angle",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          8642,
+          18000,
+          36000
+        ],
+        "size": "5600016000000",
+        "standard_name": "sensor_zenith_angle",
+        "units": "degrees",
+        "valid_range": [
+          0,
+          9000
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "satzen"
+    },
+    "scanline_time": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_range": [
+          0,
+          23583
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          2000
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          2000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "scanline time as fractional hours of the day",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.001,
+        "shape": [
+          8642,
+          18000,
+          36000
+        ],
+        "size": "5600016000000",
+        "standard_name": "time",
+        "units": "h",
+        "valid_range": [
+          0,
+          24000
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "scanline_time"
+    },
+    "scfv": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_range": [
+          0,
+          100
+        ],
+        "ancillary_variables": "scfv_unc",
+        "chunk_sizes": [
+          1,
+          1385,
+          2770
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1385,
+          2770
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "flag_meanings": "Cloud Polar_Night_or_Night Water Salt_Lake Permanent_Snow_and_Ice Classification_failed Input_Data_Error No_Satellite_Acquisition",
+        "flag_values": [
+          -51,
+          -50,
+          -46,
+          -43,
+          -41,
+          -4,
+          -3,
+          -2
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "Snow Cover Fraction Viewable",
+        "orig_data_type": "uint8",
+        "shape": [
+          8642,
+          18000,
+          36000
+        ],
+        "size": "5600016000000",
+        "standard_name": "snow_area_fraction_viewable_from_above",
+        "units": "percent",
+        "valid_range": [
+          0,
+          -2
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "scfv"
+    },
+    "scfv_unc": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_range": [
+          0,
+          100
+        ],
+        "chunk_sizes": [
+          1,
+          1385,
+          2770
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1385,
+          2770
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "flag_meanings": "Cloud Polar_Night_or_Night Water Salt_Lake Permanent_Snow_and_Ice Classification_failed Input_Data_Error No_Satellite_Acquisition",
+        "flag_values": [
+          -51,
+          -50,
+          -46,
+          -43,
+          -41,
+          -4,
+          -3,
+          -2
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "Unbiased Root Mean Square Error for Snow Cover Fraction Viewable",
+        "orig_data_type": "uint8",
+        "shape": [
+          8642,
+          18000,
+          36000
+        ],
+        "size": "5600016000000",
+        "standard_name": "snow_area_fraction_viewable_from_above standard_error",
+        "units": "percent",
+        "valid_range": [
+          0,
+          -2
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "scfv_unc"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "-180 0.01 0 90 0 -0.01",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "longitude_of_prime_meridian": 0.0,
+        "orig_data_type": "int32",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AXIS[\\\"Latitude\\\",NORTH],AXIS[\\\"Longitude\\\",EAST],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "spatial_ref"
+    }
+  },
+  "dims": {
+    "lat": 18000,
+    "lon": 36000,
+    "nv": 2,
+    "time": 8642
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "2000-02-24",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "2000-02-24",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "scfv",
+            "scfv_unc",
+            "satzen",
+            "scanline_time",
+            "spatial_ref"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.01,
+  "time_period": "1D",
+  "time_range": [
+    "2000-02-24",
+    "2023-12-31"
+  ]
+}

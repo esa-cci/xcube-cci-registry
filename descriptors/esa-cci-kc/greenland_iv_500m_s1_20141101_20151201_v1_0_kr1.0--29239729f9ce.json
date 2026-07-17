@@ -1,0 +1,145 @@
+{
+  "attrs": {
+    "date_created": "2015-12-01",
+    "institution": "ENVEO IT GmbH",
+    "methods_used": "Offset-tracking",
+    "product_version": "ESP 2.1",
+    "project": "ESA Greenland Icesheet CCI",
+    "sensors_used": "Sentinel-1A",
+    "summary": "Greenland IV from Sentinel-1",
+    "time_coverage_end": "2015-12-01",
+    "time_coverage_start": "2014-11-01",
+    "title": "greenland_iv_500m_s1_20141101_20151201_v1_0",
+    "tracking_id": "6dc6ec82-3ea6-44ab-800f-05ddbab913a6",
+    "velocity_projection_method": "Horizontal Flow"
+  },
+  "bbox": [
+    -640000.0,
+    -3356000.0,
+    856000.0,
+    -655500.0
+  ],
+  "coords": {
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "x coordinate of projection",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "y coordinate of projection",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "greenland_iv_500m_s1_20141101_20151201_v1_0_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0,
+        "unit": "meter"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "crs"
+    },
+    "land_ice_surface_easting_velocity": {
+      "attrs": {
+        "description": "easting ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        1351,
+        748
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_easting_velocity"
+    },
+    "land_ice_surface_northing_velocity": {
+      "attrs": {
+        "description": "northing ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        1351,
+        748
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_northing_velocity"
+    },
+    "land_ice_surface_velocity_magnitude": {
+      "attrs": {
+        "description": "magnitude of horizontal ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        1351,
+        748
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_velocity_magnitude"
+    },
+    "land_ice_surface_vertical_velocity": {
+      "attrs": {
+        "description": "vertical ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        1351,
+        748
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_vertical_velocity"
+    }
+  },
+  "dims": {
+    "x": 2992,
+    "y": 5401
+  },
+  "spatial_res": 500.0,
+  "time_range": [
+    "2014-11-01",
+    "2015-12-01"
+  ]
+}

@@ -1,0 +1,2018 @@
+{
+  "attrs": {
+    "abstract": "The Formaldehyde (HCHO) Climate Data Record (CDR) product is a Level 3 (L3) HCHO product developed by using satellite data from the Tropospheric Monitoring Instrument  (TROPOMI) (on Sentinel 5P) as part of the ESA (European Space Agency) Climate Change Initiative (CCI) Precursors for Aerosols and Ozone project.\n\nThis dataset provides gridded HCHO tropospheric column densities of monthly 0.125\u00b0x0.125\u00b0 resolution grids from May 2018 to December 2024. The L3 product is based on the Level 2 HCHO product created for the Precursors_cci project. \n\nCompared to the operational TROPOMI product, the air mass factors have been reprocessed using an update albedo climatology, and the CAMS (Copernicus Atmosphere Monitoring Service) Reanalysis Model for the a priori vertical profiles. The background correction and the quality values have also been updated. In addition to the main product results, such as HCHO slant column, vertical column and air mass factor, the Level 3 data files contain several additional parameters and diagnostic information such as uncertainties, a priori profiles and averaging kernels.\n \nThe version number is 2.0. Data are available in NetCDF format. https://doi.org/10.18758/y591kda5\n\nThe European Space Agency (ESA) Precursors for Aerosol and Ozone Climate Change Initiative (Precursors CCI) project is part of ESA's Climate Change Initiative (CCI) to produce long term datasets of Essential Climate Variables derived from global satellite data (https://climate.esa.int/en/projects/precursors-for-aerosols-and-ozone/).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/6081f484b28e42a08e75438c9384e877",
+    "cci_project": "PREC",
+    "comment": "L3 gridding routine, l3-s5p-hcho version 5.0.3",
+    "data_type": "HCHO",
+    "ecv": "PREC",
+    "history": "2025-12-10 Generated from L2 orbit files at BIRA-IASB.",
+    "institute": "Belgian Institute for Space Aeronomy",
+    "platform_id": "Sentinel-5P",
+    "processing_level": "L3C",
+    "product_string": "TROPOMI_S5P_BIRA-1440x2880_1M",
+    "product_version": "2-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2026-04-01T14:48:44",
+    "references": "ESA CCI+ Precursors for Aerosols and Ozone project Algorithm Theoretical Basis Document, Precursors_cci+_D2.1_ATBD",
+    "sensor_id": "TROPOMI",
+    "source": "Satellite observations from Sentinel-5P TROPOMI Level-2 HCHO operational products",
+    "title": "ESA Precursors for Aerosols and Ozone Climate Change Initiative (Precursors_cci): monthly L3 HCHO from TROPOMI, version 2.0",
+    "uuid": "6081f484b28e42a08e75438c9384e877"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "bounds": "latitude_bounds",
+        "chunk_sizes": 1440,
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": 1440,
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          1440
+        ],
+        "size": 1440,
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "latitude_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          1440,
+          2
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "independent_2"
+        ],
+        "file_chunk_sizes": [
+          1440,
+          2
+        ],
+        "file_dimensions": [
+          "latitude",
+          "independent_2"
+        ],
+        "fill_value": null,
+        "long_name": "grid latitude bounds",
+        "orig_data_type": "float32",
+        "shape": [
+          1440,
+          2
+        ],
+        "size": 2880
+      },
+      "dims": [
+        "latitude",
+        "independent_2"
+      ],
+      "dtype": "float32",
+      "name": "latitude_bounds"
+    },
+    "layer": {
+      "attrs": {
+        "chunk_sizes": [
+          40
+        ],
+        "data_type": "int64",
+        "dimensions": [
+          "layer"
+        ],
+        "file_chunk_sizes": [
+          40
+        ],
+        "file_dimensions": [
+          "layer"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "layer dimension index",
+        "orig_data_type": "int32",
+        "shape": [
+          40
+        ],
+        "size": 40,
+        "standard_name": "atmosphere_hybrid_sigma_pressure_coordinate",
+        "units": "1"
+      },
+      "dims": [
+        "layer"
+      ],
+      "dtype": "int64",
+      "name": "layer"
+    },
+    "longitude": {
+      "attrs": {
+        "bounds": "longitude_bounds",
+        "chunk_sizes": 2880,
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": 2880,
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          2880
+        ],
+        "size": 2880,
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "longitude_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          2880,
+          2
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "longitude",
+          "independent_2"
+        ],
+        "file_chunk_sizes": [
+          2880,
+          2
+        ],
+        "file_dimensions": [
+          "longitude",
+          "independent_2"
+        ],
+        "fill_value": null,
+        "long_name": "grid longitude bounds",
+        "orig_data_type": "float32",
+        "shape": [
+          2880,
+          2
+        ],
+        "size": 5760
+      },
+      "dims": [
+        "longitude",
+        "independent_2"
+      ],
+      "dtype": "float32",
+      "name": "longitude_bounds"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "number of days since 1995-01-01",
+        "orig_data_type": "float64",
+        "shape": [
+          80
+        ],
+        "size": "80",
+        "standard_name": "time",
+        "units": "days since 1995-01-01 00:00:00 0:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.PREC.mon.L3C.HCHO.TROPOMI.Sentinel-5P.TROPOMI_S5P_BIRA-1440x2880_1M.2-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "HCHO_averaging_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880,
+          40
+        ],
+        "coordinates": "time latitude longitude layer",
+        "data_type": "float32",
+        "description": "Averaging kernel",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "layer"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880,
+          40
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "layer"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO column averaging kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880,
+          40
+        ],
+        "size": "13271040000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "layer",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_averaging_kernel"
+    },
+    "HCHO_averaging_kernel_clear": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880,
+          40
+        ],
+        "coordinates": "time latitude longitude layer",
+        "data_type": "float32",
+        "description": "Averaging kernel, no cloud correction",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "layer"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880,
+          40
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "layer"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO column clear averaging kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880,
+          40
+        ],
+        "size": "13271040000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "layer",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_averaging_kernel_clear"
+    },
+    "HCHO_slant_column_number_density": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "HCHO slant column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO SCD",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_slant_column_number_density"
+    },
+    "HCHO_slant_column_number_density_corrected": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Background-corrected HCHO slant column number density uncertainty",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO bc-corrected SCD",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_slant_column_number_density_corrected"
+    },
+    "HCHO_slant_column_number_density_rms": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "HCHO slant column number density fitting rms",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "RMS of the DOAS fits",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_slant_column_number_density_rms"
+    },
+    "HCHO_slant_column_number_density_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "HCHO slant column number density uncertainty",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO SCDE",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_slant_column_number_density_uncertainty"
+    },
+    "HCHO_volume_mixing_ratio_dry_air_apriori": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880,
+          40
+        ],
+        "coordinates": "time latitude longitude layer",
+        "data_type": "float32",
+        "description": "a priori HCHO vertical profile",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "layer"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880,
+          40
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "layer"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO a priori profile",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880,
+          40
+        ],
+        "size": "13271040000",
+        "units": "ppv"
+      },
+      "dims": [
+        "time",
+        "layer",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "HCHO_volume_mixing_ratio_dry_air_apriori"
+    },
+    "cloud_fraction": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "effective cloud fraction",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "cloud fraction",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "cloud_fraction"
+    },
+    "cloud_pressure": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "cloud top pressure",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "cloud pressure",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "hPa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "cloud_pressure"
+    },
+    "count": {
+      "attrs": {
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "Harp count",
+        "orig_data_type": "int32",
+        "shape": [
+          80
+        ],
+        "size": "80",
+        "units": "1"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "count"
+    },
+    "ctm_sigma_a": {
+      "attrs": {
+        "ancillary_variables": "surface_pressure ctm_sigma_b",
+        "chunk_sizes": 40,
+        "coordinates": "layer",
+        "data_type": "float32",
+        "description": "ctm sigma-values a, pressure = ctm_sigma_a + surface_pressure * ctm_sigma_b",
+        "dimensions": [
+          "layer"
+        ],
+        "file_chunk_sizes": 40,
+        "file_dimensions": [
+          "layer"
+        ],
+        "fill_value": null,
+        "long_name": "ctm sigma-values a",
+        "orig_data_type": "float32",
+        "shape": [
+          40
+        ],
+        "size": 40,
+        "units": "hPa"
+      },
+      "dims": [
+        "layer"
+      ],
+      "dtype": "float32",
+      "name": "ctm_sigma_a"
+    },
+    "ctm_sigma_b": {
+      "attrs": {
+        "ancillary_variables": "surface_pressure ctm_sigma_a",
+        "chunk_sizes": 40,
+        "coordinates": "layer",
+        "data_type": "float32",
+        "description": "ctm sigma-values b, pressure = ctm_sigma_a + surface_pressure * ctm_sigma_b",
+        "dimensions": [
+          "layer"
+        ],
+        "file_chunk_sizes": 40,
+        "file_dimensions": [
+          "layer"
+        ],
+        "fill_value": null,
+        "long_name": "ctm sigma-values b",
+        "orig_data_type": "float32",
+        "shape": [
+          40
+        ],
+        "size": 40,
+        "units": "1"
+      },
+      "dims": [
+        "layer"
+      ],
+      "dtype": "float32",
+      "name": "ctm_sigma_b"
+    },
+    "eastward_wind": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "eastward_wind",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "u",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "m/s"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eastward_wind"
+    },
+    "eff_date": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "data_type": "float64",
+        "description": "effective date of observation",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective date",
+        "orig_data_type": "float64",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "days since 2018-07-01 00:00:00"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "eff_date"
+    },
+    "eff_fract_day": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "data_type": "float32",
+        "description": "effective fractional day in local solar time. UTC = local_solar_time - longitude/180",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective fractional day in local solar time",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_fract_day"
+    },
+    "intensity_weighted_cloud_fraction": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "intensity-weighted cloud fraction (340 nm)",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "intensity-weighted cloud radiance fraction (340 nm)",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "intensity_weighted_cloud_fraction"
+    },
+    "land_water_mask": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "int32",
+        "description": "0: water, 1:land, 2:land water transition",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 255,
+        "long_name": "land sea mask",
+        "orig_data_type": "int32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "land_water_mask"
+    },
+    "northward_wind": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "northward_wind",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "v",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "m/s"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "northward_wind"
+    },
+    "qa_L3": {
+      "attrs": {
+        "ancillary_variables": "tropospheric_HCHO_column_number_density_clear tropospheric_HCHO_column_number_density",
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "gridded data quality assurance value",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO QA L3",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "qa_L3"
+    },
+    "sensor_zenith_angle": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "viewing zenith angle of the measurement",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "VZA",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "standard_name": "sensor_zenith_angle",
+        "units": "degree"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sensor_zenith_angle"
+    },
+    "solar_zenith_angle": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "solar zenith angle of the measurement",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "SZA",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "standard_name": "solar_zenith_angle",
+        "units": "degree"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "solar_zenith_angle"
+    },
+    "surface_albedo": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Surface reflectance obtained from the TROPOMI Directional Lambertian Equivalent Reflectance database created by the Royal Netherlands Meteorological Institute (KNMI)",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface LER (340nm)",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo"
+    },
+    "surface_pressure": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "surface pressure",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface pressure",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "hPa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_pressure"
+    },
+    "surface_temperature": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "surface temperature",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface temperature",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "K"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_temperature"
+    },
+    "tropospheric_HCHO_column_number_density": {
+      "attrs": {
+        "ancillary_variables": "HCHO_slant_column_number_density_corrected tropospheric_HCHO_column_number_density_amf tropospheric_HCHO_column_number_density_background_correction",
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Background-corrected HCHO tropospheric vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "standard_name": "troposphere_mole_content_of_formaldehyde",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density"
+    },
+    "tropospheric_HCHO_column_number_density_amf": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "tropospheric air mass factor",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO tropospheric AMF (340nm)",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_amf"
+    },
+    "tropospheric_HCHO_column_number_density_amf_clear": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "tropospheric air mass factor, no cloud correction",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO tropospheric clear AMF (340nm)",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_amf_clear"
+    },
+    "tropospheric_HCHO_column_number_density_apriori": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "data_type": "float32",
+        "description": "a priori HCHO vertical column number density (integrated profile)",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD CTM",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_apriori"
+    },
+    "tropospheric_HCHO_column_number_density_background_correction": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "a priori HCHO vertical column density number density in the Pacific reference sector",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD0",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_background_correction"
+    },
+    "tropospheric_HCHO_column_number_density_clear": {
+      "attrs": {
+        "ancillary_variables": "HCHO_slant_column_number_density_corrected tropospheric_HCHO_column_number_density_amf_clear tropospheric_HCHO_column_number_density_background_correction",
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Background-corrected HCHO tropospheric vertical column number density, no cloud correction",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD clear",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_clear"
+    },
+    "tropospheric_HCHO_column_number_density_clear_OS": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Oversampled Background-corrected HCHO tropospheric vertical column number density, no cloud correction",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD clear OS",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_clear_OS"
+    },
+    "tropospheric_HCHO_column_number_density_clear_std": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Standard deviation of the background-corrected HCHO tropospheric vertical column number density without cloud correction, within the cell",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD clear STD",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_clear_std"
+    },
+    "tropospheric_HCHO_column_number_density_count": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "count HCHO tropospheric vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD count",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_count"
+    },
+    "tropospheric_HCHO_column_number_density_std": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Standard deviation of the background-corrected HCHO tropospheric vertical column number density within the cell",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD STD",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_std"
+    },
+    "tropospheric_HCHO_column_number_density_uncertainty_random": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Random uncertainty on the background-corrected HCHO tropospheric vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCDER",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_uncertainty_random"
+    },
+    "tropospheric_HCHO_column_number_density_uncertainty_systematic": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Systematic uncertainty on the background-corrected HCHO tropospheric vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCDES",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_uncertainty_systematic"
+    },
+    "tropospheric_HCHO_column_number_density_uncertainty_systematic_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "Systematic uncertainty on the background-corrected HCHO tropospheric vertical column number density, without the profile uncertainty contribution",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCDESK",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_uncertainty_systematic_kernel"
+    },
+    "tropospheric_HCHO_column_number_density_weight": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "coordinates": "time longitude latitude",
+        "data_type": "float32",
+        "description": "weight HCHO tropospheric vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "HCHO VCD weight",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_HCHO_column_number_density_weight"
+    },
+    "weight": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1440,
+          2880
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Harp weight",
+        "orig_data_type": "float32",
+        "shape": [
+          80,
+          1440,
+          2880
+        ],
+        "size": "331776000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "weight"
+    }
+  },
+  "dims": {
+    "independent_2": 2,
+    "lat": 1440,
+    "layer": 40,
+    "lon": 2880,
+    "time": 80
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2024-12-31",
+            "minDate": "2018-05-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2024-12-31",
+            "minDate": "2018-05-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "solar_zenith_angle",
+            "sensor_zenith_angle",
+            "intensity_weighted_cloud_fraction",
+            "cloud_fraction",
+            "cloud_pressure",
+            "surface_albedo",
+            "surface_pressure",
+            "surface_temperature",
+            "eastward_wind",
+            "northward_wind",
+            "land_water_mask",
+            "tropospheric_HCHO_column_number_density_amf",
+            "tropospheric_HCHO_column_number_density_amf_clear",
+            "HCHO_slant_column_number_density_rms",
+            "HCHO_slant_column_number_density",
+            "HCHO_slant_column_number_density_uncertainty",
+            "HCHO_slant_column_number_density_corrected",
+            "tropospheric_HCHO_column_number_density",
+            "tropospheric_HCHO_column_number_density_count",
+            "tropospheric_HCHO_column_number_density_weight",
+            "tropospheric_HCHO_column_number_density_clear",
+            "tropospheric_HCHO_column_number_density_clear_std",
+            "tropospheric_HCHO_column_number_density_clear_OS",
+            "tropospheric_HCHO_column_number_density_uncertainty_random",
+            "tropospheric_HCHO_column_number_density_uncertainty_systematic",
+            "tropospheric_HCHO_column_number_density_uncertainty_systematic_kernel",
+            "tropospheric_HCHO_column_number_density_std",
+            "tropospheric_HCHO_column_number_density_background_correction",
+            "tropospheric_HCHO_column_number_density_apriori",
+            "qa_L3",
+            "weight",
+            "eff_fract_day",
+            "eff_date",
+            "ctm_sigma_a",
+            "ctm_sigma_b",
+            "HCHO_volume_mixing_ratio_dry_air_apriori",
+            "HCHO_averaging_kernel",
+            "HCHO_averaging_kernel_clear",
+            "count"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.125,
+  "time_period": "1M",
+  "time_range": [
+    "2018-05-01",
+    "2024-12-31"
+  ]
+}

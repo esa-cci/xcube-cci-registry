@@ -1,24 +1,40 @@
 {
-  "generated_at": "2026-06-29T00:00:00Z",
   "builder": {
-    "name": "manual-import",
-    "description": "Initial import of bundled xcube-cci state files"
+    "name": "xcube-cci-metadata-builder",
+    "version": "0.1.0"
   },
-  "xcube_cci": {
-    "version": "0.14.1.dev0",
-    "source": "../xcube-cci/xcube_cci/data"
+  "counts": {
+    "descriptors": 906,
+    "registry_datasets": 668,
+    "registry_representations": 924,
+    "states_dataset": 589,
+    "states_datatree": 19,
+    "states_geodataframe": 49,
+    "states_vectordatacube": 37
   },
-  "source": {
-    "type": "bundled-xcube-cci-states"
-  },
+  "generated_at": "2026-07-17T11:29:43Z",
   "outputs": {
+    "descriptors": "descriptors/",
     "registry": "registry.json",
     "states": {
       "dataset": "states/dataset_states.json",
       "datatree": "states/datatree_states.json",
       "geodataframe": "states/geodataframe_states.json",
       "vectordatacube": "states/vectordatacube_states.json"
-    },
-    "descriptors": "descriptors/"
+    }
+  },
+  "source": {
+    "normalize_data": true,
+    "store_ids": [
+      "esa-cci",
+      "esa-cci-kc",
+      "esa-cci-zarr"
+    ]
+  },
+  "xcube": {
+    "version": "1.13.3"
+  },
+  "xcube_cci": {
+    "version": "0.14.1"
   }
 }

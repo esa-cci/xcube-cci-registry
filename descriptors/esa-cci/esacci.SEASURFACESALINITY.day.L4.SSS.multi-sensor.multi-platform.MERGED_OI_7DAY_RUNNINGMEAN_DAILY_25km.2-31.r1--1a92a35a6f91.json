@@ -1,0 +1,638 @@
+{
+  "attrs": {
+    "abstract": "The ESA Sea Surface Salinity CCI consortium has produced global, level 4, multi-sensor Sea Surface Salinity maps covering the 2010-2019 period.\n\nThis dataset contains Sea Surface Salinity (SSS) v2.31 data at a spatial resolution of 50 km and a time resolution of 1 week. It has been spatially sampled on a 25 km EASE (Equal Area Scalable Earth) grid and 1 day of time sampling. A monthly product is also available. In addition to salinity, information on errors are provided (see more in the user guide and product documentation available below and on the Sea Surface Salinity CCI web page).\n\nAn overview paper about CCI SSS is now published:\n\nBoutin, J., N. Reul, J. Koehler, A. Martin, R. Catany, S. Guimbard, F. Rouffi, et al. (2021), Satellite-Based Sea Surface Salinity Designed for Ocean and Climate Studies, Journal of Geophysical Research: Oceans, 126(11), e2021JC017676, doi:https://doi.org/10.1029/2021JC017676.\n\nAn updated version of CCI SSS (version 3.21) is now available on: https://catalogue.ceda.ac.uk/uuid/5920a2c77e3c45339477acd31ce62c3c ; version 3 SSS and associated uncertainties are more precise and cover a longer period (Jan 2010-sept 2020); version 3 SSS are provided closer to land than version 2 SSS, with a possible degraded quality. Users might remove these additional near land data by using the lsc_qc flag.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/eacb7580e1b54afeaabb0fd2b0a53828",
+    "cci_project": "SEASURFACESALINITY",
+    "comment": "It is a version issued for evaluation purposes by voluntary scientists and for framing CCI+SSS products. In case you discover some flaws, we (Mngt_CCI-Salinity@argans.co.uk) are very keen to get your feedback",
+    "data_type": "SSS",
+    "ecv": "SEASURFACESALINITY",
+    "history": " ",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km",
+    "product_version": "2-31",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2020-09-07T13:37:23",
+    "references": "http://cci.esa.int/salinity - DOI:10.5285/4ce685bff631459fb2a30faa699f3fc5",
+    "sensor_id": "multi-sensor",
+    "source": "SMOS CATDS-PDC L3OS 2P - DOI:10.12770/77edd308-4296-4774-b6f3-5b38301cee18, SMAP L2 RSS v4.0 - DOI:10.5067/SMP40-2SOCS, Aquarius L3 v5.0 - DOI:10.5067/AQR50-3SQCS",
+    "title": "ESA Sea Surface Salinity Climate Change Initiative (Sea_Surface_Salinity_cci): Weekly sea surface salinity product, v2.31, for 2010 to 2019",
+    "uuid": "eacb7580e1b54afeaabb0fd2b0a53828"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 584,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 584,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          584
+        ],
+        "size": 584,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 1388,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 1388,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          1388
+        ],
+        "size": 1388,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          3652
+        ],
+        "size": "3652",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00 UTC"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.SEASURFACESALINITY.day.L4.SSS.multi-sensor.multi-platform.MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km.2-31.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "isc_qc": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Ice Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "orig_data_type": "uint8",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "isc_qc"
+    },
+    "lsc_qc": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Land Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "orig_data_type": "uint8",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "lsc_qc"
+    },
+    "noutliers": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -1,
+        "long_name": "Count of the Number of Outliers within this bin cell",
+        "orig_data_type": "int16",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "noutliers"
+    },
+    "pct_var": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Percentage of Explained Sea Surface Salinity Variance by the Sea Surface Salinity Standard Error",
+        "orig_data_type": "float32",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "units": "%",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "pct_var"
+    },
+    "sss": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Unbiased merged Sea Surface Salinity",
+        "orig_data_type": "float32",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "standard_name": "sea_surface_salinity",
+        "valid_max": 50.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss"
+    },
+    "sss_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Bias in Sea Surface Salinity",
+        "orig_data_type": "float32",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 100.0,
+        "valid_min": -100.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss_bias"
+    },
+    "sss_bias_std": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of the Bias in Sea Surface Salinity",
+        "orig_data_type": "float32",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss_bias_std"
+    },
+    "sss_qc": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "long_name": "Sea Surface Salinity Quality, 0=Good; 1=Bad",
+        "orig_data_type": "uint8",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "sss_qc"
+    },
+    "sss_random_error": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Sea Surface Salinity Random Error",
+        "orig_data_type": "float32",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss_random_error"
+    },
+    "total_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          584,
+          1388
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -1,
+        "long_name": "Number of SSS in the time interval",
+        "orig_data_type": "int16",
+        "shape": [
+          3652,
+          584,
+          1388
+        ],
+        "size": "2960281984",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "total_nobs"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 584,
+    "lon": 1388,
+    "time": 3652
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2019-12-31",
+            "minDate": "2010-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2019-12-31",
+            "minDate": "2010-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "noutliers",
+            "total_nobs",
+            "sss_bias",
+            "sss_random_error",
+            "sss_bias_std",
+            "pct_var",
+            "sss_qc",
+            "isc_qc",
+            "sss",
+            "lsc_qc"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.25,
+  "time_period": "1D",
+  "time_range": [
+    "2010-01-01",
+    "2019-12-31"
+  ]
+}

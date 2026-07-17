@@ -1,0 +1,174 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "creator_email": "miriam.kosmale@dlr.de",
+    "creator_name": "German Aerospace Center, DFD",
+    "date": "See individual files for more details",
+    "geospatial_lat_max": "70.0",
+    "geospatial_lat_min": "-60.0",
+    "geospatial_lon_max": "180.0",
+    "geospatial_lon_min": "-180.0",
+    "history": "See individual files for more details\nKerchunk file created on 02/21/24",
+    "kerchunk_creation_date": "210224T162000",
+    "kerchunk_revision": 1,
+    "keywords": "satellite,observation,atmosphere",
+    "license": "ESA CCI Data policy: free and open access",
+    "platform": "ENVISAT",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-aerosol-cci.org",
+    "sensor": "See individual files for more details",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 18",
+    "summary": "Level 3 aerosol properties retreived using satellite data",
+    "title": "Ensemble aerosol product level 3",
+    "tracking_id": "See individual files for more details",
+    "version": "v2.6"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "file_number": {
+      "attrs": {
+        "axis": "F",
+        "long_name": "file_number",
+        "standard_name": "file_number"
+      },
+      "dims": [
+        "file_number"
+      ],
+      "dtype": "int64",
+      "name": "file_number"
+    },
+    "latitude": {
+      "attrs": {
+        "long_name": "Latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "long_name": "Longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    }
+  },
+  "data_id": "20020101-20120408-ESACCI-L3C_AEROSOL-AER_PRODUCTS-AATSR-ENVISAT-ENS_DAILY-v2.6_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "AOD550": {
+      "attrs": {
+        "long_name": "Aerosol optical depth at 550 nm",
+        "standard_name": "atmosphere_optical_depth_due_to_ambient_aerosol",
+        "units": "#"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "AOD550"
+    },
+    "AOD550_UNCERTAINTY_ENSEMBLE": {
+      "attrs": {
+        "long_name": "Uncertainty Ensemble",
+        "standard_name": "uncertainty",
+        "units": "#"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_UNCERTAINTY_ENSEMBLE"
+    },
+    "Latitude": {
+      "attrs": {
+        "long_name": "Latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        1,
+        180
+      ],
+      "dims": [
+        "file_number",
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "Latitude"
+    },
+    "Longitude": {
+      "attrs": {
+        "long_name": "Longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        1,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "Longitude"
+    },
+    "NMEAS": {
+      "attrs": {
+        "long_name": "number of measurements per gridcell",
+        "standard_name": "NMEAS"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "NMEAS"
+    }
+  },
+  "dims": {
+    "file_number": 3609,
+    "latitude": 180,
+    "longitude": 360
+  },
+  "spatial_res": 1.0,
+  "time_range": [
+    null,
+    null
+  ]
+}

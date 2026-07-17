@@ -1,0 +1,425 @@
+{
+  "attrs": {
+    "abstract": "This dataset comprises estimates of forest above-ground biomass (AGB) for the years 2007, 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and 2022. They are derived from a combination of Earth observation data, depending on the year, from the Copernicus Sentinel-1 mission, Envisat\u2019s ASAR (Advanced Synthetic Aperture Radar) instrument and JAXA\u2019s (Japan Aerospace Exploration Agency) Advanced Land Observing Satellite (ALOS-1 and ALOS-2), along with additional information from Earth observation sources. The data has been produced as part of the European Space Agency's (ESA's) Climate Change Initiative (CCI) programme by the Biomass CCI team.\n\nThis release of the data is version 6. Compared to version 5, version 6 consists of an update of the maps of AGB for the years 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and new AGB maps for 2007 and 2022. AGB change maps have been created for consecutive years (e.g., 2020-2019), for a decadal interval (2020-2010) as well as for the interval 2010-2007. The pool of remote sensing data includes multi-temporal observations at L-band for all biomes and for all years and extended ICESat-2 observations to calibrate retrieval models. A cost function that preserves the temporal features as expressed in the remote sensing data has been refined to limit biases between the 2007-2010 and the 2015+ maps.\n\nThe data products consist of two (2) global layers that include estimates of:\n1) above ground biomass (AGB, unit: tons/ha i.e., Mg/ha) (raster dataset). This is defined as the mass, expressed as oven-dry weight of the woody parts (stem, bark, branches and twigs) of all living trees excluding stump and roots per unit area\n2) per-pixel estimates of above-ground biomass uncertainty expressed as the standard deviation in Mg/ha (raster dataset)\n\nAdditionally provided in this version release are aggregated data products. These aggregated products of the AGB and AGB change data layers are available at coarser resolutions (1, 10, 25 and 50km).\n\nIn addition, files describing the AGB change between two consecutive years (i.e., 2016-2015, 2017-2016, 2018-2017, 2019-2018, 2020-2019, 2021-2020, 2022-2021), over a decade (2020-2010) and over 2010-2007 are provided. Each AGB change product consists of two sets of maps: the standard deviation of the AGB change and a quality flag of the AGB change. Note that the change itself can be simply computed as the difference between two AGB maps, so is not provided directly.\n\nData are provided in both netcdf and geotiff format.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/95913ffb6467447ca72c4e9d8cf30501",
+    "cci_project": "BIOMASS",
+    "comment": "These data were produced at ESA CCI as part of the ESA Biomass CCI project.",
+    "data_type": "AGB",
+    "ecv": "BIOMASS",
+    "history": "AGB estimation with BIOMASAR-L,v202410, AGB estimation with BIOMASAR-C,v202410, Merging of AGB estimates,v202410, change detection, v202410",
+    "institute": "Gamma Remote Sensing",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "CHANGE",
+    "product_version": "6-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-04-17T13:48:29",
+    "references": "http://cci.esa.int/biomass",
+    "sensor_id": "multi-sensor",
+    "source": "ALOS-2 PALSAR-2 FB and WB mosaics, Sentinel-1 GRD",
+    "title": "ESA Biomass Climate Change Initiative (Biomass_cci): Global datasets of forest above-ground biomass for the years 2007, 2010, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and 2022, v6.0",
+    "uuid": "95913ffb6467447ca72c4e9d8cf30501"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "bounds": "lat_bnds",
+        "chunk_sizes": 157500,
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 157500,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 latitude coordinate",
+        "orig_data_type": "float64",
+        "shape": [
+          157500
+        ],
+        "size": 157500,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 80.0,
+        "valid_min": -60.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          157500,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          157500,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          157500,
+          2
+        ],
+        "size": 315000
+      },
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon": {
+      "attrs": {
+        "bounds": "lon_bnds",
+        "chunk_sizes": 405000,
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 405000,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 longitude coordinate",
+        "orig_data_type": "float64",
+        "shape": [
+          405000
+        ],
+        "size": 405000,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          405000,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          405000,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          405000,
+          2
+        ],
+        "size": 810000
+      },
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "chunk_sizes": 1,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "single-year period",
+        "orig_data_type": "float64",
+        "shape": [
+          1
+        ],
+        "size": "1",
+        "standard_name": "time",
+        "units": "days since 1990-01-01"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          1,
+          2
+        ],
+        "size": "2"
+      },
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.BIOMASS.yr.L4.AGB.multi-sensor.multi-platform.CHANGE.6-0.100m-2018-2017",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "DODS": {
+          "strlen": 0
+        },
+        "GeoTransform": "-180   0.00088888888888                  0                 80                  0  -0.00088888888888",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "bytes1024",
+        "dimensions": [],
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "long_name": "CRS definition",
+        "longitude_of_prime_meridian": 0.0,
+        "orig_data_type": "bytes1024",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0],UNIT[\\\"degree\\\",0.0174532925199433],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "bytes1024",
+      "name": "crs"
+    },
+    "diff_qf": {
+      "attrs": {
+        "ancillary_variables": "agb_se",
+        "chunk_sizes": [
+          1,
+          11250,
+          11250
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          11250,
+          11250
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "grid_mapping": "crs",
+        "long_name": "Above-ground biomass change quality flag",
+        "orig_data_type": "int16",
+        "shape": [
+          1,
+          157500,
+          405000
+        ],
+        "size": "63787500000",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "diff_qf"
+    },
+    "diff_sd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          11250,
+          11250
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          11250,
+          11250
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "grid_mapping": "crs",
+        "long_name": "Above-ground biomass change standard_deviation",
+        "orig_data_type": "int16",
+        "shape": [
+          1,
+          157500,
+          405000
+        ],
+        "size": "63787500000",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "diff_sd"
+    }
+  },
+  "dims": {
+    "lat": 157500,
+    "lon": 405000,
+    "nv": 2,
+    "time": 1
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "2007-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "2007-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "diff_qf",
+            "diff_sd",
+            "crs"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.00088889,
+  "time_period": "1Y",
+  "time_range": [
+    "2007-01-01",
+    "2022-12-31"
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.10",
+    "cdm_data_type": "Grid",
+    "comment": "These data were produced at ESA CCI as part of the ESA Permafrost CCI+ project Contract No 4000123681-18-I-NB. They are part of the 1st Climate Research Data Package release.",
+    "creator_name": "University of Oslo",
+    "creator_url": "https://www.uio.no/english/",
+    "date_created": "See individual files for more details",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_lat_max": 85.0,
+    "geospatial_lat_min": 25.0,
+    "geospatial_lat_resolution": "0.01",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 180.0,
+    "geospatial_lon_min": -180.0,
+    "geospatial_lon_resolution": "0.01",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "See individual files for more details",
+    "id": "See individual files for more details",
+    "institution": "University of Oslo",
+    "key_variables": "ground temperature",
+    "keywords": "permafrost, ground temperatures",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords, Version 15.8",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "no.uio",
+    "platform": "Aqua, Terra, ENVISAT, SPOT, PROBA-V, NOAA-<15,16,17>",
+    "product_version": "04.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/Permafrost, https://doi.org/10.5194/gmd-9-523-2016",
+    "sensor": "MODIS, MERIS, ASAR, AVHRR-3, SPOT, SAR-X",
+    "source": "MODIS MOD11A1 and MYD11A1 level 3 Collection 6, ESA CCI Land Cover dataset v1.6.1, ERA5 Reanalysis",
+    "standard_name_vocabulary": "CF Standard Name Table v79",
+    "summary": "ESA CCI Permafrost product level 4",
+    "time_coverage_duration": "P19Y",
+    "time_coverage_end": "20211231T235959Z",
+    "time_coverage_resolution": "P1Y",
+    "time_coverage_start": "20030101T000000Z",
+    "title": "CCI Permafrost ground temperature",
+    "tracking_id": "6ac7d128-822d-4363-96a1-bafeaddaa194"
+  },
+  "bbox": [
+    -179.99999511705187,
+    24.999999161739513,
+    179.99999511705187,
+    84.99998748682006
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "long_name": "latitude_coordinates",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 85.0,
+        "valid_min": 25.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude_coordinates",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-PERMAFROST-L4-GTD-MODISLST_CRYOGRID-AREA4_PP-2003-2021-fv04.0-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "GST": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "standard_name": "surface_temperature",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "GST"
+    },
+    "GST_uncertainty": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground surface temperature",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "GST_uncertainty"
+    },
+    "T10m": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T10m"
+    },
+    "T10m_uncertainty": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 10.0m depth",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T10m_uncertainty"
+    },
+    "T1m": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T1m"
+    },
+    "T1m_uncertainty": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 1.0m depth",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T1m_uncertainty"
+    },
+    "T2m": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T2m"
+    },
+    "T2m_uncertainty": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 2.0m depth",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T2m_uncertainty"
+    },
+    "T5m": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T5m"
+    },
+    "T5m_uncertainty": {
+      "attrs": {
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 5.0m depth",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "chunks": [
+        1,
+        1000,
+        1000
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "T5m_uncertainty"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "-180 0.01 0 90 0 -0.01",
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "longitude_of_prime_meridian": 0.0,
+        "semi_major_axis": 6378137.0,
+        "spatial_ref": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AXIS[\"Latitude\",NORTH],AXIS[\"Longitude\",EAST],AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "spatial_ref"
+    }
+  },
+  "dims": {
+    "lat": 6000,
+    "lon": 36000,
+    "time": 19
+  },
+  "time_range": [
+    "2003-01-01",
+    "2021-01-01"
+  ]
+}

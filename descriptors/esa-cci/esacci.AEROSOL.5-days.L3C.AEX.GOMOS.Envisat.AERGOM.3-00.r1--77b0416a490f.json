@@ -1,0 +1,4679 @@
+{
+  "attrs": {
+    "abstract": "The ESA Climate Change Initiative Aerosol project has produced a number of global aerosol Essential Climate Variable (ECV) products from a set of European satellite instruments with different characteristics.  This dataset comprises Level 3 gridded stratospheric aerosol properties from the GOMOS instrument on the ENVISAT satellite.  This version of the data is version 3.00, and has been derived using the AERGOM algorithm by BIRA (Belgian Institute for Space Aeronomy). \n\nFor further details about these data products please see the linked documentation.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/7fb8fd2761484b1eae4f7df4a3e65f75",
+    "cci_project": "AEROSOL",
+    "data_type": "AEX",
+    "ecv": "AEROSOL",
+    "history": "Based on GOMOS product v6.01",
+    "institute": "Belgian Institute for Space Aeronomy",
+    "platform_id": "Envisat",
+    "processing_level": "L3C",
+    "product_string": "AERGOM",
+    "product_version": "3-00",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2020-08-27T16:03:31",
+    "references": "ATBD can be found here: http://www.esa-aerosol-cci.org/?q=webfm_send/125",
+    "sensor_id": "GOMOS",
+    "source": "Aerosol CCI",
+    "title": "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from GOMOS (AERGOM algorithm), Version 3.00",
+    "uuid": "7fb8fd2761484b1eae4f7df4a3e65f75"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "altitude": {
+      "attrs": {
+        "chunk_sizes": [
+          43
+        ],
+        "coordinates": "alt",
+        "data_type": "float64",
+        "dimensions": [
+          "altitude"
+        ],
+        "file_chunk_sizes": [
+          43
+        ],
+        "file_dimensions": [
+          "altitude"
+        ],
+        "fill_value": null,
+        "long_name": "altitude",
+        "orig_data_type": "float64",
+        "shape": [
+          43
+        ],
+        "size": 43,
+        "standard_name": "altitude",
+        "units": "km",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "altitude"
+      ],
+      "dtype": "float64",
+      "name": "altitude"
+    },
+    "latitude": {
+      "attrs": {
+        "chunk_sizes": [
+          36
+        ],
+        "coordinates": "lat",
+        "data_type": "float64",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": [
+          36
+        ],
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float64",
+        "shape": [
+          36
+        ],
+        "size": 36,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float64",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "chunk_sizes": [
+          6
+        ],
+        "coordinates": "lon",
+        "data_type": "float64",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          6
+        ],
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float64",
+        "shape": [
+          6
+        ],
+        "size": 6,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float64",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          737
+        ],
+        "size": 737,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          737
+        ],
+        "size": 1474,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.AEROSOL.5-days.L3C.AEX.GOMOS.Envisat.AERGOM.3-00.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "AEFF_PSC": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Effective radius of psc particle size distribution",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEFF_PSC"
+    },
+    "AEFF_PSC_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Effective radius of psc particle size distribution associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEFF_PSC_uncertainty"
+    },
+    "AEFF_SULF": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Effective radius of stratospheric sulfate aerosol particle size distribution",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEFF_SULF"
+    },
+    "AEFF_SULF_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Effective radius of stratospheric sulfate aerosol particle size distribution associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEFF_SULF_uncertainty"
+    },
+    "AEX355": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction at 355 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX355"
+    },
+    "AEX355_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol extinction (355 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX355_Ndata"
+    },
+    "AEX355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction (355 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol standard_error",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX355_uncertainty"
+    },
+    "AEX440": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction at 440 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX440"
+    },
+    "AEX440_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol extinction (440 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX440_Ndata"
+    },
+    "AEX440_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction (440 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol standard_error",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX440_uncertainty"
+    },
+    "AEX470": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction at 470 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX470"
+    },
+    "AEX470_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol extinction (470 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX470_Ndata"
+    },
+    "AEX470_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction (470 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol standard_error",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX470_uncertainty"
+    },
+    "AEX550": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction at 550 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX550"
+    },
+    "AEX550_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol extinction (550 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX550_Ndata"
+    },
+    "AEX550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction (550 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol standard_error",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX550_uncertainty"
+    },
+    "AEX750": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction at 750 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX750"
+    },
+    "AEX750_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol extinction (750 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX750_Ndata"
+    },
+    "AEX750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol extinction (750 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "volume_extinction_coefficient_in_air_due_to_ambient_aerosol standard_error",
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX750_uncertainty"
+    },
+    "AEX_PSC355": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "psc aerosol extinction at 355 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC355"
+    },
+    "AEX_PSC355_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean psc aerosol extinction (355 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC355_Ndata"
+    },
+    "AEX_PSC355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "psc aerosol extinction (355 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC355_uncertainty"
+    },
+    "AEX_PSC550": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "psc aerosol extinction at 550 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC550"
+    },
+    "AEX_PSC550_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean psc aerosol extinction (550 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC550_Ndata"
+    },
+    "AEX_PSC550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "psc aerosol extinction (550 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC550_uncertainty"
+    },
+    "AEX_PSC750": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "psc aerosol extinction at 750 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC750"
+    },
+    "AEX_PSC750_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean psc aerosol extinction (750 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC750_Ndata"
+    },
+    "AEX_PSC750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "psc aerosol extinction (750 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_PSC750_uncertainty"
+    },
+    "AEX_SULF355": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric sulfate aerosol extinction at 355 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF355"
+    },
+    "AEX_SULF355_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric sulfate aerosol extinction (355 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF355_Ndata"
+    },
+    "AEX_SULF355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric sulfate aerosol extinction (355 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF355_uncertainty"
+    },
+    "AEX_SULF550": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric sulfate aerosol extinction at 550 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF550"
+    },
+    "AEX_SULF550_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric sulfate aerosol extinction (550 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF550_Ndata"
+    },
+    "AEX_SULF550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric sulfate aerosol extinction (550 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF550_uncertainty"
+    },
+    "AEX_SULF750": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric sulfate aerosol extinction at 750 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF750"
+    },
+    "AEX_SULF750_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric sulfate aerosol extinction (750 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF750_Ndata"
+    },
+    "AEX_SULF750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric sulfate aerosol extinction (750 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "units": "km-1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "AEX_SULF750_uncertainty"
+    },
+    "ANG430-560-AEX": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Angstrom exponent (EXT) of stratospheric aerosols for lambda=[430-560] nm",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          -20.0,
+          50.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ANG430-560-AEX"
+    },
+    "ANG430-560-AEX_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          43,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Angstrom exponent (EXT) of stratospheric aerosols for lambda=[430-560] nm associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          43,
+          36,
+          6
+        ],
+        "size": 9288,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air standard_error",
+        "units": "1",
+        "valid_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ANG430-560-AEX_uncertainty"
+    },
+    "ANG430-560-AOD": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Angstrom exponent (AOD) of stratospheric aerosols for lambda=[430-560] nm",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          -20.0,
+          50.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ANG430-560-AOD"
+    },
+    "ANG430-560-AOD_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Angstrom exponent (AOD) of stratospheric aerosols for lambda=[430-560] nm associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air standard_error",
+        "units": "1",
+        "valid_range": [
+          -100.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ANG430-560-AOD_uncertainty"
+    },
+    "ASYM_PSC355": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of psc at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          -1.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_PSC355"
+    },
+    "ASYM_PSC355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of psc associated error at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_PSC355_uncertainty"
+    },
+    "ASYM_PSC550": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of psc at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          -1.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_PSC550"
+    },
+    "ASYM_PSC550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of psc associated error at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_PSC550_uncertainty"
+    },
+    "ASYM_PSC750": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of psc at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          -1.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_PSC750"
+    },
+    "ASYM_PSC750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of psc associated error at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_PSC750_uncertainty"
+    },
+    "ASYM_SULF355": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of stratospheric sulfate aerosol at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          -1.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_SULF355"
+    },
+    "ASYM_SULF355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of stratospheric sulfate aerosol associated error at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_SULF355_uncertainty"
+    },
+    "ASYM_SULF550": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of stratospheric sulfate aerosol at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          -1.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_SULF550"
+    },
+    "ASYM_SULF550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of stratospheric sulfate aerosol associated error at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_SULF550_uncertainty"
+    },
+    "ASYM_SULF750": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of stratospheric sulfate aerosol at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          -1.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_SULF750"
+    },
+    "ASYM_SULF750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Asymmetry parameter of stratospheric sulfate aerosol associated error at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ASYM_SULF750_uncertainty"
+    },
+    "NTOT_PSC": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Total particle number density of psc",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "cm^-3",
+        "valid_range": [
+          0.0,
+          10000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "NTOT_PSC"
+    },
+    "NTOT_PSC_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Uncertainty on total particle number density of psc",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "cm^-3",
+        "valid_range": [
+          0.0,
+          10000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "NTOT_PSC_uncertainty"
+    },
+    "NTOT_SULF": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Total particle number density of stratospheric sulfate aerosol",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "cm^-3",
+        "valid_range": [
+          0.0,
+          10000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "NTOT_SULF"
+    },
+    "NTOT_SULF_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Uncertainty on total particle number density of stratospheric sulfate aerosol",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "cm^-3",
+        "valid_range": [
+          0.0,
+          10000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "NTOT_SULF_uncertainty"
+    },
+    "SAD_PSC": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Surface Area Density of psc",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^2 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SAD_PSC"
+    },
+    "SAD_PSC_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Uncertainty on Surface Area Density of psc",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^2 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SAD_PSC_uncertainty"
+    },
+    "SAD_SULF": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Surface Area Density of stratospheric sulfate aerosol",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^2 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SAD_SULF"
+    },
+    "SAD_SULF_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Uncertainty on Surface Area Density of stratospheric sulfate aerosol",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^2 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SAD_SULF_uncertainty"
+    },
+    "SSA_PSC355": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_PSC355"
+    },
+    "SSA_PSC355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of psc associated error at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_PSC355_uncertainty"
+    },
+    "SSA_PSC550": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_PSC550"
+    },
+    "SSA_PSC550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of psc associated error at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_PSC550_uncertainty"
+    },
+    "SSA_PSC750": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_PSC750"
+    },
+    "SSA_PSC750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of psc associated error at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_PSC750_uncertainty"
+    },
+    "SSA_SULF355": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_SULF355"
+    },
+    "SSA_SULF355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol associated error at 355 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_SULF355_uncertainty"
+    },
+    "SSA_SULF550": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_SULF550"
+    },
+    "SSA_SULF550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol associated error at 550 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_SULF550_uncertainty"
+    },
+    "SSA_SULF750": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_SULF750"
+    },
+    "SSA_SULF750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Single scattering albedo of stratospheric sulfate aerosol associated error at 750 nm",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "none",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "SSA_SULF750_uncertainty"
+    },
+    "S_AOD355": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth at 355 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD355"
+    },
+    "S_AOD355_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol optical depth (355 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD355_Ndata"
+    },
+    "S_AOD355_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth (355 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol standard_error",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD355_uncertainty"
+    },
+    "S_AOD440": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth at 440 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD440"
+    },
+    "S_AOD440_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol optical depth (440 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD440_Ndata"
+    },
+    "S_AOD440_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth (440 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol standard_error",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD440_uncertainty"
+    },
+    "S_AOD470": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth at 470 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD470"
+    },
+    "S_AOD470_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol optical depth (470 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD470_Ndata"
+    },
+    "S_AOD470_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth (470 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol standard_error",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD470_uncertainty"
+    },
+    "S_AOD550": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth at 550 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD550"
+    },
+    "S_AOD550_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol optical depth (550 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD550_Ndata"
+    },
+    "S_AOD550_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth (550 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol standard_error",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD550_uncertainty"
+    },
+    "S_AOD750": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth at 750 nm (mean of the [Q25-Q75] distribution)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD750"
+    },
+    "S_AOD750_Ndata": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Number of observations used to calculate the mean stratospheric aerosol optical depth (750 nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD750_Ndata"
+    },
+    "S_AOD750_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "stratospheric aerosol optical depth (750 nm) associated error",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol standard_error",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          10.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "S_AOD750_uncertainty"
+    },
+    "Tropopause_height": {
+      "attrs": {
+        "chunk_sizes": [
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median tropopause height used for the integration in the stratosphere",
+        "orig_data_type": "float64",
+        "shape": [
+          36,
+          6
+        ],
+        "size": 216,
+        "standard_name": "tropopause_altitude",
+        "units": "km",
+        "valid_range": [
+          0.0,
+          25.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "Tropopause_height"
+    },
+    "VD_PSC": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Volume Density of psc",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^3 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "VD_PSC"
+    },
+    "VD_PSC_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Uncertainty on Volume Density of psc",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^3 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "VD_PSC_uncertainty"
+    },
+    "VD_SULF": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Volume Density of stratospheric sulfate aerosol",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^3 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "VD_SULF"
+    },
+    "VD_SULF_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          28,
+          36,
+          6
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Uncertainty on Volume Density of stratospheric sulfate aerosol",
+        "orig_data_type": "float64",
+        "shape": [
+          28,
+          36,
+          6
+        ],
+        "size": 6048,
+        "units": "um^3 cm^-3",
+        "valid_range": [
+          0.0,
+          1000000000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "altitude_%28particle_size_related_information%29",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "VD_SULF_uncertainty"
+    },
+    "altitude_psd": {
+      "attrs": {
+        "chunk_sizes": [
+          28
+        ],
+        "coordinates": "alt",
+        "data_type": "float64",
+        "dimensions": [
+          "altitude_%28particle_size_related_information%29"
+        ],
+        "file_chunk_sizes": [
+          28
+        ],
+        "file_dimensions": [
+          "altitude_%28particle_size_related_information%29"
+        ],
+        "fill_value": null,
+        "long_name": "altitude_psd",
+        "orig_data_type": "float64",
+        "shape": [
+          28
+        ],
+        "size": 28,
+        "standard_name": "altitude",
+        "units": "km",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "altitude_%28particle_size_related_information%29"
+      ],
+      "dtype": "float64",
+      "name": "altitude_psd"
+    }
+  },
+  "dims": {
+    "altitude": 43,
+    "altitude_%28particle_size_related_information%29": 28,
+    "bnds": 2,
+    "lat": 36,
+    "lon": 6,
+    "time": 737
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-05-03",
+            "minDate": "2002-04-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-05-03",
+            "minDate": "2002-04-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "altitude_psd",
+            "S_AOD355",
+            "S_AOD355_uncertainty",
+            "S_AOD355_Ndata",
+            "AEX355",
+            "AEX355_uncertainty",
+            "AEX355_Ndata",
+            "S_AOD440",
+            "S_AOD440_uncertainty",
+            "S_AOD440_Ndata",
+            "AEX440",
+            "AEX440_uncertainty",
+            "AEX440_Ndata",
+            "S_AOD470",
+            "S_AOD470_uncertainty",
+            "S_AOD470_Ndata",
+            "AEX470",
+            "AEX470_uncertainty",
+            "AEX470_Ndata",
+            "S_AOD550",
+            "S_AOD550_uncertainty",
+            "S_AOD550_Ndata",
+            "AEX550",
+            "AEX550_uncertainty",
+            "AEX550_Ndata",
+            "S_AOD750",
+            "S_AOD750_uncertainty",
+            "S_AOD750_Ndata",
+            "AEX750",
+            "AEX750_uncertainty",
+            "AEX750_Ndata",
+            "Tropopause_height",
+            "ANG430-560-AOD",
+            "ANG430-560-AOD_uncertainty",
+            "ANG430-560-AEX",
+            "ANG430-560-AEX_uncertainty",
+            "AEX_SULF355",
+            "AEX_SULF355_uncertainty",
+            "AEX_SULF355_Ndata",
+            "ASYM_SULF355",
+            "ASYM_SULF355_uncertainty",
+            "SSA_SULF355",
+            "SSA_SULF355_uncertainty",
+            "AEX_SULF550",
+            "AEX_SULF550_uncertainty",
+            "AEX_SULF550_Ndata",
+            "ASYM_SULF550",
+            "ASYM_SULF550_uncertainty",
+            "SSA_SULF550",
+            "SSA_SULF550_uncertainty",
+            "AEX_SULF750",
+            "AEX_SULF750_uncertainty",
+            "AEX_SULF750_Ndata",
+            "ASYM_SULF750",
+            "ASYM_SULF750_uncertainty",
+            "SSA_SULF750",
+            "SSA_SULF750_uncertainty",
+            "NTOT_SULF",
+            "NTOT_SULF_uncertainty",
+            "SAD_SULF",
+            "SAD_SULF_uncertainty",
+            "VD_SULF",
+            "VD_SULF_uncertainty",
+            "AEFF_SULF",
+            "AEFF_SULF_uncertainty",
+            "AEX_PSC355",
+            "AEX_PSC355_uncertainty",
+            "AEX_PSC355_Ndata",
+            "ASYM_PSC355",
+            "ASYM_PSC355_uncertainty",
+            "SSA_PSC355",
+            "SSA_PSC355_uncertainty",
+            "AEX_PSC550",
+            "AEX_PSC550_uncertainty",
+            "AEX_PSC550_Ndata",
+            "ASYM_PSC550",
+            "ASYM_PSC550_uncertainty",
+            "SSA_PSC550",
+            "SSA_PSC550_uncertainty",
+            "AEX_PSC750",
+            "AEX_PSC750_uncertainty",
+            "AEX_PSC750_Ndata",
+            "ASYM_PSC750",
+            "ASYM_PSC750_uncertainty",
+            "SSA_PSC750",
+            "SSA_PSC750_uncertainty",
+            "NTOT_PSC",
+            "NTOT_PSC_uncertainty",
+            "SAD_PSC",
+            "SAD_PSC_uncertainty",
+            "VD_PSC",
+            "VD_PSC_uncertainty",
+            "AEFF_PSC",
+            "AEFF_PSC_uncertainty"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 5.0,
+  "time_period": "5D",
+  "time_range": [
+    "2002-04-01",
+    "2012-05-03"
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.7",
+    "EPSG": "4326",
+    "cdm_data_type": "INT",
+    "comment": "These data were produced at ESA CCI as part of the ESA Biomass CCI project.",
+    "creator_email": "santoro@gamma-rs.ch",
+    "creator_name": "GAMMA Remote Sensing",
+    "creator_url": "www.gamma-rs.ch",
+    "date_created": "23-Jan-2026 15:45:29",
+    "format_version": "CCI Data Standards v2.1",
+    "geospatial_lat_max": "90",
+    "geospatial_lat_min": "-90",
+    "geospatial_lat_resolution": "0.1",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180",
+    "geospatial_lon_min": "-180",
+    "geospatial_lon_resolution": "0.1",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "AGB estimation with BIOMASAR-L,v202511, AGB estimation with BIOMASAR-C,v202511, Merging of AGB estimates,v202511, change detection,v202511",
+    "id": "ESACCI-BIOMASS-L4-DIFF-10000m-2020-2010-fv7.0.nc",
+    "institution": "GAMMA Remote Sensing",
+    "key_variables": "agb",
+    "keywords": "satellite, observation, forest, biomass",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming authority": "ch.gamma-rs",
+    "platform": "ALOS-1, ALOS-2, ENVISAT,Sentinel-1A, Sentinel-1B",
+    "product_version": "7.0",
+    "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/biomass",
+    "sensor": "PALSAR-1, PALSAR-2, ASAR, SAR-C",
+    "source": "ALOS-2 PALSAR-2 FB and WB mosaics, Sentinel-1 GRD",
+    "spatial_resolution": "10000 m",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 67",
+    "summary": "This dataset contains a global map of above-ground biomass change INDICATOR (AGB difference, quality flag and standard deviation) for the years 2020-2010",
+    "time_coverage_duration": "P11Y",
+    "time_coverage_end": "20201231T235959Z",
+    "time_coverage_resolution": "P10Y",
+    "time_coverage_start": "20100101T000000Z",
+    "title": "ESA CCI above-ground biomass change INDICATOR level 4, years 2010-2020",
+    "tracking_id": "1AA9B124-65A9-46A2-88E3-BF7C60E381E7"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.00000000000006,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "bounds": "lat_bnds",
+        "long_name": "WGS84 latitude coordinate",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "bounds": "lon_bnds",
+        "long_name": "WGS84 longitude coordinate",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds1",
+        "long_name": "Reference Year",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-BIOMASS-L4-AGB-MERGED-10000m-fv7.0-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "GeoTransform": "-180                0.1                  0                 90                  0               -0.1",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "long_name": "CRS definition",
+        "longitude_of_prime_meridian": 0.0,
+        "semi_major_axis": 6378137.0,
+        "spatial_ref": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433],AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "dims": [],
+      "dtype": "object",
+      "name": "crs"
+    },
+    "diff": {
+      "attrs": {
+        "grid_mapping": "crs",
+        "long_name": "AGB Difference",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": -10000.0
+      },
+      "chunks": [
+        1,
+        1800,
+        3600
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "diff"
+    },
+    "diff_qf": {
+      "attrs": {
+        "grid_mapping": "crs",
+        "long_name": "Quality Flag",
+        "valid_max": 5.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        1800,
+        3600
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "diff_qf"
+    },
+    "diff_sd": {
+      "attrs": {
+        "grid_mapping": "crs",
+        "long_name": "Standard Deviation",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        1800,
+        3600
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "diff_sd"
+    },
+    "lat_bnds": {
+      "chunks": [
+        1800,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "chunks": [
+        3600,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time_bnds": {
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "lat": 1800,
+    "lon": 3600,
+    "nv": 2,
+    "time": 1
+  },
+  "spatial_res": 0.09999999999999432,
+  "time_range": [
+    "1970-01-01",
+    "1970-01-01"
+  ]
+}

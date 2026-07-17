@@ -1,0 +1,275 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "TileSize": "2048:2048",
+    "cdm_data_type": "grid",
+    "comment": "",
+    "contact": "landcover-cci@uclouvain.be",
+    "creator_email": "landcover-cci@uclouvain.be",
+    "creator_name": "University catholique de Louvain",
+    "creator_url": "http://www.uclouvain.be/",
+    "date_created": "20170615T201212Z",
+    "geospatial_lat_max": "90.0",
+    "geospatial_lat_min": "-90.0",
+    "geospatial_lat_resolution": "0.002778",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180.0",
+    "geospatial_lon_min": "-180.0",
+    "geospatial_lon_resolution": "0.002778",
+    "geospatial_lon_units": "degrees_east",
+    "history": "amorgos-4,0, lc-sdr-1.0, lc-sr-1.0, lc-classification-1.0,lc-user-tools-3.13\nKerchunk file created on 26/09/23\nKerchunk file last updated by CEDA on 03/10/23 in the context of the CCI Knowledge Exchange Project",
+    "id": "ESACCI-LC-L4-LCCS-Map-300m-P1Y-1992-2015-v2.0.7b",
+    "institution": "Universite catholique de Louvain",
+    "kerchunk_creation_date": "031023T093147",
+    "kerchunk_revision": "kr1.1",
+    "keywords": "land cover classification,satellite,observation",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "org.esa-cci",
+    "product_version": "2.0.7",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-landcover-cci.org/",
+    "source": "MERIS FR L1B version 5.05, MERIS RR L1B version 8.0, SPOT VGT P",
+    "spatial_resolution": "300m",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Standard Names version 21",
+    "summary": "This dataset contains the global ESA CCI land cover classification map derived from satellite data of one epoch.",
+    "time_coverage_duration": "P24Y",
+    "time_coverage_end": "20151231",
+    "time_coverage_resolution": "P1Y",
+    "time_coverage_start": "19920101",
+    "title": "ESA CCI Land Cover Map",
+    "tracking_id": "9b6f095f-2b50-49f9-a77f-f7c832c42f8b",
+    "type": "ESACCI-LC-L4-LCCS-Map-300m-P1Y"
+  },
+  "bbox": [
+    -180.00000033908682,
+    -90.00000033908944,
+    180.00000033908682,
+    90.00000033908944
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.99861145019531,
+        "valid_min": -89.99861145019531
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 179.9986114501953,
+        "valid_min": -179.9986114501953
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-LC-L4-LCCS-Map-300m-P1Y-1992-2015-v2.0.7b-kr1.1",
+  "data_type": "dataset",
+  "data_vars": {
+    "change_count": {
+      "attrs": {
+        "long_name": "number of class changes",
+        "valid_max": 100,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        2048,
+        2048
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "change_count"
+    },
+    "crs": {
+      "attrs": {
+        "i2m": "0.002777777777778,0.0,0.0,-0.002777777777778,-180.0,90.0",
+        "wkt": "GEOGCS[\"WGS 84\", \n  DATUM[\"World Geodetic System 1984\", \n    SPHEROID[\"WGS 84\", 6378137.0, 298.257223563, AUTHORITY[\"EPSG\",\"7030\"]], \n    AUTHORITY[\"EPSG\",\"6326\"]], \n  PRIMEM[\"Greenwich\", 0.0, AUTHORITY[\"EPSG\",\"8901\"]], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH], \n  AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "chunks": [
+        1
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "crs"
+    },
+    "current_pixel_state": {
+      "attrs": {
+        "flag_meanings": "invalid clear_land clear_water clear_snow_ice cloud cloud_shadow",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "long_name": "LC pixel type mask",
+        "standard_name": "land_cover_lccs status_flag",
+        "valid_max": 5,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        2048,
+        2048
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "current_pixel_state"
+    },
+    "lccs_class": {
+      "attrs": {
+        "ancillary_variables": "processed_flag current_pixel_state observation_count change_count",
+        "flag_meanings": "no_data cropland_rainfed cropland_rainfed_herbaceous_cover cropland_rainfed_tree_or_shrub_cover cropland_irrigated mosaic_cropland mosaic_natural_vegetation tree_broadleaved_evergreen_closed_to_open tree_broadleaved_deciduous_closed_to_open tree_broadleaved_deciduous_closed tree_broadleaved_deciduous_open tree_needleleaved_evergreen_closed_to_open tree_needleleaved_evergreen_closed tree_needleleaved_evergreen_open tree_needleleaved_deciduous_closed_to_open tree_needleleaved_deciduous_closed tree_needleleaved_deciduous_open tree_mixed mosaic_tree_and_shrub mosaic_herbaceous shrubland shrubland_evergreen shrubland_deciduous grassland lichens_and_mosses sparse_vegetation sparse_tree sparse_shrub sparse_herbaceous tree_cover_flooded_fresh_or_brakish_water tree_cover_flooded_saline_water shrub_or_herbaceous_cover_flooded urban bare_areas bare_areas_consolidated bare_areas_unconsolidated water snow_and_ice",
+        "flag_values": [
+          0,
+          10,
+          11,
+          12,
+          20,
+          30,
+          40,
+          50,
+          60,
+          61,
+          62,
+          70,
+          71,
+          72,
+          80,
+          81,
+          82,
+          90,
+          100,
+          110,
+          120,
+          121,
+          122,
+          -126,
+          -116,
+          -106,
+          -105,
+          -104,
+          -103,
+          -96,
+          -86,
+          -76,
+          -66,
+          -56,
+          -55,
+          -54,
+          -46,
+          -36
+        ],
+        "long_name": "Land cover class defined in LCCS",
+        "standard_name": "land_cover_lccs",
+        "valid_max": 220,
+        "valid_min": 1
+      },
+      "chunks": [
+        1,
+        2048,
+        2048
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lccs_class"
+    },
+    "observation_count": {
+      "attrs": {
+        "long_name": "number of valid observations",
+        "standard_name": "land_cover_lccs number_of_observations",
+        "valid_max": 32767,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        2048,
+        2048
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "observation_count"
+    },
+    "processed_flag": {
+      "attrs": {
+        "flag_meanings": "not_processed processed",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "LC map processed area flag",
+        "standard_name": "land_cover_lccs status_flag",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        2048,
+        2048
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "processed_flag"
+    }
+  },
+  "dims": {
+    "lat": 64800,
+    "lon": 129600,
+    "time": 24
+  },
+  "time_period": "0D",
+  "time_range": [
+    "1949-12-31",
+    "1950-01-01"
+  ]
+}

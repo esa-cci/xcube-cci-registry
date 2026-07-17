@@ -1,0 +1,326 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains permafrost active layer thickness data produced as part of the European Space Agency's (ESA) Climate Change Initiative (CCI) Permafrost project. It forms part of the second version of their Climate Research Data Package (CRDP v4). It is derived from a thermal model driven and constrained by satellite data. Grid products of CDRP v4 are released in annual files, covering the start to the end of the Julian year. The maximum depth of seasonal thaw is provided, which corresponds to the active layer thickness. \n \nCase A: It covers Antarctica (south of 60\u00b0S) for the period 2003-2023 based on MODIS Land Surface temperature merged with downscaled ERA5 reanalysis near-surface air temperature data.\ne.g. ESACCI-PERMAFROST-L4-ALT-MODISLST_CRYOGRID-AREA27_PP-****-fv05.0.nc\nCase B: It covers Antarctica (south of 60\u00b0S) for the period 1997-2002 based on downscaled ERA5 reanalysis near-surface air temperature data which are bias-corrected with the Case A product for the overlap period 2003-2023 using a pixel-specific statistics for each day of the year.\ne.g. ESACCI-PERMAFROST-L4-ALT-ERA5_MODISLST_BIASCORRECTED-AREA27_PP-****-fv05.0.nc",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/9580c512bb474d00b1e0ee554e219bb7",
+    "cci_project": "PERMAFROST",
+    "comment": "These data were produced at ESA CCI as part of the ESA Permafrost CCI+ project Contract No 4000123681-18-I-NB. They are part of the 1st Climate Research Data Package release.",
+    "data_type": "ALT",
+    "ecv": "PERMAFROST",
+    "history": "2025-08-04 11:15:50",
+    "institute": "Department of Geosciences, University of Oslo",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "MODISLST_CRYOGRID",
+    "product_version": "05-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-08-27T17:19:29",
+    "references": "http://cci.esa.int/Permafrost, https://doi.org/10.5194/gmd-9-523-2016",
+    "sensor_id": "MODIS",
+    "source": "MODIS MOD11A1 and MYD11A1 level 3 Collection 6, ESA CCI Land Cover dataset v1.6.1, ERA5 Reanalysis",
+    "title": "ESA Permafrost Climate Change Initiative (Permafrost_cci): Permafrost active layer thickness for Antarctica, v5.0",
+    "uuid": "9580c512bb474d00b1e0ee554e219bb7"
+  },
+  "bbox": [
+    -180.0,
+    -85.0,
+    180.0,
+    -60.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 1000,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 1000,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "latitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          2500
+        ],
+        "size": 2500,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 85.0,
+        "valid_min": 25.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 1000,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 1000,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "longitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          36000
+        ],
+        "size": 36000,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          21
+        ],
+        "size": "21",
+        "standard_name": "time",
+        "units": "hours since 1950-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.PERMAFROST.yr.L4.ALT.MODIS.multi-platform.MODISLST_CRYOGRID.05-0.Antarctic",
+  "data_type": "dataset",
+  "data_vars": {
+    "ALT": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to metres: x*0.01",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          21,
+          2500,
+          36000
+        ],
+        "size": "1890000000",
+        "standard_name": "permafrost_active_layer_thickness",
+        "units": "metres",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "ALT"
+    },
+    "ALT_uncertainty": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to metres: x*0.01",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of active layer thickness",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          21,
+          2500,
+          36000
+        ],
+        "size": "1890000000",
+        "units": "metres",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "ALT_uncertainty"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "-180 0.01 0 90 0 -0.01",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int32",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": -2147483647,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "longitude_of_prime_meridian": 0.0,
+        "orig_data_type": "int32",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AXIS[\\\"Latitude\\\",NORTH],AXIS[\\\"Longitude\\\",EAST],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "int32",
+      "name": "spatial_ref"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 2500,
+    "lon": 36000,
+    "time": 21
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": -60.0,
+            "minimum": -85.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": -60.0,
+            "minimum": -85.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "spatial_ref",
+            "ALT",
+            "ALT_uncertainty"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.01,
+  "time_period": "1Y",
+  "time_range": [
+    "1997-01-01",
+    "2023-12-31"
+  ]
+}

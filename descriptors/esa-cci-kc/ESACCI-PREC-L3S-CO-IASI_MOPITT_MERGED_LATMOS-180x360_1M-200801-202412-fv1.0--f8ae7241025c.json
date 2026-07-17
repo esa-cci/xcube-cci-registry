@@ -1,0 +1,296 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "Grid",
+    "comment": "These data were produced as part of the European Space Agency Climate Change Initiative+ Precursors for Aerosol and Ozone Essential Climate Variable Project",
+    "creator_email": "maya.george@latmos.ipsl.fr",
+    "creator_url": "https://latmos.ipsl.fr",
+    "date_created": "2025-09-05T15:21:55Z",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_lat_max": "+90.0",
+    "geospatial_lat_min": "-90.0",
+    "geospatial_lat_resolution": 1.0,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_latitude_units": "degrees_north",
+    "geospatial_lon_max": "+180.0",
+    "geospatial_lon_min": "-180.0",
+    "geospatial_lon_resolution": 1.0,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 60000.0,
+    "geospatial_vertical_min": 0.0,
+    "geospatial_vertical_units": "m",
+    "history": "2025-09-05 17:21:55, Product generated on the SPIRIT cluster at IPSL, Paris, France",
+    "id": "10.5285/6242532d87d442a3acf0171d35c02e56",
+    "institution": "LATMOS",
+    "key_variables": "co_total_column_day,co_total_column_night,co_total_column_uncertainty_day,co_total_column_uncertainty_night",
+    "keywords": "satellite,observation,atmosphere,carbon monoxide,CO,Climate Data Record (CDR),level 3,total column,fire,pollution,IASI,MOPITT,CCI",
+    "keywords_vocabulary": "user-defined",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "latmos.ipsl.fr",
+    "platform": "Metop-A,Metop-B,Metop-C,Terra",
+    "product_version": "1.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "Algorithm Theoretical Basis Document (ATBD),Product User Guide (PUG), see https://climate.esa.int/en/projects/precursors-for-aerosols-and-ozone/",
+    "sensor": "IASI,MOPITT",
+    "source": "Product generated with MOPITT v9T and IASI multiplatform carbon monoxide (CO)",
+    "spatial_resolution": "1 degree x 1 degree",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 80, 7 February 2022",
+    "summary": "The ESA Climate Change Initiative (CCI) carbon monoxide (CO) Climate Data Record (CDR) merged product is a Level 3 CO product developed by merging satellite data from IASI (on METOP-A, B, and C) and MOPITT (on TERRA). ",
+    "time_coverage_duration": "P17Y",
+    "time_coverage_end": "2008-01-31T23:59:59Z",
+    "time_coverage_resolution": "P1M",
+    "time_coverage_start": "2008-01-01T00:00:00Z",
+    "title": "Monthly carbon monoxide (CO) CCI+ IASI MOPITT L3 merged product",
+    "tracking_id": "3cd4f10b-9eaf-40ac-a734-41b48415ac9e"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "long_name": "latitude of the gridcell center",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "long_name": "longitude of the gridcell center",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-PREC-L3S-CO-IASI_MOPITT_MERGED_LATMOS-180x360_1M-200801-202412-fv1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "co_total_column_day": {
+      "attrs": {
+        "comment": "daytime observations are observations associated with solar zenithal angle lower than 90 degrees",
+        "long_name": "monthly merged IASI MOPITT total carbon monoxide columns for daytime observations",
+        "units": "molecules cm-2",
+        "vertical_range_bottom": "surface",
+        "vertical_range_top": "60.0_km"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "co_total_column_day"
+    },
+    "co_total_column_night": {
+      "attrs": {
+        "comment": "nighttime observations are observations associated with solar zenithal angle higher or equal to 90 degrees",
+        "long_name": "monthly merged IASI MOPITT total carbon monoxide columns for nighttime observations",
+        "units": "molecules cm-2",
+        "vertical_range_bottom": "surface",
+        "vertical_range_top": "60.0_km"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "co_total_column_night"
+    },
+    "co_total_column_uncertainty_day": {
+      "attrs": {
+        "comment": "daytime observations are observations associated with solar zenithal angle lower than 90 degrees",
+        "long_name": "uncertainty in monthly merged IASI MOPITT total carbon monoxide columns for daytime observations",
+        "units": "molecules cm-2",
+        "vertical_range_bottom": "surface",
+        "vertical_range_top": "60.0_km"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "co_total_column_uncertainty_day"
+    },
+    "co_total_column_uncertainty_night": {
+      "attrs": {
+        "comment": "nighttime observations are observations associated with solar zenithal angle higher or equal to 90 degrees",
+        "long_name": "uncertainty in monthly merged IASI MOPITT total carbon monoxide columns for nighttime observations",
+        "units": "molecules cm-2",
+        "vertical_range_bottom": "surface",
+        "vertical_range_top": "60.0_km"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "co_total_column_uncertainty_night"
+    },
+    "flag_day": {
+      "attrs": {
+        "comment": "unitless. Daytime observations are observations associated with solar zenithal angle lower than 90 degrees",
+        "flag_meanings": "no_data MOPITT_only IASI_only IASI_and_MOPITT",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "flag for instruments used in the weighted average, for daytime observations: 3 for IASI and MOPITT, 2 for IASI only, 1 for MOPITT only and 0 when no data"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float64",
+      "name": "flag_day"
+    },
+    "flag_night": {
+      "attrs": {
+        "comment": "unitless. Nighttime observations are observations associated with solar zenithal angle higher or equal to 90 degrees",
+        "flag_meanings": "no_data MOPITT_only IASI_only IASI_and_MOPITT",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "flag for instruments used in the weighted average, for nighttime observations: 3 for IASI and MOPITT, 2 for IASI only, 1 for MOPITT only and 0 when no data"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float64",
+      "name": "flag_night"
+    },
+    "surface_altitude_day": {
+      "attrs": {
+        "comment": "daytime observations are observations associated with solar zenithal angle higher or equal to 90 degrees; only cloud free data are used",
+        "long_name": "altitude of the surface for IASI daytime observations",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "surface_altitude_day"
+    },
+    "surface_altitude_night": {
+      "attrs": {
+        "comment": "nighttime observations are observations associated with solar zenithal angle higher or equal to 90 degrees; only cloud free data are used",
+        "long_name": "altitude of the surface for IASI nighttime observations",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "time",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "surface_altitude_night"
+    },
+    "time_bnds": {
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "latitude": 180,
+    "longitude": 360,
+    "nv": 2,
+    "time": 204
+  },
+  "spatial_res": 1.0,
+  "time_range": [
+    "2008-01-01",
+    "2024-12-31"
+  ]
+}

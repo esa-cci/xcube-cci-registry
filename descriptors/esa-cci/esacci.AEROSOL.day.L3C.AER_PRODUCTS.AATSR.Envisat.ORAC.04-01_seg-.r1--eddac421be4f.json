@@ -1,0 +1,6096 @@
+{
+  "attrs": {
+    "abstract": "The ESA Climate Change Initiative Aerosol project has produced a number of global aerosol Essential Climate Variable (ECV) products from a set of European satellite instruments with different characteristics.   This dataset comprises Level 3 daily and monthly gridded aerosol products from the AATSR instrument on ENVISAT, derived using the ORAC algorithm, version 4.01. Both daily and monthly gridded products are available\n\nFor further details about these data products please see the linked documentation.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/da2b8512312a4f14a928766f7f632d36",
+    "cci_project": "AEROSOL",
+    "data_type": "AER_PRODUCTS",
+    "ecv": "AEROSOL",
+    "history": "20161101T034228Z - Product generated at STFC RAL Space. AATSR L1b ver. 6.05",
+    "institute": "Rutherford Appleton Laboratory",
+    "platform_id": "Envisat",
+    "processing_level": "L3C",
+    "product_string": "ORAC",
+    "product_version": "04-01_seg-",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2020-08-27T16:09:46",
+    "references": "ftp://ftp.rsg.rl.ac.uk/aerosol_cci/Aerosol_cci_ORAC_ATBD_v2.0.pdf",
+    "sensor_id": "AATSR",
+    "source": "AATSR L1b ver. 6.05",
+    "title": "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from AATSR (ORAC algorithm), Version 4.01",
+    "uuid": "da2b8512312a4f14a928766f7f632d36"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "aerosol_type": {
+      "attrs": {
+        "chunk_sizes": 10,
+        "data_type": "int64",
+        "dimensions": [
+          "aerosol_type"
+        ],
+        "file_chunk_sizes": 10,
+        "file_dimensions": [
+          "aerosol_type"
+        ],
+        "fill_value": 9223372036854775807,
+        "flag_meanings": "A70 A71 A72 A73 A74 A75 A76 A77 A78 A79",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "long_name": "aerosol type",
+        "orig_data_type": "int32",
+        "shape": [
+          10
+        ],
+        "size": 10,
+        "units": "1",
+        "valid_range": [
+          0,
+          9
+        ]
+      },
+      "dims": [
+        "aerosol_type"
+      ],
+      "dtype": "int64",
+      "name": "aerosol_type"
+    },
+    "latitude": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": 180,
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": 180,
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": 360,
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": 360,
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          65
+        ],
+        "size": 65,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          65
+        ],
+        "size": 130,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "view"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    },
+    "view": {
+      "attrs": {
+        "chunk_sizes": 2,
+        "data_type": "int64",
+        "dimensions": [
+          "view"
+        ],
+        "file_chunk_sizes": 2,
+        "file_dimensions": [
+          "view"
+        ],
+        "fill_value": 9223372036854775807,
+        "flag_meanings": "nadir forward",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "Instrument view",
+        "orig_data_type": "int32",
+        "shape": [
+          2
+        ],
+        "size": 2,
+        "units": "1",
+        "valid_range": [
+          0,
+          1
+        ]
+      },
+      "dims": [
+        "view"
+      ],
+      "dtype": "int64",
+      "name": "view"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.AEROSOL.day.L3C.AER_PRODUCTS.AATSR.Envisat.ORAC.04-01_seg-.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "AAOD550_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol absorption optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AAOD550_interquartile_mean"
+    },
+    "AAOD550_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol absorption optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AAOD550_lowerquartile"
+    },
+    "AAOD550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol absorption optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AAOD550_mean"
+    },
+    "AAOD550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol absorption optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AAOD550_median"
+    },
+    "AAOD550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol absorption optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AAOD550_sdev"
+    },
+    "AAOD550_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol absorption optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AAOD550_upperquartile"
+    },
+    "ANG550_870_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol Angstrom exponent between 550 and 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550_870_interquartile_mean"
+    },
+    "ANG550_870_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol Angstrom exponent between 550 and 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550_870_lowerquartile"
+    },
+    "ANG550_870_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol Angstrom exponent between 550 and 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550_870_mean"
+    },
+    "ANG550_870_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol Angstrom exponent between 550 and 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550_870_median"
+    },
+    "ANG550_870_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol Angstrom exponent between 550 and 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550_870_sdev"
+    },
+    "ANG550_870_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol Angstrom exponent between 550 and 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "angstrom_exponent_of_ambient_aerosol_in_air",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550_870_upperquartile"
+    },
+    "AOD1600_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol optical thickness at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_interquartile_mean"
+    },
+    "AOD1600_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol optical thickness at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_lowerquartile"
+    },
+    "AOD1600_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical thickness at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_mean"
+    },
+    "AOD1600_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical thickness at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_median"
+    },
+    "AOD1600_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical thickness at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_sdev"
+    },
+    "AOD1600_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol optical thickness at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_upperquartile"
+    },
+    "AOD550_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_interquartile_mean"
+    },
+    "AOD550_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_lowerquartile"
+    },
+    "AOD550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_mean"
+    },
+    "AOD550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_median"
+    },
+    "AOD550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_sdev"
+    },
+    "AOD550_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean uncertainty on AOT at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_interquartile_mean"
+    },
+    "AOD550_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile uncertainty on AOT at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_lowerquartile"
+    },
+    "AOD550_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean uncertainty on AOT at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_mean"
+    },
+    "AOD550_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median uncertainty on AOT at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_median"
+    },
+    "AOD550_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of uncertainty on AOT at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_sdev"
+    },
+    "AOD550_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile uncertainty on AOT at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_upperquartile"
+    },
+    "AOD550_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_upperquartile"
+    },
+    "AOD670_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol optical thickness at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_interquartile_mean"
+    },
+    "AOD670_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol optical thickness at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_lowerquartile"
+    },
+    "AOD670_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical thickness at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_mean"
+    },
+    "AOD670_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical thickness at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_median"
+    },
+    "AOD670_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical thickness at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_sdev"
+    },
+    "AOD670_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol optical thickness at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_upperquartile"
+    },
+    "AOD870_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol optical thickness at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_interquartile_mean"
+    },
+    "AOD870_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol optical thickness at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_lowerquartile"
+    },
+    "AOD870_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical thickness at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_mean"
+    },
+    "AOD870_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical thickness at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_median"
+    },
+    "AOD870_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical thickness at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_sdev"
+    },
+    "AOD870_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean uncertainty on AOT at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_uncertainty_interquartile_mean"
+    },
+    "AOD870_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile uncertainty on AOT at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_uncertainty_lowerquartile"
+    },
+    "AOD870_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean uncertainty on AOT at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_uncertainty_mean"
+    },
+    "AOD870_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median uncertainty on AOT at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_uncertainty_median"
+    },
+    "AOD870_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of uncertainty on AOT at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_uncertainty_sdev"
+    },
+    "AOD870_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile uncertainty on AOT at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_uncertainty_upperquartile"
+    },
+    "AOD870_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol optical thickness at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD870_upperquartile"
+    },
+    "D_AOD550_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean dust aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "D_AOD550_interquartile_mean"
+    },
+    "D_AOD550_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile dust aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "D_AOD550_lowerquartile"
+    },
+    "D_AOD550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean dust aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "D_AOD550_mean"
+    },
+    "D_AOD550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median dust aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "D_AOD550_median"
+    },
+    "D_AOD550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of dust aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "D_AOD550_sdev"
+    },
+    "D_AOD550_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile dust aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "D_AOD550_upperquartile"
+    },
+    "FM_AOD550_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean fine-mode aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_interquartile_mean"
+    },
+    "FM_AOD550_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile fine-mode aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_lowerquartile"
+    },
+    "FM_AOD550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean fine-mode aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_mean"
+    },
+    "FM_AOD550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median fine-mode aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_median"
+    },
+    "FM_AOD550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of fine-mode aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_sdev"
+    },
+    "FM_AOD550_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile fine-mode aerosol optical thickness at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.01,
+          5.01187
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_upperquartile"
+    },
+    "REFF_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.01,
+          5.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_interquartile_mean"
+    },
+    "REFF_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.01,
+          5.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_lowerquartile"
+    },
+    "REFF_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.01,
+          5.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_mean"
+    },
+    "REFF_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.01,
+          5.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_median"
+    },
+    "REFF_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.01,
+          5.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_sdev"
+    },
+    "REFF_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean uncertainty on aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_uncertainty_interquartile_mean"
+    },
+    "REFF_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile uncertainty on aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_uncertainty_lowerquartile"
+    },
+    "REFF_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean uncertainty on aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_uncertainty_mean"
+    },
+    "REFF_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median uncertainty on aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_uncertainty_median"
+    },
+    "REFF_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of uncertainty on aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_uncertainty_sdev"
+    },
+    "REFF_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile uncertainty on aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_uncertainty_upperquartile"
+    },
+    "REFF_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile aerosol effective radius",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "micron",
+        "valid_range": [
+          0.01,
+          5.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "REFF_upperquartile"
+    },
+    "aerosol_type_count": {
+      "attrs": {
+        "chunk_sizes": [
+          10,
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "int32",
+        "dimensions": [
+          "aerosol_type",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          10,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "aerosol_type",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999,
+        "long_name": "number of retrievals for each aerosol type",
+        "orig_data_type": "int32",
+        "shape": [
+          10,
+          180,
+          360
+        ],
+        "size": 648000,
+        "units": "1",
+        "valid_range": [
+          0,
+          200
+        ]
+      },
+      "dims": [
+        "time",
+        "aerosol_type",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "aerosol_type_count"
+    },
+    "cloud_fraction_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Cloud fraction",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "cloud_area_fraction",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "cloud_fraction_mean"
+    },
+    "fit_error_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Cost function at solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          100000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fit_error_mean"
+    },
+    "interquartile_count": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "int32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 0,
+        "long_name": "number of interquartile values",
+        "orig_data_type": "int32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          1,
+          200
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "interquartile_count"
+    },
+    "iterations_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Retrieval iterations",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          -1.0,
+          24.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "iterations_mean"
+    },
+    "lon_boundary_upper": {
+      "attrs": {
+        "chunk_sizes": 360,
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": 360,
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "longitude_grid_cell_upper_boundary",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "lon_boundary_upper"
+    },
+    "pixel_corner_latitude1": {
+      "attrs": {
+        "chunk_sizes": 180,
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": 180,
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "latitude_grid_cell_lower_boundary",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "units": "degrees_north",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "pixel_corner_latitude1"
+    },
+    "pixel_corner_latitude2": {
+      "attrs": {
+        "chunk_sizes": 180,
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": 180,
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "latitude_grid_cell_upper_boundary",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "pixel_corner_latitude2"
+    },
+    "pixel_corner_longitude1": {
+      "attrs": {
+        "chunk_sizes": 360,
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": 360,
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "longitude_grid_cell_lower_boundary",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "pixel_corner_longitude1"
+    },
+    "pixel_count": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "int32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 0,
+        "long_name": "number of retrieval pixels in grid cell",
+        "orig_data_type": "int32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          2,
+          200
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "pixel_count"
+    },
+    "relative_azimuth_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          2,
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "view",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          2,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "view",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Relative Azimuth angle",
+        "orig_data_type": "float32",
+        "shape": [
+          2,
+          180,
+          360
+        ],
+        "size": 129600,
+        "units": "degrees",
+        "valid_range": [
+          0.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "time",
+        "view",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "relative_azimuth_mean"
+    },
+    "satellite_zenith_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          2,
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "view",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          2,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "view",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Satellite zenith angle",
+        "orig_data_type": "float32",
+        "shape": [
+          2,
+          180,
+          360
+        ],
+        "size": 129600,
+        "standard_name": "zenith_angle",
+        "units": "degrees",
+        "valid_range": [
+          0.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "time",
+        "view",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "satellite_zenith_mean"
+    },
+    "sun_zenith_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          2,
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "view",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          2,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "view",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Solar zenith angle",
+        "orig_data_type": "float32",
+        "shape": [
+          2,
+          180,
+          360
+        ],
+        "size": 129600,
+        "standard_name": "solar_zenith_angle",
+        "units": "degrees",
+        "valid_range": [
+          0.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "time",
+        "view",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sun_zenith_mean"
+    },
+    "surface_reflectance1600_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean surface bihemispherical reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_interquartile_mean"
+    },
+    "surface_reflectance1600_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile surface bihemispherical reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_lowerquartile"
+    },
+    "surface_reflectance1600_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean surface bihemispherical reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_mean"
+    },
+    "surface_reflectance1600_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median surface bihemispherical reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_median"
+    },
+    "surface_reflectance1600_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of surface bihemispherical reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_sdev"
+    },
+    "surface_reflectance1600_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean Uncertainty on surface reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_uncertainty_interquartile_mean"
+    },
+    "surface_reflectance1600_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile Uncertainty on surface reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_uncertainty_lowerquartile"
+    },
+    "surface_reflectance1600_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Uncertainty on surface reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_uncertainty_mean"
+    },
+    "surface_reflectance1600_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median Uncertainty on surface reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_uncertainty_median"
+    },
+    "surface_reflectance1600_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of Uncertainty on surface reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_uncertainty_sdev"
+    },
+    "surface_reflectance1600_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile Uncertainty on surface reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_uncertainty_upperquartile"
+    },
+    "surface_reflectance1600_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile surface bihemispherical reflectance at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance1600_upperquartile"
+    },
+    "surface_reflectance550_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean surface bihemispherical reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_interquartile_mean"
+    },
+    "surface_reflectance550_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile surface bihemispherical reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_lowerquartile"
+    },
+    "surface_reflectance550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean surface bihemispherical reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_mean"
+    },
+    "surface_reflectance550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median surface bihemispherical reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_median"
+    },
+    "surface_reflectance550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of surface bihemispherical reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_sdev"
+    },
+    "surface_reflectance550_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean Uncertainty on surface reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_uncertainty_interquartile_mean"
+    },
+    "surface_reflectance550_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile Uncertainty on surface reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_uncertainty_lowerquartile"
+    },
+    "surface_reflectance550_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Uncertainty on surface reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_uncertainty_mean"
+    },
+    "surface_reflectance550_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median Uncertainty on surface reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_uncertainty_median"
+    },
+    "surface_reflectance550_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of Uncertainty on surface reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_uncertainty_sdev"
+    },
+    "surface_reflectance550_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile Uncertainty on surface reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_uncertainty_upperquartile"
+    },
+    "surface_reflectance550_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile surface bihemispherical reflectance at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance550_upperquartile"
+    },
+    "surface_reflectance670_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean surface bihemispherical reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_interquartile_mean"
+    },
+    "surface_reflectance670_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile surface bihemispherical reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_lowerquartile"
+    },
+    "surface_reflectance670_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean surface bihemispherical reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_mean"
+    },
+    "surface_reflectance670_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median surface bihemispherical reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_median"
+    },
+    "surface_reflectance670_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of surface bihemispherical reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_sdev"
+    },
+    "surface_reflectance670_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean Uncertainty on surface reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_uncertainty_interquartile_mean"
+    },
+    "surface_reflectance670_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile Uncertainty on surface reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_uncertainty_lowerquartile"
+    },
+    "surface_reflectance670_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Uncertainty on surface reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_uncertainty_mean"
+    },
+    "surface_reflectance670_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median Uncertainty on surface reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_uncertainty_median"
+    },
+    "surface_reflectance670_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of Uncertainty on surface reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_uncertainty_sdev"
+    },
+    "surface_reflectance670_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile Uncertainty on surface reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_uncertainty_upperquartile"
+    },
+    "surface_reflectance670_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile surface bihemispherical reflectance at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance670_upperquartile"
+    },
+    "surface_reflectance870_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean surface bihemispherical reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_interquartile_mean"
+    },
+    "surface_reflectance870_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile surface bihemispherical reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_lowerquartile"
+    },
+    "surface_reflectance870_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean surface bihemispherical reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_mean"
+    },
+    "surface_reflectance870_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median surface bihemispherical reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_median"
+    },
+    "surface_reflectance870_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of surface bihemispherical reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_sdev"
+    },
+    "surface_reflectance870_uncertainty_interquartile_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "inter-quartile mean Uncertainty on surface reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_uncertainty_interquartile_mean"
+    },
+    "surface_reflectance870_uncertainty_lowerquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "lower quartile Uncertainty on surface reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_uncertainty_lowerquartile"
+    },
+    "surface_reflectance870_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Uncertainty on surface reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_uncertainty_mean"
+    },
+    "surface_reflectance870_uncertainty_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median Uncertainty on surface reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_uncertainty_median"
+    },
+    "surface_reflectance870_uncertainty_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of Uncertainty on surface reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_uncertainty_sdev"
+    },
+    "surface_reflectance870_uncertainty_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile Uncertainty on surface reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_uncertainty_upperquartile"
+    },
+    "surface_reflectance870_upperquartile": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "upper quartile surface bihemispherical reflectance at 870 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_reflectance870_upperquartile"
+    },
+    "surface_type_number_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean Land / sea flag",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "land_area_fraction",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_type_number_mean"
+    },
+    "time_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "int32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999,
+        "info": "Seconds since 1970/01/01 00:00:00 UTC",
+        "long_name": "mean TAI70 time",
+        "orig_data_type": "int32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "time",
+        "units": "seconds",
+        "valid_range": [
+          1,
+          2147483647
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "time_mean"
+    }
+  },
+  "dims": {
+    "aerosol_type": 10,
+    "lat": 180,
+    "lon": 360,
+    "time": 65,
+    "view": 2
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-04-08",
+            "minDate": "2002-05-20",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-04-08",
+            "minDate": "2002-05-20",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "pixel_corner_latitude1",
+            "pixel_corner_latitude2",
+            "pixel_corner_longitude1",
+            "lon_boundary_upper",
+            "pixel_count",
+            "aerosol_type_count",
+            "interquartile_count",
+            "AOD550_mean",
+            "AOD550_median",
+            "AOD550_sdev",
+            "AOD550_lowerquartile",
+            "AOD550_upperquartile",
+            "AOD550_interquartile_mean",
+            "REFF_mean",
+            "REFF_median",
+            "REFF_sdev",
+            "REFF_lowerquartile",
+            "REFF_upperquartile",
+            "REFF_interquartile_mean",
+            "AOD870_mean",
+            "AOD870_median",
+            "AOD870_sdev",
+            "AOD870_lowerquartile",
+            "AOD870_upperquartile",
+            "AOD870_interquartile_mean",
+            "AOD670_mean",
+            "AOD670_median",
+            "AOD670_sdev",
+            "AOD670_lowerquartile",
+            "AOD670_upperquartile",
+            "AOD670_interquartile_mean",
+            "AOD1600_mean",
+            "AOD1600_median",
+            "AOD1600_sdev",
+            "AOD1600_lowerquartile",
+            "AOD1600_upperquartile",
+            "AOD1600_interquartile_mean",
+            "ANG550_870_mean",
+            "ANG550_870_median",
+            "ANG550_870_sdev",
+            "ANG550_870_lowerquartile",
+            "ANG550_870_upperquartile",
+            "ANG550_870_interquartile_mean",
+            "FM_AOD550_mean",
+            "FM_AOD550_median",
+            "FM_AOD550_sdev",
+            "FM_AOD550_lowerquartile",
+            "FM_AOD550_upperquartile",
+            "FM_AOD550_interquartile_mean",
+            "D_AOD550_mean",
+            "D_AOD550_median",
+            "D_AOD550_sdev",
+            "D_AOD550_lowerquartile",
+            "D_AOD550_upperquartile",
+            "D_AOD550_interquartile_mean",
+            "AAOD550_mean",
+            "AAOD550_median",
+            "AAOD550_sdev",
+            "AAOD550_lowerquartile",
+            "AAOD550_upperquartile",
+            "AAOD550_interquartile_mean",
+            "surface_reflectance550_mean",
+            "surface_reflectance550_median",
+            "surface_reflectance550_sdev",
+            "surface_reflectance550_lowerquartile",
+            "surface_reflectance550_upperquartile",
+            "surface_reflectance550_interquartile_mean",
+            "surface_reflectance670_mean",
+            "surface_reflectance670_median",
+            "surface_reflectance670_sdev",
+            "surface_reflectance670_lowerquartile",
+            "surface_reflectance670_upperquartile",
+            "surface_reflectance670_interquartile_mean",
+            "surface_reflectance870_mean",
+            "surface_reflectance870_median",
+            "surface_reflectance870_sdev",
+            "surface_reflectance870_lowerquartile",
+            "surface_reflectance870_upperquartile",
+            "surface_reflectance870_interquartile_mean",
+            "surface_reflectance1600_mean",
+            "surface_reflectance1600_median",
+            "surface_reflectance1600_sdev",
+            "surface_reflectance1600_lowerquartile",
+            "surface_reflectance1600_upperquartile",
+            "surface_reflectance1600_interquartile_mean",
+            "AOD550_uncertainty_mean",
+            "AOD550_uncertainty_median",
+            "AOD550_uncertainty_sdev",
+            "AOD550_uncertainty_lowerquartile",
+            "AOD550_uncertainty_upperquartile",
+            "AOD550_uncertainty_interquartile_mean",
+            "REFF_uncertainty_mean",
+            "REFF_uncertainty_median",
+            "REFF_uncertainty_sdev",
+            "REFF_uncertainty_lowerquartile",
+            "REFF_uncertainty_upperquartile",
+            "REFF_uncertainty_interquartile_mean",
+            "AOD870_uncertainty_mean",
+            "AOD870_uncertainty_median",
+            "AOD870_uncertainty_sdev",
+            "AOD870_uncertainty_lowerquartile",
+            "AOD870_uncertainty_upperquartile",
+            "AOD870_uncertainty_interquartile_mean",
+            "surface_reflectance550_uncertainty_mean",
+            "surface_reflectance550_uncertainty_median",
+            "surface_reflectance550_uncertainty_sdev",
+            "surface_reflectance550_uncertainty_lowerquartile",
+            "surface_reflectance550_uncertainty_upperquartile",
+            "surface_reflectance550_uncertainty_interquartile_mean",
+            "surface_reflectance670_uncertainty_mean",
+            "surface_reflectance670_uncertainty_median",
+            "surface_reflectance670_uncertainty_sdev",
+            "surface_reflectance670_uncertainty_lowerquartile",
+            "surface_reflectance670_uncertainty_upperquartile",
+            "surface_reflectance670_uncertainty_interquartile_mean",
+            "surface_reflectance870_uncertainty_mean",
+            "surface_reflectance870_uncertainty_median",
+            "surface_reflectance870_uncertainty_sdev",
+            "surface_reflectance870_uncertainty_lowerquartile",
+            "surface_reflectance870_uncertainty_upperquartile",
+            "surface_reflectance870_uncertainty_interquartile_mean",
+            "surface_reflectance1600_uncertainty_mean",
+            "surface_reflectance1600_uncertainty_median",
+            "surface_reflectance1600_uncertainty_sdev",
+            "surface_reflectance1600_uncertainty_lowerquartile",
+            "surface_reflectance1600_uncertainty_upperquartile",
+            "surface_reflectance1600_uncertainty_interquartile_mean",
+            "sun_zenith_mean",
+            "satellite_zenith_mean",
+            "relative_azimuth_mean",
+            "time_mean",
+            "cloud_fraction_mean",
+            "surface_type_number_mean",
+            "iterations_mean",
+            "fit_error_mean"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 1.0,
+  "time_period": "1D",
+  "time_range": [
+    "2002-05-20",
+    "2012-04-08"
+  ]
+}

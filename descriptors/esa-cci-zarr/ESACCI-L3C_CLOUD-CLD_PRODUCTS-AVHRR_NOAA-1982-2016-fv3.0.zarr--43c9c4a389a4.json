@@ -1,0 +1,252 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6,ACDD-1.3",
+    "cdm_data_type": "Grid",
+    "comment": "These data were produced at ESACCI as part of the ESA Cloud CCI project.",
+    "creator_email": "contact.cloudcci@dwd.de",
+    "creator_name": "Deutscher Wetterdienst",
+    "creator_url": "http://www.dwd.de",
+    "date_created": "2018-05-08T12:32:42+0000",
+    "geospatial_lat_max": 89.75,
+    "geospatial_lat_min": -89.75,
+    "geospatial_lat_resolution": "0.50",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 179.75,
+    "geospatial_lon_min": -179.75,
+    "geospatial_lon_resolution": "0.50",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "Dataset produced by DWDs CC4CL retrieval system installed at ECMWF in second phase of ESA Cloud CCI.",
+    "id": "201612-ESACCI-L3C_CLOUD-CLD_PRODUCTS-AVHRR_NOAA-19-fv3.0.nc",
+    "institution": "Deutscher Wetterdienst",
+    "keywords": "EARTH SCIENCE > ATMOSPHERE > SATELLITES > CLOUDS > CLOUD PROPERTIES",
+    "keywords_vocabulary": "GCMD Science Keywords, Version 8.1",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "de.dwd",
+    "number_of_processed_orbits": 468,
+    "platform": "NOAA-19",
+    "product_version": "3.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-cloud-cci.info",
+    "sensor": "AVHRR",
+    "source": "AVHRR_NOAA-19_GAC",
+    "spatial_resolution": "0.50 degree",
+    "standard_name_vocabulary": "Standard name table (v29, 08 July 2015)",
+    "summary": "This dataset contains monthly Level-3 global cloud property products from satellite observations. Averaged onto a regular grid.",
+    "time_coverage_duration": "P1M",
+    "time_coverage_end": "20161231T235959Z",
+    "time_coverage_resolution": "P1M",
+    "time_coverage_start": "20161201T000000Z",
+    "title": "ESA Cloud CCI Retrieval Products L3 Output File",
+    "tracking_id": "dc09abb8-324f-4cc6-97f1-d8c0e4deae2e"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "Time in days",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-L3C_CLOUD-CLD_PRODUCTS-AVHRR_NOAA-1982-2016-fv3.0.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "cfc": {
+      "attrs": {
+        "long_name": "cloud fraction",
+        "standard_name": "cloud_area_fraction",
+        "units": "1",
+        "valid_max": 1.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cfc"
+    },
+    "cfc_high": {
+      "attrs": {
+        "comment": "high level clouds = ctp < 440 hPa",
+        "long_name": "high level cloud fraction",
+        "units": "1",
+        "valid_max": 1.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cfc_high"
+    },
+    "cfc_low": {
+      "attrs": {
+        "comment": "low level clouds = 680 hPa < ctp < 1100 hPa",
+        "long_name": "low level cloud fraction",
+        "units": "1",
+        "valid_max": 1.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cfc_low"
+    },
+    "cfc_mid": {
+      "attrs": {
+        "comment": "mid level clouds = 440 hPa < ctp < 680 hPa",
+        "long_name": "mid level cloud fraction",
+        "units": "1",
+        "valid_max": 1.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cfc_mid"
+    },
+    "cfc_std": {
+      "attrs": {
+        "comment": "standard deviation of retrieved values",
+        "long_name": "cloud fraction standard deviation",
+        "units": "1",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cfc_std"
+    },
+    "cfc_unc": {
+      "attrs": {
+        "comment": "mean of the pixel uncertainties",
+        "long_name": "cloud fraction uncertainty",
+        "units": "%",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cfc_unc"
+    },
+    "nobs": {
+      "attrs": {
+        "comment": "total number of satellite observations available",
+        "long_name": "number of observations",
+        "units": "1",
+        "valid_max": 1212370944,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "nobs"
+    }
+  },
+  "dims": {
+    "lat": 360,
+    "lon": 720,
+    "time": 415
+  },
+  "spatial_res": 0.5,
+  "time_range": [
+    "1982-01-01",
+    "2016-12-01"
+  ]
+}

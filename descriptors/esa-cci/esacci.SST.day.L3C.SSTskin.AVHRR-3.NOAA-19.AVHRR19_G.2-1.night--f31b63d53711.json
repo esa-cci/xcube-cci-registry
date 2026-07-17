@@ -1,0 +1,1588 @@
+{
+  "attrs": {
+    "abstract": "This v2.1 SST_cci Advanced Very High Resolution Radiometer (AVHRR) Level 3 Collated (L3C) Climate Data Record (CDR) consists of stable, low-bias sea surface temperature (SST) data from the AVHRR series of satellite instruments.  It covers the period between 08/1981 and 12/2016.  This L3C product provides these SST data on a 0.05 regular latitude-longitude grid and collated to include all orbits for a day (separated into daytime and nighttime files).\n\nThe dataset has been produced as part of the European Space Agency (ESA) Climate Change Initiative Sea Surface Temperature project(ESA SST_cci). The data products from SST_cci accurately map the surface temperature of the global oceans over the period 1981 to 2016 using observations from many satellites. The data provide independently quantified SSTs to a quality suitable for climate research.\n\nThis CDR Version 2.1 product supercedes the CDR Version 2.0 product.  Data are made freely and openly available under a Creative Commons License by Attribution (CC By 4.0) https://creativecommons.org/licenses/by/4.0/ .\n\nWhen citing this dataset please also cite the associated data paper: Merchant, C.J., Embury, O., Bulgin, C.E., Block T., Corlett, G.K., Fiedler, E., Good, S.A., Mittaz, J., Rayner, N.A., Berry, D., Eastwood, S., Taylor, M., Tsushima, Y., Waterfall, A., Wilson, R., Donlon, C. Satellite-based time-series of sea-surface temperature since 1981 for climate applications, Scientific Data 6:223 (2019). http://doi.org/10.1038/s41597-019-0236-x",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/7db4459605da4665b6ab9a7102fb4875",
+    "cci_project": "SST",
+    "comment": "For information about uncertainty estimates see the comment attributes to the sea_surface_temperature and sea_surface_temperature_depth variables",
+    "data_type": "SSTskin",
+    "ecv": "SST",
+    "history": "created with collate_l3.py",
+    "institute": "ESACCI_SST",
+    "platform_id": "NOAA-19",
+    "processing_level": "L3C",
+    "product_string": "AVHRR19_G",
+    "product_version": "2-1",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2019-08-02T20:01:15",
+    "references": "http://www.esa-sst-cci.org",
+    "sensor_id": "AVHRR-3",
+    "source": "AVHRR19_G-ESACCI-L1C-v1, ERA_INTERIM-ECMWF-WSP-v1.0",
+    "title": "ESA Sea Surface Temperature Climate Change Initiative (SST_cci): Advanced Very High Resolution Radiometer (AVHRR) Level 3 Collated (L3C) Climate Data Record, version 2.1",
+    "uuid": "7db4459605da4665b6ab9a7102fb4875"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "chunk_sizes": [
+          3600
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": [
+          3600
+        ],
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          3600
+        ],
+        "size": 3600,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          3600,
+          2
+        ],
+        "comment": "Contains the northern and southern boundaries of the grid cells.",
+        "data_type": "float32",
+        "dimensions": [
+          "lat",
+          "bnds"
+        ],
+        "file_chunk_sizes": [
+          3600,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "bnds"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude cell boundaries",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          3600,
+          2
+        ],
+        "size": 7200,
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat",
+        "bnds"
+      ],
+      "dtype": "float32",
+      "name": "lat_bnds"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "chunk_sizes": [
+          7200
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          7200
+        ],
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          7200
+        ],
+        "size": 7200,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          7200,
+          2
+        ],
+        "comment": "Contains the eastern and western boundaries of the grid cells.",
+        "data_type": "float32",
+        "dimensions": [
+          "lon",
+          "bnds"
+        ],
+        "file_chunk_sizes": [
+          7200,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "bnds"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude cell boundaries",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          7200,
+          2
+        ],
+        "size": 14400,
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon",
+        "bnds"
+      ],
+      "dtype": "float32",
+      "name": "lon_bnds"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bnds",
+        "calendar": "gregorian",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "reference time of sst file",
+        "orig_data_type": "int32",
+        "shape": [
+          2870
+        ],
+        "size": "2870",
+        "standard_name": "time",
+        "units": "seconds since 1981-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          2
+        ],
+        "comment": "Contains the start and end times for the time period the data represent.",
+        "data_type": "int64",
+        "dimensions": [
+          "time",
+          "bnds"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "bnds"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "Time cell boundaries",
+        "orig_data_type": "int32",
+        "shape": [
+          2870,
+          2
+        ],
+        "size": "5740",
+        "units": "seconds since 1981-01-01 00:00:00"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.SST.day.L3C.SSTskin.AVHRR-3.NOAA-19.AVHRR19_G.2-1.night",
+  "data_type": "dataset",
+  "data_vars": {
+    "adjustment_alt": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Add to sea_surface_temperature, if alternative SST retrieval is required",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Adjustment to alternative sea surface temperature retrieval",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 1000,
+        "valid_min": -1000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "adjustment_alt"
+    },
+    "alt_sst_retrieval_type": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "For ATSRs, adjustment gives D2 (most consistent through time series) when D3 is provided as best. For AVHRRs, adjustment provides N2 when N3 is best. Reason for providing an alternative: can then use N2 or D2 consistently for whole record i",
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "flag_meanings": "single_view_two_channel single_view_three_channel dual_view_two_channel dual_view_three_channel single_view_11_and_3.7_two_channel",
+        "flag_values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "long_name": "Type of retrieval used for the alternate SST retrieval",
+        "orig_data_type": "uint8",
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "valid_max": 5,
+        "valid_min": 1
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "alt_sst_retrieval_type"
+    },
+    "depth_adjustment": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Add to sea_surface_temperature, if SST at 20cm at observation time is required",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Adjustment to sea surface temperature at 0.2 m",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 1000,
+        "valid_min": -1000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "depth_adjustment"
+    },
+    "empirical_adjustment": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "If not applied, fill with zeros to indicate independence from in situ",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Adjustment, based on comparison to in situ data",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 1000,
+        "valid_min": -1000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "empirical_adjustment"
+    },
+    "l2p_flags": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "These flags are important to properly use the data",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "flag_masks": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "flag_meanings": "microwave land ice lake river spare views channels day",
+        "long_name": "L2P flags",
+        "orig_data_type": "int16",
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "valid_max": 511,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "l2p_flags"
+    },
+    "quality_level": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "These are overall quality indicators and are used for all GHRSST SSTs",
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "no_data bad_data worst_quality low_quality acceptable_quality best_quality",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "long_name": "quality level of SST pixel",
+        "orig_data_type": "uint8",
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "valid_max": 5,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "quality_level"
+    },
+    "sea_surface_temperature": {
+      "attrs": {
+        "add_offset": 273.15,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Temperature of the skin of the ocean; total uncertainty = sqrt(uncertainty_systematic^2+uncertainty_correlated^2+uncertainty_random^2)",
+        "data_type": "int16",
+        "depth": "10 micrometres",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "sea surface skin temperature",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "source": "AVHRR19_G-ESACCI-L1C-v1",
+        "standard_name": "sea_surface_skin_temperature",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": -200
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sea_surface_temperature"
+    },
+    "sea_surface_temperature_depth": {
+      "attrs": {
+        "add_offset": 273.15,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Temperature of the ocean at 20 cm depth; total uncertainty = sqrt(uncertainty_systematic^2+uncertainty_correlated^2+uncertainty_random^2+uncertainty_correlated_time_and_depth_adjustment^2)",
+        "data_type": "int16",
+        "depth": "0.2 metre",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "sea surface temperature at 0.2 m",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "source": "AVHRR19_G-ESACCI-L1C-v1",
+        "standard_name": "sea_water_temperature",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": -200
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sea_surface_temperature_depth"
+    },
+    "sea_surface_temperature_depth_anomaly": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Temperature of the ocean at 20 cm depth; total uncertainty = sqrt(uncertainty_systematic^2+uncertainty_correlated^2+uncertainty_random^2+uncertainty_correlated_time_and_depth_adjustment^2)",
+        "data_type": "int16",
+        "depth": "0.2 metre",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "sea surface temperature anomaly at 0.2 m",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "source": "AVHRR19_G-ESACCI-L1C-v1",
+        "standard_name": "sea_water_temperature_anomaly",
+        "units": "kelvin",
+        "valid_max": 4000,
+        "valid_min": -4000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sea_surface_temperature_depth_anomaly"
+    },
+    "sea_surface_temperature_depth_total_uncertainty": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Total uncertainty in each sea_surface_temperature_depth data point",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Total uncertainty in sea_surface_temperature_depth",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sea_surface_temperature_depth_total_uncertainty"
+    },
+    "sea_surface_temperature_retrieval_type": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "1. single view, two channel 2. single view, three channel 3. dual view, two channel 4. dual view, three channel 5. single view, 11 and 3.7 two channel",
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "flag_meanings": "single_view_two_channel single_view_three_channel dual_view_two_channel dual_view_three_channel single_view_11_and_3.7_two_channel",
+        "flag_values": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "long_name": "Type of retrieval used for the primary SST",
+        "orig_data_type": "uint8",
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "valid_max": 5,
+        "valid_min": 1
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "sea_surface_temperature_retrieval_type"
+    },
+    "sea_surface_temperature_total_uncertainty": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Total uncertainty in each sea_surface_temperature data point",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Total uncertainty in sea_surface_temperature",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sea_surface_temperature_total_uncertainty"
+    },
+    "sses_bias": {
+      "attrs": {
+        "_Unsigned": "false",
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Populated with zeroes",
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "long_name": "SSES bias estimate",
+        "orig_data_type": "uint8",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 127,
+        "valid_min": -127
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "sses_bias"
+    },
+    "sses_standard_deviation": {
+      "attrs": {
+        "_Unsigned": "false",
+        "add_offset": 1.27,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Uncertainty information is contained in the variables uncertainty_systematic, uncertainty_correlated, and uncertainty_random",
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "long_name": "SSES standard deviation",
+        "orig_data_type": "uint8",
+        "scale_factor": 0.01,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 127,
+        "valid_min": -127
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "sses_standard_deviation"
+    },
+    "sst_depth_dtime": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "time plus sst_depth_dtime gives seconds after 1981-01-01 00:00:00",
+        "data_type": "int32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -2147483648,
+        "long_name": "time difference from reference time",
+        "orig_data_type": "int32",
+        "scale_factor": 1.0,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "seconds",
+        "valid_max": 43200,
+        "valid_min": -43200
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "sst_depth_dtime"
+    },
+    "sst_dtime": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "time plus sst_dtime gives seconds after 1981-01-01 00:00:00",
+        "data_type": "int32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -2147483648,
+        "long_name": "time difference from reference time",
+        "orig_data_type": "int32",
+        "scale_factor": 1.0,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "seconds",
+        "valid_max": 43200,
+        "valid_min": -43200
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "sst_dtime"
+    },
+    "sst_sensitivity": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Sensitivity of the retrieval to actual changes in sea surface temperature",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Sensitivity of the retrieval to actual changes in sea surface temperature",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "K/K",
+        "valid_max": 1100,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sst_sensitivity"
+    },
+    "uncertainty_correlated": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Component of uncertainty that is correlated over synoptic scales; can be combined with other uncertainty estimates to form a total uncertainty",
+        "correlation_length_scale": "100 km",
+        "correlation_time_scale": "1 day",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Uncertainty from errors likely to be correlated over synoptic scales",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_correlated"
+    },
+    "uncertainty_correlated_alt": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Component of uncertainty in alternative SST retrieval that is correlated over synoptic scales; can be combined with other uncertainty estimates to form a total uncertainty",
+        "correlation_length_scale": "100 km",
+        "correlation_time_scale": "1 day",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Uncertainty in alternative SST retrieval from errors likely to be correlated over synoptic scales",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_correlated_alt"
+    },
+    "uncertainty_correlated_time_and_depth_adjustment": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Adjustment uncertainty; can be combined with other uncertainty estimates to form a total uncertainty",
+        "correlation_length_scale": "100 km",
+        "correlation_time_scale": "1 day",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Time and depth adjustment uncertainty",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_correlated_time_and_depth_adjustment"
+    },
+    "uncertainty_random": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Component of uncertainty that is uncorrelated between SSTs; can be combined with other uncertainty estimates to form a total uncertainty",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Uncertainty from errors likely to be uncorrelated between SSTs",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_random"
+    },
+    "uncertainty_random_alt": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Component of uncertainty in alternative SST retrieval that is uncorrelated between SSTs; can be combined with other uncertainty estimates to form a total uncertainty",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Uncertainty in alternative SST retrieval from errors likely to be uncorrelated between SSTs",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_random_alt"
+    },
+    "uncertainty_systematic": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Component of uncertainty that is correlated over large scales; can be combined with other uncertainty estimates to form a total uncertainty",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Uncertainty from errors likely to be correlated over large scales",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_systematic"
+    },
+    "uncertainty_systematic_alt": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Component of uncertainty in alternative SST retrieval that is correlated over large scales; can be combined with other uncertainty estimates to form a total uncertainty",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "Uncertainty in alternative SST retrieval from errors likely to be correlated over large scales",
+        "orig_data_type": "int16",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.001,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "units": "kelvin",
+        "valid_max": 5000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "uncertainty_systematic_alt"
+    },
+    "wind_speed": {
+      "attrs": {
+        "_Unsigned": "false",
+        "add_offset": 12.7,
+        "chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "comment": "Wind speeds sourced from ECMWF ERA Interim Reanalysis; wind speeds greater than 25.4 m/s are set to 25.4.",
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 128,
+        "height": "10 m",
+        "long_name": "10m wind speed",
+        "orig_data_type": "uint8",
+        "references": "http://www.esa-sst-cci.org",
+        "scale_factor": 0.1,
+        "shape": [
+          2870,
+          3600,
+          7200
+        ],
+        "size": "74390400000",
+        "source": "ERA_INTERIM-ECMWF-WSP-v1.0",
+        "standard_name": "wind_speed",
+        "time_offset": 0.0,
+        "units": "m s-1",
+        "valid_max": 127,
+        "valid_min": -127
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "wind_speed"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 3600,
+    "lon": 7200,
+    "time": 2870
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2016-12-31",
+            "minDate": "1981-08-24",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2016-12-31",
+            "minDate": "1981-08-24",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "sea_surface_temperature",
+            "sea_surface_temperature_depth",
+            "sea_surface_temperature_depth_anomaly",
+            "sst_dtime",
+            "sst_depth_dtime",
+            "sses_bias",
+            "sses_standard_deviation",
+            "sea_surface_temperature_total_uncertainty",
+            "sea_surface_temperature_depth_total_uncertainty",
+            "depth_adjustment",
+            "adjustment_alt",
+            "l2p_flags",
+            "quality_level",
+            "wind_speed",
+            "sea_surface_temperature_retrieval_type",
+            "alt_sst_retrieval_type",
+            "uncertainty_random",
+            "uncertainty_correlated",
+            "uncertainty_systematic",
+            "uncertainty_correlated_time_and_depth_adjustment",
+            "uncertainty_random_alt",
+            "uncertainty_correlated_alt",
+            "uncertainty_systematic_alt",
+            "sst_sensitivity",
+            "empirical_adjustment"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.05,
+  "time_period": "1D",
+  "time_range": [
+    "1981-08-24",
+    "2016-12-31"
+  ]
+}

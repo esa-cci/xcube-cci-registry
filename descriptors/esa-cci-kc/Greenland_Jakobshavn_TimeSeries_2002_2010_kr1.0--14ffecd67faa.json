@@ -1,0 +1,165 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "date_created": "2014-10-06",
+    "institution": "ENVEO",
+    "methods_used": "Offset-tracking",
+    "product_version": "1.1",
+    "project": "Ice_Sheets_cci",
+    "sensors_used": "ENVISAT ASAR",
+    "summary": "Jakobshavn IV time series from ENVISAT",
+    "time_coverage_end": "2010-09-23",
+    "time_coverage_start": "2002-11-10",
+    "title": "Jakobshavn_TimeSeries_2002_2010",
+    "tracking_id": "af69c4ea-9020-4dc5-890b-a5480699e6a4",
+    "velocity_projection_method": "Horizontal Flow"
+  },
+  "bbox": [
+    -222410.0,
+    -2303699.0,
+    -123590.0,
+    -2245379.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "Midpoint time of acquisitons used",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "x coordinate of projection",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "y coordinate of projection",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "Greenland_Jakobshavn_TimeSeries_2002_2010_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "alt": {
+      "attrs": {
+        "description": "Heights (WGS84 used for SPF velocity projection)",
+        "grid_mapping": "crs",
+        "long_name": "vertical distance above the surface",
+        "source": "External ( Greenland Ice Mapping Project (GIMP) 90m DEM )",
+        "standard_name": "height",
+        "units": "m"
+      },
+      "chunks": [
+        648,
+        1098
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "alt"
+    },
+    "crs": {
+      "attrs": {
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "polar_stereographic",
+        "inverse_flattening": 298.257223563,
+        "latitude_of_projection_origin": 90.0,
+        "semi_major_axis": 6378137.0,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "crs"
+    },
+    "land_ice_surface_east_velocity": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "eastwards ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        12,
+        162,
+        275
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_east_velocity"
+    },
+    "land_ice_surface_north_velocity": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "northwards ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        12,
+        162,
+        275
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_north_velocity"
+    },
+    "time_bnds": {
+      "chunks": [
+        47,
+        2
+      ],
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 47,
+    "x": 1098,
+    "y": 648
+  },
+  "spatial_res": 90.0,
+  "time_range": [
+    "2002-11-10",
+    "2010-09-23"
+  ]
+}

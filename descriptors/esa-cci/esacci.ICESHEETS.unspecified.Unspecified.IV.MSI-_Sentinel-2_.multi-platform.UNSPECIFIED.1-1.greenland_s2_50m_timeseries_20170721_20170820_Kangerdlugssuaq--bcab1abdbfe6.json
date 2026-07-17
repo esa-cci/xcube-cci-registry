@@ -1,0 +1,339 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains optical ice velocity time series and seasonal product of the Kangerlussuaq Glacier in Greenland, derived from intensity-tracking of Sentinel-2 data acquired between 2017-07-21 and 2017-08-20. It has been produced as part of the ESA Greenland Ice sheet CCI project. \n\nThe data are provided on a polar stereographic grid (EPSG 3413:Latitude of true scale 70N, Reference Longitude 45E) with 50m grid spacing.  The horizontal velocity is provided in true meters per day, towards EASTING (x) and NORTHING (y) direction of the grid.\n\nThe data have been produced by S[&]T Norway.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/aae643e1a7614c24b6b604dea82cad93",
+    "cci_project": "ICESHEETS",
+    "comment": "Pixel offsets tracked using Imcorr. Input files were /snufkin/projects/cci/s2raw/s2raw/25WDS/2017-07-23/Seq00/B02.tiff and /snufkin/projects/cci/s2raw/s2raw/25WDS/2017-07-30/Seq00/B02.tiff. Intrinsic S2 shift (faulty georeferencing) estimated  as (x,y) = (0.4775, -0.1708) pixels. Shift was corrected. Pixel offsets converted to m/day using scaling dx_in_meters/dt_in_days = 10.0/7.0 = 1.4.",
+    "data_type": "IV",
+    "ecv": "ICESHEETS",
+    "history": "2018-06-11 17:34:32 | Combined 1 input files ['/snufkin/projects/cci/ensemble/25WDS/2017-07-21_to_2017-08-08/2017-07-23_Seq00_to_2017-07-30_Seq00.nc'] by weighted average. Weights were cubed inverse RMS of velocity field. RMS was computed with 5x5 kernel.\n\n2018-06-11 17:37:34 | Stacked in time from 2 input files ['/snufkin/projects/cci/stacked/25WDS/2017-07-21_to_2017-08-08.nc', '/snufkin/projects/cci/stacked/25WDS/2017-07-30_to_2017-08-20.nc'].",
+    "institute": "Science [&] Technology AS",
+    "platform_id": "multi-platform",
+    "processing_level": "Unspecified",
+    "product_string": "UNSPECIFIED",
+    "product_version": "1-1",
+    "project": "ESA Greenland Ice Sheet CCI",
+    "publication_date": "2018-11-29T14:50:29",
+    "sensor_id": "MSI-(Sentinel-2)",
+    "source": "Sentinel-2",
+    "title": "ESA Greenland Ice Sheet Climate Change Initiative (Greenland_Ice_Sheet_cci): Optical ice velocity of the  Kangerlussuaq Glacier between 2017-07-21 and 2017-08-20, generated using Sentinel-2 data, v1.1",
+    "uuid": "aae643e1a7614c24b6b604dea82cad93"
+  },
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "chunk_sizes": [
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          2
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "Midpoint time of aquisitions used",
+        "orig_data_type": "float64",
+        "shape": [
+          2
+        ],
+        "size": "2",
+        "standard_name": "time",
+        "units": "days since 1990-01-01 00:00:00 UTC"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          2,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "bnds"
+        ],
+        "file_chunk_sizes": [
+          2,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "bnds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          2,
+          2
+        ],
+        "size": "4",
+        "units": "days since 1990-01-01 00:00:00 UTC"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "float64",
+      "name": "time_bnds"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": [
+          2591
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "x"
+        ],
+        "file_chunk_sizes": [
+          2591
+        ],
+        "file_dimensions": [
+          "x"
+        ],
+        "fill_value": null,
+        "long_name": "x coordinate of projection",
+        "orig_data_type": "float64",
+        "shape": [
+          2591
+        ],
+        "size": 2591,
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": [
+          2591
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "y"
+        ],
+        "file_chunk_sizes": [
+          2591
+        ],
+        "file_dimensions": [
+          "y"
+        ],
+        "fill_value": null,
+        "long_name": "y coordinate of projection",
+        "orig_data_type": "float64",
+        "shape": [
+          2591
+        ],
+        "size": 2591,
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "crs": "WGS 84 / NSIDC Sea Ice Polar Stereographic North",
+  "data_id": "esacci.ICESHEETS.unspecified.Unspecified.IV.MSI-(Sentinel-2).multi-platform.UNSPECIFIED.1-1.greenland_s2_50m_timeseries_20170721_20170820_Kangerdlugssuaq",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "GeoTransform": "371050.0 50.0 0.0 -2203050.0 0.0 -50.0",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "epsg": 3413,
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "PROJCS[\\\"WGS 84 / NSIDC Sea Ice Polar Stereographic North\\\",GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]],PROJECTION[\\\"Polar_Stereographic\\\"],PARAMETER[\\\"latitude_of_origin\\\",70],PARAMETER[\\\"central_meridian\\\",-45],PARAMETER[\\\"scale_factor\\\",1],PARAMETER[\\\"false_easting\\\",0],PARAMETER[\\\"false_northing\\\",0],UNIT[\\\"metre\\\",1,AUTHORITY[\\\"EPSG\\\",\\\"9001\\\"]],AXIS[\\\"X\\\",EAST],AXIS[\\\"Y\\\",NORTH],AUTHORITY[\\\"EPSG\\\",\\\"3413\\\"]]",
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0,
+        "unit": "m"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "land_ice_surface_easting_velocity": {
+      "attrs": {
+        "chunk_sizes": [
+          2,
+          2591,
+          2591
+        ],
+        "coordinates": "time y x",
+        "data_type": "float32",
+        "description": "easting ice velocity",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          2,
+          2591,
+          2591
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_easting_velocity",
+        "orig_data_type": "float32",
+        "shape": [
+          2,
+          2591,
+          2591
+        ],
+        "size": "13426562",
+        "standard_name": "land_ice_surface_easting_velocity",
+        "units": "m/day"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_easting_velocity"
+    },
+    "land_ice_surface_northing_velocity": {
+      "attrs": {
+        "chunk_sizes": [
+          2,
+          2591,
+          2591
+        ],
+        "coordinates": "time y x",
+        "data_type": "float32",
+        "description": "northing ice velocity",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          2,
+          2591,
+          2591
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_northing_velocity",
+        "orig_data_type": "float32",
+        "shape": [
+          2,
+          2591,
+          2591
+        ],
+        "size": "13426562",
+        "standard_name": "land_ice_surface_northing_velocity",
+        "units": "m/day"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_northing_velocity"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 2,
+    "x": 2591,
+    "y": 2591
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2017-08-20",
+            "minDate": "2017-07-20",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2017-08-20",
+            "minDate": "2017-07-20",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "crs",
+            "land_ice_surface_northing_velocity",
+            "land_ice_surface_easting_velocity"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 50.0,
+  "time_range": [
+    "2017-07-20",
+    "2017-08-20"
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "attrs": {
+    "band_used": "B02",
+    "date_created": "2017-03-14",
+    "institution": "S[&]T",
+    "method_used": "Offset-tracking",
+    "product_version": "1.0",
+    "project": "ESA Greenland Icesheet CCI",
+    "resolution": "50m",
+    "sensors_used": "Sentinel-2 MSI",
+    "source": "Sentinel-2",
+    "summary": "Optical IV of Docker Smith region from Sentinel-2 optical data acquired the 2016-05-08 and 2016-05-18",
+    "time_coverage_end": "20160518T171901",
+    "time_coverage_start": "20160508T171900",
+    "title": "greenland_iv_50m_20160508_20160518_docker_smith_v1_0_classic",
+    "tracking_id": "d5b554e5-243f-4d1e-b532-5b9fdc8d7999",
+    "units": "m/day",
+    "velocity_projection_method": "Horizontal Flow"
+  },
+  "bbox": [
+    -580246.0,
+    -1526494.0,
+    -346746.0,
+    -1357244.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "Midpoint time of acquisitions used",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "x coordinate of projection",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "y coordinate of projection",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "greenland_iv_50m_20160508_20160518_docker_smith_v1_0_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "epsg": 3413.0,
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0,
+        "unit": "metre"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "crs"
+    },
+    "land_ice_surface_easting_velocity": {
+      "attrs": {
+        "description": "easting ice velocity",
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_easting_velocity",
+        "standard_name": "land_ice_surface_easting_velocity",
+        "units": "m/day"
+      },
+      "chunks": [
+        1,
+        1030,
+        1422
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_easting_velocity"
+    },
+    "land_ice_surface_northing_velocity": {
+      "attrs": {
+        "description": "northing ice velocity",
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_northing_velocity",
+        "standard_name": "land_ice_surface_northing_velocity",
+        "units": "m/day"
+      },
+      "chunks": [
+        1,
+        1030,
+        1422
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_northing_velocity"
+    },
+    "land_ice_surface_velocity_magnitude": {
+      "attrs": {
+        "description": "magnitude of horizontal ice velocity",
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_velocity_magnitude",
+        "standard_name": "land_ice_surface_velocity_magnitude",
+        "units": "m/day"
+      },
+      "chunks": [
+        1,
+        1030,
+        1422
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_velocity_magnitude"
+    },
+    "time_bnds": {
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 1,
+    "x": 4670,
+    "y": 3385
+  },
+  "spatial_res": 50.0,
+  "time_range": [
+    "2016-05-08",
+    "2016-05-18"
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "Grid",
+    "comment": "Data are based on a monthly running mean objectively interpolated",
+    "creation_time": [
+      "19-Dec-2023 08:43:56",
+      "19-Dec-2023 08:42:40",
+      "19-Dec-2023 08:42:47",
+      "19-Dec-2023 08:43:48",
+      "19-Dec-2023 08:44:07",
+      "19-Dec-2023 08:42:51",
+      "19-Dec-2023 08:43:43",
+      "19-Dec-2023 08:43:10",
+      "19-Dec-2023 08:43:02",
+      "19-Dec-2023 08:43:26",
+      "19-Dec-2023 08:43:42",
+      "19-Dec-2023 08:43:25",
+      "19-Dec-2023 08:43:31",
+      "19-Dec-2023 08:43:53",
+      "19-Dec-2023 08:43:16",
+      "19-Dec-2023 08:43:55",
+      "19-Dec-2023 08:42:37",
+      "19-Dec-2023 08:42:24",
+      "19-Dec-2023 08:42:14",
+      "19-Dec-2023 08:42:56",
+      "19-Dec-2023 08:42:33",
+      "19-Dec-2023 08:42:49",
+      "19-Dec-2023 08:43:52",
+      "19-Dec-2023 08:43:35",
+      "19-Dec-2023 08:43:20",
+      "19-Dec-2023 08:43:58",
+      "19-Dec-2023 08:42:19",
+      "19-Dec-2023 08:43:39",
+      "19-Dec-2023 08:42:41",
+      "19-Dec-2023 08:43:59",
+      "19-Dec-2023 08:43:03",
+      "19-Dec-2023 08:43:12",
+      "19-Dec-2023 08:43:22",
+      "19-Dec-2023 08:43:54",
+      "19-Dec-2023 08:42:22",
+      "19-Dec-2023 08:43:14",
+      "19-Dec-2023 08:43:32",
+      "19-Dec-2023 08:42:26",
+      "19-Dec-2023 08:43:01",
+      "19-Dec-2023 08:44:00",
+      "19-Dec-2023 08:42:57",
+      "19-Dec-2023 08:43:45",
+      "19-Dec-2023 08:44:02",
+      "19-Dec-2023 08:43:36",
+      "19-Dec-2023 08:43:29",
+      "19-Dec-2023 08:42:42",
+      "19-Dec-2023 08:42:30",
+      "19-Dec-2023 08:43:49",
+      "19-Dec-2023 08:43:18",
+      "19-Dec-2023 08:42:45",
+      "19-Dec-2023 08:42:48",
+      "19-Dec-2023 08:43:30",
+      "19-Dec-2023 08:43:00",
+      "19-Dec-2023 08:43:13",
+      "19-Dec-2023 08:44:05",
+      "19-Dec-2023 08:43:34",
+      "19-Dec-2023 08:42:53",
+      "19-Dec-2023 08:42:29",
+      "19-Dec-2023 08:42:54",
+      "19-Dec-2023 08:42:50",
+      "19-Dec-2023 08:42:32",
+      "19-Dec-2023 08:42:39",
+      "19-Dec-2023 08:43:05",
+      "19-Dec-2023 08:42:16",
+      "19-Dec-2023 08:43:27",
+      "19-Dec-2023 08:43:44",
+      "19-Dec-2023 08:42:11",
+      "19-Dec-2023 08:43:33",
+      "19-Dec-2023 08:42:59",
+      "19-Dec-2023 08:43:23",
+      "19-Dec-2023 08:43:17",
+      "19-Dec-2023 08:42:23",
+      "19-Dec-2023 08:42:38",
+      "19-Dec-2023 08:43:50",
+      "19-Dec-2023 08:42:20",
+      "19-Dec-2023 08:42:34",
+      "19-Dec-2023 08:42:35",
+      "19-Dec-2023 08:43:06",
+      "19-Dec-2023 08:42:18",
+      "19-Dec-2023 08:42:58",
+      "19-Dec-2023 08:43:11",
+      "19-Dec-2023 08:43:04",
+      "19-Dec-2023 08:43:09",
+      "19-Dec-2023 08:43:21",
+      "19-Dec-2023 08:43:38",
+      "19-Dec-2023 08:44:04",
+      "19-Dec-2023 08:42:28",
+      "19-Dec-2023 08:42:55",
+      "19-Dec-2023 08:44:03",
+      "19-Dec-2023 08:43:15",
+      "19-Dec-2023 08:44:08",
+      "19-Dec-2023 08:43:41",
+      "19-Dec-2023 08:43:07",
+      "19-Dec-2023 08:42:43",
+      "19-Dec-2023 08:43:24",
+      "19-Dec-2023 08:42:15",
+      "19-Dec-2023 08:42:52",
+      "19-Dec-2023 08:43:28",
+      "19-Dec-2023 08:42:27",
+      "19-Dec-2023 08:42:12",
+      "19-Dec-2023 08:43:47",
+      "19-Dec-2023 08:44:01",
+      "19-Dec-2023 08:42:21",
+      "19-Dec-2023 08:43:19",
+      "19-Dec-2023 08:43:37",
+      "19-Dec-2023 08:42:44",
+      "19-Dec-2023 08:43:08",
+      "19-Dec-2023 08:42:17",
+      "19-Dec-2023 08:42:25",
+      "19-Dec-2023 08:42:36",
+      "19-Dec-2023 08:43:57",
+      "19-Dec-2023 08:43:46",
+      "19-Dec-2023 08:42:46",
+      "19-Dec-2023 08:44:06",
+      "19-Dec-2023 08:42:13",
+      "19-Dec-2023 08:43:40",
+      "19-Dec-2023 08:43:51",
+      "19-Dec-2023 08:42:31"
+    ],
+    "creator_email": "jean-luc.vergely@acri-st.fr",
+    "creator_name": "ACRI-ST,LOCEAN",
+    "creator_url": "https://climate.esa.int/fr/projects/sea-surface-salinity/",
+    "date_created": "See individual files for more details",
+    "date_modified": "",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_lat_max": -24.3946,
+    "geospatial_lat_min": -89.8417,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 179.8534698486328,
+    "geospatial_lon_min": -179.8534698486328,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": " \nKerchunk file created on 02/19/24",
+    "id": "See individual files for more details",
+    "institution": "ACRI-ST,LOCEAN",
+    "kerchunk_creation_date": "190224T170345",
+    "kerchunk_revision": 1,
+    "key_variables": "sss,sss_random_error",
+    "keywords": "Ocean; Ocean Salinity; Sea Surface Salinity, Satellite",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "European Space Agency - ESA Climate Office",
+    "platform": "PROTEUS,SAC-D,SMAP",
+    "product_version": "4.41",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.ind/salinity - DOI:10.5285/f2ca631f29a24c47a7e98654ddf2c7d9",
+    "source": "SMOS DPGSv700 L2OS reprocessing, SMAP L2 RSS v5.0 - DOI:10.5067/SMP50-2SOCS, Aquarius L3 v5.0 - DOI:10.5067/AQR50-3SQCS",
+    "spatial_grid": "25km EASE 2 Lambert Azimuthal (for Southern Hemisphere products)",
+    "spatial_resolution": "50km",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 1.8",
+    "summary": "ESA CCI Sea Surface Salinity",
+    "time_coverage_duration": "P1M",
+    "time_coverage_end": "20221030T235959Z",
+    "time_coverage_start": "20100101T000000Z",
+    "title": "ESA CCI Sea Surface Salinity ECV produced at a spatial resolution of 50 km and time resolution of 1 month and spatially resampled on 25km EASE2 grid and 15 days of time sampling",
+    "tracking_id": "See individual files for more details"
+  },
+  "bbox": [
+    -179.8534698486328,
+    -89.8417,
+    179.8534698486328,
+    -24.3946
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-SEASURFACESALINITY-L4-SSS-POLAR-MERGED_OI_Monthly_CENTRED_15Day_25kmEASE2-SH-20100115-20221015-fv4.41_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "isc_qc": {
+      "attrs": {
+        "long_name": "Ice Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "int8",
+      "name": "isc_qc"
+    },
+    "lat": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "chunks": [
+        392,
+        392
+      ],
+      "dims": [
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "chunks": [
+        392,
+        392
+      ],
+      "dims": [
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "lsc_qc": {
+      "attrs": {
+        "long_name": "Land Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "int8",
+      "name": "lsc_qc"
+    },
+    "noutliers": {
+      "attrs": {
+        "long_name": "Count of the Number of Outliers within this bin cell",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "noutliers"
+    },
+    "pct_var": {
+      "attrs": {
+        "long_name": "Percentage of SSS_variability that is expected to be not explained by the products",
+        "units": "%",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "pct_var"
+    },
+    "sss": {
+      "attrs": {
+        "ancilliary": "noutliers total_nobs sss_qc",
+        "long_name": "Unbiased merged Sea Surface Salinity",
+        "standard_name": "sea_surface_salinity",
+        "units": "0.001",
+        "valid_max": 50.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "sss"
+    },
+    "sss_qc": {
+      "attrs": {
+        "long_name": "Sea Surface Salinity Quality, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "int8",
+      "name": "sss_qc"
+    },
+    "sss_random_error": {
+      "attrs": {
+        "ancilliary": "pct_var",
+        "long_name": "Sea Surface Salinity Random Error",
+        "units": "0.001",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "sss_random_error"
+    },
+    "total_nobs": {
+      "attrs": {
+        "long_name": "Number of SSS in the time interval",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        392,
+        392
+      ],
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "total_nobs"
+    }
+  },
+  "dims": {
+    "dimx": 392,
+    "dimy": 392,
+    "time": 307
+  },
+  "time_range": [
+    "2010-01-01",
+    "2022-10-30"
+  ]
+}

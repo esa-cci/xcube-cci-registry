@@ -1,0 +1,724 @@
+{
+  "attrs": {
+    "abstract": "The ESA Climate Change Initiative Aerosol project has produced a number of global aerosol Essential Climate Variable (ECV) products from a set of European satellite instruments with different characteristics. \n\nThis dataset comprises the Level 3 aerosol daily and monthly gridded products from MERIS for 2008, using the ALAMO algorithm, version 2.2.   The data have been provided by Hygeos.\n\nFor further details about these data products please see the linked documentation.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/11c5f6df1abc41968d0b28fe36393c9d",
+    "cci_project": "AEROSOL",
+    "data_type": "AOD",
+    "ecv": "AEROSOL",
+    "history": "Level 2 product from MEGS 8.0, ALAMO product V1-12, mapped with data2grid.py v2.4.5",
+    "platform_id": "Envisat",
+    "processing_level": "L3C",
+    "product_string": "MERIS_ENVISAT",
+    "product_version": "2-2",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2016-07-28T14:41:50",
+    "references": "http://envisat.esa.int/instruments/meris/atbd/",
+    "sensor_id": "MERIS",
+    "source": "MEGS 8.0, ALAMO product V1-12",
+    "title": "ESA Aerosol Climate Change Initiative (Aerosol CCI): Level 3 aerosol products from MERIS (ALAMO algorithm), Version 2.2",
+    "uuid": "11c5f6df1abc41968d0b28fe36393c9d"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": 180,
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": 180,
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": -9999.0,
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "standard_name": "latitude",
+        "units": "degree_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": 360,
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": 360,
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": -9999.0,
+        "long_name": "Longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "longitude",
+        "units": "degree_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          366
+        ],
+        "size": 366,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          366
+        ],
+        "size": 732,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.AEROSOL.day.L3C.AOD.MERIS.Envisat.MERIS_ENVISAT.2-2.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "AOD550": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Effective Aerosol Optical Thickness at 550nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550"
+    },
+    "AOD550_std": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of Effective Aerosol Optical Thickness at 550nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_std"
+    },
+    "AOD865": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Effective Aerosol Optical Thickness at 865nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD865"
+    },
+    "AOD865_std": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of Effective Aerosol Optical Thickness at 865nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD865_std"
+    },
+    "Aerosol_Altitude": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Aerosol Altitude",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "m",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Aerosol_Altitude"
+    },
+    "Aerosol_Altitude_std": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of Aerosol Altitude",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "m",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Aerosol_Altitude_std"
+    },
+    "R_eff": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Effective Radius over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "m",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "R_eff"
+    },
+    "R_eff_std": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of Effective Radius over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "m",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "R_eff_std"
+    },
+    "fAOD550": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Fine Mode Aerosol Optical Thickness at 550nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fAOD550"
+    },
+    "fAOD550_std": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of Fine Mode Aerosol Optical Thickness at 550nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fAOD550_std"
+    },
+    "fAOD865": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Fine Mode Aerosol Optical Thickness at 865nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fAOD865"
+    },
+    "fAOD865_std": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of Fine Mode Aerosol Optical Thickness at 865nm over ocean - Best solution",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          -3.4028235e+38,
+          3.4028235e+38
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "fAOD865_std"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 180,
+    "lon": 360,
+    "time": 366
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2008-12-31",
+            "minDate": "2008-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2008-12-31",
+            "minDate": "2008-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "AOD550",
+            "AOD550_std",
+            "AOD865",
+            "AOD865_std",
+            "fAOD550",
+            "fAOD550_std",
+            "fAOD865",
+            "fAOD865_std",
+            "R_eff",
+            "R_eff_std",
+            "Aerosol_Altitude",
+            "Aerosol_Altitude_std"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 1.0,
+  "time_period": "1D",
+  "time_range": [
+    "2008-01-01",
+    "2008-12-31"
+  ]
+}

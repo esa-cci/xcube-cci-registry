@@ -1,0 +1,470 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "Grid",
+    "comment": "Southern hemisphere sea ice thickness is an experimental climate data record, as the algorithm does not properly considers the impact of the complex snow morphology in the freeboard retrieval. Sea ice thickness is provided for all month but needs to be considered biased high in areas with high snow depth and during the southern summer month. Please consult the Product User Guide (PUG) for more information.",
+    "contributor_name": "Stefan Hendricks, Stephan Paul, Eero Rinne, heidi.sallila@fmi.fi",
+    "contributor_role": "PrincipalInvestigator, Author, Author, Author",
+    "creator_name": "Alfred-Wegener-Institut Helmholtz Zentrum f\u00fcr Polar und Meeresforschung",
+    "creator_type": "institution",
+    "creator_url": "http://www.awi.de",
+    "date_created": "See individual files for more details",
+    "doi": "10.5285/67b003a864cd4e9ebeccd29fbdf4447e",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_bounds_crs": "EPSG:6932",
+    "geospatial_lat_max": "-16.8229",
+    "geospatial_lat_min": "-89.6835",
+    "geospatial_lon_max": "179.7335",
+    "geospatial_lon_min": "-179.7335",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "See individual files for more details",
+    "id": "See individual files for more details",
+    "institution": "Alfred-Wegener-Institut Helmholtz Zentrum f\u00fcr Polar und Meeresforschung",
+    "keywords": "Earth Science > Cryosphere > Sea Ice > Ice Depth/Thickness, Earth Science > Cryosphere > Sea Ice > Freeboard, Earth Science > Cryosphere > Sea Ice > Snow Depth, Earth Science > Oceans > Sea Ice > Ice Depth/Thickness, Earth Science > Climate Indicators > Cryospheric Indicators > Ice Depth/Thickness, Earth Remote Sensing Instruments > Active Remote Sensing > Altimeters > Radar Altimeters > KU-BAND RADAR, Space-based Platforms > Earth Observation Satellites > cryosat2, Multinational Organizations > ESA/CCI, Institutions > AWI > Alfred Wegener Institute for Polar and Marine Research, Geographic Region > Southern Hemisphere, Vertical Location > Sea Surface",
+    "keywords_vocabulary": "GCMD Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "de.awi",
+    "platform": "CryoSat-2",
+    "processing_level": "Level-3 Collated (l3c)",
+    "product_version": "3.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "CCI+ Sea Ice ECV - Sea Ice Thickness Algorithm Theoretical Basis Document (ATBD)https://doi.org/10.5281/zenodo.10605840; CCI+ Sea Ice ECV - Sea Ice Thickness Product User Guide (PUG) https://doi.org/10.5281/zenodo.10605998",
+    "sensor": "SIRAL",
+    "source": "Altimetry: cryosat2, Snow depth: ESA-SICCI AMSR-E/AMSR2 snow depth on sea ice climatology, Mean Sea Surface: DTU21 global mean sea surface, Sea ice Concentration: C3S Sea Ice Concentration CDR/ICDR v3.0, Sea ice type: First-year sea ice only, Region code: Longitude-based sectors from Parkinson, C. L. and Cavalieri, D. J. (2012)",
+    "spatial_resolution": "50km grid spacing",
+    "standard_name_vocabulary": "CF Standard Name Table v77",
+    "summary": "Gridded Southern Hemisphere Sea Ice Thickness Climate Data Record from Envisat and CryoSat-2 satellite radar altimetry for the period June 2002 - April 2020.",
+    "time_coverage_duration": "P114M",
+    "time_coverage_end": "2020-04-30T23:59:59.999999",
+    "time_coverage_resolution": "P1M",
+    "time_coverage_start": "2010-11-01T00:00:00",
+    "title": "ESA Climate Change Initiative Sea Ice: Experimental Southern Hemisphere Sea Ice Thickness Climate Data Record (version 3)",
+    "tracking_id": "See individual files for more details"
+  },
+  "bbox": [
+    -5400.0,
+    -5400.0,
+    5400.0,
+    5400.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "coverage_content_type": "coordinate",
+        "long_name": "latitude coordinate",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        216,
+        216
+      ],
+      "dims": [
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "coverage_content_type": "coordinate",
+        "long_name": "longitude coordinate",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        216,
+        216
+      ],
+      "dims": [
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bnds",
+        "coverage_content_type": "coordinate",
+        "long_name": "Time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "xc": {
+      "attrs": {
+        "coverage_content_type": "coordinate",
+        "long_name": "x coordinate of projection (eastings)",
+        "standard_name": "projection_x_coordinate",
+        "units": "km"
+      },
+      "dims": [
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "xc"
+    },
+    "yc": {
+      "attrs": {
+        "coverage_content_type": "coordinate",
+        "long_name": "y coordinate of projection (northing)",
+        "standard_name": "projection_y_coordinate",
+        "units": "km"
+      },
+      "dims": [
+        "yc"
+      ],
+      "dtype": "float64",
+      "name": "yc"
+    }
+  },
+  "data_id": "ESACCI-SEAICE-L3C-SITHICK-SIRAL_CRYOSAT2-SH_50KM_EASE2-2010-2020-fv3p0-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "Lambert_Azimuthal_Grid": {
+      "attrs": {
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "lambert_azimuthal_equal_area",
+        "inverse_flattening": 298.257223563,
+        "latitude_of_projection_origin": -90.0,
+        "longitude_of_projection_origin": 0.0,
+        "proj4_string": "+proj=laea +lon_0=0 +datum=WGS84 +ellps=WGS84 +lat_0=-90.0",
+        "semi_major_axis": 6378137.0
+      },
+      "dims": [],
+      "dtype": "float32",
+      "name": "Lambert_Azimuthal_Grid"
+    },
+    "quality_flag": {
+      "attrs": {
+        "comment": "The expert assessment on retrieval quality is only provided for grid cess with valid thickness retrieval",
+        "coverage_content_type": "qualityInformation",
+        "flag_meanings": "nominal_quality intermediate_quality low_quality no_data",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "Sea Ice Thickness Quality Flag",
+        "standard_name": "quality_flag",
+        "units": "1",
+        "valid_max": 3,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "int8",
+      "name": "quality_flag"
+    },
+    "radar_freeboard": {
+      "attrs": {
+        "ancillary_variables": "radar_freeboard_uncertainty, region_code",
+        "comment": "radar freeboard is defined as the elevation based on the assumption of vacuum light speed without a snow propagation or range penetration correction",
+        "coverage_content_type": "physicalMeasurement",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "radar freeboard",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "radar_freeboard"
+    },
+    "radar_freeboard_uncertainty": {
+      "attrs": {
+        "comment": "algorithm uncertainty (error propagation) of sea ice thickness including uncertainty reduction of random components by gridding",
+        "coverage_content_type": "qualityInformation",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "uncertainty associated with radar freeboard",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "radar_freeboard_uncertainty"
+    },
+    "region_code": {
+      "attrs": {
+        "comment": "Region code from Antarctic seas based on their longitude range with additional latitude cut-off at 40S (see Parkinson, C. L. and Cavalieri, D. J. (2012), Antarctic sea ice variability and trends, 1979 - 2010, The Cryosphere)",
+        "coverage_content_type": "referenceInformation",
+        "flag_meanings": "land_ice ice_free_ocean indian_ocean western_pacific_ocean ross_sea bellingshausen_and_amundsen_seas weddell_sea land",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          20
+        ],
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "region code",
+        "units": "1",
+        "valid_max": 20,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "int8",
+      "name": "region_code"
+    },
+    "sea_ice_concentration": {
+      "attrs": {
+        "coverage_content_type": "auxiliaryInformation",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "sea ice concentration",
+        "standard_name": "sea_ice_area_fraction",
+        "units": "percent",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_concentration"
+    },
+    "sea_ice_freeboard": {
+      "attrs": {
+        "ancillary_variables": "sea_ice_freeboard_uncertainty, region_code",
+        "coverage_content_type": "physicalMeasurement",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "sea ice freeboard",
+        "standard_name": "sea_ice_freeboard",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_freeboard"
+    },
+    "sea_ice_freeboard_uncertainty": {
+      "attrs": {
+        "comment": "algorithm uncertainty (error propagation) of sea ice thickness including uncertainty reduction of random components by gridding",
+        "coverage_content_type": "qualityInformation",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "uncertainty associated with radar freeboard",
+        "standard_name": "sea_ice_freeboard standard_error",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_freeboard_uncertainty"
+    },
+    "sea_ice_thickness": {
+      "attrs": {
+        "ancillary_variables": "sea_ice_thickness_uncertainty, status_flag, quality_flag region_code",
+        "comment": "this field is the primary sea ice thickness estimate for this data record",
+        "coverage_content_type": "physicalMeasurement",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "sea ice thickness",
+        "standard_name": "sea_ice_thickness",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_thickness"
+    },
+    "sea_ice_thickness_uncertainty": {
+      "attrs": {
+        "comment": "algorithm uncertainty (error propagation) of sea ice thickness including uncertainty reduction of random components by gridding",
+        "coverage_content_type": "qualityInformation",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "uncertainty associated with sea ice thickness",
+        "standard_name": "sea_ice_thickness standard_error",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_thickness_uncertainty"
+    },
+    "snow_depth": {
+      "attrs": {
+        "ancillary_variables": "snow_depth_uncertainty, region_code",
+        "coverage_content_type": "auxiliaryInformation",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "thickness of the snow layer",
+        "standard_name": "surface_snow_thickness_where_sea_ice",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "snow_depth"
+    },
+    "snow_depth_uncertainty": {
+      "attrs": {
+        "coverage_content_type": "qualityInformation",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "uncertainty associated to the thickness of the snow layer",
+        "standard_name": "surface_snow_thickness_where_sea_ice standard_error",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "snow_depth_uncertainty"
+    },
+    "status_flag": {
+      "attrs": {
+        "comment": "Describes the status of the sea-ice thickness retrieval",
+        "coverage_content_type": "qualityInformation",
+        "flag_meanings": "nominal_retrieval no_data open_ocean satellite_pole_hole land_lake_landice retrieval_failed",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "Sea Ice Thickness Status Flag",
+        "standard_name": "status_flag",
+        "units": "1",
+        "valid_max": 5,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "int8",
+      "name": "status_flag"
+    },
+    "time_bnds": {
+      "attrs": {
+        "coverage_content_type": "coordinate",
+        "long_name": "Time Bounds"
+      },
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "nv": 2,
+    "time": 114,
+    "xc": 216,
+    "yc": 216
+  },
+  "time_range": [
+    "2010-11-01",
+    "2020-04-30"
+  ]
+}

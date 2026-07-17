@@ -1,0 +1,957 @@
+{
+  "attrs": {
+    "abstract": "MW-LST is a data record of land surface temperature (LST) derived from the microwave instruments Defense Meteorological Satellite Program (DMSP) Special Sensor Microwave/Imager (SSM/I) and Special Sensor Microwave Imager / Sounder (SSMIS). Observations available at frequencies close to 18, 22, 26, and 85 GHz are used as an input to a retrieval algorithm that produces LST over all continental surfaces, twice per day (6 am/pm), at a spatial resolution of ~25 km, and over 25 years (1996-2020). \n\nThe data record has been produced by the company Estellus working within the ESA Land Surface Temperature Climate Change Initiative (LST_cci).   Compared with the remaining infrared LST data records of the LST_cci, the spatial resolution of the MW-LST is coarser, and the associated retrieval errors are larger. However, it offers LST estimates for clear-sky and cloudy conditions, therefore complementing the IR LST data records, which can only provide LST for clear skies. The data record is temporally and spatially complete, although in rare occasions some data can be missing due to missing observations, e.g., due to satellite maintenance operations or anomalous behavior. The data record is provided on a regular grid of 0.25x0.25 degrees, saved as daily, monthly, and yearly netcdf files. The reader is referred to the LST_cci website for more information about how the data record was derived, and how to use the data and associated quality flags and estimated uncertainty.\n\nThis version of the data is v2.33.   It fixes an issue that was found with the variable 'lst_unc_time_correction' in the previous v2.23, but is otherwise identical.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/a7e811fe11d34df5abac6f18c920bbeb",
+    "cci_project": "LST",
+    "comment": "These data were produced as part of the ESA LST CCI project",
+    "data_type": "LST",
+    "ecv": "LST",
+    "history": "Created using software developed at Estellus",
+    "institute": "Estellus",
+    "platform_id": "multi-platform",
+    "processing_level": "L3C",
+    "product_string": "SSMI_SSMIS",
+    "product_version": "v2-33",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2023-01-26T16:13:34",
+    "references": "http://cci.esa.int/lst",
+    "sensor_id": "multi-sensor",
+    "source": "Satellite Application Facility on Climate Monitoring FCDR MWI, DOI:10.5676/EUM_SAF_CM/FCDR_MWI/V003",
+    "title": "ESA Land Surface Temperature Climate Change Initiative (LST_cci): All-weather MicroWave Land Surface Temperature (MW-LST) global data record (1996-2020), v2.33",
+    "uuid": "a7e811fe11d34df5abac6f18c920bbeb"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "actual_range": [
+          -89.875,
+          89.875
+        ],
+        "chunk_sizes": 720,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 720,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "latitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          720
+        ],
+        "size": 720,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "actual_range": [
+          -179.875,
+          179.875
+        ],
+        "chunk_sizes": 1440,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 1440,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "longitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          1440
+        ],
+        "size": 1440,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "reference time of file",
+        "orig_data_type": "float32",
+        "shape": [
+          300
+        ],
+        "size": "300",
+        "standard_name": "time",
+        "units": "seconds since 1981-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.LST.mon.L3C.LST.multi-sensor.multi-platform.SSMI_SSMIS.v2-33.ASC",
+  "data_type": "dataset",
+  "data_vars": {
+    "dtime": {
+      "attrs": {
+        "actual_range": [
+          9854.552,
+          120988.164
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "time difference from reference time",
+        "orig_data_type": "float32",
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "seconds",
+        "valid_max": 2678400.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "dtime"
+    },
+    "lst": {
+      "attrs": {
+        "actual_range": [
+          206.35999,
+          322.02
+        ],
+        "add_offset": 273.15,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "land surface temperature",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 7685,
+        "valid_min": -8315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst"
+    },
+    "lst_time_correction": {
+      "attrs": {
+        "actual_range": [
+          -10.0,
+          3.34
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "offset to be added to the land surface temperature to adjust its value at the overpass local time to the value that would have been measured at 6PM local time",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 1000,
+        "valid_min": -1000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_time_correction"
+    },
+    "lst_unc_loc_atm": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from locally correlated errors on atmospheric scales",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_loc_atm"
+    },
+    "lst_unc_loc_sfc": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from locally correlated errors on surface scales",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_loc_sfc"
+    },
+    "lst_unc_ran": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from uncorrelated errors",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_ran"
+    },
+    "lst_unc_sys": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": 1,
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "length_scale"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "length_scale"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from large scale systematic errors",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "length_scale"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_sys"
+    },
+    "lst_unc_time_correction": {
+      "attrs": {
+        "actual_range": [
+          0.0,
+          8.442
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "land surface temperature uncertainty from time correction errors",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_time_correction"
+    },
+    "lst_uncertainty": {
+      "attrs": {
+        "actual_range": [
+          0.31800002,
+          5.1410003
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "land surface temperature total uncertainty",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_uncertainty"
+    },
+    "n": {
+      "attrs": {
+        "actual_range": [
+          1,
+          31
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "number of pixels averaged",
+        "orig_data_type": "int16",
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "1",
+        "valid_max": 18750,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "n"
+    },
+    "qual_flag": {
+      "attrs": {
+        "actual_range": [
+          -32768,
+          224
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "flag_masks": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "flag_meanings": "no_use no_use no_use snow_ice-1_is_snow_ice microwave_penetration_depth-1_is_ground_with_large_penetration_depth deep_convection_occurence-1_is_possibility_of_deep_convection coast-1_is_cost inundation_risk-1_is_possibility_of_inundated_land",
+        "long_name": "Quality flags",
+        "orig_data_type": "int16",
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "valid_max": 255,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "qual_flag"
+    },
+    "sataz": {
+      "attrs": {
+        "actual_range": [
+          -179.97,
+          179.97
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "satellite azimuth angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sataz"
+    },
+    "satze": {
+      "attrs": {
+        "actual_range": [
+          52.73,
+          53.23
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "satellite zenith angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "satze"
+    },
+    "solaz": {
+      "attrs": {
+        "actual_range": [
+          -0.19999999,
+          86.82
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "solar azimuth angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "solaz"
+    },
+    "solze": {
+      "attrs": {
+        "actual_range": [
+          77.27,
+          103.28
+        ],
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "coordinates": "lat lon",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "solar zenith angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          300,
+          720,
+          1440
+        ],
+        "size": "311040000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "solze"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 720,
+    "length_scale": 1,
+    "lon": 1440,
+    "time": 300
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2020-12-31",
+            "minDate": "1996-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2020-12-31",
+            "minDate": "1996-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "dtime",
+            "satze",
+            "sataz",
+            "solze",
+            "solaz",
+            "lst",
+            "lst_uncertainty",
+            "n",
+            "qual_flag",
+            "lst_unc_ran",
+            "lst_unc_loc_atm",
+            "lst_unc_loc_sfc",
+            "lst_unc_sys",
+            "lst_time_correction",
+            "lst_unc_time_correction"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.25,
+  "time_period": "1M",
+  "time_range": [
+    "1996-01-01",
+    "2020-12-31"
+  ]
+}

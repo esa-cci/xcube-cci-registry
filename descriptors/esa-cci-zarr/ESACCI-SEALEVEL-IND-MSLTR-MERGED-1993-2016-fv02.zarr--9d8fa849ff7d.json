@@ -1,0 +1,140 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "catalogue_url": "https://catalogue.ceda.ac.uk/uuid/142052b9dc754f6da47a631e35ec4609",
+    "cdm_data_type": "Grid",
+    "comment": "These data were produced at CLS as part of the ESA Sea Level CCI project.",
+    "contact": "info-sealevel@esa-sealevel-cci.org",
+    "creator_email": "info-sealevel@esa-sealevel-cci.org",
+    "creator_name": "ESA, CLS",
+    "creator_url": "http://www.esa-sealevel-cci.org/",
+    "date_created": "2016-12-02 00:00:00",
+    "geospatial_lat_max": 89.875,
+    "geospatial_lat_min": -89.875,
+    "geospatial_lat_resolution": 0.25,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 359.875,
+    "geospatial_lon_min": 0.125,
+    "geospatial_lon_resolution": 0.25,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": "2016-12-02 00:00:00 : creation\n2021-06-07 16:37:46: converted by nc2zarr, version 1.1.2.dev0",
+    "id": "GLO-MSLTR-MERGED",
+    "institution": "ESA, CLS, CNES",
+    "keywords": "altimetry",
+    "keywords_vocabulary": "NetCDF COARDS Climate and Forecast Standard Names",
+    "license": "ESA CCI Data Policy: free and open access.",
+    "naming_authority": "ESA CCI",
+    "platform": "ERS-1, ERS-2, ENVISAT, TOPEX/Poseidon, Jason-1, Jason-2, GFO, CryoSat-2, SARAL",
+    "product_version": 2.0,
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-sealevel-cci.org/products",
+    "sensor": "RA, RA2, Poseidon-1, Poseidon-2, Poseidon-3, GFO-RA, SARAL, AltiKa",
+    "source": "ESACCI-SEALEVEL-IND-MSLTR-MERGED-20161202000000-fv02.nc",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention Standard Name Table v28",
+    "summary": "This dataset contains global maps of mean sea level variations from satellite observations",
+    "time_coverage_duration": "P23Y",
+    "time_coverage_end": "2015-12-31 23:59:59",
+    "time_coverage_resolution": "P1M",
+    "time_coverage_start": "1993-01-01 00:00:00",
+    "title": "Mean Sea Level changes geographic distribution",
+    "tracking_id": ""
+  },
+  "bbox": [
+    0.0,
+    -90.0,
+    360.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "Latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.875,
+        "valid_min": -89.875
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "Longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 359.875,
+        "valid_min": 0.125
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "object",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-SEALEVEL-IND-MSLTR-MERGED-1993-2016-fv02.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "local_msl_trend": {
+      "attrs": {
+        "long_name": "Geographical distribution of mean sea level trends",
+        "standard_name": "tendency_of_sea_surface_height_above_sea_level",
+        "units": "mm/year"
+      },
+      "chunks": [
+        720,
+        720
+      ],
+      "dims": [
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "local_msl_trend"
+    },
+    "local_msl_trend_error": {
+      "attrs": {
+        "long_name": "Geographical distribution of mean sea level trends errors",
+        "units": "mm/year"
+      },
+      "chunks": [
+        720,
+        720
+      ],
+      "dims": [
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "local_msl_trend_error"
+    }
+  },
+  "dims": {
+    "lat": 720,
+    "lon": 1440,
+    "time": 276
+  },
+  "spatial_res": 0.25,
+  "time_range": [
+    "1993-01-01",
+    "2015-12-31"
+  ]
+}

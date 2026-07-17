@@ -1,0 +1,362 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.7",
+    "acknowledgement": "The combined MW and NIR product was initiated and funded by the ESA Water_Vapour_cci project. The NIR retrieval was developed by Spectral Earth. The NIR data was processed by Brockmann Consult. NIR data is owned by Brockmann Consult and Spectral Earth.",
+    "cdm_data_type": "grid",
+    "comment": "These data were produced in the frame of the Water Vapour ECV (Water_Vapour_cci) of the ESA Climate Change Initiative Extension (CCI+) Phase 1.",
+    "creator_email": "climate.office@esa.int",
+    "creator_name": "ESA Water_Vapour_cci; Brockmann Consult; DWD; EUMETSAT/CM SAF; Spectral Earth",
+    "creator_url": "http://cci.esa.int/watervapour",
+    "date_created": "See individual files for more details",
+    "filename": "See individual files for more details",
+    "format_version": "CCI Data Standards v2.0",
+    "geospatial_lat_max": "90.0",
+    "geospatial_lat_min": "-90.0",
+    "geospatial_lat_resolution": "0.5",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180.0",
+    "geospatial_lon_min": "-180.0",
+    "geospatial_lon_resolution": "0.5",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "See individual files for more details\nKerchunk file created on 07/24/24\nUpdated time coverage duration /24/04/2025",
+    "id": "10.5285/4a85c0ef880e4f668cd4ec8e846855ef",
+    "institution": "ESACCI",
+    "kerchunk_creation_date": "240724T144216",
+    "kerchunk_revision": 1,
+    "key_variables": "tcwv",
+    "keywords": "EARTH SCIENCE > ATMOSPHERE > ATMOSPHERIC WATER VAPOR > WATER VAPOR,EARTH SCIENCE > ATMOSPHERE > ATMOSPHERIC WATER VAPOR > PRECIPITABLE WATER",
+    "keywords-vocabulary": "GCMD Science Keywords, Version 8.1",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming-authority": "ESACCI",
+    "padocc_last_changed": "240425T162409",
+    "padocc_revision": "1.1",
+    "platform": "Envisat, Terra, Sentinel-3",
+    "product_version": "3.2",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publisher_email": "climate.office@esa.int",
+    "publisher_name": "ESACCI",
+    "publisher_url": "https://climate.esa.int/en/esa-climate/esa-cci/",
+    "references": "WV_cci D2.2: ATBD Part 1 - MERIS-MODIS-OLCI L2 Products, Issue 2.1, 21 January 2021; WV_cci D4.2: CRDP Issue 3.0, 11 August 2021 ",
+    "sensor": "Medium Resolution Imaging Spectrometer; Moderate-Resolution Imaging Spectroradiometer; Ocean and Land Colour Instrument; Special Sensor Microwave Imager/Sounder",
+    "source": "Near-infrared Level 3 data over land from Brockmann Consult and Spectral Earth",
+    "spatial_resolution": "56km at Equator",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 67",
+    "summary": "This global TCWV data record was generated from MERIS, MODIS and OLCI observations over land. The product covers the period 2002-2017 with daily and montlhy as well as 0.05\u00b0 and 0.5\u00b0 temporal and spatial resolutions, respectively.",
+    "time_coverage_duration": "P15Y",
+    "time_coverage_end": "20171231 23:59:59 UTC",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "20020701 00:00:00 UTC",
+    "title": "Global Total Column of Water Vapour Product from Near Infrared Imagers",
+    "tracking_id": "See individual files for more details"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "long_name": "Latitude",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "latitude",
+        "units": "degrees_north ",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "long_name": "Longitude",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bnds",
+        "long_name": "Product dataset time given as days since 1970-01-01",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-WATERVAPOUR-L3C-TCWV-meris-05deg-20020701-20171231-fv3.2-kr1.1",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "comment": "A coordinate reference system (CRS) defines how the georeferenced spatial data relates to real locations on the Earth's surface ",
+        "i2m": "0.5,0.0,0.0,-0.5,-180.0,90.0",
+        "long_name": "Coordinate Reference System ",
+        "wkt": "GEOGCS[\"WGS84(DD)\", \n  DATUM[\"WGS84\", \n    SPHEROID[\"WGS84\", 6378137.0, 298.257223563]], \n  PRIMEM[\"Greenwich\", 0.0], \n  UNIT[\"degree\", 0.017453292519943295], \n  AXIS[\"Geodetic longitude\", EAST], \n  AXIS[\"Geodetic latitude\", NORTH]]"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "crs"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "comment": "Contains the northern and southern boundaries of the grid cells.",
+        "long_name": "Latitude cell boundaries",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "chunks": [
+        360,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float32",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "comment": "Contains the eastern and western boundaries of the grid cells.",
+        "long_name": "Longitude cell boundaries",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "chunks": [
+        720,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float32",
+      "name": "lon_bnds"
+    },
+    "num_obs": {
+      "attrs": {
+        "long_name": "Number of Total Column of Water Vapour retrievals contributing to L3 grid cell",
+        "units": " "
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "num_obs"
+    },
+    "stdv": {
+      "attrs": {
+        "long_name": "Standard deviation of Total Column of Water Vapour",
+        "units": "kg/m2"
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "stdv"
+    },
+    "surface_type_flag": {
+      "attrs": {
+        "flag_meanings": "LAND OCEAN CLOUD_OVER_LAND HEAVY_PRECIP_OVER_OCEAN SEA_ICE COAST PARTLY_CLOUDY_OVER_LAND PARTLY_SEA_ICE",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "long_name": "Surface type flag",
+        "standard_name": "status_flag ",
+        "units": " ",
+        "valid_range": [
+          0,
+          7
+        ]
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_type_flag"
+    },
+    "tcwv": {
+      "attrs": {
+        "actual_range": [
+          0.5207143425941467,
+          65.57139587402344
+        ],
+        "ancillary_variables": "stdv num_obs",
+        "long_name": "Total Column of Water",
+        "standard_name": "atmosphere_water_vapor_content ",
+        "units": "kg/m2",
+        "valid_range": [
+          0.0,
+          70.0
+        ]
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv"
+    },
+    "tcwv_err": {
+      "attrs": {
+        "long_name": "Average retrieval uncertainty",
+        "units": "kg/m2"
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv_err"
+    },
+    "tcwv_quality_flag": {
+      "attrs": {
+        "flag_meanings": "TCWV_OK HIGH_COST_FUNCTION_1 HIGH_COST_FUNCTION_2 TCWV_INVALID",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "Quality flag of Total Column of Water Vapour",
+        "standard_name": "status_flag ",
+        "units": " ",
+        "valid_range": [
+          0,
+          3
+        ]
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv_quality_flag"
+    },
+    "tcwv_ran": {
+      "attrs": {
+        "long_name": "Propagated retrieval uncertainty",
+        "units": "kg/m2"
+      },
+      "chunks": [
+        1,
+        360,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tcwv_ran"
+    },
+    "time_bnds": {
+      "attrs": {
+        "comment": "Contains the start and end times for the time period the data represent.",
+        "long_name": "Time cell boundaries"
+      },
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "lat": 360,
+    "lon": 720,
+    "nv": 2,
+    "time": 5663
+  },
+  "spatial_res": 0.5,
+  "time_period": "1D",
+  "time_range": [
+    "2002-07-01",
+    "2018-01-01"
+  ]
+}

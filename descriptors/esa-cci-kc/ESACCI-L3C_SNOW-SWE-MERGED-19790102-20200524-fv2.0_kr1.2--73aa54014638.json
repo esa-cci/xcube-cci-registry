@@ -1,0 +1,220 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.9",
+    "cdm_data_type": "grid",
+    "comment": "The following auxiliary datasets are used for product generation: ESA CCI Land Cover from 2000: water bodies aggregated to the pixel spacing of the SWE product and, providing percentage (0-100)% of water within pixel, with 50% threshold used for this version of the product. ETOPO5 based mountain mask for northern hemisphere, first produced for needs of ESA_GlobSnow project.",
+    "creator_email": "kari.luojus@fmi.fi (Scientific and Production contact), mikko.moisander@fmi.fi (file format & metadata issues)",
+    "creator_name": "Finnish Meteorological Institute",
+    "creator_url": "www.fmi.fi",
+    "date_created": "",
+    "doi": "10.5285/4647cc9ad3c044439d6c643208d3c494",
+    "format_version": "CCI Data Standards v2.3, 2021",
+    "geospatial_lat_max": "90",
+    "geospatial_lat_min": "-90",
+    "geospatial_lat_resolution": "0.1",
+    "geospatial_lat_units": "degrees north",
+    "geospatial_lon_max": "180",
+    "geospatial_lon_min": "-180",
+    "geospatial_lon_resolution": "0.1",
+    "geospatial_lon_units": "degrees east",
+    "geospatial_vertical_max": "0",
+    "geospatial_vertical_min": "0",
+    "history": "20220207T140902Z: ESA snow_cci SWE processing line, version CP3 v2.0, Dynamic snow density, PMW-snow melt mask\nKerchunk file created on 02/22/24\nKerchunk file revised on 02/29/24 - Archived at kr1.1 already",
+    "id": "",
+    "institution": "FMI",
+    "kerchunk_creation_date": "220224T145818",
+    "kerchunk_revision": "kr1.2",
+    "key_variables": "swe",
+    "keywords": "",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access; access to prototype products restricted",
+    "naming_authority": "fi.fmi",
+    "platform": "",
+    "product_version": "2.0",
+    "project": "Climate Change Initiative European Space Agency",
+    "references": "http://snow-cci.enveo.at/",
+    "sensor": "",
+    "source": "",
+    "spatial_resolution": "0.10 degree",
+    "standard_name_vocabulary": "CF Standard Name Table v75",
+    "summary": "The ESA CCI Snow SWE product provides daily information on mass of the snow cover. Snow water equivalent (swe) is measure of the ammount of water contained within a snow pack and is provided in mm, similar to precipitation information. The product is based on low resolution passive microwave satellite data combined with in-situ snow depth measurements and is provided resampled to 0.10 degree latitude longitude grid. Information is provided on all land areas on Northern hemisphere excluding mountainous regions, glaciers and Greenland that have been masked from the product. The SWE estimates are complemented with statistically derived accuracy estimate accompanying each SWE estimate (on a pixel level).",
+    "time_coverage_duration": "P1D",
+    "time_coverage_end": "20200524T235959Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "19790102T000000Z",
+    "title": "ESA CCI snow SWE product level L3C daily, Dynamic snow density, PMW-snow melt mask",
+    "tracking_id": ""
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    179.9999999999795,
+    89.99999999998977
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "long_name": "WGS84 latitude coordinates, center of pixel",
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "long_name": "WGS84 longitude coordinates, center of pixel",
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-L3C_SNOW-SWE-MERGED-19790102-20200524-fv2.0_kr1.2",
+  "data_type": "dataset",
+  "data_vars": {
+    "lat_bnds": {
+      "chunks": [
+        1800,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "chunks": [
+        3600,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "0 0.1 0 180 0 -0.1",
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "long_name": "Coordinate reference system definition",
+        "longitude_of_prime_meridian": 0,
+        "semi_major_axis": 6378137.0,
+        "spatial_ref": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "spatial_ref"
+    },
+    "swe": {
+      "attrs": {
+        "actual_range": [
+          1,
+          187
+        ],
+        "ancillary_variables": "swe_std",
+        "flag_meanings": "Glacier Mountain Water no_data no_snow",
+        "flag_values": [
+          -30,
+          -20,
+          -10,
+          -1,
+          0
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "Snow Water Equivalent",
+        "units": "mm",
+        "valid_range": [
+          1,
+          500
+        ]
+      },
+      "chunks": [
+        1,
+        600,
+        1200
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "swe"
+    },
+    "swe_std": {
+      "attrs": {
+        "actual_range": [
+          0,
+          72
+        ],
+        "flag_meanings": "Glacier Mountain Water no_data no_snow",
+        "flag_values": [
+          -30,
+          -20,
+          -10,
+          -1,
+          0
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "statistical standard deviation of estimate",
+        "units": "mm",
+        "valid_range": [
+          1,
+          250
+        ]
+      },
+      "chunks": [
+        1,
+        600,
+        1200
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "swe_std"
+    }
+  },
+  "dims": {
+    "lat": 1800,
+    "lon": 3600,
+    "nv": 2,
+    "time": 7934
+  },
+  "spatial_res": 0.09999999999999432,
+  "time_range": [
+    "1979-01-02",
+    "2020-05-24"
+  ]
+}

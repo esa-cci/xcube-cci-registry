@@ -1,0 +1,374 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains a time series of ice velocities for the 79-Fjord Glacier in Greenland, derived from Sentinel-1 SAR (Synthetic Aperture Radar) data acquired between January 2015 and March 2017. It has been produced by the ESA Greenland Ice Sheet Climate Change Initiative (CCI) project.\n\nData files are delivered in NetCDF format at 250m grid spacing in North Polar Stereographic projection (EPSG: 3413). The horizontal velocity components are provided in true meters per day, towards the EASTING(x) and NORTHING(y) directions of the grid.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/41e2300068b44fa190f24272dc08dcd0",
+    "cci_project": "ICESHEETS",
+    "data_type": "IV",
+    "ecv": "ICESHEETS",
+    "institute": "ENVironmental Earth Observation IT GmbH",
+    "platform_id": "multi-platform",
+    "processing_level": "Unspecified",
+    "product_string": "UNSPECIFIED",
+    "product_version": "1-1",
+    "project": "ESA Greenland Ice Sheet CCI",
+    "publication_date": "2019-02-04T16:16:45",
+    "sensor_id": "SAR-C-(Sentinel-1)",
+    "title": "ESA Greenland Ice Sheet Climate Change Initiative (Greenland_Ice_Sheet_cci): Ice Velocity time series for the 79-Fjord Glacier for 2015-2017 from Sentinel-1 data, v1.1",
+    "uuid": "41e2300068b44fa190f24272dc08dcd0"
+  },
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "chunk_sizes": [
+          155
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          155
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "Midpoint time of acquisitons used",
+        "orig_data_type": "float64",
+        "shape": [
+          155
+        ],
+        "size": "155",
+        "standard_name": "time",
+        "units": "days since 1990-1-1 0:0:0"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          155,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "bnds"
+        ],
+        "file_chunk_sizes": [
+          155,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "bnds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          155,
+          2
+        ],
+        "size": "310",
+        "units": "days since 1990-1-1 0:0:0"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "float64",
+      "name": "time_bnds"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": [
+          513
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "x"
+        ],
+        "file_chunk_sizes": [
+          513
+        ],
+        "file_dimensions": [
+          "x"
+        ],
+        "fill_value": null,
+        "long_name": "x coordinate of projection",
+        "orig_data_type": "float64",
+        "shape": [
+          513
+        ],
+        "size": 513,
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": [
+          545
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "y"
+        ],
+        "file_chunk_sizes": [
+          545
+        ],
+        "file_dimensions": [
+          "y"
+        ],
+        "fill_value": null,
+        "long_name": "y coordinate of projection",
+        "orig_data_type": "float64",
+        "shape": [
+          545
+        ],
+        "size": 545,
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "crs": "WGS 84 / NSIDC Sea Ice Polar Stereographic North",
+  "data_id": "esacci.ICESHEETS.unspecified.Unspecified.IV.SAR-C-(Sentinel-1).multi-platform.UNSPECIFIED.1-1.greenland_s1_250m_20150122_20170322_79-Fjord",
+  "data_type": "dataset",
+  "data_vars": {
+    "alt": {
+      "attrs": {
+        "chunk_sizes": [
+          545,
+          513
+        ],
+        "coordinates": "y x",
+        "data_type": "int16",
+        "description": "Heights (WGS84 used for velocity projection)",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          545,
+          513
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": -9999,
+        "grid_mapping": "crs",
+        "long_name": "Height above WGS84",
+        "orig_data_type": "int16",
+        "shape": [
+          545,
+          513
+        ],
+        "size": 279585,
+        "source": "External ( Greenland Ice Mapping Project (GIMP) 250m DEM )",
+        "standard_name": "height",
+        "units": "m"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "int16",
+      "name": "alt"
+    },
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "PROJCS[\\\"WGS 84 / NSIDC Sea Ice Polar Stereographic North\\\",GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]],PROJECTION[\\\"Polar_Stereographic\\\"],PARAMETER[\\\"latitude_of_origin\\\",70],PARAMETER[\\\"central_meridian\\\",-45],PARAMETER[\\\"scale_factor\\\",1],PARAMETER[\\\"false_easting\\\",0],PARAMETER[\\\"false_northing\\\",0],UNIT[\\\"metre\\\",1,AUTHORITY[\\\"EPSG\\\",\\\"9001\\\"]],AXIS[\\\"X\\\",EAST],AXIS[\\\"Y\\\",NORTH],AUTHORITY[\\\"EPSG\\\",\\\"3413\\\"]]",
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0,
+        "unit": "metre"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "land_ice_surface_east_velocity": {
+      "attrs": {
+        "cell_methods": "spatial filter (smooth: median 3x3, gapfill: planefit 5,5)",
+        "chunk_sizes": [
+          39,
+          137,
+          129
+        ],
+        "coordinates": "time y x",
+        "data_type": "float32",
+        "description": "eastwards ice velocity",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          39,
+          137,
+          129
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 3.4028235e+38,
+        "grid_mapping": "crs",
+        "orig_data_type": "float32",
+        "shape": [
+          155,
+          545,
+          513
+        ],
+        "size": "43335675",
+        "units": "m/day"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_east_velocity"
+    },
+    "land_ice_surface_north_velocity": {
+      "attrs": {
+        "cell_methods": "spatial filter (smooth: median 3x3, gapfill: planefit 5,5)",
+        "chunk_sizes": [
+          39,
+          137,
+          129
+        ],
+        "coordinates": "time y x",
+        "data_type": "float32",
+        "description": "northwards ice velocity",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          39,
+          137,
+          129
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 3.4028235e+38,
+        "grid_mapping": "crs",
+        "orig_data_type": "float32",
+        "shape": [
+          155,
+          545,
+          513
+        ],
+        "size": "43335675",
+        "units": "m/day"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_north_velocity"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 155,
+    "x": 513,
+    "y": 545
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2017-03-22",
+            "minDate": "2015-01-22",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2017-03-22",
+            "minDate": "2015-01-22",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "crs",
+            "alt",
+            "land_ice_surface_east_velocity",
+            "land_ice_surface_north_velocity"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "2015-01-22",
+    "2017-03-22"
+  ]
+}

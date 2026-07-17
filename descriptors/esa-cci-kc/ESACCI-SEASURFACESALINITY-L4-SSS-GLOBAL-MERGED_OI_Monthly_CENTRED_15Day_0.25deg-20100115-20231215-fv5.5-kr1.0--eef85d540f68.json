@@ -1,0 +1,419 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "Grid",
+    "comment": "There is a seasonal varying bias (<0.05 pss peak to peak) in the Northern Hemisphere",
+    "creation_time": [
+      "23-Sep-2024 10:23:13",
+      "23-Sep-2024 10:23:32",
+      "23-Sep-2024 10:22:17",
+      "23-Sep-2024 10:22:50",
+      "23-Sep-2024 10:22:31",
+      "23-Sep-2024 10:23:17",
+      "23-Sep-2024 10:21:18",
+      "23-Sep-2024 10:22:24",
+      "23-Sep-2024 10:23:08",
+      "23-Sep-2024 10:23:16",
+      "23-Sep-2024 10:21:15",
+      "23-Sep-2024 10:21:32",
+      "23-Sep-2024 10:21:58",
+      "23-Sep-2024 10:23:34",
+      "23-Sep-2024 10:23:24",
+      "23-Sep-2024 10:21:44",
+      "23-Sep-2024 10:21:35",
+      "23-Sep-2024 10:21:16",
+      "23-Sep-2024 10:23:14",
+      "23-Sep-2024 10:22:03",
+      "23-Sep-2024 10:23:15",
+      "23-Sep-2024 10:22:20",
+      "23-Sep-2024 10:22:15",
+      "23-Sep-2024 10:22:11",
+      "23-Sep-2024 10:21:17",
+      "23-Sep-2024 10:22:26",
+      "23-Sep-2024 10:21:28",
+      "23-Sep-2024 10:22:22",
+      "23-Sep-2024 10:22:13",
+      "23-Sep-2024 10:23:09",
+      "23-Sep-2024 10:21:22",
+      "23-Sep-2024 10:21:40",
+      "23-Sep-2024 10:21:13",
+      "23-Sep-2024 10:23:20",
+      "23-Sep-2024 10:22:28",
+      "23-Sep-2024 10:22:34",
+      "23-Sep-2024 10:23:28",
+      "23-Sep-2024 10:23:01",
+      "23-Sep-2024 10:21:45",
+      "23-Sep-2024 10:22:45",
+      "23-Sep-2024 10:22:39",
+      "23-Sep-2024 10:21:20",
+      "23-Sep-2024 10:23:40",
+      "23-Sep-2024 10:21:52",
+      "23-Sep-2024 10:21:53",
+      "23-Sep-2024 10:22:35",
+      "23-Sep-2024 10:22:58",
+      "23-Sep-2024 10:23:42",
+      "23-Sep-2024 10:21:21",
+      "23-Sep-2024 10:23:18",
+      "23-Sep-2024 10:21:36",
+      "23-Sep-2024 10:21:42",
+      "23-Sep-2024 10:22:27",
+      "23-Sep-2024 10:23:21",
+      "23-Sep-2024 10:21:29",
+      "23-Sep-2024 10:22:04",
+      "23-Sep-2024 10:23:44",
+      "23-Sep-2024 10:23:27",
+      "23-Sep-2024 10:21:39",
+      "23-Sep-2024 10:22:37",
+      "23-Sep-2024 10:21:26",
+      "23-Sep-2024 10:21:25",
+      "23-Sep-2024 10:21:41",
+      "23-Sep-2024 10:23:03",
+      "23-Sep-2024 10:21:49",
+      "23-Sep-2024 10:23:37",
+      "23-Sep-2024 10:22:56",
+      "23-Sep-2024 10:21:30",
+      "23-Sep-2024 10:22:43",
+      "23-Sep-2024 10:21:24",
+      "23-Sep-2024 10:23:00",
+      "23-Sep-2024 10:22:25",
+      "23-Sep-2024 10:23:33",
+      "23-Sep-2024 10:23:22",
+      "23-Sep-2024 10:23:05",
+      "23-Sep-2024 10:23:25",
+      "23-Sep-2024 10:21:19",
+      "23-Sep-2024 10:22:55",
+      "23-Sep-2024 10:23:31",
+      "23-Sep-2024 10:21:43",
+      "23-Sep-2024 10:23:23",
+      "23-Sep-2024 10:22:47",
+      "23-Sep-2024 10:22:12",
+      "23-Sep-2024 10:22:40",
+      "23-Sep-2024 10:22:49",
+      "23-Sep-2024 10:21:47",
+      "23-Sep-2024 10:21:23",
+      "23-Sep-2024 10:22:51",
+      "23-Sep-2024 10:22:59",
+      "23-Sep-2024 10:22:33",
+      "23-Sep-2024 10:22:54",
+      "23-Sep-2024 10:22:05",
+      "23-Sep-2024 10:22:01",
+      "23-Sep-2024 10:22:21",
+      "23-Sep-2024 10:23:43",
+      "23-Sep-2024 10:21:38",
+      "23-Sep-2024 10:23:39",
+      "23-Sep-2024 10:21:12",
+      "23-Sep-2024 10:22:29",
+      "23-Sep-2024 10:21:27",
+      "23-Sep-2024 10:21:50",
+      "23-Sep-2024 10:23:30",
+      "23-Sep-2024 10:23:29",
+      "23-Sep-2024 10:22:18",
+      "23-Sep-2024 10:23:26",
+      "23-Sep-2024 10:21:48",
+      "23-Sep-2024 10:21:54",
+      "23-Sep-2024 10:22:02",
+      "23-Sep-2024 10:22:10",
+      "23-Sep-2024 10:22:14",
+      "23-Sep-2024 10:23:12",
+      "23-Sep-2024 10:22:44",
+      "23-Sep-2024 10:22:06",
+      "23-Sep-2024 10:22:07",
+      "23-Sep-2024 10:22:09",
+      "23-Sep-2024 10:23:10",
+      "23-Sep-2024 10:23:19",
+      "23-Sep-2024 10:21:57",
+      "23-Sep-2024 10:22:42",
+      "23-Sep-2024 10:23:41",
+      "23-Sep-2024 10:23:06",
+      "23-Sep-2024 10:21:55",
+      "23-Sep-2024 10:21:56",
+      "23-Sep-2024 10:22:08",
+      "23-Sep-2024 10:21:14",
+      "23-Sep-2024 10:23:02",
+      "23-Sep-2024 10:21:59",
+      "23-Sep-2024 10:22:32",
+      "23-Sep-2024 10:22:41",
+      "23-Sep-2024 10:23:04",
+      "23-Sep-2024 10:23:36",
+      "23-Sep-2024 10:22:57",
+      "23-Sep-2024 10:23:07",
+      "23-Sep-2024 10:23:38",
+      "23-Sep-2024 10:22:30",
+      "23-Sep-2024 10:21:33",
+      "23-Sep-2024 10:21:34",
+      "23-Sep-2024 10:22:52",
+      "23-Sep-2024 10:21:51",
+      "23-Sep-2024 10:22:16",
+      "23-Sep-2024 10:22:19",
+      "23-Sep-2024 10:23:11",
+      "23-Sep-2024 10:22:48",
+      "23-Sep-2024 10:22:23",
+      "23-Sep-2024 10:21:37",
+      "23-Sep-2024 10:22:36",
+      "23-Sep-2024 10:22:46",
+      "23-Sep-2024 10:22:53",
+      "23-Sep-2024 10:23:35",
+      "23-Sep-2024 10:22:38",
+      "23-Sep-2024 10:21:31",
+      "23-Sep-2024 10:22:00",
+      "23-Sep-2024 10:21:46"
+    ],
+    "creator_email": "jean-luc.vergely@acri-st.fr",
+    "creator_name": "ACRI-ST,LOCEAN",
+    "creator_url": "http://cci.esa.int/salinity",
+    "date_created": "See individual files for more details",
+    "date_modified": "",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_lat_max": 89.875,
+    "geospatial_lat_min": -89.875,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 179.875,
+    "geospatial_lon_min": -179.875,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": " ",
+    "id": "See individual files for more details",
+    "institution": "ACRI-ST,LOCEAN",
+    "key_variables": "sss,sss_random_error",
+    "keywords": "Ocean, Ocean Salinity, Sea Surface Salinity, Satellite",
+    "keywords_vocabulary": "",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "European Space Agency - ESA Climate Office",
+    "platform": "PROTEUS,SAC-D,SMAP",
+    "product_version": "5.5",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/salinity - DOI:10.5285/7294d93479654c139770f13fae4142d1",
+    "sensor": "SMOS/MIRAS,Aquarius,SMAP",
+    "source": "SMOS CCI L2OS reprocessing from DPGS L1Cv7, SMAP L2 RSS v5.3 - DOI:10.5067/SMP5.3-2SOCS, Aquarius L3 v5.0 - DOI:10.5067/AQR50-3SQCS",
+    "spatial_grid": "25km regular grid",
+    "spatial_resolution": "50km",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 1.8",
+    "summary": "ESA CCI Sea Surface Salinity",
+    "time_coverage_duration": "P13Y",
+    "time_coverage_end": "20231230T235959Z",
+    "time_coverage_resolution": "P15D",
+    "time_coverage_start": "20100101T000000Z",
+    "title": "ESA CCI Sea Surface Salinity ECV produced at a spatial resolution of 50 km and time resolution of 1 month and spatially resampled on 0.25\u00b0 rectangular grid and 15 days of time sampling",
+    "tracking_id": "See individual files for more details"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-SEASURFACESALINITY-L4-SSS-GLOBAL-MERGED_OI_Monthly_CENTRED_15Day_0.25deg-20100115-20231215-fv5.5-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "isc_qc": {
+      "attrs": {
+        "long_name": "Ice Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int8",
+      "name": "isc_qc"
+    },
+    "lsc_qc": {
+      "attrs": {
+        "long_name": "Land Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int8",
+      "name": "lsc_qc"
+    },
+    "noutliers": {
+      "attrs": {
+        "long_name": "Count of the Number of Outliers within this bin cell",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "noutliers"
+    },
+    "pct_var": {
+      "attrs": {
+        "long_name": "Percentage of SSS_variability that is expected to be not explained by the products",
+        "units": "%",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "pct_var"
+    },
+    "sss": {
+      "attrs": {
+        "ancilliary": "noutliers total_nobs sss_qc",
+        "long_name": "Unbiased merged Sea Surface Salinity",
+        "standard_name": "sea_surface_salinity",
+        "units": "0.001",
+        "valid_max": 50.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss"
+    },
+    "sss_qc": {
+      "attrs": {
+        "long_name": "Sea Surface Salinity Quality, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int8",
+      "name": "sss_qc"
+    },
+    "sss_random_error": {
+      "attrs": {
+        "ancilliary": "pct_var",
+        "long_name": "Sea Surface Salinity Random Error",
+        "units": "0.001",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss_random_error"
+    },
+    "total_nobs": {
+      "attrs": {
+        "long_name": "Number of SSS in the time interval",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "total_nobs"
+    }
+  },
+  "dims": {
+    "lat": 720,
+    "lon": 1440,
+    "time": 335
+  },
+  "spatial_res": 0.25,
+  "time_range": [
+    "2010-01-01",
+    "2023-12-30"
+  ]
+}

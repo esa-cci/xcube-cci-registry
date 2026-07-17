@@ -1,0 +1,424 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains v4.0 of the Daily Snow Water Equivalent (SWE) product from the ESA Climate Change Initiative (CCI) Snow project, at 0.1 degree resolution.\n\nSnow water equivalent (SWE) is the depth of liquid water that would result if the of snow cover melted completely, which equates to the snow cover mass per unit area. The SWE product covers the Northern Hemisphere from 1979/01 to 2023/12 with complex terrain, land ice, and large lakes masked. The dataset covers the Northern Hemisphere winter season (October \u2013 May; occasional data produced during June and September) at a daily frequency starting in October 1987 and every second day from 1979 to May 1987. Retrievals are not produced for coastal regions of Greenland.\n\nThe product combines passive microwave data with ground-based snow depth measurements, via Bayesian non-linear iterative assimilation, to estimate SWE. It is based on data from the recalibrated enhanced resolution CETB ESDR dataset (MEaSUREs Calibrated Enhanced-Resolution Passive Microwave Daily EASE-Grid 2.0 Brightness Temperature (CETB) Earth System Data Record (ESDR) https://nsidc.org/pmesdr/data/), resampled to the 12.5km EASE-Grid 2.0.\n\nA background snow-depth field, derived from re-gridded snow-depth observations made at synoptic weather stations, and a passive microwave emission model are the key components of the retrieval scheme. Snow density, which varies in both time and space, is parameterized from interpolated in situ observations from snow courses and snow pillows equipped with co-located snow depth sensors.\nThe dataset is aimed to serve the needs of users working on climate research and monitoring activities, including the detection of variability and trends, climate modelling, and aspects of hydrology and meteorology.\n\nThe Finnish Meteorological Institute (FMI) is responsible for the SWE product generation. The SWE development is carried out in collaboration by FMI and Environment and Climate Change Canada (ECCC).\n\nChanges from v3.1 \n\nThe time series has been extended from version 3.1 by one year, to 2023. The retrieval algorithm has been modified to prioritize morning overpass (descending) data over evening (ascending) data. This change affects the SWE retrieval for all years except 1988\u20131991. Data from those years is from the F08 satellite, which has a reversed orbit, and evening (descending) data is prioritized, as in earlier versions of the SWE retrieval. Snow masking in post-production now uses CryoClim SCE data for 35\u201340\u00b0 latitude and \u221230\u20133\u00b0 longitude. Elsewhere, the baseline snow mask and CryoClim are combined so that any pixel flagged by either is marked snow-covered, as in v3.1. The pixel-wise uncertainty model has been updated for North America using extensive snow course data.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/edf8abd23f4a40aabd4d52e48dec06ea",
+    "cci_project": "SNOW",
+    "comment": "The following auxiliary datasets are used for product generation: ESA CCI Land Cover from 2000: water bodies aggregated to the pixel spacing of the SWE product and, providing percentage (0-100)% of water within pixel, with 50% threshold used for this version of the product. ETOPO5 based mountain mask for northern hemisphere, first produced for needs of ESA_GlobSnow project.",
+    "data_type": "SWE",
+    "ecv": "SNOW",
+    "history": "20250123T101023Z: ESA snow_cci SWE processing line, version 4.0, Dynamic snow densities, CryoClim snow melt masks",
+    "institute": "Finnish Meteorological Institute",
+    "platform_id": "multi-platform",
+    "processing_level": "L3C",
+    "product_string": "MERGED",
+    "product_version": "4-0",
+    "project": "Climate Change Initiative European Space Agency",
+    "publication_date": "2025-09-04T16:10:21",
+    "references": "http://snow-cci.enveo.at/",
+    "sensor_id": "multi-sensor",
+    "source": "SMMR brightness temperature data from 19 & 37GHz channels. WMO synoptic in-situ snow depth measurements, daily averages",
+    "title": "ESA Snow Climate Change Initiative (Snow_cci): Snow Water Equivalent (SWE) level 3C daily global climate research data package (CRDP) (1979 - 2023), version 4.0",
+    "uuid": "edf8abd23f4a40aabd4d52e48dec06ea"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "chunk_sizes": [
+          1800
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": [
+          1800
+        ],
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 latitude coordinates, center of pixel",
+        "orig_data_type": "float64",
+        "shape": [
+          1800
+        ],
+        "size": 1800,
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          1800,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          1800,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          1800,
+          2
+        ],
+        "size": 3600
+      },
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "chunk_sizes": [
+          3600
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          3600
+        ],
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "WGS84 longitude coordinates, center of pixel",
+        "orig_data_type": "float64",
+        "shape": [
+          3600
+        ],
+        "size": 3600,
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          3600,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          3600,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          3600,
+          2
+        ],
+        "size": 7200
+      },
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          9575
+        ],
+        "size": "9575",
+        "standard_name": "time",
+        "units": "hours since 1950-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.SNOW.day.L3C.SWE.multi-sensor.multi-platform.MERGED.4-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "0 0.1 0 180 0 -0.1",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "long_name": "Coordinate reference system definition",
+        "longitude_of_prime_meridian": 0,
+        "orig_data_type": "int32",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "spatial_ref"
+    },
+    "swe": {
+      "attrs": {
+        "actual_range": [
+          1,
+          283
+        ],
+        "ancillary_variables": "swe_std",
+        "chunk_sizes": [
+          1,
+          600,
+          1200
+        ],
+        "coordinates": "lat lon time",
+        "data_type": "int32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          600,
+          1200
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -100000,
+        "flag_meanings": "Glacier Mountain Water no_data no_snow",
+        "flag_values": [
+          -30,
+          -20,
+          -10,
+          -1,
+          0
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "Snow Water Equivalent",
+        "orig_data_type": "int32",
+        "shape": [
+          9575,
+          1800,
+          3600
+        ],
+        "size": "62046000000",
+        "units": "mm",
+        "valid_range": [
+          -30,
+          500
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "swe"
+    },
+    "swe_std": {
+      "attrs": {
+        "actual_range": [
+          0,
+          98
+        ],
+        "chunk_sizes": [
+          1,
+          600,
+          1200
+        ],
+        "coordinates": "lat lon time",
+        "data_type": "int32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          600,
+          1200
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -100000,
+        "flag_meanings": "Glacier Mountain Water no_data no_snow",
+        "flag_values": [
+          -30,
+          -20,
+          -10,
+          -1,
+          0
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "statistical standard deviation of estimate",
+        "orig_data_type": "int32",
+        "shape": [
+          9575,
+          1800,
+          3600
+        ],
+        "size": "62046000000",
+        "units": "mm",
+        "valid_range": [
+          -30,
+          250
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "swe_std"
+    }
+  },
+  "dims": {
+    "lat": 1800,
+    "lon": 3600,
+    "nv": 2,
+    "time": 9575
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "1979-01-02",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "1979-01-02",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "swe",
+            "swe_std",
+            "spatial_ref"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.1,
+  "time_period": "1D",
+  "time_range": [
+    "1979-01-02",
+    "2023-12-31"
+  ]
+}

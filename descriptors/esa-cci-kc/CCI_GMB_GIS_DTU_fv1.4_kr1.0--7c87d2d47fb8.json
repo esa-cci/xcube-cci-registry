@@ -1,0 +1,123 @@
+{
+  "attrs": {
+    "Institution": "DTU Space - Div. of Geodynamics",
+    "Latitude_max": "83.23728",
+    "Latitude_min": "60.73857",
+    "Longitude_max": "-14.706720000000018",
+    "Longitude_min": "-71.83566000000002",
+    "Method": "GRACE GMB trend following Barletta et al. 2012",
+    "Project": "Greenland ice sheet CCI.",
+    "Source": "GRACE",
+    "Title": "CCI GMB Greenland ice sheet",
+    "Tracking_id": "f7ec2514-f666-4e49-b042-62b7205d3888",
+    "Units": "Units used (mm water equivalent per year)",
+    "date_created": "Created Fri Nov 24 13:03:03 2017",
+    "grid_projection": "Geographical coordinates relative to WGS84",
+    "netCDF_version": "NETCDF3_CLASSIC",
+    "product_version": "1.2",
+    "time_coverage_end": "Date and time of the last measurement in the data file: 2017-01-31",
+    "time_coverage_start": "Date and time of the first measurement in the data file: 2003-01-01",
+    "time_resolution": "5 year trends."
+  },
+  "data_id": "CCI_GMB_GIS_DTU_fv1.4_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "GMB_trend": {
+      "attrs": {
+        "long_name": "Mass trend for time span",
+        "source": "GRACE",
+        "unit": "mm water equivalent"
+      },
+      "chunks": [
+        901,
+        11
+      ],
+      "dims": [
+        "meas_ind",
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "GMB_trend"
+    },
+    "end_time": {
+      "attrs": {
+        "long_name": "End of time span",
+        "title": "Time"
+      },
+      "chunks": [
+        11
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "end_time"
+    },
+    "latitude": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        901
+      ],
+      "dims": [
+        "meas_ind"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        901
+      ],
+      "dims": [
+        "meas_ind"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "start_time": {
+      "attrs": {
+        "long_name": "Mean of time span",
+        "title": "Time"
+      },
+      "chunks": [
+        11
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "start_time"
+    },
+    "t": {
+      "attrs": {
+        "long_name": "Average time for time slice",
+        "title": "Time"
+      },
+      "chunks": [
+        11
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "t"
+    }
+  },
+  "dims": {
+    "meas_ind": 901,
+    "time": 11
+  },
+  "time_range": [
+    "2003-01-01",
+    "2017-01-31"
+  ]
+}

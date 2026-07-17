@@ -1,0 +1,442 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "Grid",
+    "comment": "The following caveats must be considered: 1) Products have not been fully optimised for very high latitudes, 2) There is a systematic global underestimation of ~0.1 pss early 2010 that gradually disappears over the year, 3) Products are in general of better quality after 2015 due to the inclusion of SMAP data and reduced contaminations (RFI, sun) on SMOS data. We (Mngt_CCI-Salinity@argans.co.uk) are very keen to get users feedbacks about these products",
+    "creation_time": [
+      "27-Apr-2021 00:37:05",
+      "27-Apr-2021 00:39:24",
+      "27-Apr-2021 00:39:15",
+      "27-Apr-2021 00:38:39",
+      "27-Apr-2021 00:38:03",
+      "27-Apr-2021 00:38:50",
+      "27-Apr-2021 00:39:03",
+      "27-Apr-2021 00:36:36",
+      "27-Apr-2021 00:39:21",
+      "27-Apr-2021 00:36:54",
+      "27-Apr-2021 00:36:35",
+      "27-Apr-2021 00:39:14",
+      "27-Apr-2021 00:39:22",
+      "27-Apr-2021 00:38:33",
+      "27-Apr-2021 00:38:40",
+      "27-Apr-2021 00:38:55",
+      "27-Apr-2021 00:38:48",
+      "27-Apr-2021 00:37:48",
+      "27-Apr-2021 00:36:28",
+      "27-Apr-2021 00:39:11",
+      "27-Apr-2021 00:38:38",
+      "27-Apr-2021 00:38:23",
+      "27-Apr-2021 00:37:08",
+      "27-Apr-2021 00:39:07",
+      "27-Apr-2021 00:37:37",
+      "27-Apr-2021 00:38:47",
+      "27-Apr-2021 00:36:51",
+      "27-Apr-2021 00:36:59",
+      "27-Apr-2021 00:37:58",
+      "27-Apr-2021 00:38:56",
+      "27-Apr-2021 00:37:26",
+      "27-Apr-2021 00:39:00",
+      "27-Apr-2021 00:38:01",
+      "27-Apr-2021 00:37:17",
+      "27-Apr-2021 00:38:58",
+      "27-Apr-2021 00:37:01",
+      "27-Apr-2021 00:38:02",
+      "27-Apr-2021 00:38:28",
+      "27-Apr-2021 00:38:15",
+      "27-Apr-2021 00:37:50",
+      "27-Apr-2021 00:36:44",
+      "27-Apr-2021 00:36:53",
+      "27-Apr-2021 00:37:23",
+      "27-Apr-2021 00:36:31",
+      "27-Apr-2021 00:39:06",
+      "27-Apr-2021 00:38:45",
+      "27-Apr-2021 00:39:04",
+      "27-Apr-2021 00:38:35",
+      "27-Apr-2021 00:38:57",
+      "27-Apr-2021 00:37:51",
+      "27-Apr-2021 00:38:10",
+      "27-Apr-2021 00:37:15",
+      "27-Apr-2021 00:36:46",
+      "27-Apr-2021 00:36:30",
+      "27-Apr-2021 00:38:29",
+      "27-Apr-2021 00:37:44",
+      "27-Apr-2021 00:38:07",
+      "27-Apr-2021 00:37:40",
+      "27-Apr-2021 00:37:21",
+      "27-Apr-2021 00:38:21",
+      "27-Apr-2021 00:39:01",
+      "27-Apr-2021 00:38:42",
+      "27-Apr-2021 00:37:49",
+      "27-Apr-2021 00:38:16",
+      "27-Apr-2021 00:37:41",
+      "27-Apr-2021 00:37:38",
+      "27-Apr-2021 00:37:39",
+      "27-Apr-2021 00:36:39",
+      "27-Apr-2021 00:38:17",
+      "27-Apr-2021 00:39:16",
+      "27-Apr-2021 00:37:03",
+      "27-Apr-2021 00:37:56",
+      "27-Apr-2021 00:37:35",
+      "27-Apr-2021 00:38:43",
+      "27-Apr-2021 00:38:59",
+      "27-Apr-2021 00:38:24",
+      "27-Apr-2021 00:37:59",
+      "27-Apr-2021 00:37:53",
+      "27-Apr-2021 00:37:02",
+      "27-Apr-2021 00:37:00",
+      "27-Apr-2021 00:37:16",
+      "27-Apr-2021 00:38:11",
+      "27-Apr-2021 00:37:33",
+      "27-Apr-2021 00:36:37",
+      "27-Apr-2021 00:37:14",
+      "27-Apr-2021 00:38:36",
+      "27-Apr-2021 00:36:34",
+      "27-Apr-2021 00:38:53",
+      "27-Apr-2021 00:37:42",
+      "27-Apr-2021 00:36:29",
+      "27-Apr-2021 00:37:07",
+      "27-Apr-2021 00:37:10",
+      "27-Apr-2021 00:36:47",
+      "27-Apr-2021 00:38:13",
+      "27-Apr-2021 00:37:28",
+      "27-Apr-2021 00:37:47",
+      "27-Apr-2021 00:38:20",
+      "27-Apr-2021 00:36:32",
+      "27-Apr-2021 00:39:12",
+      "27-Apr-2021 00:36:45",
+      "27-Apr-2021 00:39:19",
+      "27-Apr-2021 00:36:40",
+      "27-Apr-2021 00:36:49",
+      "27-Apr-2021 00:37:24",
+      "27-Apr-2021 00:37:32",
+      "27-Apr-2021 00:36:52",
+      "27-Apr-2021 00:39:08",
+      "27-Apr-2021 00:36:56",
+      "27-Apr-2021 00:38:04",
+      "27-Apr-2021 00:39:05",
+      "27-Apr-2021 00:36:55",
+      "27-Apr-2021 00:39:10",
+      "27-Apr-2021 00:36:57",
+      "27-Apr-2021 00:38:19",
+      "27-Apr-2021 00:36:33",
+      "27-Apr-2021 00:37:22",
+      "27-Apr-2021 00:39:18",
+      "27-Apr-2021 00:37:43",
+      "27-Apr-2021 00:37:45",
+      "27-Apr-2021 00:37:29",
+      "27-Apr-2021 00:37:27",
+      "27-Apr-2021 00:37:19",
+      "27-Apr-2021 00:38:00",
+      "27-Apr-2021 00:38:34",
+      "27-Apr-2021 00:38:25",
+      "27-Apr-2021 00:38:32",
+      "27-Apr-2021 00:39:09",
+      "27-Apr-2021 00:39:23",
+      "27-Apr-2021 00:38:49",
+      "27-Apr-2021 00:37:20",
+      "27-Apr-2021 00:37:13",
+      "27-Apr-2021 00:38:18",
+      "27-Apr-2021 00:39:13",
+      "27-Apr-2021 00:39:20",
+      "27-Apr-2021 00:38:26",
+      "27-Apr-2021 00:37:11",
+      "27-Apr-2021 00:38:08",
+      "27-Apr-2021 00:38:27",
+      "27-Apr-2021 00:36:41",
+      "27-Apr-2021 00:38:22",
+      "27-Apr-2021 00:36:38",
+      "27-Apr-2021 00:37:31",
+      "27-Apr-2021 00:38:54",
+      "27-Apr-2021 00:37:36",
+      "27-Apr-2021 00:38:09",
+      "27-Apr-2021 00:37:12",
+      "27-Apr-2021 00:36:42",
+      "27-Apr-2021 00:38:05",
+      "27-Apr-2021 00:37:34",
+      "27-Apr-2021 00:38:51",
+      "27-Apr-2021 00:37:54",
+      "27-Apr-2021 00:38:41",
+      "27-Apr-2021 00:38:14",
+      "27-Apr-2021 00:37:55",
+      "27-Apr-2021 00:38:12",
+      "27-Apr-2021 00:38:44",
+      "27-Apr-2021 00:37:52",
+      "27-Apr-2021 00:38:31",
+      "27-Apr-2021 00:36:58",
+      "27-Apr-2021 00:37:06",
+      "27-Apr-2021 00:36:43",
+      "27-Apr-2021 00:36:50",
+      "27-Apr-2021 00:36:48",
+      "27-Apr-2021 00:37:46",
+      "27-Apr-2021 00:38:46",
+      "27-Apr-2021 00:37:18",
+      "27-Apr-2021 00:38:37",
+      "27-Apr-2021 00:37:25",
+      "27-Apr-2021 00:38:30",
+      "27-Apr-2021 00:38:52",
+      "27-Apr-2021 00:39:17",
+      "27-Apr-2021 00:37:09",
+      "27-Apr-2021 00:37:04",
+      "27-Apr-2021 00:39:02",
+      "27-Apr-2021 00:37:57",
+      "27-Apr-2021 00:37:30",
+      "27-Apr-2021 00:38:06"
+    ],
+    "creator_email": "jean-luc.vergely@acri-st.fr",
+    "creator_name": "ACRI-ST,LOCEAN",
+    "creator_url": "https://climate.esa.int/fr/projects/sea-surface-salinity/",
+    "date_created": "See individual files for more details",
+    "date_modified": "",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_lat_max": 83.51713562011719,
+    "geospatial_lat_min": -83.51713562011719,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 179.8703155517578,
+    "geospatial_lon_min": -179.8703155517578,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": " \nKerchunk file created on 02/19/24",
+    "id": "See individual files for more details",
+    "institution": "ACRI-ST,LOCEAN",
+    "kerchunk_creation_date": "190224T170406",
+    "kerchunk_revision": 1,
+    "key_variables": "sss,sss_random_error",
+    "keywords": "Ocean, Ocean Salinity, Sea Surface Salinity, Satellite",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "European Space Agency - ESA Climate Office",
+    "platform": "PROTEUS,SAC-D,SMAP",
+    "product_version": "3.21",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "https://climate.esa.int/fr/projects/sea-surface-salinity/ - DOI:10.5285/5920a2c77e3c45339477acd31ce62c3c",
+    "sensor": "SMOS/MIRAS,Aquarius,SMAP",
+    "source": "SMOS CCI v3 L2OS reprocessing (ERA5,ref OTT SSS:ISAS, RFI filtering) from DPGS L1 v620, L2OS v671 modified as in DOI:10.1109/tgrs.2020.3030488, SMAP L2 RSS v4.0 - DOI:10.5067/SMP40-2SOCS, Aquarius L3 v5.0 - DOI:10.5067/AQR50-3SQCS",
+    "spatial_grid": "25km EASE 2 cylindrical grid",
+    "spatial_resolution": "50km",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 1.8",
+    "summary": "ESA CCI Sea Surface Salinity",
+    "time_coverage_duration": "P1M",
+    "time_coverage_end": "20200930T235959Z",
+    "time_coverage_resolution": "P15D",
+    "time_coverage_start": "20100101T000000Z",
+    "title": "ESA CCI Sea Surface Salinity ECV produced at a spatial resolution of 50 km and time resolution of 1 month and spatially resampled on 25 km EASE grid and 15 days of time sampling",
+    "tracking_id": "See individual files for more details"
+  },
+  "bbox": [
+    -179.99999854782973,
+    -83.66038971208994,
+    179.99999854782973,
+    83.66038971208994
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20100115-20200915-fv3.21_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "isc_qc": {
+      "attrs": {
+        "long_name": "Ice Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "isc_qc"
+    },
+    "lsc_qc": {
+      "attrs": {
+        "long_name": "Land Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lsc_qc"
+    },
+    "noutliers": {
+      "attrs": {
+        "long_name": "Count of the Number of Outliers within this bin cell",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "noutliers"
+    },
+    "pct_var": {
+      "attrs": {
+        "long_name": "Percentage of SSS_variability that is expected to be not explained by the products",
+        "units": "%",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "pct_var"
+    },
+    "sss": {
+      "attrs": {
+        "ancillary_variables": "noutliers total_nobs sss_qc",
+        "long_name": "Multi-Satellite Sea Surface Salinity",
+        "standard_name": "sea_surface_salinity",
+        "valid_max": 50.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss"
+    },
+    "sss_qc": {
+      "attrs": {
+        "long_name": "Sea Surface Salinity Quality, 0=Good; 1=Bad",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss_qc"
+    },
+    "sss_random_error": {
+      "attrs": {
+        "ancillary_variables": "pct_var",
+        "long_name": "Sea Surface Salinity Random Error",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sss_random_error"
+    },
+    "total_nobs": {
+      "attrs": {
+        "long_name": "Number of SSS in the time interval",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        584,
+        1388
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "total_nobs"
+    }
+  },
+  "dims": {
+    "lat": 584,
+    "lon": 1388,
+    "time": 257
+  },
+  "time_range": [
+    "2010-01-01",
+    "2020-09-30"
+  ]
+}

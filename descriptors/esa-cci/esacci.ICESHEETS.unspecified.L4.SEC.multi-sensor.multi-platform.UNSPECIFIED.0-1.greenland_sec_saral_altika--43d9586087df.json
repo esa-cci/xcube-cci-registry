@@ -1,0 +1,554 @@
+{
+  "attrs": {
+    "abstract": "This data set is part of the ESA Greenland Ice sheet CCI project. The data set provides surface elevation changes (SEC) for the Greenland Ice sheet derived from SARAL-AltiKa for 2013-2017.\n \nThis new experimental product of surface elevation change is based on data from the AltiKa-instrument onboard the France (CNES)/Indian (ISRO) SARAL satellite. The AktiKa altimeter utilizes Ka-band radar signals, which have less penetration in the upper snow. However, the surface slope and roughness has an imprint in the derived signal and the new product is only available for the flatter central parts of the Greenland ice sheet.\n\nThe corresponding SEC grid from Cryosat-2 is included for comparison. The algorithm used to devive the product is described in the paper \u201cImplications of changing scattering properties on the Greenland ice sheet volume change from Cryosat-2 altimetry\u201d by S.B. Simonsen and L.S. S\u00f8rensen, Remote Sensing of the Environment, 190,pp.207-216, doi:10.1016/j.rse.2016.12.012.   The approach used here corresponds to Least Squares Method (LSM) 5 described in the paper, in which the slope within each grid cell is accounted for by subtraction of the GIMP DEM; the data are corrected for both backscatter and leading edge width; and the LSM is solved at 1 km grid resolution (2 km search radius) and averaged in the post-processing to 5 km grid resolution and with a correlation length of 20 km.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/0470e96f2d8245549ef2ba81842cdfd8",
+    "cci_project": "ICESHEETS",
+    "data_type": "SEC",
+    "ecv": "ICESHEETS",
+    "institute": "DTU-Space, Department of Geodynamics",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "UNSPECIFIED",
+    "product_version": "0-1",
+    "publication_date": "2018-11-22T17:59:03",
+    "sensor_id": "multi-sensor",
+    "title": "ESA Greenland Ice Sheet Climate Change Initiative (Greenland_Ice_Sheet_cci): Greenland Surface Elevation Change grid from SARAL-AltiKa for 2013-2017, v0.1",
+    "uuid": "0470e96f2d8245549ef2ba81842cdfd8"
+  },
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "coords": {
+    "end_time": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "Time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "Time"
+        ],
+        "fill_value": null,
+        "long_name": "End of time slice",
+        "orig_data_type": "float32",
+        "shape": [
+          1
+        ],
+        "size": "1",
+        "title": "Time",
+        "units": "days since 2000-01-01 00:00:00"
+      },
+      "dims": [
+        "Time"
+      ],
+      "dtype": "float32",
+      "name": "end_time"
+    },
+    "start_time": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "Time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "Time"
+        ],
+        "fill_value": null,
+        "long_name": "Start of time slice",
+        "orig_data_type": "float32",
+        "shape": [
+          1
+        ],
+        "size": "1",
+        "title": "Time",
+        "units": "days since 2000-01-01 00:00:00"
+      },
+      "dims": [
+        "Time"
+      ],
+      "dtype": "float32",
+      "name": "start_time"
+    },
+    "t": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "Time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "Time"
+        ],
+        "fill_value": null,
+        "long_name": "Average time for time slice",
+        "orig_data_type": "float32",
+        "shape": [
+          1
+        ],
+        "size": "1",
+        "title": "Time",
+        "units": "days since 2000-01-01 00:00:00"
+      },
+      "dims": [
+        "Time"
+      ],
+      "dtype": "float32",
+      "name": "t"
+    },
+    "x": {
+      "attrs": {
+        "chunk_sizes": [
+          634
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "x"
+        ],
+        "file_chunk_sizes": [
+          634
+        ],
+        "file_dimensions": [
+          "x"
+        ],
+        "fill_value": null,
+        "long_name": "Cartesian x-coordinate - easting",
+        "orig_data_type": "float32",
+        "shape": [
+          634
+        ],
+        "size": 634,
+        "standard_name": "projection_x_coordinate",
+        "units": "meters"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "chunk_sizes": [
+          635
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y"
+        ],
+        "file_chunk_sizes": [
+          635
+        ],
+        "file_dimensions": [
+          "y"
+        ],
+        "fill_value": null,
+        "long_name": "Cartesian y-coordinate - northing",
+        "orig_data_type": "float32",
+        "shape": [
+          635
+        ],
+        "size": 635,
+        "standard_name": "projection_y_coordinate",
+        "units": "meters"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float32",
+      "name": "y"
+    }
+  },
+  "crs": "Polar Stereographic (variant B)",
+  "data_id": "esacci.ICESHEETS.unspecified.L4.SEC.multi-sensor.multi-platform.UNSPECIFIED.0-1.greenland_sec_saral_altika",
+  "data_type": "dataset",
+  "data_vars": {
+    "AltiKaSEC": {
+      "attrs": {
+        "Bias_correction": "Backscatter and LeW",
+        "Comment": "CCI version",
+        "Contributor": "DTU-GDK",
+        "Gridding_method": "Weighted interpolation",
+        "Source": "AltiKA",
+        "Time": "April 2013 until April 2017",
+        "Units": "m/yr",
+        "backscatter_corrections": "Backscatter  and Leading edge",
+        "chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "file_dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "All applied to the AltiKa L2 produce",
+        "grid_mapping": "grid_projection",
+        "level1_source": "AltiKa",
+        "long_name": " AltiKA surface elevation changes, 10.0 km gaussian filter",
+        "orig_data_type": "float32",
+        "ref": "Greenland CCI, pers. com Simonsen 2017",
+        "shape": [
+          635,
+          634,
+          1
+        ],
+        "size": "402590",
+        "slope_correction": "GIMP slope model from L2 product"
+      },
+      "dims": [
+        "time",
+        "Time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "AltiKaSEC"
+    },
+    "AltiKaSEC_error": {
+      "attrs": {
+        "Bias_correction": "Backscatter and LeW",
+        "Comment": "CCI version",
+        "Contributor": "DTU-GDK",
+        "Gridding_method": "Weighted interpolation",
+        "Source": "AltiKa",
+        "Time": "April 2013 until April 2017",
+        "Units": "m/yr",
+        "backscatter_corrections": "Backscatter and Leading edge",
+        "chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "file_dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "All applied to the AltiKa L2 produce",
+        "grid_mapping": "grid_projection",
+        "level1_source": "AltiKa",
+        "long_name": "AltiKa Error estimates associated with surface elevation changes",
+        "orig_data_type": "float32",
+        "shape": [
+          635,
+          634,
+          1
+        ],
+        "size": "402590",
+        "slope_correction": "GIMP Slope model from L2 product"
+      },
+      "dims": [
+        "time",
+        "Time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "AltiKaSEC_error"
+    },
+    "CS2SEC": {
+      "attrs": {
+        "Bias_correction": "Backscatter and LeW",
+        "Comment": "CCI version of the LSM5 from Simonsen et al. 2017",
+        "Contributor": "DTU-GDK",
+        "Gridding_method": "Weighted interpolation",
+        "Source": "Cryosat-2",
+        "Time": "April 2013 until April 2017",
+        "Units": "m/yr",
+        "backscatter_corrections": "Backscatter  and Leading edge",
+        "chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "file_dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "All applied to the Cryosat L2 produce",
+        "grid_mapping": "grid_projection",
+        "level1_source": "Cryosat L1 Baseline C",
+        "long_name": "CryoSat-2 Surface elevation changes, 10.0 km gaussian filter",
+        "orig_data_type": "float32",
+        "ref": "Simonsen et al. 2017",
+        "shape": [
+          635,
+          634,
+          1
+        ],
+        "size": "402590",
+        "slope_correction": "GIMP and MSSL slope model from L2 product"
+      },
+      "dims": [
+        "time",
+        "Time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "CS2SEC"
+    },
+    "CS2SEC_error": {
+      "attrs": {
+        "Bias_correction": "Backscatter and LeW",
+        "Comment": "CCI version of the LSM5 from Simonsen et al. 2017",
+        "Contributor": "DTU-GDK",
+        "Gridding_method": "Weighted interpolation",
+        "Source": "Cryosat-2",
+        "Time": "April 2013 until April 2017",
+        "Units": "m/yr",
+        "backscatter_corrections": "Backscatter and Leading edge",
+        "chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          635,
+          634,
+          1
+        ],
+        "file_dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "All applied to the Cryosat L2 produce",
+        "grid_mapping": "grid_projection",
+        "level1_source": "Cryosat L1 Baseline C",
+        "long_name": "CryoSat-2 Error estimates associated with surface elevation changes",
+        "orig_data_type": "float32",
+        "shape": [
+          635,
+          634,
+          1
+        ],
+        "size": "402590",
+        "slope_correction": "GIMP and MSSL slope model from L2 product"
+      },
+      "dims": [
+        "time",
+        "Time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "CS2SEC_error"
+    },
+    "grid_projection": {
+      "attrs": {
+        "DODS": {
+          "strlen": 0
+        },
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "bytes1024",
+        "dimensions": [],
+        "ellipsoid": "WGS84",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "orig_data_type": "bytes1024",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0
+      },
+      "dims": [],
+      "dtype": "bytes1024",
+      "name": "grid_projection"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": [
+          635,
+          634
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          635,
+          634
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "grid_projection",
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          635,
+          634
+        ],
+        "size": 402590,
+        "units": "degrees north"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": [
+          635,
+          634
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          635,
+          634
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "grid_projection",
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          635,
+          634
+        ],
+        "size": 402590,
+        "units": "degrees east"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    }
+  },
+  "dims": {
+    "Time": 1,
+    "bnds": 2,
+    "x": 634,
+    "y": 635
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2017-03-31",
+            "minDate": "2013-03-31",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2017-03-31",
+            "minDate": "2013-03-31",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "grid_projection",
+            "lat",
+            "lon",
+            "CS2SEC",
+            "CS2SEC_error",
+            "AltiKaSEC",
+            "AltiKaSEC_error"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "2013-03-31",
+    "2017-03-31"
+  ]
+}

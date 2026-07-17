@@ -1,0 +1,484 @@
+{
+  "attrs": {
+    "abstract": "As part of the ESA Land Cover Climate Change Initiative (CCI) project a new set of Global Land Cover Maps have been produced. These maps are available at 300m spatial resolution for each year between 1992 and 2015.\n\nEach pixel value corresponds to the classification of a land cover class defined based on the UN Land Cover Classification System (LCCS).  The reliability of the classifications made are documented by the four quality flags (decribed further in the Product User Guide) that accompany these maps.    Data are provided in both NetCDF and GeoTiff format.\n\nFurther Land Cover CCI products, user tools and a product viewer are available at: http://maps.elie.ucl.ac.be/CCI/viewer/index.php .   Maps for the 2016-2020 time period have been produced in the context of the Copernicus Climate Change service, and can be downloaded from the Copernicus Climate Data Store (CDS).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/b382ebe6679d44b8b0e68ea4ef4b701c",
+    "cci_project": "LC",
+    "comment": "",
+    "data_type": "LCCS",
+    "ecv": "LC",
+    "history": "amorgos-4,0, lc-sdr-1.0, lc-sr-1.0, lc-classification-1.0,lc-user-tools-3.13",
+    "institute": "Universite Catholique de Louvain",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "Map",
+    "product_version": "2-0-7",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2019-11-29T15:39:55",
+    "references": "http://www.esa-landcover-cci.org/",
+    "sensor_id": "multi-sensor",
+    "source": "MERIS FR L1B version 5.05, MERIS RR L1B version 8.0, SPOT VGT P",
+    "title": "ESA Land Cover Climate Change Initiative (Land_Cover_cci):  Global Land Cover Maps, Version 2.0.7",
+    "uuid": "b382ebe6679d44b8b0e68ea4ef4b701c"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 64800,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 64800,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          64800
+        ],
+        "size": 64800,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.99861,
+        "valid_min": -89.99861
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 129600,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 129600,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          129600
+        ],
+        "size": 129600,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 179.99861,
+        "valid_min": -179.99861
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          24
+        ],
+        "size": 24,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          24
+        ],
+        "size": 48,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.LC.yr.L4.LCCS.multi-sensor.multi-platform.Map.2-0-7.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "change_count": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          2048,
+          2048
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          2048,
+          2048
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "long_name": "number of class changes",
+        "orig_data_type": "uint8",
+        "shape": [
+          64800,
+          129600
+        ],
+        "size": 8398080000,
+        "valid_max": 100,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "change_count"
+    },
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "i2m": "0.002777777777778,0.0,0.0,-0.002777777777778,-180.0,90.0",
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "wkt": "GEOGCS[\\\"WGS 84\\\", \n  DATUM[\\\"World Geodetic System 1984\\\", \n    SPHEROID[\\\"WGS 84\\\", 6378137.0, 298.257223563, AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]], \n    AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]], \n  PRIMEM[\\\"Greenwich\\\", 0.0, AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]], \n  UNIT[\\\"degree\\\", 0.017453292519943295], \n  AXIS[\\\"Geodetic longitude\\\", EAST], \n  AXIS[\\\"Geodetic latitude\\\", NORTH], \n  AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "current_pixel_state": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          2048,
+          2048
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          2048,
+          2048
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "flag_meanings": "invalid clear_land clear_water clear_snow_ice cloud cloud_shadow",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "long_name": "LC pixel type mask",
+        "orig_data_type": "uint8",
+        "shape": [
+          64800,
+          129600
+        ],
+        "size": 8398080000,
+        "standard_name": "land_cover_lccs status_flag",
+        "valid_max": 5,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "current_pixel_state"
+    },
+    "lccs_class": {
+      "attrs": {
+        "_Unsigned": "true",
+        "ancillary_variables": "processed_flag current_pixel_state observation_count change_count",
+        "chunk_sizes": [
+          2048,
+          2048
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          2048,
+          2048
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "no_data cropland_rainfed cropland_rainfed_herbaceous_cover cropland_rainfed_tree_or_shrub_cover cropland_irrigated mosaic_cropland mosaic_natural_vegetation tree_broadleaved_evergreen_closed_to_open tree_broadleaved_deciduous_closed_to_open tree_broadleaved_deciduous_closed tree_broadleaved_deciduous_open tree_needleleaved_evergreen_closed_to_open tree_needleleaved_evergreen_closed tree_needleleaved_evergreen_open tree_needleleaved_deciduous_closed_to_open tree_needleleaved_deciduous_closed tree_needleleaved_deciduous_open tree_mixed mosaic_tree_and_shrub mosaic_herbaceous shrubland shrubland_evergreen shrubland_deciduous grassland lichens_and_mosses sparse_vegetation sparse_tree sparse_shrub sparse_herbaceous tree_cover_flooded_fresh_or_brakish_water tree_cover_flooded_saline_water shrub_or_herbaceous_cover_flooded urban bare_areas bare_areas_consolidated bare_areas_unconsolidated water snow_and_ice",
+        "flag_values": [
+          0,
+          10,
+          11,
+          12,
+          20,
+          30,
+          40,
+          50,
+          60,
+          61,
+          62,
+          70,
+          71,
+          72,
+          80,
+          81,
+          82,
+          90,
+          100,
+          110,
+          120,
+          121,
+          122,
+          -126,
+          -116,
+          -106,
+          -105,
+          -104,
+          -103,
+          -96,
+          -86,
+          -76,
+          -66,
+          -56,
+          -55,
+          -54,
+          -46,
+          -36
+        ],
+        "long_name": "Land cover class defined in LCCS",
+        "orig_data_type": "uint8",
+        "shape": [
+          64800,
+          129600
+        ],
+        "size": 8398080000,
+        "standard_name": "land_cover_lccs",
+        "valid_max": 220,
+        "valid_min": 1
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "lccs_class"
+    },
+    "observation_count": {
+      "attrs": {
+        "chunk_sizes": [
+          2048,
+          2048
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          2048,
+          2048
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon"
+        ],
+        "fill_value": -1,
+        "long_name": "number of valid observations",
+        "orig_data_type": "int16",
+        "shape": [
+          64800,
+          129600
+        ],
+        "size": 8398080000,
+        "standard_name": "land_cover_lccs number_of_observations",
+        "valid_max": 32767,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "observation_count"
+    },
+    "processed_flag": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          2048,
+          2048
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          2048,
+          2048
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon"
+        ],
+        "fill_value": 255,
+        "flag_meanings": "not_processed processed",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "LC map processed area flag",
+        "orig_data_type": "uint8",
+        "shape": [
+          64800,
+          129600
+        ],
+        "size": 8398080000,
+        "standard_name": "land_cover_lccs status_flag",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "processed_flag"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 64800,
+    "lon": 129600,
+    "time": 24
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2015-12-31",
+            "minDate": "1992-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2015-12-31",
+            "minDate": "1992-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "lccs_class",
+            "processed_flag",
+            "current_pixel_state",
+            "observation_count",
+            "change_count",
+            "crs"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.002778,
+  "time_period": "1Y",
+  "time_range": [
+    "1992-01-01",
+    "2015-12-31"
+  ]
+}

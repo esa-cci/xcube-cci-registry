@@ -1,0 +1,301 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.7",
+    "Metadata_Conventions": "Unidata Dataset Discovery v1.0",
+    "NCO": "netCDF Operators version 4.7.5 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco)",
+    "cdm_data_type": "Grid",
+    "comment": "See summary attribute",
+    "creation_date": "",
+    "creator_email": "help@esa-oceancolour-cci.org",
+    "creator_name": "Plymouth Marine Laboratory",
+    "creator_url": "http://esa-oceancolour-cci.org",
+    "date_created": "",
+    "geospatial_lat_max": 90.0,
+    "geospatial_lat_min": -90.0,
+    "geospatial_lat_resolution": ".04166666666666666666",
+    "geospatial_lat_units": "decimal degrees north",
+    "geospatial_lon_max": 180.0,
+    "geospatial_lon_min": -180.0,
+    "geospatial_lon_resolution": ".04166666666666666666",
+    "geospatial_lon_units": "decimal degrees east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "git_commit_hash": "",
+    "history": "\nKerchunk file created on 02/27/24",
+    "id": "",
+    "institution": "Plymouth Marine Laboratory",
+    "kerchunk_creation_date": "270224T211939",
+    "kerchunk_revision": 1,
+    "keywords": "satellite,observation,ocean,ocean colour",
+    "keywords_vocabulary": "none",
+    "license": "ESA CCI Data Policy: free and open access.  When referencing, please use: Ocean Colour Climate Change Initiative dataset, Version <Version Number>, European Space Agency, available online at http://www.esa-oceancolour-cci.org.  We would also appreciate being notified of publications so that we can list them on the project website at http://www.esa-oceancolour-cci.org/?q=publications",
+    "naming_authority": "uk.ac.pml",
+    "netcdf_file_type": "NETCDF4_CLASSIC",
+    "number_of_bands_used_to_classify": "4",
+    "number_of_files_composited": "",
+    "number_of_optical_water_types": "14",
+    "platform": "Orbview-2,Aqua,Envisat,Suomi-NPP, Sentinel-3a, Sentinel-3b",
+    "processing_level": "Level-3 binned",
+    "product_version": "6.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-oceancolour-cci.org/",
+    "sensor": "SeaWiFS,MODIS,MERIS,VIIRS,OLCI",
+    "sensors_present": "",
+    "source": "",
+    "spatial_resolution": "4km bin cells",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Conventions Version 1.7",
+    "start_date": "",
+    "stop_date": "",
+    "summary": "",
+    "time_coverage_duration": "P1M",
+    "time_coverage_end": "202212312359Z",
+    "time_coverage_resolution": "P1M",
+    "time_coverage_start": "199709010000Z",
+    "title": "ESA CCI Ocean Colour Product",
+    "tracking_id": ""
+  },
+  "bbox": [
+    -120.00000505014903,
+    -89.97916791027006,
+    120.00000505014903,
+    89.97916791027006
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        72900
+      ],
+      "dims": [
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        72900
+      ],
+      "dims": [
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-OC-L3S-CHLOR_A-MERGED-1M_MONTHLY_4km_SIN_PML_OCx-199709-202212-fv6.0_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "MERIS_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the number of observations from the MERIS sensor contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "MERIS_nobs_sum"
+    },
+    "MODISA_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the number of observations from the MODIS (Aqua) sensor contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "MODISA_nobs_sum"
+    },
+    "OLCI-A_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3a) sensor contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-A_nobs_sum"
+    },
+    "OLCI-B_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3b) sensor contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-B_nobs_sum"
+    },
+    "SeaWiFS_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the number of observations from the SeaWiFS (GAC and LAC) sensor contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "SeaWiFS_nobs_sum"
+    },
+    "VIIRS_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the number of observations from the VIIRS sensor contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "VIIRS_nobs_sum"
+    },
+    "chlor_a": {
+      "attrs": {
+        "ancillary_variables": "chlor_a_log10_rmsd chlor_a_log10_bias",
+        "long_name": "Chlorophyll-a concentration in seawater (not log-transformed), generated by as a blended combination of OCI, OCI2, OC2 and OCx algorithms, depending on water class memberships",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P011/current/CHLTVOLU",
+        "standard_name": "mass_concentration_of_chlorophyll_a_in_sea_water",
+        "units": "milligram m-3",
+        "units_nonstandard": "mg m^-3"
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "chlor_a"
+    },
+    "chlor_a_log10_bias": {
+      "attrs": {
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/chlor_a/cci_chla_bias.dat",
+        "long_name": "Bias of log10-transformed chlorophyll-a concentration in seawater.",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty"
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "chlor_a_log10_bias"
+    },
+    "chlor_a_log10_rmsd": {
+      "attrs": {
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/chlor_a/cci_chla_rmsd.dat",
+        "long_name": "Root-mean-square-difference of log10-transformed chlorophyll-a concentration in seawater.",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty"
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "chlor_a_log10_rmsd"
+    },
+    "crs": {
+      "attrs": {
+        "grid_mapping_name": "1D binned sinusoidal",
+        "number_of_latitude_rows": 4320,
+        "total_number_of_bins": 23761676
+      },
+      "chunks": [
+        1
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "int32",
+      "name": "crs"
+    },
+    "total_nobs_sum": {
+      "attrs": {
+        "long_name": "Count of the total number of observations contributing to this bin cell",
+        "number_of_files_composited": 19
+      },
+      "chunks": [
+        1,
+        72900
+      ],
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "total_nobs_sum"
+    }
+  },
+  "dims": {
+    "bin_index": 23761676,
+    "time": 304
+  },
+  "time_range": [
+    "1997-09-01",
+    "2022-12-31"
+  ]
+}

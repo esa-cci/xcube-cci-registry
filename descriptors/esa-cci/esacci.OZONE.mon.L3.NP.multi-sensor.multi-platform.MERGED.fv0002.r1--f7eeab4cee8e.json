@@ -1,0 +1,679 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains Level 3 nadir profile ozone data  from the ESA Ozone Climate Change Initiative (CCI) project.   The Level 3 data are monthly averages on a regular 3D grid derived from level 2 ozone profiles.  In this version 2 of the dataset, data are available for 1997 and 2007 and 2008 only, and use data from the GOME instrument on ERS (1997) and the GOME-2 instrument on METOP-A (2007, 2008).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/4eb4e801424a47f7b77434291921f889",
+    "cci_project": "OZONE",
+    "comment": "These data were produced at KNMI as part of the ESA OZONE CCI project.",
+    "data_type": "NP",
+    "ecv": "OZONE",
+    "history": "L2 data gridded to global grid.",
+    "institute": "Royal Netherlands Meteorological Institute",
+    "platform_id": "multi-platform",
+    "processing_level": "L3",
+    "product_string": "MERGED",
+    "product_version": "fv0002",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2016-03-08T16:54:39",
+    "references": "http://www.esa-ozone-cci.org/",
+    "sensor_id": "multi-sensor",
+    "source": "This dataset contains L2 profiles from GOME, SCIAMACHY, OMI and GOME-2 gridded onto a global grid.",
+    "title": "ESA Ozone Climate Change Initiative (Ozone CCI): Level 3 Nadir Ozone Profile Merged Data Product, version 2",
+    "uuid": "4eb4e801424a47f7b77434291921f889"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "air_pressure": {
+      "attrs": {
+        "NOTE": "Replace the first element from this array with the corresponding surface pressure element.",
+        "chunk_sizes": 17,
+        "data_type": "float32",
+        "dimensions": [
+          "air_pressure"
+        ],
+        "file_chunk_sizes": 17,
+        "file_dimensions": [
+          "air_pressure"
+        ],
+        "fill_value": null,
+        "long_name": "air pressure at layer boundaries",
+        "orig_data_type": "float32",
+        "shape": [
+          17
+        ],
+        "size": 17,
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "dims": [
+        "air_pressure"
+      ],
+      "dtype": "float32",
+      "name": "air_pressure"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 180,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 180,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude, from -90 (south) to +90 (north) given at gridcell centers",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "layers": {
+      "attrs": {
+        "chunk_sizes": 16,
+        "data_type": "int64",
+        "dimensions": [
+          "layers"
+        ],
+        "file_chunk_sizes": 16,
+        "file_dimensions": [
+          "layers"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "model_level_number == layer number, starting at 1",
+        "orig_data_type": "int32",
+        "shape": [
+          16
+        ],
+        "size": 16,
+        "standard_name": "model_level_number",
+        "units": "1"
+      },
+      "dims": [
+        "layers"
+      ],
+      "dtype": "int64",
+      "name": "layers"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 360,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 360,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude, from -180 (west) to +180 (east) given at gridcell centers",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "time",
+        "orig_data_type": "int32",
+        "shape": [
+          36
+        ],
+        "size": "36",
+        "standard_name": "time",
+        "units": "seconds since 1997-03-01"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.OZONE.mon.L3.NP.multi-sensor.multi-platform.MERGED.fv0002.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "O3_du": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          8,
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "layers",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          8,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "time",
+          "layers",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "weighted average of the partial ozone columns (DU/layer)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          16,
+          180,
+          360
+        ],
+        "size": "37324800",
+        "standard_name": "mole_content_of_ozone_in_atmosphere_layer",
+        "units": "446.15E-6 mol m-2"
+      },
+      "dims": [
+        "time",
+        "layers",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3_du"
+    },
+    "O3_du_tot": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "total column: vertically integrated O3_du dataset (DU)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          180,
+          360
+        ],
+        "size": "2332800",
+        "standard_name": "atmosphere_mole_content_of_ozone",
+        "units": "446.15E-6 mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3_du_tot"
+    },
+    "O3_ndens": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "weighted average of the number density (#molecules/cm3)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          17,
+          180,
+          360
+        ],
+        "size": "39657600",
+        "standard_name": "mole_concentration_of_ozone_in_air",
+        "units": "6.02214E-17 mol m-3"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3_ndens"
+    },
+    "O3_vmr": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "weighted average of the volume mixing ratio (ppmv)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          17,
+          180,
+          360
+        ],
+        "size": "39657600",
+        "standard_name": "mole_fraction_of_ozone_in_air",
+        "units": "1e-6"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3_vmr"
+    },
+    "O3e_du": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          8,
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "layers",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          8,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "time",
+          "layers",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "error in the weighted average of the partial ozone columns (DU/layer)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          16,
+          180,
+          360
+        ],
+        "size": "37324800",
+        "standard_name": "mole_content_of_ozone_in_atmosphere_layer standard_error",
+        "units": "446.15E-6 mol m-2"
+      },
+      "dims": [
+        "time",
+        "layers",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3e_du"
+    },
+    "O3e_du_tot": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "total column error: quadratically added o3e_du (DU)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          180,
+          360
+        ],
+        "size": "2332800",
+        "standard_name": "atmosphere_mole_content_of_ozone standard_error",
+        "units": "446.15E-6 mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3e_du_tot"
+    },
+    "O3e_ndens": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "error in the weighted average of the number density (#molecules/cm3)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          17,
+          180,
+          360
+        ],
+        "size": "39657600",
+        "standard_name": "mole_concentration_of_ozone_in_air standard_error",
+        "units": "6.02214E-17 mol m-3"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3e_ndens"
+    },
+    "O3e_vmr": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          9,
+          90,
+          180
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "error in the weighted average of the volume mixing ratio (ppmv)",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          17,
+          180,
+          360
+        ],
+        "size": "39657600",
+        "standard_name": "mole_fraction_of_ozone_in_air standard_error",
+        "units": "1e-6"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "O3e_vmr"
+    },
+    "surface_pressure": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "Pressure at the bottom of the atmosphere.",
+        "orig_data_type": "float32",
+        "shape": [
+          36,
+          180,
+          360
+        ],
+        "size": "2332800",
+        "standard_name": "surface_air_pressure",
+        "units": "hPa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_pressure"
+    }
+  },
+  "dims": {
+    "air_pressure": 17,
+    "bnds": 2,
+    "lat": 180,
+    "layers": 16,
+    "lon": 360,
+    "time": 36
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2008-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2008-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "surface_pressure",
+            "O3_du",
+            "O3e_du",
+            "O3_du_tot",
+            "O3e_du_tot",
+            "O3_vmr",
+            "O3e_vmr",
+            "O3_ndens",
+            "O3e_ndens"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 1.0,
+  "time_period": "1M",
+  "time_range": [
+    "1997-01-01",
+    "2008-12-31"
+  ]
+}

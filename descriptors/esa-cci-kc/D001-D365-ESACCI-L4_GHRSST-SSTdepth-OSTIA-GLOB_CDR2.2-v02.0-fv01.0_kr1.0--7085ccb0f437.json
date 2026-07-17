@@ -1,0 +1,276 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.5, Unidata Observation Dataset v1.0",
+    "Metadata_Conventions": "Unidata Dataset Discovery v1.0",
+    "acknowledgment": "Funded by the European Space Agency (ESA)",
+    "cdm_data_type": "grid",
+    "comment": "This climatology includes the post-hoc dust corrections from Merchant and Embury (2020) https://doi.org/10.3390/rs12162554 \nWARNING Some applications are unable to properly handle signed byte values. If values are encountered > 127, please subtract 256 from this reported value",
+    "contact": "https://climate.esa.int/en/projects/sea-surface-temperature",
+    "contributor_name": "JASMIN",
+    "contributor_role": "This work used JASMIN, the UK's collaborative data analysis environment (https://jasmin.ac.uk)",
+    "creator_email": "o.embury@reading.ac.uk",
+    "creator_institution": "University of Reading",
+    "creator_name": "Owen Embury",
+    "creator_type": "person",
+    "creator_url": "https://climate.esa.int/en/projects/sea-surface-temperature",
+    "date_created": "",
+    "date_metadata_modified": "",
+    "doi": "https://dx.doi.org/10.5285/dc11996a68c446abb342e917efdaac30",
+    "easternmost_longitude": 180.00001525878906,
+    "file_quality_level": 3,
+    "gds_version_id": "2.0",
+    "geospatial_lat_max": 90.0,
+    "geospatial_lat_min": -90.0,
+    "geospatial_lat_resolution": 0.05000000074505806,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 180.00001525878906,
+    "geospatial_lon_min": -180.0,
+    "geospatial_lon_resolution": 0.05000000074505806,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": -0.20000000298023224,
+    "geospatial_vertical_min": -0.20000000298023224,
+    "history": "created with create_climatology.py v3.0\nKerchunk file created on 02/27/24",
+    "id": "Climatology-ESACCI-L4-GLOB_CDR-v2.2",
+    "institution": "ESACCI",
+    "kerchunk_creation_date": "270224T211443",
+    "kerchunk_revision": 1,
+    "key_variables": "analysed_sst, sea_ice_fraction",
+    "keywords": "Oceans > Ocean Temperature > Sea Surface Temperature",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "Creative Commons Licence by attribution (https://creativecommons.org/licenses/by/4.0/)",
+    "metadata_link": "https://dx.doi.org/10.5285/dc11996a68c446abb342e917efdaac30",
+    "naming_authority": "org.ghrsst",
+    "netcdf_version_id": "4.7.4",
+    "northernmost_latitude": 90.0,
+    "platform": "ERS-<1,2>, Envisat, NOAA-<07,09,11,12,14,15,16,17,18,19>, MetOpA",
+    "processing_level": "L4",
+    "product_specification_version": "SST_CCI-PSD-UKMO-201-Issue-2",
+    "product_version": "2.2",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publisher_email": "support@ceda.ac.uk",
+    "publisher_name": "NERC EDS Centre for Environmental Data Analysis",
+    "publisher_type": "institution",
+    "publisher_url": "https://www.ceda.ac.uk",
+    "references": "Merchant, C.J. et al., 2019. Satellite-based time-series of sea-surface temperature since 1981 for climate applications. Sci Data 6, 223. https://doi.org/10.1038/s41597-019-0236-x \nMerchant, C.J., Embury, O., 2020. Adjusting for Desert-Dust-Related Biases in a Climate Data Record of Sea Surface Temperature. Remote Sensing 12, 2554. https://doi.org/10.3390/rs12162554",
+    "sensor": "ATSR, AATSR, AVHRR_GAC",
+    "source": "OSTIA-ESACCI-L4-GLOB-v2.1",
+    "southernmost_latitude": -90.0,
+    "spatial_resolution": "0.05 degree",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention",
+    "start_time": "1982-01-01T00:00:00Z",
+    "stop_time": "2010-12-31T00:00:00Z",
+    "summary": "Daily climatological mean sea surface temperature on a global 0.05 degree latitude-longitude grid, derived from the SST CCI analysis data for the period 1982 to 2010 (29 years). This climatology includes the post-hoc dust corrections from Merchant and Embury (2020) https://doi.org/10.3390/rs12162554",
+    "time_coverage_duration": "P1D",
+    "time_coverage_end": "2010-12-31T00:00:00Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "1982-01-01T00:00:00Z",
+    "title": "ESA SST CCI Climatology v2.2",
+    "tracking_id": "",
+    "uuid": "",
+    "westernmost_longitude": -180.0
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "comment": " Latitude geographical coordinates,WGS84 projection",
+        "long_name": "Latitude",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "comment": " Longitude geographical coordinates,WGS84 projection",
+        "long_name": "Longitude",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "climatology": "climatology_bnds",
+        "comment": " ",
+        "long_name": "reference time of sst field",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "D001-D365-ESACCI-L4_GHRSST-SSTdepth-OSTIA-GLOB_CDR2.2-v02.0-fv01.0_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "analysed_sst": {
+      "attrs": {
+        "cell_methods": "time: mean over years",
+        "depth": "20 cm",
+        "long_name": "analysed sea surface temperature",
+        "source": "ATSR<1,2>-ESACCI-L3U-v2.0, AATSR-ESACCI-L3U-v2.0, AVHRR<07,09,11,12,14,15,16,17,18,19>_G-ESACCI-L3U-v2.0, AVHRRMTA_G-ESACCI-L3U-v2.0",
+        "standard_name": "sea_water_temperature",
+        "units": "kelvin",
+        "valid_max": 4500,
+        "valid_min": -300
+      },
+      "chunks": [
+        1,
+        1200,
+        2400
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "analysed_sst"
+    },
+    "climatology_bnds": {
+      "attrs": {
+        "comment": "Contains the start and end times for the time period the data represent.",
+        "long_name": "Climatology cell boundaries"
+      },
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "climatology_bnds"
+    },
+    "lat_bnds": {
+      "attrs": {
+        "comment": "Contains the northern and southern boundaries of the grid cells.",
+        "long_name": "Latitude cell boundaries",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "chunks": [
+        3600,
+        2
+      ],
+      "dims": [
+        "lat",
+        "bnds"
+      ],
+      "dtype": "float32",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "attrs": {
+        "comment": "Contains the eastern and western boundaries of the grid cells.",
+        "long_name": "Longitude cell boundaries",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "chunks": [
+        7200,
+        2
+      ],
+      "dims": [
+        "lon",
+        "bnds"
+      ],
+      "dtype": "float32",
+      "name": "lon_bnds"
+    },
+    "mask": {
+      "attrs": {
+        "comment": "b0: 1=grid cell is open sea water b1: 1=grid cell is land b2: 1=grid cell is lake surface b3: 1=grid cell is sea ice b4-b7: reserved for future grid mask data",
+        "flag_masks": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ],
+        "flag_meanings": "water land optional_lake_surface sea_ice optional_river_surface",
+        "long_name": "sea/land/lake/ice field composite mask",
+        "source": "NAVOCEANO_landmask_v1.0 EUMETSAT_OSI-SAF_icemask ARCLake_lakemask",
+        "valid_max": 31,
+        "valid_min": 1
+      },
+      "chunks": [
+        1,
+        1800,
+        3600
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "mask"
+    },
+    "sea_ice_fraction": {
+      "attrs": {
+        "cell_methods": "time: mean over years",
+        "comment": " Sea ice area fraction",
+        "long_name": "sea ice area fraction",
+        "source": "EUMETSAT_OSI-SAF-ICE-OSI-450-v2.0, EUMETSAT_OSI-SAF-ICE-OSI-430-v1.2",
+        "standard_name": "sea_ice_area_fraction",
+        "units": "1",
+        "valid_max": 100,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        1800,
+        3600
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "sea_ice_fraction"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 3600,
+    "lon": 7200,
+    "time": 365
+  },
+  "time_period": "1D",
+  "time_range": [
+    "2010-01-01",
+    "2011-01-01"
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "attrs": {
+    "abstract": "This dataset provides Sea Ice Concentration (SIC) for the polar regions, derived from the Nimbus-5 Electrical Scanning Microwave Radiometer (ESMR), which operated between 1972 and 1977. It is processed with an algorithm using the single channel ESMR data (19.35 GHz), and has been gridded at 25 km grid spacing. This is the first version of the product, v1.0.\n\nThis product was generated in the context of the ESA Climate Change Initiative Programme (ESA CCI) by the Sea Ice CCI (Sea_Ice_cci) project.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/34a15b96f1134d9e95b9e486d74e49cf",
+    "cci_project": "SEAICE",
+    "data_type": "SICONC",
+    "description": "Weather related data.",
+    "ecv": "SEAICE",
+    "history": "2022-11-11T16:40:43Z creation",
+    "institute": "DTU Space",
+    "platform_id": "Nimbus-5",
+    "processing_level": "L3C",
+    "product_string": "NIMBUS5_ESMR-EASE2_SH",
+    "product_version": "1-0",
+    "project": "ESA Climate Change Initiative",
+    "publication_date": "2023-01-17T14:23:14",
+    "references": "https://climate.esa.int/en/projects/sea-ice/Sea-Ice-Key-Documents/",
+    "sensor_id": "ESMR-(Nimbus-5)",
+    "source": "ESMR from Nimbus 5,ERA-5 fields from ECMWF",
+    "title": "ESA Sea Ice Climate Change Initiative (Sea_Ice_cci): Nimbus-5 ESMR Sea Ice Concentration, version 1.0",
+    "uuid": "34a15b96f1134d9e95b9e486d74e49cf"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bnds",
+        "calendar": "proleptic_gregorian",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "reference time of product",
+        "orig_data_type": "int32",
+        "shape": [
+          1026
+        ],
+        "size": "1026",
+        "standard_name": "time",
+        "units": "days since 1900-01-01T12:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "nv"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "nv"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          2
+        ],
+        "size": "2052"
+      },
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "time_bnds"
+    },
+    "xc": {
+      "attrs": {
+        "chunk_sizes": [
+          432
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          432
+        ],
+        "file_dimensions": [
+          "xc"
+        ],
+        "fill_value": null,
+        "long_name": "x coordinate of projection (eastings)",
+        "orig_data_type": "float64",
+        "shape": [
+          432
+        ],
+        "size": 432,
+        "standard_name": "projection_x_coordinate",
+        "units": "km"
+      },
+      "dims": [
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "xc"
+    },
+    "yc": {
+      "attrs": {
+        "chunk_sizes": [
+          432
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "yc"
+        ],
+        "file_chunk_sizes": [
+          432
+        ],
+        "file_dimensions": [
+          "yc"
+        ],
+        "fill_value": null,
+        "long_name": "y coordinate of projection (northings)",
+        "orig_data_type": "float64",
+        "shape": [
+          432
+        ],
+        "size": 432,
+        "standard_name": "projection_y_coordinate",
+        "units": "km"
+      },
+      "dims": [
+        "yc"
+      ],
+      "dtype": "float64",
+      "name": "yc"
+    }
+  },
+  "crs": "Lambert Azimuthal Equal Area",
+  "data_id": "esacci.SEAICE.day.L3C.SICONC.ESMR-(Nimbus-5).Nimbus-5.NIMBUS5_ESMR-EASE2_SH.1-0.SH",
+  "data_type": "dataset",
+  "data_vars": {
+    "Lambert_Azimuthal_Grid": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "lambert_azimuthal_equal_area",
+        "inverse_flattening": 298.257223563,
+        "latitude_of_projection_origin": -90,
+        "longitude_of_projection_origin": 0,
+        "orig_data_type": "int32",
+        "proj4_string": "+proj=laea +lat_0=-90 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs +type=crs",
+        "semi_major_axis": 6378137,
+        "semi_minor_axis": 6356752.314245,
+        "shape": [
+          1
+        ],
+        "size": 1
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "Lambert_Azimuthal_Grid"
+    },
+    "Tb": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "these are the uncorrected brightness temperatures",
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "(uncorrected) brightness temperatures",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "units": "K",
+        "valid_max": 273.15,
+        "valid_min": 90
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "Tb"
+    },
+    "Tb_corr": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "these are the corrected brightness temperatures",
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "corrected brightness temperatures",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "units": "K",
+        "valid_max": 273.15,
+        "valid_min": 90
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "Tb_corr"
+    },
+    "algorithm_standard_error": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "this is one of the two components contributing to 'total_standard_error'",
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "algorithm uncertainty (one standard deviation) of concentration of sea ice",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "algorithm_standard_error"
+    },
+    "ice_conc": {
+      "attrs": {
+        "ancillary_variables": "total_standard_error status_flag",
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "this field is the primary sea ice concentration estimate for this climate data record",
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "fully filtered concentration of sea ice using atmospheric correction of brightness temperatures and open water filters",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "standard_name": "sea_ice_area_fraction",
+        "units": "%",
+        "valid_max": 100,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "ice_conc"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": [
+          432,
+          432
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "long_name": "latitude coordinate",
+        "orig_data_type": "float32",
+        "shape": [
+          432,
+          432
+        ],
+        "size": 186624,
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": [
+          432,
+          432
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "long_name": "longitude coordinate",
+        "orig_data_type": "float32",
+        "shape": [
+          432,
+          432
+        ],
+        "size": 186624,
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "raw_ice_conc_values": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "this field can be used in combination with \\\"ice_conc\\\" to access un-bounded normal distribution of sea ice concentration estimates corresponding to the uncertainty estimate in \\\"total_standard_error\\\". It does also feature some amount of un-physical data (below 0 and above 1).",
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "sea ice concentration estimates as retrieved by the algorithm, and that were edited away by the various filters",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "raw_ice_conc_values"
+    },
+    "smearing_standard_error": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "this is one of the two components contributing to 'total_standard_error'",
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "smearing uncertainty (one standard deviation) of concentration of sea ice",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "smearing_standard_error"
+    },
+    "status_flag": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "comment": "Flag values found in the map might be combinations of those listed above. For example flag value 80 (= 2^4 + 2^6 = 16 + 64) indicates high_t2m AND temporal_interp",
+        "coordinates": "lon lat",
+        "data_type": "int64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": 9223372036854775807,
+        "flag_descriptions": "\nall bits to 0 (no flag/flag 0): Nominal retrieval by the SIC algorithm\nbit 1 (flag 1): Position is over land\nbit 2 (flag 2): Position is lake\nbit 3 (flag 4): SIC is set to zero by the open water filter\nbit 4 (flag 8): SIC value is changed for correcting land spill-over effects\nbit 5 (flag 16): Handle with caution, the 2m air temperature is high at this position, and this might be false ice\nbit 6 (flag 32): Coast\nbit 7 (flag 64):  SIC is set to zero since position is outside maximum sea ice climatology \nbit 8 (flag 128): Point not accepted but no other flags raised.",
+        "flag_masks": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "flag_meanings": "land lake open_water_filtered land_spill_over high_t2m coast max_ice_climo not_accepted",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "status flag bit array for sea ice concentration retrievals",
+        "orig_data_type": "int32",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "standard_name": "sea_ice_area_fraction status_flag",
+        "valid_max": 32767,
+        "valid_min": 1
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "int64",
+      "name": "status_flag"
+    },
+    "total_standard_error": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "file_chunk_sizes": [
+          1,
+          432,
+          432
+        ],
+        "file_dimensions": [
+          "time",
+          "yc",
+          "xc"
+        ],
+        "fill_value": null,
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "total uncertainty (one standard deviation) of concentration of sea ice",
+        "orig_data_type": "float64",
+        "shape": [
+          1026,
+          432,
+          432
+        ],
+        "size": "191476224",
+        "standard_name": "sea_ice_area_fraction standard_error",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "total_standard_error"
+    }
+  },
+  "dims": {
+    "nv": 2,
+    "time": 1026,
+    "xc": 432,
+    "yc": 432
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "1977-05-10",
+            "minDate": "1972-12-11",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "1977-05-10",
+            "minDate": "1972-12-11",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "Lambert_Azimuthal_Grid",
+            "ice_conc",
+            "raw_ice_conc_values",
+            "total_standard_error",
+            "smearing_standard_error",
+            "algorithm_standard_error",
+            "status_flag",
+            "Tb_corr",
+            "Tb",
+            "lat",
+            "lon"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 25.0,
+  "time_period": "1D",
+  "time_range": [
+    "1972-12-11",
+    "1977-05-10"
+  ]
+}

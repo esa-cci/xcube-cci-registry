@@ -1,0 +1,486 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.9",
+    "cdm_data_type": "Grid",
+    "comment": "This dataset was produced with funding of the ESA CCI+ Soil Moisture project; ESRIN Contract No: 4000126684/19/I-NB",
+    "contact": "cci_sm_contact@eodc.eu",
+    "creator_email": "cci_sm_developer@eodc.eu",
+    "creator_name": "Department of Geodesy and Geoinformation, Vienna University of Technology",
+    "creator_url": "https://climers.geo.tuwien.ac.at/",
+    "date_created": "",
+    "geospatial_lat_max": "90.0",
+    "geospatial_lat_min": "-90.0",
+    "geospatial_lat_resolution": "0.25 degree",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180.0",
+    "geospatial_lon_min": "-180.0",
+    "geospatial_lon_resolution": "0.25 degree",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "\nKerchunk file created on 02/28/24",
+    "id": "",
+    "institution": "TU Wien (AUT); VanderSat B.V. (NL)",
+    "kerchunk_creation_date": "280224T095740",
+    "kerchunk_revision": 1,
+    "key_variables": "sm",
+    "keywords": "soil moisture, soil water content, microwave remote sensing, active, passive, combined, climate data record",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "Data use is free and open for all registered users.",
+    "naming_authority": "TU Wien",
+    "platform": "Nimbus 7, DMSP, TRMM, AQUA, Coriolis, GCOM-W1, MIRAS, SMAP, GPM, FengYun-3B, FengYun-3C, FengYun-3D; ERS-1, ERS-2, METOP-A, METOP-B",
+    "processing_level": "Quality-controlled, super-collocated (L3S) Satellite Soil Moisture (SM) data from multiple sensors",
+    "product_version": "v07.1",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-soilmoisture-cci.org; Dorigo, W.A., Wagner, W., Albergel, C., Albrecht, F.,  Balsamo, G., Brocca, L., Chung, D., Ertl, M., Forkel, M., Gruber, A., Haas, E., Hamer, D. P. Hirschi, M., Ikonen, J., De Jeu, R. Kidd, R. Lahoz, W., Liu, Y.Y., Miralles, D., Lecomte, P. (2017) ESA CCI Soil Moisture for improved Earth system understanding: State-of-the art and future directions. In Remote Sensing of Environment, 2017, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2017.07.001; Gruber, A., Scanlon, T., van der Schalie, R., Wagner, W., Dorigo, W. (2019) Evolution of the ESA CCI Soil Moisture Climate Data Records and their underlying merging methodology. Earth System Science Data 11, 717-739, https://doi.org/10.5194/essd-11-717-2019; Gruber, A., Dorigo, W. A., Crow, W., Wagner W. (2017). Triple Collocation-Based Merging of Satellite Soil Moisture Retrievals. IEEE Transactions on Geoscience and Remote Sensing. PP. 1-13. https://doi.org/10.1109/TGRS.2017.2734070",
+    "sensor": "SMMR, SSM/I, TMI, AMSR-E, WindSat, AMSR2, SMOS, SMAP_radiometer, GMI, VIRR-3B, VIRR-3C, VIRR-3D; AMI-WS, ASCAT-A, ASCAT-B, ASCAT-C",
+    "source": "WARP 5.5R1.1/AMI-WS/ERS12 Level 2 Soil Moisture; WARP 5.4R1.0/AMI-WS/ERS2 Level 2 Soil Moisture; H115: Metop ASCAT Surface Soil Moisture Climate Data Record v5 12.5 km sampling, DOI: 10.15770/EUM_SAF_H_0006; H116: Metop ASCAT Surface Soil Moisture Climate Data Record v5 Extension 12.5 km sampling; H115: Metop ASCAT Surface Soil Moisture Climate Data Record v5 12.5 km sampling, DOI: 10.15770/EUM_SAF_H_0006; H116: Metop ASCAT Surface Soil Moisture Climate Data Record v5 Extension 12.5 km sampling; H115: Metop ASCAT Surface Soil Moisture Climate Data Record v5 12.5 km sampling, DOI: 10.15770/EUM_SAF_H_0006; H116: Metop ASCAT Surface Soil Moisture Climate Data Record v5 Extension 12.5 km sampling;; LPRMv7/SMMR/Nimbus 7 L3 Surface Soil Moisture, Ancillary Params, and quality flags; LPRMv7/SSMI/F08, F11, F13 DMSP L3 Surface Soil Moisture, Ancillary Params, and quality flags; LPRMv7/TMI/TRMM L2 Surface Soil Moisture, Ancillary Params, and QC; LPRMv7/AMSR-E/Aqua L2B Surface Soil Moisture, Ancillary Params, and QC; LPRMv7/WINDSAT/CORIOLIS L2 Surface Soil Moisture, Ancillary Params, and QC; LPRMv7/AMSR2/GCOM-W1 L3 Surface Soil Moisture, Ancillary Params; LPRMv7/SMOS/MIRAS L3 Surface Soil Moisture, CATDS Level 3 Brightness Temperatures (L3TB) version 300 RE03 & RE04; LPRMv7/SMAP_radiometer/SMAP L2 Surface Soil Moisture, Ancillary Params, and QC; LPRMv7/GMI/GPM L3 Surface Soil Moisture, Ancillary Params, and quality flags; LPRMv7/VIRR/FengYun-3B L3 Surface Soil Moisture, Ancillary Params, and quality flags; LPRMv7/VIRR/FengYun-3C L3 Surface Soil Moisture, Ancillary Params, and quality flags; LPRMv7/VIRR/FengYun-3D L3 Surface Soil Moisture, Ancillary Params, and quality flags;;",
+    "spatial_resolution": "25km",
+    "standard_name_vocabulary": "CF Standard Name Table v77",
+    "summary": "This dataset was produced with funding of the ESA CCI+ Soil Moisture project; ESRIN Contract No: 4000126684/19/I-NB",
+    "time_coverage_duration": "P43Y",
+    "time_coverage_end": "20211231T235959Z",
+    "time_coverage_end_product": "20211231T235959Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "19781101T000000Z",
+    "time_coverage_start_product": "19781101T000000Z",
+    "title": "ESA CCI Surface Soil Moisture COMBINED active+passive Product",
+    "tracking_id": ""
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "_CoordinateAxisType": "Lat",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "_CoordinateAxisType": "Lon",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-SOILMOISTURE-L3S-SSMV-COMBINED-19781101-20211231-fv07.1_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "dnflag": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": [
+          "NaN",
+          "day",
+          "night"
+        ],
+        "bits": [
+          "0b0",
+          "0b1",
+          "0b10"
+        ],
+        "dtype": "int8",
+        "flag_meanings": [
+          "NaN",
+          "day",
+          "night",
+          "day_night_combination"
+        ],
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "Day / Night Flag",
+        "valid_range": [
+          0,
+          3
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "dnflag"
+    },
+    "flag": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": [
+          "no_data_inconsistency_detected",
+          "snow_coverage_or_temperature_below_zero",
+          "dense_vegetation",
+          "others_no_convergence_in_the_model_thus_no_valid_sm_estimates",
+          "soil_moisture_value_exceeds_physical_boundary",
+          "weight_of_measurement_below_threshold",
+          "all_datasets_deemed_unreliable",
+          "barren_ground_advisory_flag",
+          "NaN"
+        ],
+        "bits": [
+          "0b0",
+          "0b1",
+          "0b10",
+          "0b100",
+          "0b1000",
+          "0b10000",
+          "0b100000",
+          "0b1000000",
+          "0b10000000"
+        ],
+        "dtype": "int16",
+        "flag_meanings": [
+          "no_data_inconsistency_detected",
+          "snow_coverage_or_temperature_below_zero",
+          "dense_vegetation",
+          "combination_of_flag_values_1_and_2",
+          "soil_moisture_value_exceeds_physical_boundary",
+          "combination_of_flag_values_1_and_8",
+          "combination_of_flag_values_2_and_8",
+          "barren_ground_advisory_flag",
+          "combination_of_flag_values_1_and_64",
+          "combination_of_flag_values_2_and_64",
+          "combination_of_flag_values_1_and_2_and_64",
+          "combination_of_flag_values_8_and_64",
+          "combination_of_flag_values_1_and_8_and_64",
+          "combination_of_flag_values_2_and_8_and_64",
+          "combination_of_flag_values_1_and_2_and_4_and_8_and_16_and_32_and_64"
+        ],
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          64,
+          65,
+          66,
+          67,
+          72,
+          73,
+          74,
+          127
+        ],
+        "long_name": "Flag",
+        "standard_name": "soil_moisture_content status_flag",
+        "valid_range": [
+          0,
+          255
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "flag"
+    },
+    "freqbandID": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": [
+          "NaN",
+          "L14",
+          "C53",
+          "C66",
+          "C68",
+          "C69",
+          "C73",
+          "X107",
+          "K194",
+          "MODEL"
+        ],
+        "bits": [
+          "0b0",
+          "0b1",
+          "0b10",
+          "0b100",
+          "0b1000",
+          "0b10000",
+          "0b100000",
+          "0b1000000",
+          "0b10000000",
+          "0b100000000"
+        ],
+        "dtype": "int16",
+        "flag_meanings": [
+          "NaN",
+          "C66",
+          "X107",
+          "C66+X107"
+        ],
+        "flag_values": [
+          0,
+          4,
+          64,
+          68
+        ],
+        "long_name": "Frequency Band Identification",
+        "valid_range": [
+          0,
+          511
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "freqbandID"
+    },
+    "mode": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": [
+          "NaN",
+          "ascending",
+          "descending"
+        ],
+        "bits": [
+          "0b0",
+          "0b1",
+          "0b10"
+        ],
+        "dtype": "int8",
+        "flag_meanings": [
+          "NaN",
+          "ascending",
+          "descending",
+          "ascending_descending_combination"
+        ],
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "Satellite Mode",
+        "valid_range": [
+          0,
+          3
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "mode"
+    },
+    "sensor": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": [
+          "NaN",
+          "SMMR",
+          "SSMI",
+          "TMI",
+          "AMSRE",
+          "WindSat",
+          "AMSR2",
+          "SMOS",
+          "AMIWS",
+          "ASCATA",
+          "ASCATB",
+          "SMAP",
+          "MODEL",
+          "GPM",
+          "FY3B",
+          "FY3D",
+          "ASCATC",
+          "FY3C"
+        ],
+        "bits": [
+          "0b0",
+          "0b1",
+          "0b10",
+          "0b100",
+          "0b1000",
+          "0b10000",
+          "0b100000",
+          "0b1000000",
+          "0b10000000",
+          "0b100000000",
+          "0b1000000000",
+          "0b10000000000",
+          "0b100000000000",
+          "0b1000000000000",
+          "0b10000000000000",
+          "0b100000000000000",
+          "0b1000000000000000",
+          "0b10000000000000000"
+        ],
+        "dtype": "int32",
+        "flag_meanings": [
+          "NaN",
+          "SMMR"
+        ],
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "Sensor",
+        "valid_range": [
+          0,
+          131071
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "sensor"
+    },
+    "sm": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "ancillary_variables": "sm_uncertainty flag t0",
+        "dtype": "float32",
+        "long_name": "Volumetric Soil Moisture",
+        "standard_name": "soil_moisture_content",
+        "units": "m3 m-3",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sm"
+    },
+    "sm_uncertainty": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "dtype": "float32",
+        "long_name": "Volumetric Soil Moisture Uncertainty",
+        "standard_name": "soil_moisture_content standard_error",
+        "units": "m3 m-3",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sm_uncertainty"
+    },
+    "t0": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "dtype": "float64",
+        "long_name": "Observation Timestamp",
+        "valid_range": [
+          3225.0,
+          3227.0
+        ]
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "t0"
+    }
+  },
+  "dims": {
+    "lat": 720,
+    "lon": 1440,
+    "time": 15767
+  },
+  "spatial_res": 0.25,
+  "time_period": "1D",
+  "time_range": [
+    "1978-10-31",
+    "2021-12-31"
+  ]
+}

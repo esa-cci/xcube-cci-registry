@@ -1,0 +1,509 @@
+{
+  "attrs": {
+    "abstract": "This data set is part of the ESA Greenland Ice sheet CCI project. The data set provides surface elevation changes (SEC) for the Greenland Ice sheet derived from Cryosat 2 satellite radar altimetry, for the time period between 2010 and 2017.\n \nThe surface elevation change data  are provided as 2-year means (2011-2012, 2012-2013, 2013-2014, 2014-2015, 2015-2016, and 2016-2017), and five-year means are also provided (2011-2015, 2012-2016, 2013-2017), along with their associated errors.   Data are provided in both NetCDF and gridded ASCII format, as well as png plots.\n\nThe algorithm used  to devive the product is described in the paper \u201cImplications of changing scattering properties on the Greenland ice sheet volume change from Cryosat-2 altimetry\u201d by S.B. Simonsen and L.S. S\u00f8rensen, Remote Sensing of the Environment, 190,pp.207-216, doi:10.1016/j.rse.2016.12.012",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/41e9783d4caa447b99f653c065805579",
+    "cci_project": "ICESHEETS",
+    "data_type": "SEC",
+    "ecv": "ICESHEETS",
+    "institute": "DTU Space",
+    "platform_id": "CryoSat-2",
+    "processing_level": "Unspecified",
+    "product_string": "UNSPECIFIED",
+    "product_version": "2-2",
+    "publication_date": "2018-11-22T11:59:39",
+    "sensor_id": "SIRAL",
+    "title": "ESA Greenland Ice Sheet Climate Change Initiative (Greenland_Ice_Sheet_cci): Greenland Surface Elevation Change from Cryosat-2, v2.2",
+    "uuid": "41e9783d4caa447b99f653c065805579"
+  },
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "coords": {
+    "end_time": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": [
+          6
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          6
+        ],
+        "file_dimensions": [
+          "Time"
+        ],
+        "fill_value": null,
+        "long_name": "End of time slice",
+        "orig_data_type": "float32",
+        "shape": [
+          6
+        ],
+        "size": "6",
+        "title": "Time",
+        "units": "days since 2000-01-01 00:00:00"
+      },
+      "dims": [
+        "Time"
+      ],
+      "dtype": "float32",
+      "name": "end_time"
+    },
+    "start_time": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": [
+          6
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          6
+        ],
+        "file_dimensions": [
+          "Time"
+        ],
+        "fill_value": null,
+        "long_name": "Start of time slice",
+        "orig_data_type": "float32",
+        "shape": [
+          6
+        ],
+        "size": "6",
+        "title": "Time",
+        "units": "days since 2000-01-01 00:00:00"
+      },
+      "dims": [
+        "Time"
+      ],
+      "dtype": "float32",
+      "name": "start_time"
+    },
+    "t": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": [
+          6
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          6
+        ],
+        "file_dimensions": [
+          "Time"
+        ],
+        "fill_value": null,
+        "long_name": "Average time for time slice",
+        "orig_data_type": "float32",
+        "shape": [
+          6
+        ],
+        "size": "6",
+        "title": "Time",
+        "units": "days since 2000-01-01 00:00:00"
+      },
+      "dims": [
+        "Time"
+      ],
+      "dtype": "float32",
+      "name": "t"
+    },
+    "x": {
+      "attrs": {
+        "chunk_sizes": [
+          325
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "x"
+        ],
+        "file_chunk_sizes": [
+          325
+        ],
+        "file_dimensions": [
+          "x"
+        ],
+        "fill_value": null,
+        "long_name": "Cartesian x-coordinate - easting",
+        "orig_data_type": "float32",
+        "shape": [
+          325
+        ],
+        "size": 325,
+        "standard_name": "projection_x_coordinate",
+        "units": "meters"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "chunk_sizes": [
+          614
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y"
+        ],
+        "file_chunk_sizes": [
+          614
+        ],
+        "file_dimensions": [
+          "y"
+        ],
+        "fill_value": null,
+        "long_name": "Cartesian y-coordinate - northing",
+        "orig_data_type": "float32",
+        "shape": [
+          614
+        ],
+        "size": 614,
+        "standard_name": "projection_y_coordinate",
+        "units": "meters"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float32",
+      "name": "y"
+    }
+  },
+  "crs": "Polar Stereographic (variant B)",
+  "data_id": "esacci.ICESHEETS.yr.Unspecified.SEC.SIRAL.CryoSat-2.UNSPECIFIED.2-2.greenland_sec_cryosat_2yr",
+  "data_type": "dataset",
+  "data_vars": {
+    "SEC": {
+      "attrs": {
+        "Bias_correction": "Backscatter and LeW",
+        "Comment": "CCI version of the LSM5 from Simonsen et al. 2017",
+        "Contributor": "DTU-GDK",
+        "Gridding_method": "Weighted interpolation",
+        "Source": "Cryosat-2",
+        "Time": "January 2011 until December 2016. At year 2 running mean ",
+        "Units": "m/yr",
+        "backscatter_corrections": "Backscatter  and Leading edge",
+        "chunk_sizes": [
+          614,
+          325,
+          6
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          614,
+          325,
+          6
+        ],
+        "file_dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "All applied to the Cryosat L2 produce",
+        "grid_mapping": "grid_projection",
+        "level1_source": "Cryosat L1 Baseline C",
+        "long_name": "Surface elevation changes, 20.0 km gaussian filter",
+        "orig_data_type": "float32",
+        "ref": "Simonsen et al. 2017",
+        "shape": [
+          614,
+          325,
+          6
+        ],
+        "size": "1197300",
+        "slope_correction": "GIMP and MSSL slope model from L2 product"
+      },
+      "dims": [
+        "time",
+        "Time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "SEC"
+    },
+    "SEC_error": {
+      "attrs": {
+        "Bias_correction": "Backscatter and LeW",
+        "Comment": "CCI version of the LSM5 from Simonsen et al. 2017",
+        "Contributor": "DTU-GDK",
+        "Gridding_method": "Weighted interpolation",
+        "Source": "Cryosat-2",
+        "Time": "January 2011 until December 2016. At year running mean ",
+        "Units": "m/yr",
+        "backscatter_corrections": "Backscatter and Leading edge",
+        "chunk_sizes": [
+          614,
+          325,
+          6
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "file_chunk_sizes": [
+          614,
+          325,
+          6
+        ],
+        "file_dimensions": [
+          "y",
+          "x",
+          "Time"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "All applied to the Cryosat L2 produce",
+        "grid_mapping": "grid_projection",
+        "level1_source": "Cryosat L1 Baseline C",
+        "long_name": "Error estimates associated with surface elevation changes",
+        "orig_data_type": "float32",
+        "shape": [
+          614,
+          325,
+          6
+        ],
+        "size": "1197300",
+        "slope_correction": "GIMP and MSSL slope model from L2 product"
+      },
+      "dims": [
+        "time",
+        "Time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "SEC_error"
+    },
+    "grid_projection": {
+      "attrs": {
+        "DODS": {
+          "strlen": 0
+        },
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "bytes1024",
+        "dimensions": [],
+        "ellipsoid": "WGS84",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "orig_data_type": "bytes1024",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0
+      },
+      "dims": [],
+      "dtype": "bytes1024",
+      "name": "grid_projection"
+    },
+    "landtype": {
+      "attrs": {
+        "Bias_correction": "None",
+        "Comment": " Ocean: 1, Land: 2, Outlying ice caps: 3, Ice sheet: 4",
+        "Contributor": "GEUS and DTU-S",
+        "Gridding_method": "",
+        "Source": "Willy Weng (GEUS), Simon Ekholm, Arne Olesen (DTU-S)",
+        "Time": "None",
+        "backscatter_corrections": "None",
+        "bias_correction": "None",
+        "chunk_sizes": [
+          614,
+          325
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          614,
+          325
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": 9999,
+        "geophysical_corrections": "None",
+        "grid_mapping": "grid_projection",
+        "ice_sheet": 4,
+        "land": 2,
+        "level1_source": "None",
+        "long_name": "Land type definition.",
+        "ocean": 1,
+        "orig_data_type": "int16",
+        "outlying_ice_caps": 3,
+        "shape": [
+          614,
+          325
+        ],
+        "size": 199550,
+        "slope_correction": "None"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "int16",
+      "name": "landtype"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": [
+          614,
+          325
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          614,
+          325
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "grid_projection",
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          614,
+          325
+        ],
+        "size": 199550,
+        "units": "degrees north"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": [
+          614,
+          325
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          614,
+          325
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "grid_projection",
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          614,
+          325
+        ],
+        "size": 199550,
+        "units": "degrees east"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    }
+  },
+  "dims": {
+    "Time": 6,
+    "bnds": 2,
+    "x": 325,
+    "y": 614
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2017-12-31",
+            "minDate": "2011-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2017-12-31",
+            "minDate": "2011-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "grid_projection",
+            "lat",
+            "lon",
+            "landtype",
+            "SEC",
+            "SEC_error"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_period": "1Y",
+  "time_range": [
+    "2011-01-01",
+    "2017-12-31"
+  ]
+}

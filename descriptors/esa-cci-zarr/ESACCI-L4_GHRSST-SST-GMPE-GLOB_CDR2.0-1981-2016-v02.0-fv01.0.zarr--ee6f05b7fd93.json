@@ -1,0 +1,302 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.4",
+    "acknowledgment": "Funded by ESA",
+    "cdm_data_type": "grid",
+    "comment": "",
+    "creator_email": "science.leader@esa-sst-cci.org",
+    "creator_name": "SST_cci",
+    "creator_url": "http://www.esa-sst-cci.org",
+    "date_created": "20180711T172223Z",
+    "easternmost_longitude": 180.0,
+    "file_quality_level": 3,
+    "gds_version_id": "2.0",
+    "geospatial_lat_resolution": "0.25 degree",
+    "geospatial_lat_units": "degrees north",
+    "geospatial_lon_resolution": "0.25 degree",
+    "geospatial_lon_units": "degrees east",
+    "history": "NULL",
+    "id": "UKMO-L4LRens-GLOB-GMPE",
+    "institution": "UKMO",
+    "keywords": "Oceans > Ocean Temperature > Sea Surface Temperature",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "Creative Commons Licence by attribution (https://creativecommons.org/licenses/by/4.0/",
+    "metadata_conventions": "Unidata Observation Dataset v1.0",
+    "metadata_link": "not available",
+    "naming_authority": "org.ghrsst",
+    "netcdf_version_id": "3.6",
+    "northernmost_latitude": 90.0,
+    "platform": "",
+    "processing_level": "GMPE",
+    "product_version": "3.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publisher_email": "science.leader@esa-sst-cci.org",
+    "publisher_name": "ESACCI",
+    "publisher_url": "http://www.esa-sst-cci.org",
+    "references": "Martin et al., Deep Sea Research II, 2011",
+    "sensor": "",
+    "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST",
+    "southernmost_latitude": -90.0,
+    "spatial_resolution": "0.25 degree",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention",
+    "start_time": "20161231T000000Z",
+    "stop_time": "20170101T000000Z",
+    "summary": "An ensemble product with input from a number of L4 SST analyses",
+    "time_coverage_end": "20170101T000000Z",
+    "time_coverage_start": "20161231T000000Z",
+    "title": "Global SST Ensemble, L4 GMPE",
+    "uuid": "dc0c5b25-93bf-4943-aba1-7f0de9109620",
+    "westernmost_longitude": -180.0
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "field_name_length": {
+      "attrs": {
+        "long_name": "Length of string array for names of inputs"
+      },
+      "dims": [
+        "field_name_length"
+      ],
+      "dtype": "int32",
+      "name": "field_name_length"
+    },
+    "fields": {
+      "attrs": {
+        "long_name": "Fields number"
+      },
+      "dims": [
+        "fields"
+      ],
+      "dtype": "int32",
+      "name": "fields"
+    },
+    "fieldsp1": {
+      "attrs": {
+        "long_name": "Fields number plus one"
+      },
+      "dims": [
+        "fieldsp1"
+      ],
+      "dtype": "int32",
+      "name": "fieldsp1"
+    },
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "reference time of sst field",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-L4_GHRSST-SST-GMPE-GLOB_CDR2.0-1981-2016-v02.0-fv01.0.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "analysed_sst": {
+      "attrs": {
+        "long_name": "median SST from GMPE",
+        "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST",
+        "standard_name": "sea_surface_foundation_temperature",
+        "units": "kelvin",
+        "valid_max": 4500,
+        "valid_min": -300
+      },
+      "chunks": [
+        16,
+        720,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "analysed_sst"
+    },
+    "analysis_number": {
+      "attrs": {
+        "comment": "",
+        "long_name": "Number of contributing analyses",
+        "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST",
+        "units": "",
+        "valid_max": 127,
+        "valid_min": -127
+      },
+      "chunks": [
+        16,
+        720,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "analysis_number"
+    },
+    "anomaly_fields": {
+      "attrs": {
+        "comment": "",
+        "long_name": "Anomaly of input analyses from the ensemble median",
+        "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST",
+        "units": "kelvin",
+        "valid_max": 3000,
+        "valid_min": -3000
+      },
+      "chunks": [
+        16,
+        16,
+        720,
+        720
+      ],
+      "dims": [
+        "time",
+        "fields",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "anomaly_fields"
+    },
+    "field_name": {
+      "attrs": {
+        "comment": "",
+        "long_name": "name of the contributing L4 analyses",
+        "units": ""
+      },
+      "chunks": [
+        16,
+        50
+      ],
+      "dims": [
+        "fields",
+        "field_name_length"
+      ],
+      "dtype": "|S1",
+      "name": "field_name"
+    },
+    "gradient_fields": {
+      "attrs": {
+        "comment": "",
+        "long_name": "Horizontal SST gradients of input analyses",
+        "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST, GMPE median",
+        "units": "kelvin m-1",
+        "valid_max": 3000,
+        "valid_min": -3000
+      },
+      "chunks": [
+        16,
+        17,
+        720,
+        720
+      ],
+      "dims": [
+        "time",
+        "fieldsp1",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "gradient_fields"
+    },
+    "median_type": {
+      "attrs": {
+        "comment": "",
+        "long_name": "Index of analysis which is the ensemble median",
+        "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST",
+        "units": "",
+        "valid_max": 3000,
+        "valid_min": -3000
+      },
+      "chunks": [
+        16,
+        720,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "median_type"
+    },
+    "standard_deviation": {
+      "attrs": {
+        "comment": "",
+        "long_name": "Standard deviation of input analyses",
+        "source": "SST CCI V2, SST CCI V1.1, MyOcean, AVHRR_OI, CMC, HadISST.2.2.0.0_r0, HadISST.2.2.0.0_r1, HadISST.2.2.0.0_r2, HadISST.2.2.0.0_r3, HadISST.2.2.0.0_r4, HadISST.2.2.0.0_r5, HadISST.2.2.0.0_r6, HadISST.2.2.0.0_r7, HadISST.2.2.0.0_r8, HadISST.2.2.0.0_r9, MGDSST",
+        "units": "kelvin",
+        "valid_max": 32000,
+        "valid_min": -32000
+      },
+      "chunks": [
+        16,
+        720,
+        720
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "standard_deviation"
+    }
+  },
+  "dims": {
+    "field_name_length": 50,
+    "fields": 16,
+    "fieldsp1": 17,
+    "lat": 720,
+    "lon": 1440,
+    "time": 12784
+  },
+  "spatial_res": 0.25,
+  "time_period": "1D",
+  "time_range": [
+    "1982-01-01",
+    "2017-01-01"
+  ]
+}

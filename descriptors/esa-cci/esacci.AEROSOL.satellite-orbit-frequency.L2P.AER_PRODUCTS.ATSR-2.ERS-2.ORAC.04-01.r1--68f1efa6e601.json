@@ -1,0 +1,250 @@
+{
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "crs": "WGS84",
+  "data_id": "esacci.AEROSOL.satellite-orbit-frequency.L2P.AER_PRODUCTS.ATSR-2.ERS-2.ORAC.04-01.r1",
+  "data_type": "geodataframe",
+  "feature_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "AAOD550": {
+        "properties": {},
+        "type": "object"
+      },
+      "ANG550_870": {
+        "properties": {},
+        "type": "object"
+      },
+      "AOD1600": {
+        "properties": {},
+        "type": "object"
+      },
+      "AOD550": {
+        "properties": {},
+        "type": "object"
+      },
+      "AOD550_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "AOD670": {
+        "properties": {},
+        "type": "object"
+      },
+      "AOD870": {
+        "properties": {},
+        "type": "object"
+      },
+      "AOD870_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "D_AOD550": {
+        "properties": {},
+        "type": "object"
+      },
+      "FM_AOD550": {
+        "properties": {},
+        "type": "object"
+      },
+      "REFF": {
+        "properties": {},
+        "type": "object"
+      },
+      "REFF_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "aerosol_type": {
+        "properties": {},
+        "type": "object"
+      },
+      "cloud_fraction": {
+        "properties": {},
+        "type": "object"
+      },
+      "data_count": {
+        "properties": {},
+        "type": "object"
+      },
+      "fit_error": {
+        "properties": {},
+        "type": "object"
+      },
+      "geometry": {
+        "pattern": "POINT(* *)",
+        "type": "string"
+      },
+      "instrument_view": {
+        "properties": {},
+        "type": "object"
+      },
+      "iterations": {
+        "properties": {},
+        "type": "object"
+      },
+      "pixel_count": {
+        "properties": {},
+        "type": "object"
+      },
+      "pixel_number": {
+        "properties": {},
+        "type": "object"
+      },
+      "quality_flag": {
+        "properties": {},
+        "type": "object"
+      },
+      "relative_azimuth_at_center": {
+        "properties": {},
+        "type": "object"
+      },
+      "satellite_zenith_at_center": {
+        "properties": {},
+        "type": "object"
+      },
+      "sun_zenith_at_center": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance1600": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance1600_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance550": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance550_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance670": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance670_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance870": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_reflectance870_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_type_number": {
+        "properties": {},
+        "type": "object"
+      },
+      "time": {
+        "format": "date",
+        "type": "string"
+      }
+    },
+    "type": "object"
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2003-06-22",
+            "minDate": "1995-06-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2003-06-22",
+            "minDate": "1995-06-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "pixel_number",
+            "instrument_view",
+            "AOD550",
+            "REFF",
+            "AOD670",
+            "AOD870",
+            "AOD1600",
+            "ANG550_870",
+            "FM_AOD550",
+            "D_AOD550",
+            "AAOD550",
+            "surface_reflectance550",
+            "surface_reflectance670",
+            "surface_reflectance870",
+            "surface_reflectance1600",
+            "AOD550_uncertainty",
+            "REFF_uncertainty",
+            "AOD870_uncertainty",
+            "surface_reflectance550_uncertainty",
+            "surface_reflectance670_uncertainty",
+            "surface_reflectance870_uncertainty",
+            "surface_reflectance1600_uncertainty",
+            "sun_zenith_at_center",
+            "satellite_zenith_at_center",
+            "relative_azimuth_at_center",
+            "aerosol_type",
+            "quality_flag",
+            "cloud_fraction",
+            "surface_type_number",
+            "iterations",
+            "fit_error",
+            "pixel_count",
+            "data_count"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "1995-06-01",
+    "2003-06-22"
+  ]
+}

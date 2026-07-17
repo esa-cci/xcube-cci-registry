@@ -1,0 +1,275 @@
+{
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "crs": "WGS84",
+  "data_id": "esacci.GHG.satellite-orbit-frequency.L2.CH4.TANSO-FTS.GOSAT.SRPR.v2-3-8.r1",
+  "data_type": "geodataframe",
+  "feature_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "air_temperature": {
+        "properties": {},
+        "type": "object"
+      },
+      "altitude": {
+        "properties": {},
+        "type": "object"
+      },
+      "ch4_profile_apriori": {
+        "properties": {},
+        "type": "object"
+      },
+      "chi2": {
+        "properties": {},
+        "type": "object"
+      },
+      "co2_profile_apriori": {
+        "properties": {},
+        "type": "object"
+      },
+      "dry_airmass_layer": {
+        "properties": {},
+        "type": "object"
+      },
+      "exposure_id": {
+        "properties": {},
+        "type": "object"
+      },
+      "flag_landtype": {
+        "properties": {},
+        "type": "object"
+      },
+      "flag_sunglint": {
+        "properties": {},
+        "type": "object"
+      },
+      "gain": {
+        "properties": {},
+        "type": "object"
+      },
+      "geometry": {
+        "pattern": "POINT(* *)",
+        "type": "string"
+      },
+      "h2o_column_1593": {
+        "properties": {},
+        "type": "object"
+      },
+      "h2o_column_1629": {
+        "properties": {},
+        "type": "object"
+      },
+      "h2o_column_2042": {
+        "properties": {},
+        "type": "object"
+      },
+      "intensity_offset_o2a": {
+        "properties": {},
+        "type": "object"
+      },
+      "l1b_name": {
+        "properties": {},
+        "type": "object"
+      },
+      "optical_thickness_of_atmosphere_layer_due_to_ambient_aerosol": {
+        "properties": {},
+        "type": "object"
+      },
+      "pressure_levels": {
+        "properties": {},
+        "type": "object"
+      },
+      "pressure_weight": {
+        "properties": {},
+        "type": "object"
+      },
+      "raw_xch4": {
+        "properties": {},
+        "type": "object"
+      },
+      "raw_xch4_err": {
+        "properties": {},
+        "type": "object"
+      },
+      "raw_xco2": {
+        "properties": {},
+        "type": "object"
+      },
+      "raw_xco2_err": {
+        "properties": {},
+        "type": "object"
+      },
+      "sensor_zenith_angle": {
+        "properties": {},
+        "type": "object"
+      },
+      "signal_to_noise_window": {
+        "properties": {},
+        "type": "object"
+      },
+      "solar_zenith_angle": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_albedo_1593": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_albedo_1629": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_albedo_2042": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_albedo_758": {
+        "properties": {},
+        "type": "object"
+      },
+      "surface_altitude_stdv": {
+        "properties": {},
+        "type": "object"
+      },
+      "time": {
+        "format": "date",
+        "type": "string"
+      },
+      "x_wind": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4_averaging_kernel": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4_quality_flag": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "xco2_apriori": {
+        "properties": {},
+        "type": "object"
+      },
+      "xco2_averaging_kernel": {
+        "properties": {},
+        "type": "object"
+      },
+      "y_wind": {
+        "properties": {},
+        "type": "object"
+      }
+    },
+    "type": "object"
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2015-12-30",
+            "minDate": "2009-04-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2015-12-30",
+            "minDate": "2009-04-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "solar_zenith_angle",
+            "sensor_zenith_angle",
+            "pressure_levels",
+            "pressure_weight",
+            "xch4",
+            "xch4_uncertainty",
+            "xch4_averaging_kernel",
+            "ch4_profile_apriori",
+            "xch4_quality_flag",
+            "flag_landtype",
+            "flag_sunglint",
+            "gain",
+            "exposure_id",
+            "l1b_name",
+            "signal_to_noise_window",
+            "dry_airmass_layer",
+            "altitude",
+            "air_temperature",
+            "surface_altitude_stdv",
+            "x_wind",
+            "y_wind",
+            "chi2",
+            "optical_thickness_of_atmosphere_layer_due_to_ambient_aerosol",
+            "raw_xch4",
+            "raw_xch4_err",
+            "raw_xco2",
+            "raw_xco2_err",
+            "xco2_apriori",
+            "xco2_averaging_kernel",
+            "co2_profile_apriori",
+            "h2o_column_1593",
+            "h2o_column_1629",
+            "h2o_column_2042",
+            "intensity_offset_o2a",
+            "surface_albedo_758",
+            "surface_albedo_1593",
+            "surface_albedo_1629",
+            "surface_albedo_2042"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "2009-04-01",
+    "2015-12-30"
+  ]
+}

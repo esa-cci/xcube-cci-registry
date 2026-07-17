@@ -1,0 +1,235 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.9",
+    "cdm_data_type": "Swath",
+    "comment": "The following auxiliary data set is used for product generation: ESA GlobCoverVersion 2.2. PMR data is stratified into groups based on these land-cover classesfor generation of probability density functions. A land mask is also derived fromthese data. Lakes smaller than the 300 m in extent have been removed in theoriginal data. Resampling to 5 km spatial resolution removed water bodies ofextent less than 5 km. Water bodies and permanent snow and ice areas are maskedbased on this dataset. The optical component algorithm needs model surfacetemperature, which is retrieved from ECMWF ERA.",
+    "creator_email": "earthobs@nr.no",
+    "creator_name": "Norwegian Computing Center",
+    "creator_url": "http://www.nr.no",
+    "date_created": "See individual files for more details",
+    "doi": "10.5285/f4654030223445b0bac63a23aaa60620",
+    "format_version": "CCI Data Standards v2.3, 2021",
+    "geospatial_lat_max": 90.0,
+    "geospatial_lat_min": -90.0,
+    "geospatial_lat_resolution": 0.05,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 180.0,
+    "geospatial_lon_min": -180.0,
+    "geospatial_lon_resolution": 0.05,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": "2022-06-23: CryoClim processing chain SCE, version 1.0\nUpdated time coverage duration /24/04/2025",
+    "id": "See individual files for more details",
+    "institution": "Norwegian Computing Center",
+    "key_variables": "scfg",
+    "keywords": "snow cover, sensor fusion, AVHRR, SMMR, SSM/I, SSMIS",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "nr.no",
+    "padocc_last_changed": "300425T120415",
+    "padocc_revision": "1.1",
+    "platform": "NOAA-7, 9, 11, 14, 16, 18, 19; Nimbus-7; DMSP F8, F10, F11, F13, F14, F15, F16, F17, F18",
+    "product_version": "1.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://snow-cci.enveo.at/",
+    "sensor": "AVHRR, SMMR, SSM/I, SSMIS",
+    "source": "EUMETSAT CM SAF FCDRs for AVHRR and SMMR+SSM/I+SSMIS",
+    "spatial_resolution": "0.05 degree",
+    "standard_name_vocabulary": "CF Standard Name Table v76",
+    "summary": "The CryoClim FSC product provides daily information on fractional snow cover(0-100 %) per grid cell for global land areas except permanent snow and iceareas with 0.05\u00b0grid size. The product is based on multi-sensor/time-series fusion of AVHRR, SMMR, SSM/I and SSMIS data elimination cloud cover and polar night, resulting in a temporally consistent snow map. In forested areas, the product provides information on snow on the ground.",
+    "time_coverage_duration": "P37Y",
+    "time_coverage_end": "20190630T235959Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "19820101T000000Z",
+    "title": "ESA CCI snow product level L3S daily",
+    "tracking_id": "See individual files for more details"
+  },
+  "bbox": [
+    -180.0,
+    -89.99999999998977,
+    180.00000000008185,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "actual_range": [
+          -89.97499999998976,
+          89.975
+        ],
+        "axis": "Y",
+        "bounds": "lat_bnds",
+        "long_name": "WGS84 latitude coordinates, center of pixel",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "actual_range": [
+          -179.975,
+          179.97500000008185
+        ],
+        "axis": "X",
+        "bounds": "lon_bnds",
+        "long_name": "WGS84 longitude coordinates, center of pixel",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "19820101-20190630-ESACCI-L3S_SNOW-SCFG-MERGED-CRYOCLIM-fv1.0-kr1.1",
+  "data_type": "dataset",
+  "data_vars": {
+    "lat_bnds": {
+      "chunks": [
+        3600,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "chunks": [
+        7200,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "scfg": {
+      "attrs": {
+        "actual_range": [
+          0,
+          100
+        ],
+        "ancillary_variables": "scfg_unc",
+        "flag_meanings": "Cloud Polar_Night_or_Night Water Permanent_Snow_and_Ice Classification_failed Input_Data_Error No_Satellite_Acquisition",
+        "flag_values": [
+          205,
+          206,
+          210,
+          215,
+          252,
+          253,
+          254
+        ],
+        "grid_mapping": "spatial_ref",
+        "long_name": "Fractional Snow Cover",
+        "standard_name": "surface_snow_area_fraction",
+        "units": "percent",
+        "valid_range": [
+          0,
+          254
+        ]
+      },
+      "chunks": [
+        1,
+        1200,
+        2400
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "scfg"
+    },
+    "scfg_unc": {
+      "attrs": {
+        "actual_range": [
+          0,
+          100
+        ],
+        "flag_meanings": "Cloud Polar_Night_or_Night Water Permanent_Snow_and_Ice Classification_failed Input_Data_Error No_Satellite_Acquisition",
+        "flag_values": [
+          205,
+          206,
+          210,
+          215,
+          252,
+          253,
+          254
+        ],
+        "grid_mapping": "spatial_ref",
+        "key_variables": "scfg",
+        "long_name": "Unbiased Root Mean Square Error for Snow Cover Fraction on Ground",
+        "standard_name": "surface_snow_area_fraction standard_error",
+        "units": "percent",
+        "valid_range": [
+          0,
+          254
+        ]
+      },
+      "chunks": [
+        1,
+        1200,
+        2400
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "scfg_unc"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "-180.0 0.05000000000001137 0.0 89.99999999999999 0.0 -0.04999999999999715",
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "longitude_of_prime_meridian": 0.0,
+        "semi_major_axis": 6378137.0,
+        "spatial_ref": "GEOGCRS[\"WGS 84\",DATUM[\"World Geodetic System 1984\",ELLIPSOID[\"WGS 84\",6378137,298.257223563,LENGTHUNIT[\"metre\",1]]],PRIMEM[\"Greenwich\",0,ANGLEUNIT[\"degree\",0.0174532925199433]],CS[ellipsoidal,2],AXIS[\"geodetic latitude (Lat)\",north,ORDER[1],ANGLEUNIT[\"degree\",0.0174532925199433]],AXIS[\"geodetic longitude (Lon)\",east,ORDER[2],ANGLEUNIT[\"degree\",0.0174532925199433]],ID[\"EPSG\",4326]]"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "spatial_ref"
+    }
+  },
+  "dims": {
+    "lat": 3600,
+    "lon": 7200,
+    "nv": 2,
+    "time": 13695
+  },
+  "spatial_res": 0.04999999999999716,
+  "time_period": "1D",
+  "time_range": [
+    "1981-12-31",
+    "2019-06-30"
+  ]
+}

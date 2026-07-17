@@ -1,0 +1,335 @@
+{
+  "attrs": {
+    "cdm_data_type": "Grid",
+    "comment": "Southern hemisphere sea ice thickness is an experimental climate data record, as the algorithm does not properly considers the impact of the complex snow morphology in the freeboard retrieval. Sea ice thickness is provided for all month but needs to be considered biased high in areas with high snow depth and during the southern summer month. Please consult the Product User Guide (PUG) for more information.",
+    "conventions": "CF-1.6",
+    "creator_email": "stefan.hendricks@awi.de, stephan.paul@awi.de, eero.rinne@fmi.fi",
+    "creator_name": "Stefan Hendricks, Stephan Paul (Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research, Bremerhaven, Germany); Eero Rine (Finnish Meteorological Institute, Helsinki, Finland)",
+    "creator_url": "http://www.awi.de",
+    "date_created": "",
+    "doi": "10.5285/b1f1ac03077b4aa784c5a413a2210bf5",
+    "geospatial_lat_max": "-16.8229",
+    "geospatial_lat_min": "-89.6835",
+    "geospatial_lon_max": "179.7335",
+    "geospatial_lon_min": "-179.7335",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "\nKerchunk file created on 02/22/24\nKerchunk file revised on 02/22/24 - Updates Feb 2024\nKerchunk file revised on 02/29/24 - Archived at kr1.1 already",
+    "id": "",
+    "institution": "Alfred-Wegener-Institut Helmholtz Zentrum f\u00fcr Polar und Meeresforschung",
+    "kerchunk_creation_date": "220224T134938",
+    "kerchunk_revision": "kr1.2",
+    "keywords": "Sea Ice, Ice Depth/Thickness, Radar Altimeters",
+    "keywords_vocabulary": "GCMD Science Keywords",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "naming_authority": "de.awi",
+    "platform": "Envisat",
+    "processing_level": "Level-3 Collated (l3c)",
+    "product_version": "2.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "Algorithm Theoretical Baseline Document, Sea Ice Climate Change Initiative: Phase 2 (version 2.2)",
+    "sensor": "RA-2",
+    "source": "Altimetry: envisat, Snow depth: ESA-SICCI AMSR-E/AMSR2 snow depth on sea ice climatology, Mean Sea Surface: DTU15 global mean sea surface, Sea ice Concentration: OSI-SAF Global Sea Ice Concentration (OSI-409), Sea ice type:  First-year sea ice only",
+    "spatial_resolution": "50 km",
+    "standard_name_vocabulary": "CF",
+    "summary": "Monthly gridded Southern Hemisphere Sea Ice Thickness Climate Data Record from Envisat and CryoSat-2 satellite radar altimetry for the period June 2002 - April 2017.",
+    "time_coverage_duration": "P1M",
+    "time_coverage_end": "20120331T235959Z",
+    "time_coverage_resolution": "P1M",
+    "time_coverage_start": "20020601T000000Z",
+    "title": "ESA Climate Change Initiative Sea Ice: Experimental Southern Hemisphere Sea Ice Thickness Climate Data Record",
+    "tracking_id": ""
+  },
+  "bbox": [
+    -5400.0,
+    -5400.0,
+    5400.0,
+    5400.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "long_name": "latitude of grid cell center",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        216,
+        216
+      ],
+      "dims": [
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude of grid cell center",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        216,
+        216
+      ],
+      "dims": [
+        "yc",
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "bounds": "time_bnds",
+        "long_name": "reference time of product",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "xc": {
+      "attrs": {
+        "long_name": "x coordinate of projection (eastings)",
+        "standard_name": "projection_x_coordinate",
+        "units": "km"
+      },
+      "dims": [
+        "xc"
+      ],
+      "dtype": "float64",
+      "name": "xc"
+    },
+    "yc": {
+      "attrs": {
+        "long_name": "y coordinate of projection (eastings)",
+        "standard_name": "projection_y_coordinate",
+        "units": "km"
+      },
+      "dims": [
+        "yc"
+      ],
+      "dtype": "float64",
+      "name": "yc"
+    }
+  },
+  "data_id": "ESACCI-SEAICE-L3C-SITHICK-RA2_ENVISAT-SH50KMEASE2-200206-201203-fv2.0_kr1.2",
+  "data_type": "dataset",
+  "data_vars": {
+    "Lambert_Azimuthal_Grid": {
+      "attrs": {
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "lambert_azimuthal_equal_area",
+        "inverse_flattening": 298.257223563,
+        "latitude_of_projection_origin": -90.0,
+        "longitude_of_projection_origin": 0.0,
+        "proj4_string": "+proj=laea +lon_0=0 +datum=WGS84 +ellps=WGS84 +lat_0=-90.0",
+        "semi_major_axis": 6378137.0
+      },
+      "dims": [],
+      "dtype": "float32",
+      "name": "Lambert_Azimuthal_Grid"
+    },
+    "freeboard": {
+      "attrs": {
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "elevation of retracked point above instantaneous sea surface height (with snow range corrections)",
+        "standard_name": "sea_ice_freeboard",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "freeboard"
+    },
+    "freeboard_uncertainty": {
+      "attrs": {
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "freeboard uncertainty",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "freeboard_uncertainty"
+    },
+    "radar_freeboard": {
+      "attrs": {
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "elevation of retracked point above instantaneous sea surface height (no snow range corrections)",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "radar_freeboard"
+    },
+    "radar_freeboard_uncertainty": {
+      "attrs": {
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "uncertainty of radar freeboard",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "radar_freeboard_uncertainty"
+    },
+    "sea_ice_concentration": {
+      "attrs": {
+        "comment": "Average grid cell sea ice concentration during days with altimetry data coverage (not monthly mean)",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "sea ice contration",
+        "standard_name": "sea_ice_area_fraction",
+        "units": "percent",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_concentration"
+    },
+    "sea_ice_thickness": {
+      "attrs": {
+        "ancillary_variables": "sea_ice_thickness_uncertainty status_flag",
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "thickness of the sea ice layer",
+        "standard_name": "sea_ice_thickness",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_thickness"
+    },
+    "sea_ice_thickness_uncertainty": {
+      "attrs": {
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "uncertainty of the sea ice layer thickness",
+        "units": "m"
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "float32",
+      "name": "sea_ice_thickness_uncertainty"
+    },
+    "status_flag": {
+      "attrs": {
+        "comment": "Describes the status of the sea-ice thickness retrieval",
+        "flag_meaning": "0: nominal sea ice thickness retrieval; 1: no input data; 2: outside sea ice concentration mask; 3: latitude above orbit inclination; 4: land, lake or land ice; 5: sea ice thickness retrieval failed;",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "grid_mapping": "Lambert_Azimuthal_Grid",
+        "long_name": "status flag for the sea ice thickness retrieval",
+        "standard_name": "sea_ice_thickness status_flag",
+        "unit": 1,
+        "valid_max": 5,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        216,
+        216
+      ],
+      "dims": [
+        "time",
+        "yc",
+        "xc"
+      ],
+      "dtype": "int8",
+      "name": "status_flag"
+    },
+    "time_bnds": {
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "nv": 2,
+    "time": 118,
+    "xc": 216,
+    "yc": 216
+  },
+  "time_range": [
+    "2002-06-01",
+    "2012-03-31"
+  ]
+}

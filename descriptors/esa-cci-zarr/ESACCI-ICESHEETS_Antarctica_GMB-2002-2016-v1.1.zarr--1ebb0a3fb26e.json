@@ -1,0 +1,176 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "Title": "AIS_cci Gravimetric Mass Balance Gridded Product",
+    "abstract": "This dataset provides gridded Gravimetric Mass Balance data for the Antarctic Ice Sheet. It has been produced in the framework of the Antarctic Ice Sheets Climate Change Initiative (CCI) project, under the lead of TU Dresden.\nThe ice sheet mass balance, i.e. the change in ice mass over time, is determined using the US-German satellite gravimetry mission GRACE (Gravity Recovery and Climate Experiment). The Antarctic Ice Sheet CCI GMB products are based on the monthly GRACE solutions ITSG-Grace2016 by Technische Universitaet Graz, and comprises a time series of mass change grids covering the entire ice sheet (GMB Gridded product), along side mass change time series for different drainage basins (GMB Basin Product).\nThe dataset described here covers version 1.1 of the Gridded product. Time series of gridded mass changes are provided in a polar-stereographic projection (EPSG:3031) with a grid resolution of 50 km x 50 km. The gridded changes are given in millimetre of equivalent water height (mm w.eq., or kg/m2).\nIf publishing results based on this dataset, please cite the following: Groh, A., & Horwath, M. (2016). The method of tailored sensitivity kernels for GRACE mass change estimates. Geophysical Research Abstracts, 18, EGU2016-12065\nInteractive data visualisation is available at: https://data1.geo.tu-dresden.de/ais_gmb/",
+    "catalogue_url": "https://catalogue.ceda.ac.uk/uuid/2d0422ea3c4047d5829d5fbdabe0c156",
+    "contact": "martin.horwath@tu-dresden.de",
+    "date_created": "2016-11-24",
+    "false_easting": "0",
+    "false_northing": "0",
+    "gia_model": "IJ05_R2 (http://doi.org/10.1002/jgrb.50208)",
+    "grid_mapping_name": "polar_stereographic",
+    "institution": "TU Dresden, Chair of Geodetic Earth System Research",
+    "inverse_flattening": "298.257223563",
+    "latitude_of_projection_origin": "-90",
+    "longitude_of_prime_meridian": "0",
+    "netCDF_version": "netCDF-4_classic",
+    "product_version": "1.1",
+    "project": "Antarctic_Ice_Sheet_cci",
+    "reference": "AIS_cci Product User Guide (http://esa-icesheets-antarctica-cci.org/index.php?q=documents)",
+    "semi_major_axis": "6378137.",
+    "source": "GRACE monthly solutions provided by TU Graz (ITSG-Grace2016)",
+    "spatial_ref": "PROJCS[\"WGS 84 / Antarctic Polar Stereographic\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.01745329251994328,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-71],PARAMETER[\"central_meridian\",0],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],AUTHORITY[\"EPSG\",\"3031\"],AXIS[\"Easting\",UNKNOWN],AXIS[\"Northing\",UNKNOWN]]",
+    "standard_parallel": "-71.",
+    "straight_vertical_longitude_from_pole": "0",
+    "summary": "GRACE-derived time series of gridded Antarctic ice mass changes with respect to the mass as of 2009-01-01 according to a linear, periodic (periods: 1 year, 1/2 year, 161 days) and quadratic model fitted to the monthly solutions in the period 2003-02 - 2013-12",
+    "time_coverage_end": "2016-07",
+    "time_coverage_start": "2002-08"
+  },
+  "bbox": [
+    -2925000.0,
+    -2425000.0,
+    2925000.0,
+    2425000.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "modified julian date",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "x-coordinate",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "y-coordinate",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "ESACCI-ICESHEETS_Antarctica_GMB-2002-2016-v1.1.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "area": {
+      "attrs": {
+        "long_name": "grid cell area on the ellipsoid",
+        "standard_name": "cell_area",
+        "units": "m^2",
+        "valid_max": 2641911273.0,
+        "valid_min": 2217492293.0
+      },
+      "chunks": [
+        97,
+        117
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "area"
+    },
+    "dm": {
+      "attrs": {
+        "long_name": "change in ice mass",
+        "standard_name": "change_in_land_ice_amount",
+        "units": "kg/m^2",
+        "valid_max": 3111.3,
+        "valid_min": -4882.9
+      },
+      "chunks": [
+        148,
+        97,
+        117
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "dm"
+    },
+    "lat": {
+      "attrs": {
+        "long_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        97,
+        117
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "long_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        97,
+        117
+      ],
+      "dims": [
+        "y",
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time_dec": {
+      "attrs": {
+        "long_name": "decimal year",
+        "units": "year"
+      },
+      "chunks": [
+        148
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time_dec"
+    }
+  },
+  "dims": {
+    "time": 148,
+    "x": 117,
+    "y": 97
+  },
+  "spatial_res": 50000.0,
+  "time_range": [
+    "2002-08-16",
+    "2016-07-16"
+  ]
+}

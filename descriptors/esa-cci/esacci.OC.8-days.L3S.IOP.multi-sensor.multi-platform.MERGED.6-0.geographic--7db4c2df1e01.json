@@ -1,0 +1,2842 @@
+{
+  "attrs": {
+    "abstract": "The ESA Ocean Colour CCI project has produced global, level 3, binned multi-sensor time-series of satellite ocean-colour data with a particular focus for use in climate studies.\n\nThis dataset contains their Version 6.0 inherent optical properties (IOP) product (in mg/m3) on a geographic projection at approximately 4 km spatial resolution and at a number of time resolutions (daily, 5-day, 8-day, monthly and yearly composites) covering the period 1997 - 2022.  Note, the IOP data is also included in the 'All Products' dataset. \n\nThe inherent optical properties (IOP) dataset consists of the total absorption and particle backscattering coefficients, and, additionally, the fraction of detrital & dissolved organic matter absorption and phytoplankton absorption. The total absorption (units m-1), the total backscattering (m-1), the absorption by detrital and coloured dissolved organic matter, the backscattering by particulate matter, and the absorption by phytoplankton share the same spatial resolution of ~4 km. The values of IOP are reported for the standard SeaWiFS wavelengths (412, 443, 490, 510, 555, 670nm). \n\nThis data product is on a geographic grid projection, which is a direct conversion of latitude and longitude coordinates to a rectangular grid, typically a fixed multiplier of 360x180. The netCDF files follow the CF convention for this projection with a resolution of 8640x4320.  (A separate dataset is also available for data on a sinusoidal projection.)",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/90682bac7d0e4e418085f30eba43dfba",
+    "cci_project": "OC",
+    "comment": "See summary attribute",
+    "data_type": "IOP",
+    "ecv": "OC",
+    "history": "Source data were: ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_GEO_PML_OCx_QAA-19970915-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_GEO_PML_OCx_QAA-19970916-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_GEO_PML_OCx_QAA-19970918-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_GEO_PML_OCx_QAA-19970919-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_GEO_PML_OCx_QAA-19970920-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_GEO_PML_OCx_QAA-19970921-fv6.0.nc; netcdf_compositor_cci composites  Rrs_412, Rrs_412_bias, Rrs_443, Rrs_443_bias, Rrs_490, Rrs_490_bias, Rrs_510, Rrs_510_bias, Rrs_560, Rrs_560_bias, Rrs_665, Rrs_665_bias, adg_412, adg_412_bias, adg_443, adg_443_bias, adg_490, adg_490_bias, adg_510, adg_510_bias, adg_560, adg_560_bias, adg_665, adg_665_bias, aph_412, aph_412_bias, aph_443, aph_443_bias, aph_490, aph_490_bias, aph_510, aph_510_bias, aph_560, aph_560_bias, aph_665, aph_665_bias, atot_412, atot_443, atot_490, atot_510, atot_560, atot_665, bbp_412, bbp_443, bbp_490, bbp_510, bbp_560, bbp_665, chlor_a, chlor_a_log10_bias, kd_490, kd_490_bias, water_class1, water_class10, water_class11, water_class12, water_class13, water_class14, water_class2, water_class3, water_class4, water_class5, water_class6, water_class7, water_class8, water_class9 with --mean,  Rrs_412_rmsd, Rrs_443_rmsd, Rrs_490_rmsd, Rrs_510_rmsd, Rrs_560_rmsd, Rrs_665_rmsd, adg_412_rmsd, adg_443_rmsd, adg_490_rmsd, adg_510_rmsd, adg_560_rmsd, adg_665_rmsd, aph_412_rmsd, aph_443_rmsd, aph_490_rmsd, aph_510_rmsd, aph_560_rmsd, aph_665_rmsd, chlor_a_log10_rmsd, kd_490_rmsd with --root-mean-square, and  MERIS_nobs, MODISA_nobs, OLCI-A_nobs, OLCI-B_nobs, SeaWiFS_nobs, VIIRS_nobs, total_nobs - with --total\n1660653909 Subsetted from standardised_geo/ESACCI-OC-L3S-OC_PRODUCTS-MERGED-8D_DAILY_4km_GEO_PML_OCx_QAA-19970914-fv6.0.nc to only include variables MERIS_nobs_sum,MODISA_nobs_sum,OLCI-A_nobs_sum,OLCI-B_nobs_sum,SeaWiFS_nobs_sum,VIIRS_nobs_sum,adg_412,adg_412_bias,adg_412_rmsd,adg_443,adg_443_bias,adg_443_rmsd,adg_490,adg_490_bias,adg_490_rmsd,adg_510,adg_510_bias,adg_510_rmsd,adg_560,adg_560_bias,adg_560_rmsd,adg_665,adg_665_bias,adg_665_rmsd,aph_412,aph_412_bias,aph_412_rmsd,aph_443,aph_443_bias,aph_443_rmsd,aph_490,aph_490_bias,aph_490_rmsd,aph_510,aph_510_bias,aph_510_rmsd,aph_560,aph_560_bias,aph_560_rmsd,aph_665,aph_665_bias,aph_665_rmsd,atot_412,atot_443,atot_490,atot_510,atot_560,atot_665,bbp_412,bbp_443,bbp_490,bbp_510,bbp_560,bbp_665,crs,lat,lon,time,total_nobs_sum",
+    "institute": "Plymouth Marine Laboratory",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "MERGED",
+    "product_version": "6-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2023-08-01T09:26:09",
+    "references": "http://www.esa-oceancolour-cci.org/",
+    "sensor_id": "multi-sensor",
+    "source": "NASA SeaWiFS  L1A and L2 R2018.0 LAC and GAC, MODIS-Aqua L1A and L2 R2018.0, MERIS L1B 4th reprocessing inc OCL corrections, NASA VIIRS L1A and L2 R2018.0, OLCI L1B",
+    "title": "ESA Ocean Colour Climate Change Initiative (Ocean_Colour_cci): Global dataset of inherent optical properties (IOP) gridded on a geographic projection at 4km resolution, Version 6.0",
+    "uuid": "90682bac7d0e4e418085f30eba43dfba"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": 270,
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 270,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float64",
+        "shape": [
+          4320
+        ],
+        "size": 4320,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.97916666666667,
+        "valid_min": -89.97916666666666
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": 270,
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 270,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float64",
+        "shape": [
+          8640
+        ],
+        "size": 8640,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 179.97916666666663,
+        "valid_min": -179.97916666666666
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "orig_data_type": "int32",
+        "shape": [
+          1166
+        ],
+        "size": "1166",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    }
+  },
+  "crs": "OGC:CRS84",
+  "data_id": "esacci.OC.8-days.L3S.IOP.multi-sensor.multi-platform.MERGED.6-0.geographic",
+  "data_type": "dataset",
+  "data_vars": {
+    "MERIS_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the MERIS sensor contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "MERIS_nobs_sum"
+    },
+    "MODISA_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the MODIS (Aqua) sensor contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "MODISA_nobs_sum"
+    },
+    "OLCI-A_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3a) sensor contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-A_nobs_sum"
+    },
+    "OLCI-B_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3b) sensor contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-B_nobs_sum"
+    },
+    "SeaWiFS_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the SeaWiFS (GAC and LAC) sensor contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "SeaWiFS_nobs_sum"
+    },
+    "VIIRS_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the VIIRS sensor contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "VIIRS_nobs_sum"
+    },
+    "adg_412": {
+      "attrs": {
+        "ancillary_variables": "adg_412_rmsd adg_412_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Absorption coefficient for dissolved and detrital material at 412 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_412"
+    },
+    "adg_412_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of absorption coefficient for dissolved and detrital material at 412 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_412_bias"
+    },
+    "adg_412_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of absorption coefficient for dissolved and detrital material at 412 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_412_rmsd"
+    },
+    "adg_443": {
+      "attrs": {
+        "ancillary_variables": "adg_443_rmsd adg_443_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Absorption coefficient for dissolved and detrital material at 443 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_443"
+    },
+    "adg_443_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of absorption coefficient for dissolved and detrital material at 443 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_443_bias"
+    },
+    "adg_443_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of absorption coefficient for dissolved and detrital material at 443 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_443_rmsd"
+    },
+    "adg_490": {
+      "attrs": {
+        "ancillary_variables": "adg_490_rmsd adg_490_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Absorption coefficient for dissolved and detrital material at 490 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_490"
+    },
+    "adg_490_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of absorption coefficient for dissolved and detrital material at 490 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_490_bias"
+    },
+    "adg_490_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of absorption coefficient for dissolved and detrital material at 490 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_490_rmsd"
+    },
+    "adg_510": {
+      "attrs": {
+        "ancillary_variables": "adg_510_rmsd adg_510_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Absorption coefficient for dissolved and detrital material at 510 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_510"
+    },
+    "adg_510_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of absorption coefficient for dissolved and detrital material at 510 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_510_bias"
+    },
+    "adg_510_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of absorption coefficient for dissolved and detrital material at 510 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_510_rmsd"
+    },
+    "adg_560": {
+      "attrs": {
+        "ancillary_variables": "adg_560_rmsd adg_560_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Absorption coefficient for dissolved and detrital material at 560 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_560"
+    },
+    "adg_560_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of absorption coefficient for dissolved and detrital material at 560 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_560_bias"
+    },
+    "adg_560_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of absorption coefficient for dissolved and detrital material at 560 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_560_rmsd"
+    },
+    "adg_665": {
+      "attrs": {
+        "ancillary_variables": "adg_665_rmsd adg_665_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Absorption coefficient for dissolved and detrital material at 665 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_665"
+    },
+    "adg_665_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of absorption coefficient for dissolved and detrital material at 665 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_665_bias"
+    },
+    "adg_665_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/adg/cci_iop_adg_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of absorption coefficient for dissolved and detrital material at 665 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "adg_665_rmsd"
+    },
+    "aph_412": {
+      "attrs": {
+        "ancillary_variables": "aph_412_rmsd aph_412_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "grid_mapping": "crs",
+        "long_name": "Phytoplankton absorption coefficient at 412 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_412"
+    },
+    "aph_412_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of phytoplankton absorption coefficient at 412 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_412_bias"
+    },
+    "aph_412_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of phytoplankton absorption coefficient at 412 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_412_rmsd"
+    },
+    "aph_443": {
+      "attrs": {
+        "ancillary_variables": "aph_443_rmsd aph_443_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "grid_mapping": "crs",
+        "long_name": "Phytoplankton absorption coefficient at 443 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_443"
+    },
+    "aph_443_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of phytoplankton absorption coefficient at 443 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_443_bias"
+    },
+    "aph_443_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of phytoplankton absorption coefficient at 443 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_443_rmsd"
+    },
+    "aph_490": {
+      "attrs": {
+        "ancillary_variables": "aph_490_rmsd aph_490_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "grid_mapping": "crs",
+        "long_name": "Phytoplankton absorption coefficient at 490 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_490"
+    },
+    "aph_490_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of phytoplankton absorption coefficient at 490 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_490_bias"
+    },
+    "aph_490_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of phytoplankton absorption coefficient at 490 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_490_rmsd"
+    },
+    "aph_510": {
+      "attrs": {
+        "ancillary_variables": "aph_510_rmsd aph_510_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "grid_mapping": "crs",
+        "long_name": "Phytoplankton absorption coefficient at 510 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_510"
+    },
+    "aph_510_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of phytoplankton absorption coefficient at 510 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_510_bias"
+    },
+    "aph_510_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of phytoplankton absorption coefficient at 510 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_510_rmsd"
+    },
+    "aph_560": {
+      "attrs": {
+        "ancillary_variables": "aph_560_rmsd aph_560_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "grid_mapping": "crs",
+        "long_name": "Phytoplankton absorption coefficient at 560 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_560"
+    },
+    "aph_560_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of phytoplankton absorption coefficient at 560 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_560_bias"
+    },
+    "aph_560_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of phytoplankton absorption coefficient at 560 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_560_rmsd"
+    },
+    "aph_665": {
+      "attrs": {
+        "ancillary_variables": "aph_665_rmsd aph_665_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "grid_mapping": "crs",
+        "long_name": "Phytoplankton absorption coefficient at 665 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0063",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_665"
+    },
+    "aph_665_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of phytoplankton absorption coefficient at 665 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_665_bias"
+    },
+    "aph_665_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/aph/cci_iop_aph_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of phytoplankton absorption coefficient at 665 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.uncertweb.org",
+        "rel": "uncertainty",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "aph_665_rmsd"
+    },
+    "atot_412": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Total absorption coefficient at 412 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0062",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "atot_412"
+    },
+    "atot_443": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Total absorption coefficient at 443 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0062",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "atot_443"
+    },
+    "atot_490": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Total absorption coefficient at 490 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0062",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "atot_490"
+    },
+    "atot_510": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Total absorption coefficient at 510 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0062",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "atot_510"
+    },
+    "atot_560": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Total absorption coefficient at 560 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0062",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "atot_560"
+    },
+    "atot_665": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Total absorption coefficient at 665 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0062",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_absorption_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "atot_665"
+    },
+    "bbp_412": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Particulate backscattering coefficient for dissolved and detrital material at 412 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.nerc.ac.uk/collection/P04/current/",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "bbp_412"
+    },
+    "bbp_443": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Particulate backscattering coefficient for dissolved and detrital material at 443 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.nerc.ac.uk/collection/P04/current/",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "bbp_443"
+    },
+    "bbp_490": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Particulate backscattering coefficient for dissolved and detrital material at 490 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.nerc.ac.uk/collection/P04/current/",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "bbp_490"
+    },
+    "bbp_510": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Particulate backscattering coefficient for dissolved and detrital material at 510 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.nerc.ac.uk/collection/P04/current/",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "bbp_510"
+    },
+    "bbp_560": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Particulate backscattering coefficient for dissolved and detrital material at 560 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.nerc.ac.uk/collection/P04/current/",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "bbp_560"
+    },
+    "bbp_665": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Particulate backscattering coefficient for dissolved and detrital material at 665 nm derived using the QAA model V6 (Lee et al 2014) as parameterised within SeaDAS.",
+        "orig_data_type": "float32",
+        "paper_ref": "Lee, Z., et al. Update of the Quasi-Analytical Algorithm (QAA_v6) [R/OL]. International Ocean Color Group Software Report [2013-04-03]. http://www.ioccg.org/groups/Software-OCA/OAA_5.2014.",
+        "parameter_vocab_uri": "http://vocab.nerc.ac.uk/collection/P04/current/",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800",
+        "standard_name": "volume_backwards_scattering_coefficient_of_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "bbp_665"
+    },
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "latitude_longitude",
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "total_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the total number of observations contributing to this bin cell",
+        "number_of_files_composited": 6,
+        "orig_data_type": "float32",
+        "shape": [
+          1166,
+          4320,
+          8640
+        ],
+        "size": "43520716800"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "total_nobs_sum"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 4320,
+    "lon": 8640,
+    "time": 1166
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "1997-09-04",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "1997-09-04",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "MERIS_nobs_sum",
+            "MODISA_nobs_sum",
+            "OLCI-A_nobs_sum",
+            "OLCI-B_nobs_sum",
+            "SeaWiFS_nobs_sum",
+            "VIIRS_nobs_sum",
+            "adg_412",
+            "adg_412_bias",
+            "adg_412_rmsd",
+            "adg_443",
+            "adg_443_bias",
+            "adg_443_rmsd",
+            "adg_490",
+            "adg_490_bias",
+            "adg_490_rmsd",
+            "adg_510",
+            "adg_510_bias",
+            "adg_510_rmsd",
+            "adg_560",
+            "adg_560_bias",
+            "adg_560_rmsd",
+            "adg_665",
+            "adg_665_bias",
+            "adg_665_rmsd",
+            "aph_412",
+            "aph_412_bias",
+            "aph_412_rmsd",
+            "aph_443",
+            "aph_443_bias",
+            "aph_443_rmsd",
+            "aph_490",
+            "aph_490_bias",
+            "aph_490_rmsd",
+            "aph_510",
+            "aph_510_bias",
+            "aph_510_rmsd",
+            "aph_560",
+            "aph_560_bias",
+            "aph_560_rmsd",
+            "aph_665",
+            "aph_665_bias",
+            "aph_665_rmsd",
+            "atot_412",
+            "atot_443",
+            "atot_490",
+            "atot_510",
+            "atot_560",
+            "atot_665",
+            "bbp_412",
+            "bbp_443",
+            "bbp_490",
+            "bbp_510",
+            "bbp_560",
+            "bbp_665",
+            "crs",
+            "total_nobs_sum"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.041666666666666664,
+  "time_period": "8D",
+  "time_range": [
+    "1997-09-04",
+    "2022-12-31"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "attrs": {
+    "abstract": "As part of the ESA Land Cover Climate Change Initiative (CCI) project a static map of open water bodies at 150 m spatial resolution at the equator has been produced.  \n\nThe CCI WB v4.0 is composed of two layers:\n\n1. A static map of open water bodies at 150 m spatial resolution resulting from a compilation and editions of land/water classifications: the Envisat ASAR water bodies indicator, a sub-dataset from the Global Forest Change 2000 - 2012 and the Global Inland Water product.\n\nThis product is delivered at 150 m as a stand-alone product but it is consistent with class \"Water Bodies\" of the annual MRLC (Medium Resolution Land Cover) Maps. The product was resampled to 300 m using an average algorithm. Legend : 1-Land, 2-Water\n\n2. A static map with the distinction between ocean and inland water is now available at 150 m spatial resolution. It is fully consistent with the CCI WB-Map v4.0. Legend: 0-Ocean, 1-Land.\n\nTo cite the CCI WB-Map v4.0, please refer to : Lamarche, C.; Santoro, M.; Bontemps, S.; D\u2019Andrimont, R.; Radoux, J.; Giustarini, L.; Brockmann, C.; Wevers, J.; Defourny, P.; Arino, O. Compilation and Validation of SAR and Optical Data Products for a Complete and Global Map of Inland/Ocean Water Tailored to the Climate Modeling Community. Remote Sens. 2017, 9, 36. https://doi.org/10.3390/rs9010036",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/7e139108035142a9a1ddd96abcdfff36",
+    "cci_project": "LC",
+    "comment": "",
+    "data_type": "WB",
+    "ecv": "LC",
+    "history": "lc-wb-classification-1.0,lc-user-tools-3.10",
+    "institute": "Universite Catholique de Louvain",
+    "platform_id": "Envisat",
+    "processing_level": "L4",
+    "product_string": "Map",
+    "product_version": "4-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2016-03-31T14:54:47",
+    "references": "http://www.esa-landcover-cci.org/",
+    "sensor_id": "ASAR",
+    "source": "ASAR",
+    "title": "ESA Land Cover Climate Change Initiative (Land_Cover_cci):  Water Bodies Map, v4.0",
+    "uuid": "7e139108035142a9a1ddd96abcdfff36"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 129600,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 129600,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          129600
+        ],
+        "size": 129600,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.999306,
+        "valid_min": -89.99929
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 259200,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 259200,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          259200
+        ],
+        "size": 259200,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 179.99928,
+        "valid_min": -179.9993
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          1
+        ],
+        "size": 2,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.LC.13-yrs.L4.WB.ASAR.Envisat.Map.4-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "i2m": "0.0013888888,0.0,0.0,-0.0013888888,-180.0,90.0",
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "wkt": "GEOGCS[\\\"WGS 84\\\", \n  DATUM[\\\"World Geodetic System 1984\\\", \n    SPHEROID[\\\"WGS 84\\\", 6378137.0, 298.257223563, AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]], \n    AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]], \n  PRIMEM[\\\"Greenwich\\\", 0.0, AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]], \n  UNIT[\\\"degree\\\", 0.017453292519943295], \n  AXIS[\\\"Geodetic longitude\\\", EAST], \n  AXIS[\\\"Geodetic latitude\\\", NORTH], \n  AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "wb_class": {
+      "attrs": {
+        "_Unsigned": "true",
+        "chunk_sizes": [
+          2048,
+          2048
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          2048,
+          2048
+        ],
+        "file_dimensions": [
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "terrestrial water",
+        "flag_values": [
+          1,
+          2
+        ],
+        "long_name": "terrestrial or water pixel classification",
+        "orig_data_type": "uint8",
+        "shape": [
+          129600,
+          259200
+        ],
+        "size": 33592320000,
+        "standard_name": "land_cover_lccs",
+        "valid_max": 2,
+        "valid_min": 1
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "wb_class"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 129600,
+    "lon": 259200,
+    "time": 1
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-12-31",
+            "minDate": "2000-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-12-31",
+            "minDate": "2000-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "wb_class",
+            "crs"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.001389,
+  "time_period": "13Y",
+  "time_range": [
+    "2000-01-01",
+    "2012-12-31"
+  ]
+}

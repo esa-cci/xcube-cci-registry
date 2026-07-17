@@ -1,0 +1,157 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.0",
+    "band_used": "B02",
+    "comment": "Pixel offsets tracked using Imcorr. Input files were /snufkin/projects/cci/s2raw/s2raw/27XVH/2017-06-26/Seq00/B02.tiff and /snufkin/projects/cci/s2raw/s2raw/27XVH/2017-07-10/Seq02/B02.tiff. Intrinsic S2 shift (faulty georeferencing) estimated  as (x,y) = (0.6290, 0.2184) pixels. Shift was corrected. Pixel offsets converted to m/day using scaling dx_in_meters/dt_in_days = 10.0/14.0 = 0.7.",
+    "date_created": "2018-05-08",
+    "history": "2018-05-08 14:07:30 | Combined 2 input files ['/snufkin/projects/cci/ensemble/27XVH/2017-06-25_to_2017-07-12/2017-06-26_Seq00_to_2017-07-10_Seq02.nc', '/snufkin/projects/cci/ensemble/27XVH/2017-06-25_to_2017-07-12/2017-06-25_Seq00_to_2017-07-10_Seq00.nc'] by weighted average. Weights were cubed inverse RMS of velocity field. RMS was computed with 5x5 kernel.",
+    "institution": "S[&]T",
+    "method_used": "Offset-tracking",
+    "netCDF_version": "NetCDF-4 classic",
+    "product_version": "1.1",
+    "project": "ESA Greenland Ice Sheet CCI",
+    "resolution": "50.0",
+    "sensors_used": "Sentinel-2 MSI",
+    "snt_file_format_revision": 7,
+    "snt_file_release_level": "development",
+    "source": "Sentinel-2",
+    "summary": "Ice Velocity seasonal product of Zachariae Glacier from Sentinel-2 data acquired between the 2017-06-25 and 2017-08-10",
+    "time_coverage_end": "2017-08-10",
+    "time_coverage_start": "2017-06-25",
+    "title": "Zachariae_Seasonal_20170625_20170810",
+    "tracking_id": "5dd0f886-0473-11e8-8856-32dadc4bc036",
+    "units": "m/day"
+  },
+  "bbox": [
+    385050.0,
+    -1202650.0,
+    526300.0,
+    -1061400.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "Midpoint time of aquisition used",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "x coordinate of projection",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "y coordinate of projection",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "greenland_iv_seasonal_50m_s2_20170625_20170810_Zachariae_v1_1_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "GeoTransform": "385050.0 50.0 0.0 -1061400.0 0.0 -50.0",
+        "epsg": 3413,
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "spatial_ref": "PROJCS[\"WGS 84 / NSIDC Sea Ice Polar Stereographic North\",GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",70],PARAMETER[\"central_meridian\",-45],PARAMETER[\"scale_factor\",1],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"X\",EAST],AXIS[\"Y\",NORTH],AUTHORITY[\"EPSG\",\"3413\"]]",
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0,
+        "unit": "m"
+      },
+      "dims": [],
+      "dtype": "float64",
+      "name": "crs"
+    },
+    "land_ice_surface_easting_velocity": {
+      "attrs": {
+        "description": "easting ice velocity",
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_easting_velocity",
+        "standard_name": "land_ice_surface_easting_velocity",
+        "units": "m/day"
+      },
+      "chunks": [
+        1,
+        2825,
+        2825
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_easting_velocity"
+    },
+    "land_ice_surface_northing_velocity": {
+      "attrs": {
+        "description": "northing ice velocity",
+        "grid_mapping": "crs",
+        "long_name": "land_ice_surface_northing_velocity",
+        "standard_name": "land_ice_surface_northing_velocity",
+        "units": "m/day"
+      },
+      "chunks": [
+        1,
+        2825,
+        2825
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_northing_velocity"
+    },
+    "time_bnds": {
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 1,
+    "x": 2825,
+    "y": 2825
+  },
+  "spatial_res": 50.0,
+  "time_range": [
+    "2017-06-25",
+    "2017-08-10"
+  ]
+}

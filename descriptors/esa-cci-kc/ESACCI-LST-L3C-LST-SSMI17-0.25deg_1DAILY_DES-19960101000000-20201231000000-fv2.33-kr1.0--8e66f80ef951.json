@@ -1,0 +1,468 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.8",
+    "cdm_data_type": "grid",
+    "comment": "These data were produced as part of the ESA LST CCI project",
+    "creator_email": "carlos.jimenez@estellus.fr",
+    "creator_name": "Carlos Jimenez, Estellus",
+    "creator_url": "http://cci.esa.int/lst",
+    "date_created": "See individual files for more details",
+    "doi": "10.5285/a7e811fe11d34df5abac6f18c920bbeb",
+    "format_version": "CCI Data Standards v2.3",
+    "geospatial_lat_max": 89.875,
+    "geospatial_lat_min": -89.875,
+    "geospatial_lat_resolution": 0.25,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 179.875,
+    "geospatial_lon_min": -179.875,
+    "geospatial_lon_resolution": 0.25,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 0.0,
+    "geospatial_vertical_min": 0.0,
+    "history": "Created using software developed at Estellus",
+    "id": "See individual files for more details",
+    "institution": "Estellus",
+    "key_variables": "land_surface_temperature",
+    "keywords": "Earth Science, Land Surface, Land Temperature, Land Surface Temperature",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "ESA",
+    "platform": "See individual files for more details",
+    "product_version": "v2.33",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/lst",
+    "sensor": "See individual files for more details",
+    "source": "See individual files for more details",
+    "spatial_resolution": "~25km",
+    "standard_name_vocabulary": "CF Standard Name Table v77",
+    "summary": "See individual files for more details",
+    "time_coverage_duration": "P25Y",
+    "time_coverage_end": "20210101T000000Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "19960101T004800Z",
+    "title": "See individual files for more details",
+    "tracking_id": "ab5349e6-5080-4356-bc20-a73faf7320de"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "actual_range": [
+          -89.875,
+          89.875
+        ],
+        "long_name": "latitude_coordinates",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "actual_range": [
+          -179.875,
+          179.875
+        ],
+        "long_name": "longitude_coordinates",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "reference time of file",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-LST-L3C-LST-SSMI17-0.25deg_1DAILY_DES-19960101000000-20201231000000-fv2.33-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "dtime": {
+      "attrs": {
+        "actual_range": [
+          2880.0,
+          85376.0
+        ],
+        "long_name": "time difference from reference time",
+        "units": "seconds",
+        "valid_max": 86400.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "dtime"
+    },
+    "lst": {
+      "attrs": {
+        "actual_range": [
+          211.989990234375,
+          313.29998779296875
+        ],
+        "long_name": "land surface temperature",
+        "units": "kelvin",
+        "valid_max": 7685,
+        "valid_min": -8315
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst"
+    },
+    "lst_time_correction": {
+      "attrs": {
+        "actual_range": [
+          -0.5699999928474426,
+          1.6200000047683716
+        ],
+        "long_name": "offset to be added to the land surface temperature to adjust its value at the overpass local time to the value that would have been measured at 6AM local time",
+        "units": "kelvin",
+        "valid_max": 1000,
+        "valid_min": -1000
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_time_correction"
+    },
+    "lst_unc_loc_atm": {
+      "attrs": {
+        "long_name": "uncertainty from locally correlated errors on atmospheric scales",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_loc_atm"
+    },
+    "lst_unc_loc_sfc": {
+      "attrs": {
+        "long_name": "uncertainty from locally correlated errors on surface scales",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_loc_sfc"
+    },
+    "lst_unc_ran": {
+      "attrs": {
+        "long_name": "uncertainty from uncorrelated errors",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_ran"
+    },
+    "lst_unc_sys": {
+      "attrs": {
+        "long_name": "uncertainty from large scale systematic errors",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1
+      ],
+      "dims": [
+        "length_scale"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_sys"
+    },
+    "lst_unc_time_correction": {
+      "attrs": {
+        "actual_range": [
+          0.003000000026077032,
+          3.9630002975463867
+        ],
+        "long_name": "land surface temperature uncertainty from time correction errors",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_unc_time_correction"
+    },
+    "lst_uncertainty": {
+      "attrs": {
+        "actual_range": [
+          1.0910000801086426,
+          5.045000076293945
+        ],
+        "long_name": "land surface temperature total uncertainty",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lst_uncertainty"
+    },
+    "n": {
+      "attrs": {
+        "actual_range": [
+          1,
+          1
+        ],
+        "long_name": "number of pixels averaged",
+        "units": "1",
+        "valid_max": 18750,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "n"
+    },
+    "qual_flag": {
+      "attrs": {
+        "actual_range": [
+          -32768,
+          224
+        ],
+        "flag_masks": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "flag_meanings": "no_use no_use no_use snow_ice-1_is_snow_ice microwave_penetration_depth-1_is_ground_with_large_penetration_depth deep_convection_occurence-1_is_possibility_of_deep_convection coast-1_is_cost inundation_risk-1_is_possibility_of_inundated_land",
+        "long_name": "Quality flags",
+        "valid_max": 255,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "qual_flag"
+    },
+    "sataz": {
+      "attrs": {
+        "actual_range": [
+          -44.41999816894531,
+          121.7199935913086
+        ],
+        "long_name": "satellite azimuth angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "sataz"
+    },
+    "satze": {
+      "attrs": {
+        "actual_range": [
+          52.71999740600586,
+          53.22999954223633
+        ],
+        "long_name": "satellite zenith angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "satze"
+    },
+    "solaz": {
+      "attrs": {
+        "actual_range": [
+          -108.14999389648438,
+          5.139999866485596
+        ],
+        "long_name": "solar azimuth angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "solaz"
+    },
+    "solze": {
+      "attrs": {
+        "actual_range": [
+          58.12999725341797,
+          121.30999755859375
+        ],
+        "long_name": "solar zenith angle",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        720,
+        1440
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "solze"
+    }
+  },
+  "dims": {
+    "lat": 720,
+    "length_scale": 1,
+    "lon": 1440,
+    "time": 9131
+  },
+  "spatial_res": 0.25,
+  "time_range": [
+    "1996-01-01",
+    "2020-12-31"
+  ]
+}

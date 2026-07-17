@@ -1,0 +1,317 @@
+{
+  "attrs": {
+    "abstract": "In the early period, it also contains data from the ATSR-2 instrument on the ERS-2 satellite.The ESA Climate Change Initiative Aerosol project has produced a number of global aerosol Essential Climate Variable (ECV) products from a set of European satellite instruments with different characteristics.   This dataset comprises Level 3 daily, monthly and yearly aerosol products from the ATSR-2 instrument on the ERS-2 satellite. The data is an uncertainty-weighted ensemble of the outputs of three separate algorithms (the SU, ADV, and ORAC algorithms.) This product is version 2.6 of the ensemble product. Data is provided for the period 1995 to 2002.    In 2002, it also contains data from the AATSR instrument on the ENVISAT satellite. A separate AATSR product covering the period 2002-2012 is also available, and together these form a continuous timeseries from 1995-2012.\n\nFor further details about these data products please see the documentation.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/bf5eae2a052848aab2abf93d96e7e9aa",
+    "cci_project": "AEROSOL",
+    "data_type": "AER_PRODUCTS",
+    "ecv": "AEROSOL",
+    "platform_id": "multi-platform",
+    "processing_level": "L3C",
+    "product_string": "ATSR2-ENVISAT-ENS_DAILY",
+    "product_version": "v2-6",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2020-08-27T16:05:17",
+    "references": "http://www.esa-aerosol-cci.org",
+    "sensor_id": "multi-sensor",
+    "title": "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from ATSR-2 (ensemble product), Version 2.6",
+    "uuid": "bf5eae2a052848aab2abf93d96e7e9aa"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2255
+        ],
+        "size": 2255,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          2255
+        ],
+        "size": 4510,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.AEROSOL.day.L3C.AER_PRODUCTS.multi-sensor.multi-platform.ATSR2-ENVISAT-ENS_DAILY.v2-6.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "AOD550": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Aerosol optical depth at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_depth_due_to_ambient_aerosol",
+        "units": "#"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550"
+    },
+    "AOD550_UNCERTAINTY_ENSEMBLE": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Uncertainty Ensemble",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "uncertainty",
+        "units": "#"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_UNCERTAINTY_ENSEMBLE"
+    },
+    "Latitude": {
+      "attrs": {
+        "chunk_sizes": [
+          180
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": [
+          180
+        ],
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "Latitude"
+    },
+    "Longitude": {
+      "attrs": {
+        "chunk_sizes": [
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          360
+        ],
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "Longitude"
+    },
+    "NMEAS": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "number of measurements per gridcell",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "NMEAS"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "NMEAS"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 180,
+    "lon": 360,
+    "time": 2255
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2002-12-31",
+            "minDate": "1995-08-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2002-12-31",
+            "minDate": "1995-08-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "Latitude",
+            "Longitude",
+            "AOD550",
+            "AOD550_UNCERTAINTY_ENSEMBLE",
+            "NMEAS"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_period": "1D",
+  "time_range": [
+    "1995-08-01",
+    "2002-12-31"
+  ]
+}

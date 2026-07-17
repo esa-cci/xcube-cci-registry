@@ -1,0 +1,1102 @@
+{
+  "attrs": {
+    "abstract": "The ESA Climate Change Initiative Aerosol project has produced a number of global aerosol Essential Climate Variable (ECV) products from a set of European satellite instruments with different characteristics. This dataset comprises Level 3 daily and monthly gridded aerosol products from the AATSR instrument on the ENVISAT satellite, derived using the ADV algorithm, version 2.31.   Data is available for the period from 2002 to 2012.\n\nFor further details about these data products please see the linked documentation.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/ab90030e26c54ba495b1cbec51e137e1",
+    "cci_project": "AEROSOL",
+    "data_type": "AER_PRODUCTS",
+    "ecv": "AEROSOL",
+    "history": "2016-10-11 14:00:42 - Product generated from ADV 2.30, AATSR L1b ver. 6.03",
+    "institute": "Finnish Meteorological Institute",
+    "platform_id": "Envisat",
+    "processing_level": "L3C",
+    "product_string": "ADV",
+    "product_version": "2-31",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2020-08-27T16:10:46",
+    "references": "http://www.esa-aerosol-cci.org",
+    "sensor_id": "AATSR",
+    "title": "ESA Aerosol Climate Change Initiative (Aerosol_cci): Level 3 aerosol products from AATSR (ADV algorithm), Version 2.31",
+    "uuid": "ab90030e26c54ba495b1cbec51e137e1"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "chunk_sizes": [
+          180
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": [
+          180
+        ],
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "chunk_sizes": [
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          360
+        ],
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          119
+        ],
+        "size": 119,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          119
+        ],
+        "size": 238,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.AEROSOL.mon.L3C.AER_PRODUCTS.AATSR.Envisat.ADV.2-31.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "ANG550-670_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Angstrom coefficient determined with mean AODs at 550 and 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          -1.0,
+          2.6
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "ANG550-670_mean"
+    },
+    "AOD1600_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical density at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_mean"
+    },
+    "AOD1600_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical density at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_median"
+    },
+    "AOD1600_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical density at 1600 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD1600_sdev"
+    },
+    "AOD550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical density at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_mean"
+    },
+    "AOD550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical density at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_median"
+    },
+    "AOD550_propagated_uncertainty_1": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "The sum of AOD550_sdev and AOD_propagated_uncertainty_1",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_propagated_uncertainty_1"
+    },
+    "AOD550_propagated_uncertainty_2": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "The propagation of of pixel uncertainties into the average value",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_propagated_uncertainty_2"
+    },
+    "AOD550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical density at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_sdev"
+    },
+    "AOD550_uncertainty_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "The mean uncertainty of the pixels",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_uncertainty_mean"
+    },
+    "AOD550_worst_case_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "Worst-case propagation (AOD+sdev)-(AOD-sdev)",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD550_worst_case_uncertainty"
+    },
+    "AOD670_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean aerosol optical density at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_mean"
+    },
+    "AOD670_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median aerosol optical density at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_median"
+    },
+    "AOD670_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of aerosol optical density at 670 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "AOD670_sdev"
+    },
+    "FM_AOD550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean fine mode aerosol optical depth at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_mean"
+    },
+    "FM_AOD550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median fine mode aerosol optical depth at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_optical_thickness_due_to_ambient_aerosol",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_median"
+    },
+    "FM_AOD550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of fine mode aerosol optical depth at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          4.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "FM_AOD550_sdev"
+    },
+    "pixel_count": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "int32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 2147483647,
+        "long_name": "number of days with results",
+        "orig_data_type": "int16",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          1,
+          200
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int32",
+      "name": "pixel_count"
+    },
+    "surface_albedo550_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "mean surface reflectance nadir view at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "surface_albedo",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo550_mean"
+    },
+    "surface_albedo550_median": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "median surface reflectance nadir view at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "surface_albedo",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo550_median"
+    },
+    "surface_albedo550_sdev": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": -999.0,
+        "long_name": "standard deviation of surface reflectance nadir view at 550 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo550_sdev"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 180,
+    "lon": 360,
+    "time": 119
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-04-08",
+            "minDate": "2002-07-24",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-04-08",
+            "minDate": "2002-07-24",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "AOD550_mean",
+            "AOD670_mean",
+            "AOD1600_mean",
+            "AOD550_median",
+            "AOD670_median",
+            "AOD1600_median",
+            "ANG550-670_mean",
+            "surface_albedo550_mean",
+            "surface_albedo550_median",
+            "surface_albedo550_sdev",
+            "AOD550_sdev",
+            "AOD670_sdev",
+            "AOD1600_sdev",
+            "pixel_count",
+            "FM_AOD550_mean",
+            "FM_AOD550_median",
+            "FM_AOD550_sdev",
+            "AOD550_uncertainty_mean",
+            "AOD550_propagated_uncertainty_1",
+            "AOD550_propagated_uncertainty_2",
+            "AOD550_worst_case_uncertainty"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 1.0,
+  "time_period": "1M",
+  "time_range": [
+    "2002-07-24",
+    "2012-04-08"
+  ]
+}

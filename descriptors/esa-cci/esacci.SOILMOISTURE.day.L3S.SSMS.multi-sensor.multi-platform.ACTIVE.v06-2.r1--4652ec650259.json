@@ -1,0 +1,683 @@
+{
+  "attrs": {
+    "abstract": "The Soil Moisture CCI ACTIVE dataset is one of the three datasets created as part of the European Space Agency's (ESA) Soil Moisture Essential Climate Variable (ECV) Climate Change Initiative (CCI) project. The product has been created by fusing scatterometer soil moisture products, derived from the instruments AMI-WS and ASCAT. PASSIVE and COMBINED products have also been created.\n\nThe v06.2 ACTIVE product, provided as global daily images in NetCDF-4 classic file format, presents a global coverage of surface soil moisture at a spatial resolution of 0.25 degrees. It is provided in percent of saturation [%] and covers the period (yyyy-mm-dd) 1991-08-05 to 2021-12-31. For information regarding the theoretical and algorithmic base of the product, please see the Algorithm Theoretical Baseline Document. Additional reference documents and information relating to the dataset can also be found on the CCI Soil Moisture project website.\n\nThe data set should be cited using the following references:\n\n1. Gruber, A., Scanlon, T., van der Schalie, R., Wagner, W., and Dorigo, W. (2019). Evolution of the ESA CCI Soil Moisture climate data records and their underlying merging methodology, Earth Syst. Sci. Data, 11, 717\u2013739, https://doi.org/10.5194/essd-11-717-2019\n\n2. Dorigo, W.A., Wagner, W., Albergel, C., Albrecht, F., Balsamo, G., Brocca, L., Chung, D., Ertl, M., Forkel, M., Gruber, A., Haas, E., Hamer, D. P. Hirschi, M., Ikonen, J., De Jeu, R. Kidd, R. Lahoz, W., Liu, Y.Y., Miralles, D., Lecomte, P. (2017). ESA CCI Soil Moisture for improved Earth system understanding: State-of-the art and future directions. In Remote Sensing of Environment, 2017, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2017.07.001",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/898c950f441e400d8b569216ebe41cab",
+    "cci_project": "SOILMOISTURE",
+    "comment": "This dataset was produced with funding of the ESA CCI+ Soil Moisture project; ESRIN Contract No: 4000126684/19/I-NB",
+    "data_type": "SSMS",
+    "ecv": "SOILMOISTURE",
+    "history": "2022-02-07 18:04:36 - product produced",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "ACTIVE",
+    "product_version": "v06-2",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2023-03-10T12:27:21",
+    "references": "http://www.esa-soilmoisture-cci.org; Dorigo, W.A., Wagner, W., Albergel, C., Albrecht, F.,  Balsamo, G., Brocca, L., Chung, D., Ertl, M., Forkel, M., Gruber, A., Haas, E., Hamer, D. P. Hirschi, M., Ikonen, J., De Jeu, R. Kidd, R. Lahoz, W., Liu, Y.Y., Miralles, D., Lecomte, P. (2017) ESA CCI Soil Moisture for improved Earth system understanding: State-of-the art and future directions. In Remote Sensing of Environment, 2017, ISSN 0034-4257, https://doi.org/10.1016/j.rse.2017.07.001; Gruber, A., Scanlon, T., van der Schalie, R., Wagner, W., Dorigo, W. (2019) Evolution of the ESA CCI Soil Moisture Climate Data Records and their underlying merging methodology. Earth System Science Data 11, 717-739, https://doi.org/10.5194/essd-11-717-2019; Gruber, A., Dorigo, W. A., Crow, W., Wagner W. (2017). Triple Collocation-Based Merging of Satellite Soil Moisture Retrievals. IEEE Transactions on Geoscience and Remote Sensing. PP. 1-13. https://doi.org/10.1109/TGRS.2017.2734070",
+    "sensor_id": "multi-sensor",
+    "source": "WARP 5.5R1.1/AMI-WS/ERS12 Level 2 Soil Moisture; WARP 5.4R1.0/AMI-WS/ERS2 Level 2 Soil Moisture; H115+H116: Metop ASCAT Surface Soil Moisture Climate Data Record 12.5 km sampling; H115+H116: Metop ASCAT Surface Soil Moisture Climate Data Record 12.5 km sampling;",
+    "title": "ESA Soil Moisture Climate Change Initiative (Soil_Moisture_cci): ACTIVE product, Version 06.2",
+    "uuid": "898c950f441e400d8b569216ebe41cab"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "_CoordinateAxisType": "Lat",
+        "chunk_sizes": [
+          720
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": [
+          720
+        ],
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          720
+        ],
+        "size": 720,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "_CoordinateAxisType": "Lon",
+        "chunk_sizes": [
+          1440
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1440
+        ],
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          1440
+        ],
+        "size": 1440,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "chunk_sizes": [
+          11107
+        ],
+        "data_type": "int32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 2147483647,
+        "orig_data_type": "int16",
+        "shape": [
+          11107
+        ],
+        "size": "11107",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00 UTC"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.SOILMOISTURE.day.L3S.SSMS.multi-sensor.multi-platform.ACTIVE.v06-2.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "dnflag": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "_Unsigned": "false",
+        "bit_meanings": "NaN",
+        "bits": [
+          0,
+          1,
+          2
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "int8",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "NaN",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "Day / Night Flag",
+        "orig_data_type": "uint8",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "valid_range": [
+          0,
+          3
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "dnflag"
+    },
+    "flag": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "_Unsigned": "false",
+        "bit_meanings": "no_data_inconsistency_detected",
+        "bits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "int8",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 127,
+        "flag_meanings": "no_data_inconsistency_detected",
+        "flag_values": [
+          0,
+          1,
+          4,
+          5,
+          127
+        ],
+        "long_name": "Flag",
+        "orig_data_type": "uint8",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "valid_range": [
+          0,
+          127
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "flag"
+    },
+    "freqbandID": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": "NaN",
+        "bits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "int16",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "NaN",
+        "flag_values": [
+          0,
+          2
+        ],
+        "long_name": "Frequency Band Identification",
+        "orig_data_type": "int16",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "valid_range": [
+          0,
+          511
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "freqbandID"
+    },
+    "mode": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "_Unsigned": "false",
+        "bit_meanings": "NaN",
+        "bits": [
+          0,
+          1,
+          2
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "uint8",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "int8",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "NaN",
+        "flag_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "long_name": "Satellite Mode",
+        "orig_data_type": "uint8",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "valid_range": [
+          0,
+          3
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint8",
+      "name": "mode"
+    },
+    "sensor": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "bit_meanings": "NaN",
+        "bits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "int16",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0,
+        "flag_meanings": "NaN",
+        "flag_values": [
+          0,
+          128
+        ],
+        "long_name": "Sensor",
+        "orig_data_type": "int16",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "valid_range": [
+          0,
+          16383
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sensor"
+    },
+    "sm": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "float32",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -9999.0,
+        "long_name": "Percent of Saturation Soil Moisture",
+        "orig_data_type": "float32",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "units": "percent",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sm"
+    },
+    "sm_uncertainty": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "float32",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -9999.0,
+        "long_name": "Percent of Saturation Soil Moisture Uncertainty",
+        "orig_data_type": "float32",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "units": "percent",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sm_uncertainty"
+    },
+    "t0": {
+      "attrs": {
+        "_CoordinateAxes": "time lat lon",
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "dtype": "float64",
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -9999.0,
+        "long_name": "Observation Timestamp",
+        "orig_data_type": "float64",
+        "shape": [
+          11107,
+          720,
+          1440
+        ],
+        "size": "11515737600",
+        "units": "days since 1970-01-01 00:00:00 UTC",
+        "valid_range": [
+          7887.0,
+          7889.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "t0"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 720,
+    "lon": 1440,
+    "time": 11107
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2021-12-31",
+            "minDate": "1991-08-05",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2021-12-31",
+            "minDate": "1991-08-05",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "sm",
+            "sm_uncertainty",
+            "flag",
+            "freqbandID",
+            "dnflag",
+            "mode",
+            "sensor",
+            "t0"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.25,
+  "time_period": "1D",
+  "time_range": [
+    "1991-08-05",
+    "2021-12-31"
+  ]
+}

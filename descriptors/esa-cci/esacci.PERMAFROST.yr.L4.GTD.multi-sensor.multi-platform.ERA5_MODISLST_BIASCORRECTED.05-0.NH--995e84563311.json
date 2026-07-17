@@ -1,0 +1,726 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains permafrost ground temperature data produced as part of the European Space Agency's (ESA) Climate Change Initiative (CCI) Permafrost project. It forms part of the second version of their Climate Research Data Package (CRDP v4). It is derived from a thermal model driven and constrained by satellite data. Grid products of CRDP v4 are released in annual files, covering the start to the end of the Julian year. This corresponds to average annual ground temperatures and is provided for specific depths (surface, 1m, 2m, 5m, 10m).\n \nCase A: It covers the Northern Hemisphere (north of 30\u00b0N) for the period 2003-2023 based on MODIS Land Surface temperature merged with downscaled ERA5 reanalysis near-surface air temperature data.\ne.g. ESACCI-PERMAFROST-L4-GTD-MODISLST_CRYOGRID-AREA4_PP-****-fv05.0.nc\nCase B: It covers the Northern Hemisphere (north of 30\u00b0N) for the period 1997-2002 based on downscaled ERA5 reanalysis near-surface air temperature data which are bias-corrected with the Case A product for the overlap period 2003-2023 using a pixel-specific statistics for each day of the year.\ne.g. ESACCI-PERMAFROST-L4-GTD-ERA5_MODISLST_BIASCORRECTED-AREA4_PP-****-fv05.0.nc",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/5675b0be944f45a8af0e7ddbeb47a011",
+    "cci_project": "PERMAFROST",
+    "comment": "These data were produced at ESA CCI as part of the ESA Permafrost CCI+ project Contract No 4000123681-18-I-NB. They are part of the 1st Climate Research Data Package release.",
+    "data_type": "GTD",
+    "ecv": "PERMAFROST",
+    "history": "2025-08-04 23:25:53",
+    "institute": "Department of Geosciences, University of Oslo",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "ERA5_MODISLST_BIASCORRECTED",
+    "product_version": "05-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-08-27T17:18:33",
+    "references": "http://cci.esa.int/Permafrost, https://doi.org/10.5194/gmd-9-523-2016",
+    "sensor_id": "multi-sensor",
+    "source": "MODIS MOD11A1 and MYD11A1 level 3 Collection 6, ESA CCI Land Cover dataset v1.6.1, ERA5 Reanalysis",
+    "title": "ESA Permafrost Climate Change Initiative (Permafrost_cci): Permafrost Ground Temperature for the Northern Hemisphere, v5.0",
+    "uuid": "5675b0be944f45a8af0e7ddbeb47a011"
+  },
+  "bbox": [
+    -180.0,
+    25.0,
+    180.0,
+    85.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 1000,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 1000,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "latitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          6000
+        ],
+        "size": 6000,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 85.0,
+        "valid_min": 25.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 1000,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 1000,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "longitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          36000
+        ],
+        "size": 36000,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          6
+        ],
+        "size": "6",
+        "standard_name": "time",
+        "units": "hours since 1950-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.PERMAFROST.yr.L4.GTD.multi-sensor.multi-platform.ERA5_MODISLST_BIASCORRECTED.05-0.NH",
+  "data_type": "dataset",
+  "data_vars": {
+    "GST": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "standard_name": "surface_temperature",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "GST"
+    },
+    "GST_uncertainty": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground surface temperature",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "GST_uncertainty"
+    },
+    "T10m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T10m"
+    },
+    "T10m_uncertainty": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 10.0m depth",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T10m_uncertainty"
+    },
+    "T1m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T1m"
+    },
+    "T1m_uncertainty": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 1.0m depth",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T1m_uncertainty"
+    },
+    "T2m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T2m"
+    },
+    "T2m_uncertainty": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 2.0m depth",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T2m_uncertainty"
+    },
+    "T5m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "standard_name": "temperature_in_ground",
+        "units": "degrees celsius",
+        "valid_max": 31315,
+        "valid_min": 20315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T5m"
+    },
+    "T5m_uncertainty": {
+      "attrs": {
+        "_Unsigned": "true",
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 65535,
+        "grid_mapping": "spatial_ref",
+        "long_name": "spatial uncertainty (variability within pixel) of ground temperature at 5.0m depth",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          6000,
+          36000
+        ],
+        "size": "1296000000",
+        "units": "degrees celsius",
+        "valid_max": 32315,
+        "valid_min": 27315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "T5m_uncertainty"
+    },
+    "spatial_ref": {
+      "attrs": {
+        "GeoTransform": "-180 0.01 0 90 0 -0.01",
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int32",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": -2147483647,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "longitude_of_prime_meridian": 0.0,
+        "orig_data_type": "int32",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AXIS[\\\"Latitude\\\",NORTH],AXIS[\\\"Longitude\\\",EAST],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "int32",
+      "name": "spatial_ref"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 6000,
+    "lon": 36000,
+    "time": 6
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 85.0,
+            "minimum": 25.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 85.0,
+            "minimum": 25.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "spatial_ref",
+            "GST",
+            "GST_uncertainty",
+            "T1m",
+            "T1m_uncertainty",
+            "T2m",
+            "T2m_uncertainty",
+            "T5m",
+            "T5m_uncertainty",
+            "T10m",
+            "T10m_uncertainty"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.01,
+  "time_period": "1Y",
+  "time_range": [
+    "1997-01-01",
+    "2023-12-31"
+  ]
+}

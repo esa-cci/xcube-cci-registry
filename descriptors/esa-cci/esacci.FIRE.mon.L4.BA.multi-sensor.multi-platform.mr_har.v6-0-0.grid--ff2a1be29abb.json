@@ -1,0 +1,425 @@
+{
+  "attrs": {
+    "abstract": "The ESA Fire Disturbance Climate Change Initiative (CCI) project has produced maps of global burned area derived from satellite observations. The Harmonised Medium Resolution Burned Area grid product version 6.0 (MRBA60H) described here contains gridded data on global burned area derived from the harmonisation of two previous datasets: FireCCI51 and MRBA60 (previously known as FireCCIS311). This harmonisation has been done using machine learning techniques to try to approximate the FireCCI51 burned area to that of MRBA60 for the period when Sentinel-3 was not available (2003-2018). From 2019 onwards, the Grid product of MRBA60 can be used as the continuation of MRBA60H, providing a consistent dataset.\n\nThe description of the algorithm, input variables and validation results can be found in the Algorithm Theoretical Basis Document (ATBD) of the product in the linked documentation. The gridded dataset contains two variables: sum of burned area per month and per 0.25-degree grid cell, and the corresponding uncertainty, calculated as the Root Mean Square Error. For further information on the product and its format see the Product User Guide (PUG) in the linked documentation.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/db75c5f51ee240ae8743355dcebbb9b9",
+    "cci_project": "FIRE",
+    "comment": "These data were produced as part of the Climate Change Initiative Programme, Fire Disturbance ECV.",
+    "data_type": "BA",
+    "ecv": "FIRE",
+    "history": "Created on 2026-05-21 18:00:40",
+    "institute": "University of Alcala",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "mr_har",
+    "product_version": "v6-0-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2026-05-28T12:52:09",
+    "references": "See https://climate.esa.int/en/projects/fire/",
+    "sensor_id": "multi-sensor",
+    "source": "Harmonised FireCCI51 to FireCCIS311 (now renamed MRBA60) burned area, MODIS MCD14ML thermal anomalies. Ancillary datasets: climatological and vegetation variables (see ATBD of the product for more information)",
+    "title": "ESA Fire Climate Change Initiative (FireCCI): Harmonised Medium Resolution Burned Area Grid product, version 6.0 (MRBA60H)",
+    "uuid": "db75c5f51ee240ae8743355dcebbb9b9"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "bounds": "lat_bounds",
+        "chunk_sizes": [
+          720
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": [
+          720
+        ],
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float64",
+        "shape": [
+          720
+        ],
+        "size": 720,
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lat_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          720,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lat",
+          "bounds"
+        ],
+        "file_chunk_sizes": [
+          720,
+          2
+        ],
+        "file_dimensions": [
+          "lat",
+          "bounds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          720,
+          2
+        ],
+        "size": 1440
+      },
+      "dims": [
+        "lat",
+        "bounds"
+      ],
+      "dtype": "float64",
+      "name": "lat_bounds"
+    },
+    "lon": {
+      "attrs": {
+        "bounds": "lon_bounds",
+        "chunk_sizes": [
+          1440
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1440
+        ],
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float64",
+        "shape": [
+          1440
+        ],
+        "size": 1440,
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "lon_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          1440,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "lon",
+          "bounds"
+        ],
+        "file_chunk_sizes": [
+          1440,
+          2
+        ],
+        "file_dimensions": [
+          "lon",
+          "bounds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          1440,
+          2
+        ],
+        "size": 2880
+      },
+      "dims": [
+        "lon",
+        "bounds"
+      ],
+      "dtype": "float64",
+      "name": "lon_bounds"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bounds",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float64",
+        "shape": [
+          192
+        ],
+        "size": "192",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    },
+    "time_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "bounds"
+        ],
+        "file_chunk_sizes": [
+          1,
+          2
+        ],
+        "file_dimensions": [
+          "time",
+          "bounds"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          192,
+          2
+        ],
+        "size": "384",
+        "units": "days since 1970-01-01 00:00:00"
+      },
+      "dims": [
+        "time",
+        "bounds"
+      ],
+      "dtype": "float64",
+      "name": "time_bounds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.FIRE.mon.L4.BA.multi-sensor.multi-platform.mr_har.v6-0-0.grid",
+  "data_type": "dataset",
+  "data_vars": {
+    "burned_area": {
+      "attrs": {
+        "cell_methods": "time: sum",
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "total burned_area",
+        "orig_data_type": "float32",
+        "shape": [
+          192,
+          720,
+          1440
+        ],
+        "size": "199065600",
+        "standard_name": "burned_area",
+        "units": "m2",
+        "valid_range": [
+          0.0,
+          769288944.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "burned_area"
+    },
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "i2m": "0.25,0.0,0.0,-0.25,-180.0,90.0",
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "wkt": "GEOGCS[\\\"WGS84(DD)\\\",DATUM[\\\"WGS84\\\",SPHEROID[\\\"WGS84\\\", 6378137.0, 298.257223563]],PRIMEM[\\\"Greenwich\\\", 0.0],UNIT[\\\"degree\\\", 0.017453292519943295],AXIS[\\\"Geodetic longitude\\\", EAST],AXIS[\\\"Geodetic latitude\\\", NORTH]]"
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          720,
+          1440
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "uncertainty of burned area, calculated as Root Mean Square Error.",
+        "orig_data_type": "float32",
+        "shape": [
+          192,
+          720,
+          1440
+        ],
+        "size": "199065600",
+        "units": "m2",
+        "valid_range": [
+          0.0,
+          769288944.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "uncertainty"
+    }
+  },
+  "dims": {
+    "bounds": 2,
+    "lat": 720,
+    "lon": 1440,
+    "time": 192
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2018-12-30",
+            "minDate": "2003-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2018-12-30",
+            "minDate": "2003-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "crs",
+            "burned_area",
+            "uncertainty"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.25,
+  "time_period": "1M",
+  "time_range": [
+    "2003-01-01",
+    "2018-12-30"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "attrs": {
+    "abstract": "This dataset provides the Gravitational Mass Balance (GMB) product derived from gravimetry data from the GRACE satellite instrument, by TU Dresden.  The data consists of two products: a mass change time series for the entire Greenland Ice Sheet and different drainage basins for the period April 2002 to August 2016; and mass trend grids for different 5-year periods between 2003 and 2016.   This version (1.2) is derived from GRACE monthly solutions provided by TU Graz (ITSG-Grace 2016)\n\nThe mass change time series contains the mass change (with respect to a chosen reference month) for all of the Greenland Ice Sheet and each individual drainage basin.  For each month (defined by a decimal year) a mass change in Gt and its associated error (also in Gt) is provided.   The mass trend grid product is given in units of mm water equivalent per year.\n\nMass balance is an important variable to understand glacial thinning and ablation rates to enable mapping glacier area change. The time series allows the longer term comparison of trends whereas the mass trend grids provide a yearly snapshot which can be further analysed and compared across the data set. \n\nBasin definitions and further data descriptions can be found in the Algorithm Theoretical Baseline Document (ST-DTU-ESA-GISCCI-ATBD-001_v3.1.pdf) and Product Specification Document (ST-DTU-ESA-GISCCI-PSD_v2.2.pdf) which are provided on the Greenland Ice Sheet CCI project website. This GMB product has been produced by TU Dresden for comparison with the existing GMB product derived by DTU Space.\n\nPlease cite the dataset as follows: Groh, A., & Horwath, M. (2016). The method of tailored sensitivity kernels for GRACE mass change estimates. Geophysical Research Abstracts, 18, EGU2016-12065",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/b017235a8e544d6fbad21387ebfbf0d8",
+    "cci_project": "ICESHEETS",
+    "data_type": "GMB",
+    "ecv": "ICESHEETS",
+    "institute": "Technische Universit\u00e4t Dresden",
+    "platform_id": "GRACE",
+    "processing_level": "Unspecified",
+    "product_string": "UNSPECIFIED",
+    "product_version": "1-2",
+    "project": "Greenland_Ice_Sheet_cci",
+    "publication_date": "2018-11-28T16:59:20",
+    "sensor_id": "GRACE-instrument",
+    "source": "GRACE monthly solutions provided by TU Graz (ITSG-Grace2016)",
+    "title": "ESA Greenland Ice Sheet Climate Change Initiative (Greenland_Ice_Sheet_cci): Greenland Gravimetric Mass Balance from GRACE data, derived by TU Dresden, v1.2",
+    "uuid": "b017235a8e544d6fbad21387ebfbf0d8"
+  },
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "coords": {
+    "end_time": {
+      "attrs": {
+        "chunk_sizes": 10,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 10,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "end of time span",
+        "orig_data_type": "float64",
+        "shape": [
+          10
+        ],
+        "size": "10",
+        "units": "days since 2003-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "end_time"
+    },
+    "geometry": {
+      "attrs": {
+        "chunk_sizes": [
+          50
+        ],
+        "data_type": "object",
+        "dimensions": [
+          "meas_ind"
+        ],
+        "file_chunk_sizes": [
+          50
+        ],
+        "file_dimensions": [
+          "meas_ind"
+        ],
+        "long_name": "geometry",
+        "shape": [
+          724
+        ],
+        "size": 724,
+        "standard_name": "geometry"
+      },
+      "dims": [
+        "meas_ind"
+      ],
+      "dtype": "object",
+      "name": "geometry"
+    },
+    "start_time": {
+      "attrs": {
+        "chunk_sizes": 10,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 10,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "start of time span",
+        "orig_data_type": "float64",
+        "shape": [
+          10
+        ],
+        "size": "10",
+        "units": "days since 2003-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "start_time"
+    },
+    "t": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "gregorian",
+        "chunk_sizes": 10,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 10,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "average time for time slice",
+        "orig_data_type": "float64",
+        "shape": [
+          10
+        ],
+        "size": "10",
+        "standard_name": "time",
+        "units": "days since 2003-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "t"
+    }
+  },
+  "crs": "WGS 84",
+  "data_id": "esacci.ICESHEETS.yr.Unspecified.GMB.GRACE-instrument.GRACE.UNSPECIFIED.1-2.greenland_gmb_mass_trends",
+  "data_type": "vectordatacube",
+  "data_vars": {
+    "GMB_trend": {
+      "attrs": {
+        "chunk_sizes": [
+          10,
+          50
+        ],
+        "coordinates": "latitude longitude",
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "meas_ind"
+        ],
+        "file_chunk_sizes": [
+          10,
+          50
+        ],
+        "file_dimensions": [
+          "time",
+          "meas_ind"
+        ],
+        "fill_value": null,
+        "long_name": "mass trend for time span",
+        "orig_data_type": "float64",
+        "shape": [
+          10,
+          724
+        ],
+        "size": 734,
+        "source": "GRACE - ITSG-Grace2016",
+        "standard_name": "tendency_of_change_in_land_ice_amount",
+        "units": "kg m-2 yr-1",
+        "units_comments": "kg m-2 yr-1 corresponds to mm water equivalent per year"
+      },
+      "dims": [
+        "time",
+        "meas_ind"
+      ],
+      "dtype": "float64",
+      "name": "GMB_trend"
+    },
+    "crs": {
+      "attrs": {
+        "DODS": {
+          "strlen": 0
+        },
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "bytes1024",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": "298.257223563",
+        "longitude_of_prime_meridian": "0",
+        "orig_data_type": "bytes1024",
+        "semi_major_axis": "6378137.",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.01745329251994328,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]]"
+      },
+      "dims": [],
+      "dtype": "bytes1024",
+      "name": "crs"
+    }
+  },
+  "dims": {
+    "meas_ind": 724,
+    "time": 10
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "GMB_trend",
+            "crs"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_period": "1Y",
+  "time_range": [
+    "2002-03-31",
+    "2016-08-31"
+  ]
+}

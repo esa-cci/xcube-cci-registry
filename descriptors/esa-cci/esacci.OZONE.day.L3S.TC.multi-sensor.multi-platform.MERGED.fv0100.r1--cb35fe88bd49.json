@@ -1,0 +1,385 @@
+{
+  "attrs": {
+    "abstract": "This dataset is a monthly mean gridded total ozone data record (level 3) produced by the ESA Ozone Climate Change Initiative project (Ozone CCI).  The dataset is a prototype of a merged harmonised ozone data record combining ozone data from the GOME instrument on ERS-2, the SCIAMACHY instrument on ENVISAT and the GOME-2 instrument on METOP-A, and covers the period between April 1996 to June 2011.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/0d2260ad4e2c42b6b14fe5b3308f5eaa",
+    "cci_project": "OZONE",
+    "comment": "Product generated at DLR as part of the ESA O3 CCI project.",
+    "data_type": "TC",
+    "ecv": "OZONE",
+    "history": "Processing #1 of CCI total ozone columns",
+    "institute": "Deutsches Zentrum fuer Luft- und Raumfahrt",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "MERGED",
+    "product_version": "fv0100",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2016-03-08T16:55:06",
+    "references": "GTO-ECV reference: Loyola et al., Global long-term monitoring of the ozone layer - a prerequisite for predictions, International Journal of Remote Sensing, vol. 30, no. 15, pp. 4295-4318, 2009.",
+    "sensor_id": "multi-sensor",
+    "source": "UCAS v3.0 - Ozone_CCI",
+    "title": "ESA Ozone Climate Change Initiative (Ozone CCI): Level 3 Total Ozone Merged Data Product, version 01",
+    "uuid": "0d2260ad4e2c42b6b14fe5b3308f5eaa"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "chunk_sizes": [
+          180
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": [
+          180
+        ],
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "long_name": "Latitude of the grid center",
+        "orig_data_type": "float64",
+        "shape": [
+          180
+        ],
+        "size": 180,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float64",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "chunk_sizes": [
+          360
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          360
+        ],
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Longitude of the grid center",
+        "orig_data_type": "float64",
+        "shape": [
+          360
+        ],
+        "size": 360,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          0.0,
+          360.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float64",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          185
+        ],
+        "size": 185,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          185
+        ],
+        "size": 370,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.OZONE.day.L3S.TC.multi-sensor.multi-platform.MERGED.fv0100.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "atmosphere_mole_content_of_ozone": {
+      "attrs": {
+        "ancillary_variables": "atmosphere_mole_content_of_ozone_standard_deviation atmosphere_mole_content_of_ozone_standard_error atmosphere_mole_content_of_ozone_number_of_observations",
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Mean Total Ozone Column in Dobson Units",
+        "orig_data_type": "float64",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_mole_content_of_ozone",
+        "units": "DU",
+        "valid_range": [
+          50.0,
+          650.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "atmosphere_mole_content_of_ozone"
+    },
+    "atmosphere_mole_content_of_ozone_number_of_observations": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "The number of measurements use to derive the Mean Total Ozone Column in Dobson Units",
+        "orig_data_type": "float64",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_mole_content_of_ozone_number_of_observations",
+        "units": "1",
+        "valid_range": [
+          0.0,
+          1000.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "atmosphere_mole_content_of_ozone_number_of_observations"
+    },
+    "atmosphere_mole_content_of_ozone_standard_deviation": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Deviation of the Mean Total Ozone Column in Dobson Units",
+        "orig_data_type": "float64",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_mole_content_of_ozone_standard_deviation",
+        "units": "DU",
+        "valid_range": [
+          0.0,
+          200.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "atmosphere_mole_content_of_ozone_standard_deviation"
+    },
+    "atmosphere_mole_content_of_ozone_standard_error": {
+      "attrs": {
+        "chunk_sizes": [
+          180,
+          360
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          180,
+          360
+        ],
+        "file_dimensions": [
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "Standard Error of the Mean Total Ozone Column in Dobson Units",
+        "orig_data_type": "float64",
+        "shape": [
+          180,
+          360
+        ],
+        "size": 64800,
+        "standard_name": "atmosphere_mole_content_of_ozone_standard_error",
+        "units": "DU",
+        "valid_range": [
+          0.0,
+          100.0
+        ]
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "atmosphere_mole_content_of_ozone_standard_error"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 180,
+    "lon": 360,
+    "time": 185
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2011-06-29",
+            "minDate": "1996-03-31",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2011-06-29",
+            "minDate": "1996-03-31",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "atmosphere_mole_content_of_ozone_standard_deviation",
+            "atmosphere_mole_content_of_ozone_standard_error",
+            "atmosphere_mole_content_of_ozone_number_of_observations",
+            "atmosphere_mole_content_of_ozone"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 1.0,
+  "time_period": "1D",
+  "time_range": [
+    "1996-03-31",
+    "2011-06-29"
+  ]
+}

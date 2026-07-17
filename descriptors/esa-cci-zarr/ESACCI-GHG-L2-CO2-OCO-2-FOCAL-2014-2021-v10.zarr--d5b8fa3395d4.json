@@ -1,0 +1,447 @@
+{
+  "attrs": {
+    "cdm_data_type": "point",
+    "comment": "These data were produced at the Institute of Environmental Physics, University of Bremen.",
+    "conventions": "CF-1.6",
+    "creator_email": "",
+    "creator_name": "",
+    "creator_url": "",
+    "date_created": "2021-11-17T13:31:34.485051",
+    "geospatial_lat_max": 90,
+    "geospatial_lat_min": -90,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": 180,
+    "geospatial_lon_min": -180,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": 100000,
+    "geospatial_vertical_min": 0,
+    "history": "2023 Change product format with nc2zarr",
+    "id": "IUP-GHG-L2-CO2-OCO-2-FOCAL-20210331-v10.nc",
+    "institution": "IUP",
+    "keywords": "satellite, atmosphere, carbon dioxide",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD)",
+    "license": "free and open access",
+    "naming_authority": "",
+    "platform": "OCO-2",
+    "product_version": "v10",
+    "project": "",
+    "references": "",
+    "sensor": "OCO-2",
+    "source": "",
+    "spatial_resolution": "",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Conventions Version 1.6",
+    "summary": "OCO-2 level 2 data processed with the fast atmospheric trace gas retrieval FOCAL v10",
+    "time_coverage_duration": "P1D",
+    "time_coverage_end": "20210331T220916Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "20140906T015518Z",
+    "title": "FOCAL",
+    "tracking_id": "dac9342d-bece-444b-a9-9-174cd82ba0e4"
+  },
+  "bbox": [
+    -180,
+    -90,
+    180,
+    90
+  ],
+  "data_id": "ESACCI-GHG-L2-CO2-OCO-2-FOCAL-2014-2021-v10.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "co2_profile_apriori": {
+      "attrs": {
+        "comment": "A priori dry-air mole fraction profile of atmospheric carbon dioxide in ppm All values represent layer averages within the corresponding pressure levels. Profiles are ordered from surface to top of atmosphere. The a priori profile is needed to apply the XCO2 averaging kernel. See Product Specification Document Version 3 at www.esa-ghg-cci.org for more information.",
+        "long_name": "a priori dry-air mole fraction profile of atmospheric carbon dioxide",
+        "units": "1e-6"
+      },
+      "chunks": [
+        100000,
+        5
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "co2_profile_apriori"
+    },
+    "footprint_index": {
+      "attrs": {
+        "comment": "Footprint index of the sounding (1-7).",
+        "long_name": "Footprint"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "footprint_index"
+    },
+    "h2o_profile_apriori": {
+      "attrs": {
+        "comment": "A priori dry-air mole fraction profile of atmospheric water vapor in ppm. All values represent layer averages within the corresponding pressure levels. Profiles are ordered from surface to top of atmosphere. The a priori profile is needed to apply the XH2O averaging kernel. See Product Specification Document Version 3 at www.esa-ghg-cci.org for more information.",
+        "long_name": "a priori dry-air mole fraction profile of atmospheric water vapor",
+        "units": "1e-6"
+      },
+      "chunks": [
+        100000,
+        5
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "h2o_profile_apriori"
+    },
+    "land_fraction": {
+      "attrs": {
+        "comment": "Fraction of land within the measurement.",
+        "long_name": "land fraction"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "land_fraction"
+    },
+    "latitude": {
+      "attrs": {
+        "comment": "Center latitude of the measurement",
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90,
+          90
+        ]
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "comment": "Center longitude of the measurement",
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180,
+          180
+        ]
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "operation_mode": {
+      "attrs": {
+        "comment": "The mode of operation of the measurement (ND,GL,TX,...).",
+        "long_name": "Mode of operation"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "object",
+      "name": "operation_mode"
+    },
+    "pressure_levels": {
+      "attrs": {
+        "comment": "Pressure levels define the boundaries of the averaging kernel and mole fraction profile layers. Surface pressure is represented by the 1st element, i.e., profiles are ordered from surface to top of atmosphere.",
+        "long_name": "pressure levels",
+        "units": "hPa"
+      },
+      "chunks": [
+        100000,
+        6
+      ],
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_levels"
+    },
+    "pressure_weight": {
+      "attrs": {
+        "comment": "Layer dependent weights needed to apply the averaging kernels (see Product Specification Document Version 3, www.esa-ghg-cci.org)",
+        "long_name": "pressure weight",
+        "units": "1"
+      },
+      "chunks": [
+        100000,
+        5
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_weight"
+    },
+    "sensor_zenith_angle": {
+      "attrs": {
+        "comment": "Sensor zenith angle is the angle between the line of sight to the sensor and the local vertical.",
+        "long_name": "sensor zenith angle",
+        "standard_name": "sensor_zenith_angle",
+        "units": "degree"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "sensor_zenith_angle"
+    },
+    "solar_zenith_angle": {
+      "attrs": {
+        "comment": "Solar zenith angle is the the angle between the line of sight to the sun and the local vertical.",
+        "long_name": "solar zenith angle",
+        "standard_name": "solar_zenith_angle",
+        "units": "degree"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "solar_zenith_angle"
+    },
+    "sounding_id": {
+      "attrs": {
+        "comment": "The unique ID of the Sounding.",
+        "long_name": "Sounding ID"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "sounding_id"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "vertex_latitude": {
+      "attrs": {
+        "comment": "Corner latitudes of field of view of the measurement. The field of view of the three spectral bands is averaged.",
+        "long_name": "Vertex latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90,
+          90
+        ]
+      },
+      "chunks": [
+        100000,
+        4
+      ],
+      "dims": [
+        "sounding_dim",
+        "vertex_dim"
+      ],
+      "dtype": "float32",
+      "name": "vertex_latitude"
+    },
+    "vertex_longitude": {
+      "attrs": {
+        "comment": "Corner longitudes of field of view of the measurement. The field of view of the three spectral bands is averaged.",
+        "long_name": "Vertex longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180,
+          180
+        ]
+      },
+      "chunks": [
+        100000,
+        4
+      ],
+      "dims": [
+        "sounding_dim",
+        "vertex_dim"
+      ],
+      "dtype": "float32",
+      "name": "vertex_longitude"
+    },
+    "xco2": {
+      "attrs": {
+        "comment": "Retrieved column-average dry-air mole fraction of atmospheric carbon dioxide (XCO2) in ppm",
+        "long_name": "column-average dry-air mole fraction of atmospheric carbon dioxide in dry air",
+        "standard_name": "dry_atmosphere_mole_fraction_of_carbon_dioxide",
+        "units": "1e-6"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xco2"
+    },
+    "xco2_averaging_kernel": {
+      "attrs": {
+        "comment": "The normalized column-averaging kernel represents the sensitivity of the retrieved XCO2 to the atmospheric carbon dioxide mole fraction depending on pressure (height). All values represent layer averages within the corresponding pressure levels. Values near one are ideal and indicate that the influence of the a priori is minimal. Profiles are ordered from surface to top of atmosphere. See Product Specification Document Version 3 at www.esa-ghg-cci.org for more information.",
+        "long_name": "normalized column averaging kernel",
+        "units": "1"
+      },
+      "chunks": [
+        100000,
+        5
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "xco2_averaging_kernel"
+    },
+    "xco2_quality_flag": {
+      "attrs": {
+        "comment": "0=good, 1=bad",
+        "flag_meanings": "good_quality potentially_bad_quality",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "quality flag"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int8",
+      "name": "xco2_quality_flag"
+    },
+    "xco2_uncertainty": {
+      "attrs": {
+        "comment": "1-sigma uncertainty of the retrieved column-average dry-air mole fraction of atmospheric carbon dioxide (XCO2) in ppm",
+        "long_name": "1-sigma uncertainty of the retrieved column-average dry-air mole fraction of atmospheric carbon dioxide",
+        "units": "1e-6"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xco2_uncertainty"
+    },
+    "xh2o": {
+      "attrs": {
+        "comment": "Retrieved column-average dry-air mole fraction of atmospheric water vapor (XH2O) in ppm",
+        "long_name": "column-average dry-air mole fraction of atmospheric water vapor in dry air",
+        "standard_name": "dry_atmosphere_mole_fraction_of_water_vapor",
+        "units": "1e-6"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xh2o"
+    },
+    "xh2o_averaging_kernel": {
+      "attrs": {
+        "comment": "The normalized column-averaging kernel represents the sensitivity of the retrieved XH2O to the atmospheric water vapor mole fraction depending on pressure (height). All values represent layer averages within the corresponding pressure levels. Values near one are ideal and indicate that the influence of the a priori is minimal. Profiles are ordered from surface to top of atmosphere. See Product Specification Document Version 3 at www.esa-ghg-cci.org for more information.",
+        "long_name": "normalized column averaging kernel",
+        "units": "1"
+      },
+      "chunks": [
+        100000,
+        5
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "xh2o_averaging_kernel"
+    },
+    "xh2o_quality_flag": {
+      "attrs": {
+        "comment": "0=good, 1=bad",
+        "flag_meanings": "good_quality potentially_bad_quality",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "quality flag"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int8",
+      "name": "xh2o_quality_flag"
+    },
+    "xh2o_uncertainty": {
+      "attrs": {
+        "comment": "1-sigma uncertainty of the retrieved column-average dry-air mole fraction of atmospheric water vapor (XH2O) in ppm",
+        "long_name": "1-sigma uncertainty of the retrieved column-average dry-air mole fraction of atmospheric water vapor",
+        "units": "1e-6"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xh2o_uncertainty"
+    }
+  },
+  "dims": {
+    "layer_dim": 5,
+    "level_dim": 6,
+    "sounding_dim": 178509941,
+    "vertex_dim": 4
+  },
+  "time_range": [
+    "2014-09-06",
+    "2021-03-31"
+  ]
+}

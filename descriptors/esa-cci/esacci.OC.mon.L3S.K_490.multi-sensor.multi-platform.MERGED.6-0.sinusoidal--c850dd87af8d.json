@@ -1,0 +1,588 @@
+{
+  "attrs": {
+    "abstract": "The ESA Ocean Colour CCI project has produced global, level 3, binned multi-sensor time-series of satellite ocean-colour data with a particular focus for use in climate studies.\n\nThis dataset contains the Version 6.0 Kd490 attenuation coefficient (m-1) for downwelling irradiance product on a sinusoidal projection at approximately 4 km spatial resolution and at a number of time resolutions (daily, 5-day, 8-day, monthly and yearly composites) covering the period 1997 - 2022. It is computed from the Ocean Colour CCI Version 6.0 inherent optical properties dataset at 490 nm and the solar zenith angle. Note, these data are also contained within the 'All Products' dataset. \n\nThis data product is on a sinusoidal equal-area grid projection, matching the NASA standard level 3 binned projection. The default number of latitude rows is 4320, which results in a vertical bin cell size of approximately 4 km. The number of longitude columns varies according to the latitude, which permits the equal area property. Unlike the NASA format, where the bin cells that do not contain any data are omitted, the CCI format retains all cells and simply marks empty cells with a NetCDF fill value. (A separate dataset is also available for data on a geographic projection).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/3bdb21a4cd004e5f8cc148fea5f1d4e3",
+    "cci_project": "OC",
+    "comment": "See summary attribute",
+    "data_type": "K_490",
+    "ecv": "OC",
+    "history": "Source data were: ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971101-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971102-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971103-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971104-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971105-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971106-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971107-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971108-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971109-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971110-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971111-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971112-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971113-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971114-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971115-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971116-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971117-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971118-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971119-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971120-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971121-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971122-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971123-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971124-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971125-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971126-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971127-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971128-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971129-fv6.0.nc, ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1D_DAILY_4km_SIN_PML_OCx_QAA-19971130-fv6.0.nc; netcdf_compositor_cci composites  Rrs_412, Rrs_412_bias, Rrs_443, Rrs_443_bias, Rrs_490, Rrs_490_bias, Rrs_510, Rrs_510_bias, Rrs_560, Rrs_560_bias, Rrs_665, Rrs_665_bias, adg_412, adg_412_bias, adg_443, adg_443_bias, adg_490, adg_490_bias, adg_510, adg_510_bias, adg_560, adg_560_bias, adg_665, adg_665_bias, aph_412, aph_412_bias, aph_443, aph_443_bias, aph_490, aph_490_bias, aph_510, aph_510_bias, aph_560, aph_560_bias, aph_665, aph_665_bias, atot_412, atot_443, atot_490, atot_510, atot_560, atot_665, bbp_412, bbp_443, bbp_490, bbp_510, bbp_560, bbp_665, chlor_a, chlor_a_log10_bias, kd_490, kd_490_bias, water_class1, water_class10, water_class11, water_class12, water_class13, water_class14, water_class2, water_class3, water_class4, water_class5, water_class6, water_class7, water_class8, water_class9 with --mean,  Rrs_412_rmsd, Rrs_443_rmsd, Rrs_490_rmsd, Rrs_510_rmsd, Rrs_560_rmsd, Rrs_665_rmsd, adg_412_rmsd, adg_443_rmsd, adg_490_rmsd, adg_510_rmsd, adg_560_rmsd, adg_665_rmsd, aph_412_rmsd, aph_443_rmsd, aph_490_rmsd, aph_510_rmsd, aph_560_rmsd, aph_665_rmsd, chlor_a_log10_rmsd, kd_490_rmsd with --root-mean-square, and  MERIS_nobs, MODISA_nobs, OLCI-A_nobs, OLCI-B_nobs, SeaWiFS_nobs, VIIRS_nobs, total_nobs - with --total\n1660543819 Subsetted from standardised_sine/ESACCI-OC-L3S-OC_PRODUCTS-MERGED-1M_MONTHLY_4km_SIN_PML_OCx_QAA-199711-fv6.0.nc to only include variables MERIS_nobs_sum,MODISA_nobs_sum,OLCI-A_nobs_sum,OLCI-B_nobs_sum,SeaWiFS_nobs_sum,VIIRS_nobs_sum,crs,kd_490,kd_490_bias,kd_490_rmsd,lat,lon,time,total_nobs_sum",
+    "institute": "Plymouth Marine Laboratory",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "MERGED",
+    "product_version": "6-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2023-08-01T09:25:28",
+    "references": "http://www.esa-oceancolour-cci.org/",
+    "sensor_id": "multi-sensor",
+    "source": "NASA SeaWiFS  L1A and L2 R2018.0 LAC and GAC, MODIS-Aqua L1A and L2 R2018.0, MERIS L1B 4th reprocessing inc OCL corrections, NASA VIIRS L1A and L2 R2018.0, OLCI L1B",
+    "title": "ESA Ocean Colour Climate Change Initiative (Ocean_Colour_cci): Global attenuation coefficient for downwelling irradiance (Kd490) gridded on a sinusoidal projection at 4km resolution, Version 6.0",
+    "uuid": "3bdb21a4cd004e5f8cc148fea5f1d4e3"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "orig_data_type": "int32",
+        "shape": [
+          304
+        ],
+        "size": "304",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    }
+  },
+  "crs": "1D binned sinusoidal",
+  "data_id": "esacci.OC.mon.L3S.K_490.multi-sensor.multi-platform.MERGED.6-0.sinusoidal",
+  "data_type": "dataset",
+  "data_vars": {
+    "MERIS_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the MERIS sensor contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "MERIS_nobs_sum"
+    },
+    "MODISA_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the MODIS (Aqua) sensor contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "MODISA_nobs_sum"
+    },
+    "OLCI-A_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3a) sensor contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-A_nobs_sum"
+    },
+    "OLCI-B_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3b) sensor contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-B_nobs_sum"
+    },
+    "SeaWiFS_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the SeaWiFS (GAC and LAC) sensor contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "SeaWiFS_nobs_sum"
+    },
+    "VIIRS_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the VIIRS sensor contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "VIIRS_nobs_sum"
+    },
+    "crs": {
+      "attrs": {
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "1D binned sinusoidal",
+        "number_of_latitude_rows": 4320,
+        "orig_data_type": "int32",
+        "shape": [
+          304
+        ],
+        "size": "304",
+        "total_number_of_bins": 23761676
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "kd_490": {
+      "attrs": {
+        "ancillary_variables": "kd_490_rmsd kd_490_bias",
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Downwelling attenuation coefficient at 490nm, derived using Lee 2005 equation and bbw from Zhang 2009 (following the SeaDAS Kd_lee algorithm)",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFSN0064",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504",
+        "standard_name": "volume_attenuation_coefficient_of_downwelling_radiative_flux_in_sea_water",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "kd_490"
+    },
+    "kd_490_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/kd/cci_kd_bias.dat",
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of downwelling attenuation coefficient at 490 nm derived using Lee 2005 equation and bbw from Zhang 2009",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "kd_490_bias"
+    },
+    "kd_490_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/kd/cci_kd_rmsd.dat",
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of downwelling attenuation coefficient at 490 nm derived using Lee 2005 equation and bbw from Zhang 2009",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504",
+        "units": "m-1",
+        "units_nonstandard": "m^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "kd_490_rmsd"
+    },
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": 72900,
+        "data_type": "float32",
+        "dimensions": [
+          "bin_index"
+        ],
+        "file_chunk_sizes": 72900,
+        "file_dimensions": [
+          "bin_index"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          23761676
+        ],
+        "size": 23761676,
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "dims": [
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": 72900,
+        "data_type": "float32",
+        "dimensions": [
+          "bin_index"
+        ],
+        "file_chunk_sizes": 72900,
+        "file_dimensions": [
+          "bin_index"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          23761676
+        ],
+        "size": 23761676,
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "dims": [
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "total_nobs_sum": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          72900
+        ],
+        "coordinates": "lat lon",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "file_chunk_sizes": [
+          1,
+          72900
+        ],
+        "file_dimensions": [
+          "time",
+          "bin_index"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the total number of observations contributing to this bin cell",
+        "number_of_files_composited": 30,
+        "orig_data_type": "float32",
+        "shape": [
+          304,
+          23761676
+        ],
+        "size": "7223549504"
+      },
+      "dims": [
+        "time",
+        "bin_index"
+      ],
+      "dtype": "float32",
+      "name": "total_nobs_sum"
+    }
+  },
+  "dims": {
+    "bin_index": 23761676,
+    "bnds": 2,
+    "time": 304
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "1997-09-04",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "1997-09-04",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "MERIS_nobs_sum",
+            "MODISA_nobs_sum",
+            "OLCI-A_nobs_sum",
+            "OLCI-B_nobs_sum",
+            "SeaWiFS_nobs_sum",
+            "VIIRS_nobs_sum",
+            "crs",
+            "kd_490",
+            "kd_490_bias",
+            "kd_490_rmsd",
+            "lat",
+            "lon",
+            "total_nobs_sum"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.041666666666666664,
+  "time_period": "1M",
+  "time_range": [
+    "1997-09-04",
+    "2022-12-31"
+  ]
+}

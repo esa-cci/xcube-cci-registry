@@ -1,0 +1,1225 @@
+{
+  "attrs": {
+    "abstract": "This long-term dataset contains monthly Level 3 (L3) gridded ammonia (NH3) total column data derived from IASI (Infrared Atmospheric Sounding Interferometer) measurements onboard Metop-A/B/C (Meteorological operational satellite-A/B/C) data produced as part of the European Space Agency's (ESA) Climate Change Initiative (CCI) Precursors for aerosols and ozone project. The temporal range of the dataset is October 2007 to June 2025. Full documentation can be found on the project website at https://climate.esa.int/en/projects/precursors-for-aerosols-and-ozone/.\n\nThe version number is 4.0.1R. Data are available in NetCDF format.\n\nThis dataset forms part of the ESA Precursors Climate Change Initiative (Precursors_cci): Precursors IASI NH3 L3 data products v4R. doi:10.5285/463862326d574951bea52527f9df397d. https://dx.doi.org/10.5285/463862326d574951bea52527f9df397d",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/2ec5b1fb653445bdbbd0dcd69dd223da",
+    "cci_project": "PREC",
+    "comment": "These data were produced as part of the European Space Agency Climate Change Initiative+ Precursors for Aerosols and Ozone Essential Climate Variable project",
+    "data_type": "NH3",
+    "ecv": "PREC",
+    "history": "2025-08-28 15:32:38 - Product generated with retrieval code version 4.0.1 Reanalysis",
+    "platform_id": "multi-platform",
+    "processing_level": "L3C",
+    "product_string": "ANNI-IASI_MERGED",
+    "product_version": "4-0-1r",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2026-02-19T10:39:36",
+    "references": "Reference to the ANNI retrieval: Clarisse et. al (2023), The IASI NH3 version 4 product: averaging kernels and improved consistency, Atmos. Meas. Tech., 16, 5009-5028, doi:amt-16-5009-2023, 2023 ; Franco et al. (2018), A General Framework for Global Retrievals of Trace Gases From IASI: Application to Methanol, Formic Acid, and PAN, J. Geophys. Res.-Atmos., 123, 13,963-13,984, doi:10.1029/2018JD029633. Other specific references to the ANNI-NH3 retrieval: Van Damme et al. (2017), Version 2 of the IASI NH3 neural network retrieval algorithm: near-real-time and reanalysed datasets, Atm. Meas. Tech., 10, 4905-4914, doi:10.5194/amt-10-4905-2017; Whitburn et al. (2016), A Flexible and robust neural network IASI-NH3 retrieval algorithm, J. Geophys. Res.-Atmos., 121, 6581-6599, doi:10.1002/2016JD024828.",
+    "sensor_id": "IASI",
+    "source": "IASI L1C (EumetCast NRT)",
+    "title": "ESA Precursors for Aerosols and Ozone Climate Change Initiative (Precursors_cci): IASI NH3 L3 merged product, version 4R",
+    "uuid": "2ec5b1fb653445bdbbd0dcd69dd223da"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "chunk_sizes": 900,
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": 900,
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          900
+        ],
+        "size": 900,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "chunk_sizes": 1800,
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": 1800,
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          1800
+        ],
+        "size": 1800,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "time": {
+      "attrs": {
+        "_Unsigned": "true",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "uint32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 4294967295,
+        "orig_data_type": "uint32",
+        "shape": [
+          213
+        ],
+        "size": "213",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00",
+        "valid_range": [
+          0,
+          -1
+        ]
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "uint32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.PREC.day.L3C.NH3.IASI.multi-platform.ANNI-IASI_MERGED.4-0-1r.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "eff_date_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "effective date of observation in days since the start of the month",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective date (AM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "day"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_date_am"
+    },
+    "eff_date_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "effective date of observation in days since the start of the month",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective date (AM+PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "day"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_date_ampm"
+    },
+    "eff_date_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "effective date of observation in days since the start of the month",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective date (PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "day"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_date_pm"
+    },
+    "eff_fract_day_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "effective fractional day in local solar time. UTC = local_solar_time - longitude/360",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective fractional day in local solar time (AM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_fract_day_am"
+    },
+    "eff_fract_day_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "effective fractional day in local solar time. UTC = local_solar_time - longitude/360",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective fractional day in local solar time (PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_fract_day_pm"
+    },
+    "nh3_total_column_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "L3 (AM) NH3 total column in mole per square meter",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_am"
+    },
+    "nh3_total_column_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "L3 (AM+PM) NH3 total column in mole per square meter",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_ampm"
+    },
+    "nh3_total_column_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "L3 (PM) NH3 total column in mole per square meter",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_pm"
+    },
+    "nh3_total_column_random_uncertainty_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "random total uncertainty on the NH3 total column (AM)",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_random_uncertainty_am"
+    },
+    "nh3_total_column_random_uncertainty_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "random total uncertainty on the NH3 total column (AM+PM)",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_random_uncertainty_ampm"
+    },
+    "nh3_total_column_random_uncertainty_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "random total uncertainty on the NH3 total column (PM)",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_random_uncertainty_pm"
+    },
+    "nh3_total_column_systematic_uncertainty_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "systematic total uncertainty on the NH3 total column (AM)",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_systematic_uncertainty_am"
+    },
+    "nh3_total_column_systematic_uncertainty_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "systematic total uncertainty on the total column (AM+PM)",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_systematic_uncertainty_ampm"
+    },
+    "nh3_total_column_systematic_uncertainty_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "systematic total uncertainty on the NH3 total column (PM)",
+        "missing_value": null,
+        "multiplication_factor_to_convert_to_molecules_per_cm2": 6.02214076e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "mol m-2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "nh3_total_column_systematic_uncertainty_pm"
+    },
+    "number_of_observations_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "number of observations used for calculating the L3 (AM)",
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "standard_name": "number_of_observations",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "number_of_observations_am"
+    },
+    "number_of_observations_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "number of observations used for calculating the L3 (AM+PM)",
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "standard_name": "number_of_observations",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "number_of_observations_ampm"
+    },
+    "number_of_observations_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "number of observations used for calculating the L3 (PM)",
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "standard_name": "number_of_observations",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "number_of_observations_pm"
+    },
+    "surface_air_pressure_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface pressure (AM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "Pa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_air_pressure_am"
+    },
+    "surface_air_pressure_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface pressure (AM+PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "Pa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_air_pressure_ampm"
+    },
+    "surface_air_pressure_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface pressure (PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "Pa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_air_pressure_pm"
+    },
+    "surface_altitude_am": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface altitude (AM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "m"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_altitude_am"
+    },
+    "surface_altitude_ampm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface altitude (AM+PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "m"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_altitude_ampm"
+    },
+    "surface_altitude_pm": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface altitude (PM)",
+        "missing_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          213,
+          900,
+          1800
+        ],
+        "size": "345060000",
+        "units": "m"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "surface_altitude_pm"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 900,
+    "lon": 1800,
+    "time": 213
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2025-06-30",
+            "minDate": "2007-10-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2025-06-30",
+            "minDate": "2007-10-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "nh3_total_column_ampm",
+            "nh3_total_column_am",
+            "nh3_total_column_pm",
+            "number_of_observations_ampm",
+            "number_of_observations_am",
+            "number_of_observations_pm",
+            "nh3_total_column_random_uncertainty_ampm",
+            "nh3_total_column_random_uncertainty_am",
+            "nh3_total_column_random_uncertainty_pm",
+            "nh3_total_column_systematic_uncertainty_ampm",
+            "nh3_total_column_systematic_uncertainty_am",
+            "nh3_total_column_systematic_uncertainty_pm",
+            "surface_altitude_ampm",
+            "surface_altitude_am",
+            "surface_altitude_pm",
+            "surface_air_pressure_ampm",
+            "surface_air_pressure_am",
+            "surface_air_pressure_pm",
+            "eff_fract_day_am",
+            "eff_fract_day_pm",
+            "eff_date_ampm",
+            "eff_date_am",
+            "eff_date_pm"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.2,
+  "time_period": "1D",
+  "time_range": [
+    "2007-10-01",
+    "2025-06-30"
+  ]
+}

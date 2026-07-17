@@ -1,0 +1,1307 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains column-averaged dry-air mole fractions (mixing ratios) of methane (XCH4). It has been produced using Near Infrared (NIR) and Shortwave Infrared (SWIR) spectra acquired from the Thermal and Near Infrared Sensor for Carbon Observations - Fourier Transform Spectrometer-2 (TANSO-FTS-2) onboard the Japanese Greenhouse gases Observing Satellite (GOSAT-2), using the Remote Sensing of Greenhouse Gases for Carbon Cycle Modeling (RemoTeC) SRON Full Physics (SRFP) retrieval algorithm. Results are provided for the individual GOSAT-2 spatial footprints.\n\nThese data have been produced as part of the European Space Agency (ESA)'s Climate Change Initiative (CCI) programme.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/9d3304ed60884e4c8ec4719b6e5c57b1",
+    "cci_project": "GHG",
+    "comment": "These data were produced at SRON Netherlands Institute for Space Research in the frame of the ESA GHG CCI project",
+    "data_type": "CH4",
+    "ecv": "GHG",
+    "history": "01.05.2024 -  product generated with RemoTeC v2.0.3",
+    "institute": "Netherlands Institute for Space Research",
+    "platform_id": "GOSAT-2",
+    "processing_level": "L2",
+    "product_string": "SRFP",
+    "product_version": "v2-0-3",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-04-30T08:57:04",
+    "references": "http://www.esa-ghg-cii.org/ \n http://onlinelibrary.wiley.com/doi/10.1002/jgrd.50332/abstract \n http://onlinelibrary.wiley.com/doi/10.1029/2011GL047888/abstract",
+    "sensor_id": "TANSO-FTS-2",
+    "source": "GOSAT2 L1B version v210",
+    "title": "ESA Greenhouse Gases Climate Change Initiative (GHG_cci): Column-averaged methane from GOSAT-2, generated with the SRFP (RemoTeC) full physics retrieval algorithm (CH4_GO2_SRFP), version 2.0.3",
+    "uuid": "9d3304ed60884e4c8ec4719b6e5c57b1"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          1729
+        ],
+        "size": 1729,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          1729
+        ],
+        "size": 3458,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "polarization_dim"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.GHG.satellite-orbit-frequency.L2.CH4.TANSO-FTS-2.GOSAT-2.SRFP.v2-0-3.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "aerosol_central_height": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Peak height of the aerosol Gaussian height distribution",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Retrieved aerosol peak height",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "m"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "aerosol_central_height"
+    },
+    "aerosol_size": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The size parameter is the exponent of the power-law slope of the aerosol size distribution",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Retrieved size parameter of the aerosol distribution",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "aerosol_size"
+    },
+    "aerosol_total_column": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved total aerosol column in units of particles m-2",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Retrieved aerosol total column",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "m-2"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "aerosol_total_column"
+    },
+    "air_temperature": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          13
+        ],
+        "comment": "",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          13
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Air temperature at each level",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          13
+        ],
+        "size": 50336,
+        "units": "K"
+      },
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "air_temperature"
+    },
+    "altitude": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Altitude is the surface elevation in meters",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Altitude",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "m"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "altitude"
+    },
+    "ch4_profile_apriori": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          12
+        ],
+        "comment": "A priori dry-air mole fraction profile of atmospheric methane in ppb (http://www.atmos-meas-tech.net/5/1349/2012/amt-5-1349-2012.html). All values represent layer averages within the corresponding pressure levels. Profiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          12
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "a priori dry-air mole fraction profile of atmospheric methane",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          12
+        ],
+        "size": 46464,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "ch4_profile_apriori"
+    },
+    "chi2": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Chi_squared value of the sounding",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Chi-squared",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "unit": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "chi2"
+    },
+    "dry_airmass_layer": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          12
+        ],
+        "comment": "The dry airmass per layer, units are molecules m-2",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          12
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Dry airmass per layer",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          12
+        ],
+        "size": 46464,
+        "units": "m-2"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "dry_airmass_layer"
+    },
+    "exposure_id": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Exposure identification number of the sounding",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "exposure id",
+        "orig_data_type": "int32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "exposure_id"
+    },
+    "flag_landtype": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "0 = no glint, 1 = glint",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "flag for land / ocean soundings",
+        "orig_data_type": "int32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "flag_landtype"
+    },
+    "flag_sunglint": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "0 = no glint, 1 = glint",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "flag for normal / sunglint soundings",
+        "orig_data_type": "int32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "flag_sunglint"
+    },
+    "h2o_column": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved H2O total column in units of molecules m-2",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "H2O total column",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "m-2"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "h2o_column"
+    },
+    "intensity_offset_o2a": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved intensity offset in the O2A-band",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Intensity offset in the O2A-band",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "W cm-2"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "intensity_offset_o2a"
+    },
+    "latitude": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Center latitude of the measurement.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Center longitude of the measurement.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "optical_thickness_of_atmosphere_layer_due_to_ambient_aerosol": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          4
+        ],
+        "comment": "'Layer' means any layer with upper and lower boundaries that have constant values in some vertical coordinate. There must be a vertical coordinate variable indicating the extent of the layer(s). If the layers are model layers, the vertical coordinate can be model_level_number, but it is recommended to specify a physical coordinate (in a scalar or auxiliary coordinate variable) as well. The optical thickness is the integral along the path of radiation of a volume scattering/absorption/attenuation coefficient. The radiative flux is reduced by a factor exp(-optical_thickness) on traversing the path. A coordinate variable of radiation_wavelength or radiation_frequency can be specified to indicate that the optical thickness applies at specific wavelengths or frequencies. 'Aerosol' means the suspended liquid or solid particles in air (except cloud droplets). 'Ambient aerosol' is aerosol that has taken up ambient water through hygroscopic growth. The extent of hygroscopic growth depends on the relative humidity and the composition of the aerosol. The specification of a physical process by the phrase due_to_process means that the quantity named is a single term in a sum of terms which together compose the general quantity named by omitting the phrase. Window 1 ranges between 757 nm and 773 nm, window 2 ranges from 1.59 um and 1.62 um, window 3 ranges between 1.63 um and 1.65 um and window 4 ranges between 2.04 um and 2.08 um",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "window_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          4
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "window_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Aerosol optical thickness per retrieval window",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          4
+        ],
+        "size": 15488,
+        "unit": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "window_dim"
+      ],
+      "dtype": "float32",
+      "name": "optical_thickness_of_atmosphere_layer_due_to_ambient_aerosol"
+    },
+    "pressure_levels": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          13
+        ],
+        "comment": "Pressure levels define the boundaries of the averaging kernel and mole fraction profile layers. Surface pressure is represented by the 1st element, i.e., profiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          13
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "fill_value": null,
+        "long_name": "pressure_levels",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          13
+        ],
+        "size": 50336,
+        "units": "hPa"
+      },
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_levels"
+    },
+    "pressure_weight": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          12
+        ],
+        "comment": "Pressure weights are the layer dependent weights needed to apply the averaging kernels.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          12
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "pressure weight",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          12
+        ],
+        "size": 46464,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_weight"
+    },
+    "raw_xch4": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved raw XCH4 total column before bias correction",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Raw retrieved XCH4 column",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "raw_xch4"
+    },
+    "raw_xch4_err": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "commment": "The raw uncertainty due to measurement noise on the XCH4 total column",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Raw uncertainty on the XCH4 total column",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "raw_xch4_err"
+    },
+    "sensor_zenith_angle": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Sensor zenith angle is the angle between the line of sight to the sensor and the local vertical.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "sensor zenith angle",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "degrees"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "sensor_zenith_angle"
+    },
+    "signal_to_noise_window": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          2,
+          4
+        ],
+        "comment": "The signal to noise ratio per retrieval window for both polarization directions. Window 1 ranges between 757 nm and 773 nm, Window 2 ranges between 1.59 um and 1.62 um, Window 3 ranges between 1.63 um and 1.65 um and Window 4 ranges between 2.04 um and 2.08 um",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "polarization_dim",
+          "window_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          2,
+          4
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "polarization_dim",
+          "window_dim"
+        ],
+        "fill_value": null,
+        "long_name": "signal to noise ratio",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          2,
+          4
+        ],
+        "size": 30976,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "polarization_dim",
+        "window_dim"
+      ],
+      "dtype": "float32",
+      "name": "signal_to_noise_window"
+    },
+    "solar_zenith_angle": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Solar zenith angle is the angle between the line of sight to the sun and the local vertical.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "solar zenith angle",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "degrees"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "solar_zenith_angle"
+    },
+    "surface_albedo_1593": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved surface albedo for window 2, at 1593 nm",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Surface albedo at 1593 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_1593"
+    },
+    "surface_albedo_1629": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved surface albedo for window 3, at 1629 nm",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Surface albedo at 1629 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_1629"
+    },
+    "surface_albedo_2042": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved surface albedo for window 4, at 2042 nm",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Surface albedo at 2042 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_2042"
+    },
+    "surface_albedo_758": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "The retrieved surface albedo for window 1, at 758 nm",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Surface albedo at 758 nm",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_758"
+    },
+    "surface_altitude_stdv": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Standard deviation of the surface elevation within the area of the GOSAT-2 sounding, as derived from the SRTM database",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "Standard deviation of the surface elevation",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "m"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_altitude_stdv"
+    },
+    "x_wind": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          13
+        ],
+        "comment": "'x' indicates a vector component along the grid x-axis, positive with increasing x. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.)",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          13
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "fill_value": null,
+        "long_name": "grid_eastward_wind ",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          13
+        ],
+        "size": 50336,
+        "units": "m s-1"
+      },
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "x_wind"
+    },
+    "xch4": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "Retrieved column-average dry-air mole fraction of atmospheric methane (XCH4) in ppb.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "column-average dry-air mole fraction of atmospheric methane",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4"
+    },
+    "xch4_averaging_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          12
+        ],
+        "comment": "The normalized column-averaging kernel represents the sensitivity of the retrieved XCH4 to the atmospheric methane mole fraction depending on pressure (height). All values represent layer averages within the corresponding pressure levels. Values near one are ideal and indicate that the influence of the a priori is minimal. Profiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          12
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "normalized column averaging kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          12
+        ],
+        "size": 46464,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_averaging_kernel"
+    },
+    "xch4_quality_flag": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "0.0 to 0.8=good, 1=bad",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "xch4_quality flag",
+        "meanings": "Quality assurance (QA) value for XCH4 retrieval. A value between 0 and 1 is given to each pixel, where 0 is the best. increasing the QA value taken will give more data and increase the uncertainty in XCH4, e.g. QA <= 0.4 will give better coverage but larger scatter in XCH4 bias. Pixels with QA value of 1 should never be used.",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1",
+        "values": "0B, 1B; // byte"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_quality_flag"
+    },
+    "xch4_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          3872
+        ],
+        "comment": "1-sigma uncertainty of the retrieved column-average dry-air mole fraction of atmospheric methane (XCH4) in ppb.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": [
+          3872
+        ],
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "1-sigma uncertainty of the retrieved column-average dry-air mole fraction of atmospheric methane",
+        "orig_data_type": "float32",
+        "shape": [
+          3872
+        ],
+        "size": 3872,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_uncertainty"
+    },
+    "y_wind": {
+      "attrs": {
+        "chunk_sizes": [
+          3872,
+          13
+        ],
+        "comment": "'y' indicates a vector component along the grid y-axis, positive with increasing y. Wind is defined as a two-dimensional (horizontal) air velocity vector, with no vertical component. (Vertical motion in the atmosphere has the standard name upward_air_velocity.) ",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "file_chunk_sizes": [
+          3872,
+          13
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "fill_value": null,
+        "long_name": "grid_northward_wind",
+        "orig_data_type": "float32",
+        "shape": [
+          3872,
+          13
+        ],
+        "size": 50336,
+        "units": "m s-1"
+      },
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "y_wind"
+    }
+  },
+  "dims": {
+    "layer_dim": 12,
+    "level_dim": 13,
+    "polarization_dim": 2,
+    "sounding_dim": 3872,
+    "time": 1729,
+    "window_dim": 4
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "2019-02-05",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "2019-02-05",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "solar_zenith_angle",
+            "sensor_zenith_angle",
+            "longitude",
+            "latitude",
+            "pressure_levels",
+            "pressure_weight",
+            "xch4",
+            "xch4_uncertainty",
+            "xch4_averaging_kernel",
+            "ch4_profile_apriori",
+            "xch4_quality_flag",
+            "flag_landtype",
+            "flag_sunglint",
+            "exposure_id",
+            "signal_to_noise_window",
+            "dry_airmass_layer",
+            "altitude",
+            "air_temperature",
+            "surface_altitude_stdv",
+            "x_wind",
+            "y_wind",
+            "chi2",
+            "optical_thickness_of_atmosphere_layer_due_to_ambient_aerosol",
+            "raw_xch4",
+            "raw_xch4_err",
+            "h2o_column",
+            "surface_albedo_758",
+            "surface_albedo_1593",
+            "surface_albedo_1629",
+            "surface_albedo_2042",
+            "intensity_offset_o2a",
+            "aerosol_size",
+            "aerosol_central_height",
+            "aerosol_total_column"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 10.5,
+  "time_range": [
+    "2019-02-05",
+    "2023-12-31"
+  ]
+}

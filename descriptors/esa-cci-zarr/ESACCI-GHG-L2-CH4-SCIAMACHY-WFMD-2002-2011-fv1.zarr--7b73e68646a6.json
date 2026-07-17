@@ -1,0 +1,449 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "abstract": "The CH4_SCI_WFMD dataset comprises level 2, column-averaged dry-air mole fractions (mixing ratios) of methane (XCH4). It has been produced using data acquired from the SCanning Imaging Absorption spectroMeter for Atmospheric CHartographY (SCIAMACHY) on board the European Space Agency's (ESA's) environmental research satellite ENVISAT, as part of the ESA's Greenhouse Gases Climate Change Initiative (GHG_cci) project. This version of the data is version 4.0, and forms part of the Climate Research Data Package 4.\nThe Weighting Function Modified DOAS (WFMD) algorithm is a least-squares method based on scaling pre-selected atmospheric vertical profiles. A second product is also available, which has been generated from the SCIAMACHY data using the IMAP algorithm.\nThe data product is stored per day in separate NetCDF-files (NetCDF-4 classic model). The product files contain the key products and other information relevant for the use of the data e.g. the averaging kernels. Note that the results since November 2005 are considered to be of reduced quality in comparison to the earlier results because the extended-wavelength part (1590-1770 nm) of SCIAMACHY's channel 6, covering the methane 2v3 absorption band used for the methane retrieval, is subject to irreversible displacement damage induced by high energy solar protons, which occurs from time to time at individual detector pixels. Therefore several affected detector pixels had to be excluded for the time period since November 2005.\nFor further information on the product, including details of the WFMD algorithm and the SCIAMACHY instrument, please see the associated product user guide (PUG) or the Algorithm Theoretical Basis Documents.",
+    "catalogue_url": "https://catalogue.ceda.ac.uk/uuid/aa09603e91b44f3cb1573c9dd415e8a8",
+    "cdm_data_type": "point",
+    "comment": "These data were produced at the University of Bremen in the framework of the ESA GHG-CCI project",
+    "creator_email": "schneising@iup.physik.uni-bremen.de",
+    "creator_name": "University of Bremen, IUP, Oliver Schneising",
+    "creator_url": "http://www.iup.uni-bremen.de/sciamachy/NIR_NADIR_WFM_DOAS/products/",
+    "date_created": "20160520T153608Z",
+    "geospatial_lat_max": 90.0,
+    "geospatial_lat_min": -90.0,
+    "geospatial_lat_units": "degree_north",
+    "geospatial_lon_max": 180.0,
+    "geospatial_lon_min": -180.0,
+    "geospatial_lon_units": "degree_east",
+    "geospatial_vertical_max": 100000.0,
+    "geospatial_vertical_min": 0.0,
+    "history": "2016 - product generated with WFMD\n2021 - product converted with github.com/bcdev/nc2zarr",
+    "id": "ESACCI-GHG-L2-CH4-SCIAMACHY-WFMD-2002-2011-fv1.nc",
+    "institution": "University of Bremen",
+    "keywords": "satellite, ENVISAT, SCIAMACHY, atmosphere, methane",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD)",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "iup.uni-bremen.de",
+    "platform": "ENVISAT",
+    "product_version": "v4.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-ghg-cci.org/\nhttp://dx.doi.org/10.5194/acp-11-2863-2011\nhttp://dx.doi.org/10.1002/2014EF000265",
+    "sensor": "SCIAMACHY",
+    "source": "SCIAMACHY L1B version 7.xx (consolidation W)",
+    "spatial_resolution": "30km x 60km at nadir (typically)",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Conventions Version 1.6",
+    "summary": "Weighting Function Modified DOAS (WFMD) is designed to retrieve column-averaged dry air mole fractions\nof atmospheric carbon dioxide and methane from the near-infrared/shortwave-infrared (NIR/SWIR)\nnadir spectra of the SCIAMACHY instrument onboard ENVISAT.",
+    "time_coverage_duration": "P1D",
+    "time_coverage_end": "20111231T220044Z",
+    "time_coverage_resolution": "P1D",
+    "time_coverage_start": "20021001T015504Z",
+    "title": "ESA CCI SCIAMACHY WFMD XCH4",
+    "tracking_id": "4c9c0419-a6eb-4aba-befb-b365296f234c"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "data_id": "ESACCI-GHG-L2-CH4-SCIAMACHY-WFMD-2002-2011-fv1.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "altitude": {
+      "attrs": {
+        "comment": "Average surface altitude",
+        "long_name": "altitude",
+        "standard_name": "altitude",
+        "units": "m"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "altitude"
+    },
+    "ch4_profile_apriori": {
+      "attrs": {
+        "comment": "A priori dry-air mole fraction profile of atmospheric methane in ppb.\nAll values represent layer averages within the corresponding pressure levels.\nProfiles are ordered from surface to top of atmosphere.",
+        "long_name": "a priori dry air mole fraction profile of atmospheric methane",
+        "units": "1e-9"
+      },
+      "chunks": [
+        100000,
+        20
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "ch4_profile_apriori"
+    },
+    "h2o_column": {
+      "attrs": {
+        "comment": "Retrieved vertical column amount of water vapour",
+        "long_name": "vertical column of water vapour",
+        "units": "g cm-2"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "h2o_column"
+    },
+    "land_mask": {
+      "attrs": {
+        "comment": "0=ocean, 1=completely land covered",
+        "flag_meanings": "ocean land",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "land mask"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int8",
+      "name": "land_mask"
+    },
+    "latitude": {
+      "attrs": {
+        "comment": "Center latitude of the measurement",
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degree_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "latitude_corners": {
+      "attrs": {
+        "comment": "Corner latitudes of the measurement",
+        "long_name": "corner latitudes",
+        "units": "degree_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "chunks": [
+        100000,
+        4
+      ],
+      "dims": [
+        "sounding_dim",
+        "corners_dim"
+      ],
+      "dtype": "float32",
+      "name": "latitude_corners"
+    },
+    "longitude": {
+      "attrs": {
+        "comment": "Center longitude of the measurement",
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degree_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "longitude_corners": {
+      "attrs": {
+        "comment": "Corner longitudes of the measurement",
+        "long_name": "corner longitudes",
+        "units": "degree_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "chunks": [
+        100000,
+        4
+      ],
+      "dims": [
+        "sounding_dim",
+        "corners_dim"
+      ],
+      "dtype": "float32",
+      "name": "longitude_corners"
+    },
+    "orbit_number": {
+      "attrs": {
+        "comment": "Orbit number",
+        "long_name": "orbit number",
+        "units": "1"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "orbit_number"
+    },
+    "pressure_levels": {
+      "attrs": {
+        "comment": "Pressure levels define the boundaries of the averaging kernel and a priori profile layers.\nLevels are ordered from surface to top of atmosphere.",
+        "long_name": "pressure levels",
+        "units": "hPa"
+      },
+      "chunks": [
+        100000,
+        21
+      ],
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_levels"
+    },
+    "pressure_weight": {
+      "attrs": {
+        "comment": "Layer dependent weights needed to apply the averaging kernels.",
+        "long_name": "pressure weight",
+        "units": "1"
+      },
+      "chunks": [
+        100000,
+        20
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_weight"
+    },
+    "scene_number": {
+      "attrs": {
+        "comment": "Ground scene number (per orbit)",
+        "long_name": "ground scene number",
+        "units": "1"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int16",
+      "name": "scene_number"
+    },
+    "sensor_zenith_angle": {
+      "attrs": {
+        "comment": "Sensor zenith angle is the angle between the line of sight to the sensor and the local vertical.",
+        "long_name": "sensor zenith angle",
+        "standard_name": "sensor_zenith_angle",
+        "units": "degree"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "sensor_zenith_angle"
+    },
+    "solar_zenith_angle": {
+      "attrs": {
+        "comment": "Solar zenith angle is the the angle between the line of sight to the sun and the local vertical.",
+        "long_name": "solar zenith angle",
+        "standard_name": "solar_zenith_angle",
+        "units": "degree"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "solar_zenith_angle"
+    },
+    "state_number": {
+      "attrs": {
+        "comment": "State number (per orbit)",
+        "long_name": "state number",
+        "units": "1"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int16",
+      "name": "state_number"
+    },
+    "surface_albedo_1560nm": {
+      "attrs": {
+        "comment": "Retrieved surface albedo at 1560nm",
+        "long_name": "surface albedo at 1560nm",
+        "units": "1"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_1560nm"
+    },
+    "surface_albedo_1630nm": {
+      "attrs": {
+        "comment": "Retrieved surface albedo at 1630nm",
+        "long_name": "surface albedo at 1630nm",
+        "units": "1"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_1630nm"
+    },
+    "surface_albedo_750nm": {
+      "attrs": {
+        "comment": "Retrieved surface albedo at 750nm",
+        "long_name": "surface albedo at 750nm",
+        "units": "1"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_albedo_750nm"
+    },
+    "time": {
+      "attrs": {
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "xch4": {
+      "attrs": {
+        "comment": "Retrieved column-averaged dry air mole fraction of atmospheric methane (XCH4) in ppb",
+        "long_name": "column-averaged dry air mole fraction of atmospheric methane",
+        "standard_name": "dry_atmosphere_mole_fraction_of_methane",
+        "units": "1e-9"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4"
+    },
+    "xch4_averaging_kernel": {
+      "attrs": {
+        "comment": "Represents the altitude sensitivity of the retrieval as a function of pressure.\nAll values represent layer averages within the corresponding pressure levels.\nProfiles are ordered from surface to top of atmosphere.",
+        "long_name": "xch4 averaging kernel",
+        "units": "1"
+      },
+      "chunks": [
+        100000,
+        20
+      ],
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_averaging_kernel"
+    },
+    "xch4_quality_flag": {
+      "attrs": {
+        "comment": "0=good, 1=bad",
+        "flag_meanings": "good_quality potentially_bad_quality",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "quality flag"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int8",
+      "name": "xch4_quality_flag"
+    },
+    "xch4_uncertainty": {
+      "attrs": {
+        "comment": "1-sigma uncertainty of the retrieved column-averaged dry air mole fraction of atmospheric methane (XCH4) in ppb",
+        "long_name": "1-sigma uncertainty of the retrieved column-averaged dry air mole fraction of atmospheric methane",
+        "units": "1e-9"
+      },
+      "chunks": [
+        100000
+      ],
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_uncertainty"
+    }
+  },
+  "dims": {
+    "corners_dim": 4,
+    "layer_dim": 20,
+    "level_dim": 21,
+    "sounding_dim": 12515096
+  },
+  "time_range": [
+    "2002-10-01",
+    "2011-12-31"
+  ]
+}

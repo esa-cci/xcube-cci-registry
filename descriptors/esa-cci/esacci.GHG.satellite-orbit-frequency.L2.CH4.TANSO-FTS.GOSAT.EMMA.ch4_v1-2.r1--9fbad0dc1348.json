@@ -1,0 +1,150 @@
+{
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "crs": "WGS84",
+  "data_id": "esacci.GHG.satellite-orbit-frequency.L2.CH4.TANSO-FTS.GOSAT.EMMA.ch4_v1-2.r1",
+  "data_type": "geodataframe",
+  "feature_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "ch4_profile_apriori": {
+        "properties": {},
+        "type": "object"
+      },
+      "geometry": {
+        "pattern": "POINT(* *)",
+        "type": "string"
+      },
+      "median_processor_id": {
+        "properties": {},
+        "type": "object"
+      },
+      "median_uncertainty": {
+        "properties": {},
+        "type": "object"
+      },
+      "median_uncertainty_ex": {
+        "properties": {},
+        "type": "object"
+      },
+      "median_uncertainty_se": {
+        "properties": {},
+        "type": "object"
+      },
+      "pressure_levels": {
+        "properties": {},
+        "type": "object"
+      },
+      "pressure_weight": {
+        "properties": {},
+        "type": "object"
+      },
+      "sensor_zenith_angle": {
+        "properties": {},
+        "type": "object"
+      },
+      "solar_zenith_angle": {
+        "properties": {},
+        "type": "object"
+      },
+      "time": {
+        "format": "date",
+        "type": "string"
+      },
+      "xch4": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4_averaging_kernel": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4_quality_flag": {
+        "properties": {},
+        "type": "object"
+      },
+      "xch4_uncertainty": {
+        "properties": {},
+        "type": "object"
+      }
+    },
+    "type": "object"
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2014-05-30",
+            "minDate": "2009-06-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2014-05-30",
+            "minDate": "2009-06-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "solar_zenith_angle",
+            "sensor_zenith_angle",
+            "xch4_quality_flag",
+            "xch4",
+            "xch4_uncertainty",
+            "ch4_profile_apriori",
+            "pressure_levels",
+            "pressure_weight",
+            "xch4_averaging_kernel",
+            "median_processor_id",
+            "median_uncertainty",
+            "median_uncertainty_se",
+            "median_uncertainty_ex"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "2009-06-01",
+    "2014-05-30"
+  ]
+}

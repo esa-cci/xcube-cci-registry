@@ -1,0 +1,535 @@
+{
+  "attrs": {
+    "abstract": "This dataset comprises gridded limb ozone monthly zonal mean profiles from the OSIRIS instrument on the ODIN satellite. \n\nThe data are zonal mean time series (10\u00b0 latitude bin) and include uncertainty/variability of the Monthly Zonal Mean.\n\nThe monthly zonal mean (MZM) data set provides ozone profiles averaged in 10\u00b0 latitude zones from 90\u00b0S to 90\u00b0N, for each month. The monthly zonal mean data are structured into yearly netcdf files, for each instrument separately. The filename indicates the instrument and the year. For example, the file \u201cESACCI-OZONE-L3-LP-OSIRIS_ODIN-MZM-2008-fv0001.nc\u201d contains monthly zonal mean data for OSIRIS in 2008.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/f428fffb26cf4cd5b97dfb6381cb16bb",
+    "cci_project": "OZONE",
+    "comment": "Definitions of parameters and data processing is described in the dedicated Technical Note",
+    "data_type": "LP",
+    "ecv": "OZONE",
+    "platform_id": "ODIN",
+    "processing_level": "L3",
+    "product_string": "OSIRIS_ODIN",
+    "product_version": "v0001",
+    "publication_date": "2016-03-08T16:52:46",
+    "sensor_id": "OSIRIS",
+    "title": "ESA Ozone Climate Change Initiative (Ozone CCI): OSIRIS Level 3 Limb Ozone Monthly Zonal Mean (MZM) Profiles, Version 1",
+    "uuid": "f428fffb26cf4cd5b97dfb6381cb16bb"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "air_pressure": {
+      "attrs": {
+        "chunk_sizes": 34,
+        "data_type": "float32",
+        "dimensions": [
+          "air_pressure"
+        ],
+        "file_chunk_sizes": 34,
+        "file_dimensions": [
+          "air_pressure"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          34
+        ],
+        "size": 34,
+        "standard_name": "air_pressure",
+        "units": "hPa"
+      },
+      "dims": [
+        "air_pressure"
+      ],
+      "dtype": "float32",
+      "name": "air_pressure"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 18,
+        "data_type": "float32",
+        "dimensions": "lat",
+        "long_name": "latitude",
+        "shape": [
+          18
+        ],
+        "size": 18,
+        "units": "degrees_north"
+      },
+      "dims": [
+        "l",
+        "a",
+        "t"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": [
+          36
+        ],
+        "data_type": "float32",
+        "dimensions": "lon",
+        "long_name": "longitude",
+        "shape": [
+          36
+        ],
+        "size": 36,
+        "units": "degrees_north"
+      },
+      "dims": [
+        "l",
+        "o",
+        "n"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": 12,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 12,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          144
+        ],
+        "size": "144",
+        "standard_name": "time",
+        "units": "days since 1900-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.OZONE.mon.L3.LP.OSIRIS.ODIN.OSIRIS_ODIN.v0001.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "approximate_altitude": {
+      "attrs": {
+        "chunk_sizes": 34,
+        "data_type": "float32",
+        "dimensions": [
+          "air_pressure"
+        ],
+        "file_chunk_sizes": 34,
+        "file_dimensions": [
+          "air_pressure"
+        ],
+        "fill_value": null,
+        "long_name": "approximate altitude corresponding to pressure levels",
+        "orig_data_type": "float32",
+        "shape": [
+          34
+        ],
+        "size": 34,
+        "standard_name": "altitude",
+        "units": "km"
+      },
+      "dims": [
+        "air_pressure"
+      ],
+      "dtype": "float32",
+      "name": "approximate_altitude"
+    },
+    "inhomogeneity_in_latitude": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "long_name": "inhomogeneity measure in latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "inhomogeneity_in_latitude"
+    },
+    "inhomogeneity_in_time": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "long_name": "inhomogeneity measure in time",
+        "orig_data_type": "float32",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "inhomogeneity_in_time"
+    },
+    "mean_uncertainty_estimate": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "long_name": "mean of error estimates",
+        "orig_data_type": "float32",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "mean_uncertainty_estimate"
+    },
+    "ozone_mixing_ratio": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "standard_name": "mole_fraction_of_ozone_in_air",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ozone_mixing_ratio"
+    },
+    "ozone_mole_concentation": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float64",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "standard_name": "mole_concentration_of_ozone_in_air",
+        "units": "mol cm-3"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "ozone_mole_concentation"
+    },
+    "sample_standard_deviation": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "long_name": "Sample standard deviation in 1 month x10 deg bins",
+        "orig_data_type": "float32",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "sample_standard_deviation"
+    },
+    "standard_error_of_the_mean": {
+      "attrs": {
+        "chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "file_chunk_sizes": [
+          12,
+          34,
+          18
+        ],
+        "file_dimensions": [
+          "time",
+          "air_pressure",
+          "latitude_centers"
+        ],
+        "fill_value": null,
+        "long_name": "uncertainty of the monthly zonal  mean data",
+        "orig_data_type": "float32",
+        "shape": [
+          144,
+          34,
+          18
+        ],
+        "size": "88128",
+        "units": "%"
+      },
+      "dims": [
+        "time",
+        "air_pressure",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "standard_error_of_the_mean"
+    }
+  },
+  "dims": {
+    "air_pressure": 34,
+    "bnds": 2,
+    "lat": 18,
+    "lon": 36,
+    "time": 144
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-12-31",
+            "minDate": "2001-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-12-31",
+            "minDate": "2001-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "approximate_altitude",
+            "ozone_mixing_ratio",
+            "ozone_mole_concentation",
+            "standard_error_of_the_mean",
+            "sample_standard_deviation",
+            "mean_uncertainty_estimate",
+            "inhomogeneity_in_time",
+            "inhomogeneity_in_latitude"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 10.0,
+  "time_period": "1M",
+  "time_range": [
+    "2001-01-01",
+    "2012-12-31"
+  ]
+}

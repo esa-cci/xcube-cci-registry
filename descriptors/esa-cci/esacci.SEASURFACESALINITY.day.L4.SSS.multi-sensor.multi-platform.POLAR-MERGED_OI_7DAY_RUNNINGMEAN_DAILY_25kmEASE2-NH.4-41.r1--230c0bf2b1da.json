@@ -1,0 +1,576 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains Sea Surface Salinity (SSS) v04.41 data at a spatial resolution of 50km and a time resolution of 1 week. It is spatially sampled on a NH polar 25km EASE (Equal Area Scalable Earth) grid with 1 day of time sampling. This product is also available separately on a regular lat/lon grid. A monthly product is also available. In addition to salinity, information on uncertainties are provided. For more information see the user guide and other product documentation available from the linked Sea Surface Salinity CCI web page.\n\nCompared to version 3.21 of the data, version 04.41 SSS is of similar or improved quality. The main improvements concern high latitude regions (reduced seasonal biases and better ice flagging). The v04.41 dataset covers a longer period (Jan 2010-Oct 2022).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/471698c7db45451cbf3b7d834ecab9fd",
+    "cci_project": "SEASURFACESALINITY",
+    "comment": "Data are based on a 7-day running mean objectively interpolated",
+    "data_type": "SSS",
+    "ecv": "SEASURFACESALINITY",
+    "history": " ",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "POLAR-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25kmEASE2-NH",
+    "product_version": "4-41",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2024-02-16T10:47:17",
+    "references": "http://cci.esa.ind/salinity - DOI:10.5285/f2ca631f29a24c47a7e98654ddf2c7d9",
+    "sensor_id": "multi-sensor",
+    "source": "SMOS DPGSv700 L2OS reprocessing, SMAP L2 RSS v5.0 - DOI:10.5067/SMP50-2SOCS, Aquarius L3 v5.0 - DOI:10.5067/AQR50-3SQCS",
+    "title": "ESA Sea Surface Salinity Climate Change Initiative (Sea_Surface_Salinity_cci): Weekly sea surface salinity product for the Northern Hemisphere on a 25km EASE grid, v04.41, for 2010 to 2022",
+    "uuid": "471698c7db45451cbf3b7d834ecab9fd"
+  },
+  "bbox": [
+    -180.0,
+    45.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float32",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float32",
+        "shape": [
+          4685
+        ],
+        "size": "4685",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00 UTC"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float32",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.SEASURFACESALINITY.day.L4.SSS.multi-sensor.multi-platform.POLAR-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25kmEASE2-NH.4-41.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "isc_qc": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": 65535,
+        "long_name": "Ice Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "orig_data_type": "uint8",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "uint16",
+      "name": "isc_qc"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": [
+          392,
+          392
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          392,
+          392
+        ],
+        "size": 153664,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": [
+          392,
+          392
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          392,
+          392
+        ],
+        "size": 153664,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "lsc_qc": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": 65535,
+        "long_name": "Land Sea Contamination Quality Check, 0=Good; 1=Bad",
+        "orig_data_type": "uint8",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "uint16",
+      "name": "lsc_qc"
+    },
+    "noutliers": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": -1,
+        "long_name": "Count of the Number of Outliers within this bin cell",
+        "orig_data_type": "int16",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "int16",
+      "name": "noutliers"
+    },
+    "pct_var": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": null,
+        "long_name": "Percentage of SSS_variability that is expected to be not explained by the products",
+        "orig_data_type": "float32",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "units": "%",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "pct_var"
+    },
+    "sss": {
+      "attrs": {
+        "ancilliary": "noutliers total_nobs sss_qc",
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": null,
+        "long_name": "Unbiased merged Sea Surface Salinity",
+        "orig_data_type": "float32",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "standard_name": "sea_surface_salinity",
+        "units": "0.001",
+        "valid_max": 50.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "sss"
+    },
+    "sss_qc": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": 65535,
+        "long_name": "Sea Surface Salinity Quality, 0=Good; 1=Bad",
+        "orig_data_type": "uint8",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "valid_max": 1,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "uint16",
+      "name": "sss_qc"
+    },
+    "sss_random_error": {
+      "attrs": {
+        "ancilliary": "pct_var",
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": null,
+        "long_name": "Sea Surface Salinity Random Error",
+        "orig_data_type": "float32",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "units": "0.001",
+        "valid_max": 100.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "float32",
+      "name": "sss_random_error"
+    },
+    "total_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "file_chunk_sizes": [
+          1,
+          392,
+          392
+        ],
+        "file_dimensions": [
+          "time",
+          "dimy",
+          "dimx"
+        ],
+        "fill_value": -1,
+        "long_name": "Number of SSS in the time interval",
+        "orig_data_type": "int16",
+        "shape": [
+          4685,
+          392,
+          392
+        ],
+        "size": "719915840",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "dimy",
+        "dimx"
+      ],
+      "dtype": "int16",
+      "name": "total_nobs"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "dimx": 392,
+    "dimy": 392,
+    "time": 4685
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": 45.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": 45.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "2010-01-02",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2023-12-31",
+            "minDate": "2010-01-02",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "lat",
+            "lon",
+            "sss",
+            "sss_random_error",
+            "noutliers",
+            "total_nobs",
+            "pct_var",
+            "sss_qc",
+            "lsc_qc",
+            "isc_qc"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 50.0,
+  "time_period": "1D",
+  "time_range": [
+    "2010-01-02",
+    "2023-12-31"
+  ]
+}

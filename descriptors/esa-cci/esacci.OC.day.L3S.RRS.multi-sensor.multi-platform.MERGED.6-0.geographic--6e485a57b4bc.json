@@ -1,0 +1,1993 @@
+{
+  "attrs": {
+    "abstract": "The ESA Ocean Colour CCI project has produced global, level 3, binned multi-sensor time-series of satellite ocean-colour data with a particular focus for use in climate studies.\n\nThis dataset contains the Version 6.0 Remote Sensing Reflectance product on a geographic projection at approximately 4 km spatial resolution and at a number of time resolutions (daily, 5-day, 8-day, monthly and yearly composites) covering the period 1997 - 2022. Values for remote sensing reflectance at the sea surface are provided for the standard SeaWiFS wavelengths (412, 443, 490, 510, 555, 670nm) with pixel-by-pixel uncertainty estimates for each wavelength. These are merged products based on SeaWiFS, MERIS and Aqua-MODIS data. Note, this dataset is also contained within the 'All Products' dataset. \n\nThis data product is on a geographic grid projection, which is a direct conversion of latitude and longitude coordinates to a rectangular grid, typically a fixed multiplier of 360x180. The netCDF files follow the CF convention for this projection with a resolution of 8640x4320. (A separate dataset is also available for data on a sinusoidal projection).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/a0782135bcd04d77a1dae4aa71fba47c",
+    "cci_project": "OC",
+    "comment": "See summary attribute",
+    "data_type": "RRS",
+    "ecv": "OC",
+    "history": "Source data were: NASA OBPG SeaWiFS level1 R2018.0 LAC and GAC [A/C via l2gen], NASA OBPG VIIRS L1 R2018.0  [A/C via POLYMER], NASA OBPG MODIS Aqua L1 R2018.0 (A/C via POLYMER), ESA MERIS L1B (4th reprocessing inc OCL correction) [POLYMER v4.14]  and OLCI L1B [POLYMER v4.14]; Derived products were mainly produced with functions validated from the current NASA SeaDAS release and some custom implementations.  Uncertainty generation determined by the fuzzy classifier scheme of Tim Moore (2009) as updated by Jackson et al. (2017) and Jackson et al. (in prep).",
+    "institute": "Plymouth Marine Laboratory",
+    "platform_id": "multi-platform",
+    "processing_level": "L3S",
+    "product_string": "MERGED",
+    "product_version": "6-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2023-08-01T09:29:22",
+    "references": "http://www.esa-oceancolour-cci.org/",
+    "sensor_id": "multi-sensor",
+    "source": "NASA SeaWiFS  L1A and L2 R2018.0 LAC and GAC, MODIS-Aqua L1A and L2 R2018.0, MERIS L1B 4th reprocessing inc OCL corrections, NASA VIIRS L1A and L2 R2018.0, OLCI L1B",
+    "title": "ESA Ocean Colour Climate Change Initiative (Ocean_Colour_cci): Global remote sensing reflectance gridded on a geographic projection at 4km resolution, Version 6.0",
+    "uuid": "a0782135bcd04d77a1dae4aa71fba47c"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "axis": "Y",
+        "chunk_sizes": 270,
+        "data_type": "float64",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 270,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float64",
+        "shape": [
+          4320
+        ],
+        "size": 4320,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 89.97916666666667,
+        "valid_min": -89.97916666666666
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "axis": "X",
+        "chunk_sizes": 270,
+        "data_type": "float64",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 270,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float64",
+        "shape": [
+          8640
+        ],
+        "size": 8640,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 179.97916666666663,
+        "valid_min": -179.97916666666666
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "chunk_sizes": 1,
+        "data_type": "int64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "orig_data_type": "int32",
+        "shape": [
+          9224
+        ],
+        "size": "9224",
+        "standard_name": "time",
+        "units": "days since 1970-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    }
+  },
+  "crs": "OGC:CRS84",
+  "data_id": "esacci.OC.day.L3S.RRS.multi-sensor.multi-platform.MERGED.6-0.geographic",
+  "data_type": "dataset",
+  "data_vars": {
+    "MERIS_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the MERIS sensor contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "MERIS_nobs"
+    },
+    "MODISA_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the MODIS (Aqua) sensor contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "MODISA_nobs"
+    },
+    "OLCI-A_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3a) sensor contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-A_nobs"
+    },
+    "OLCI-B_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the OLCI (Sentinel-3b) sensor contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "OLCI-B_nobs"
+    },
+    "Rrs_412": {
+      "attrs": {
+        "ancillary_variables": "Rrs_412_rmsd Rrs_412_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 412 nm.",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFV13N26",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "standard_name": "surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_412"
+    },
+    "Rrs_412_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 412 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_412_bias"
+    },
+    "Rrs_412_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 412 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 412
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_412_rmsd"
+    },
+    "Rrs_443": {
+      "attrs": {
+        "ancillary_variables": "Rrs_443_rmsd Rrs_443_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 443 nm.",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFV13N26",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "standard_name": "surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_443"
+    },
+    "Rrs_443_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 443 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_443_bias"
+    },
+    "Rrs_443_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 443 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 443
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_443_rmsd"
+    },
+    "Rrs_490": {
+      "attrs": {
+        "ancillary_variables": "Rrs_490_rmsd Rrs_490_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 490 nm.",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFV13N26",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "standard_name": "surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_490"
+    },
+    "Rrs_490_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 490 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_490_bias"
+    },
+    "Rrs_490_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 490 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 490
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_490_rmsd"
+    },
+    "Rrs_510": {
+      "attrs": {
+        "ancillary_variables": "Rrs_510_rmsd Rrs_510_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 510 nm.",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFV13N26",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "standard_name": "surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_510"
+    },
+    "Rrs_510_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 510 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_510_bias"
+    },
+    "Rrs_510_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 510 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 510
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_510_rmsd"
+    },
+    "Rrs_560": {
+      "attrs": {
+        "ancillary_variables": "Rrs_560_rmsd Rrs_560_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 560 nm.",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFV13N26",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "standard_name": "surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_560"
+    },
+    "Rrs_560_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 560 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_560_bias"
+    },
+    "Rrs_560_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 560 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 560
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_560_rmsd"
+    },
+    "Rrs_665": {
+      "attrs": {
+        "ancillary_variables": "Rrs_665_rmsd Rrs_665_bias",
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 665 nm.",
+        "orig_data_type": "float32",
+        "parameter_vocab_uri": "http://vocab.ndg.nerc.ac.uk/term/P071/19/CFV13N26",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "standard_name": "surface_ratio_of_upwelling_radiance_emerging_from_sea_water_to_downwelling_radiative_flux_in_air",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_665"
+    },
+    "Rrs_665_bias": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_bias.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Bias of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 665 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_665_bias"
+    },
+    "Rrs_665_rmsd": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "comment": "Uncertainty lookups derived from file: /data/datasets/CCI/v6.0-production/stage09b-uncertainty_tables/rrs/cci_Rrs_rmsd.dat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Root-mean-square-difference of sea surface reflectance defined as the ratio of water-leaving radiance to surface irradiance at 665 nm.",
+        "orig_data_type": "float32",
+        "ref": "http://www.esa-oceancolour-cci.org/?q=webfm_send/581",
+        "rel": "uncertainty",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200",
+        "units": "sr-1",
+        "units_nonstandard": "sr^-1",
+        "wavelength": 665
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "Rrs_665_rmsd"
+    },
+    "SeaWiFS_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the SeaWiFS (GAC and LAC) sensor contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "SeaWiFS_nobs"
+    },
+    "VIIRS_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the number of observations from the VIIRS sensor contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "VIIRS_nobs"
+    },
+    "crs": {
+      "attrs": {
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "int64",
+        "dimensions": [],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "latitude_longitude",
+        "orig_data_type": "int32",
+        "shape": [
+          1
+        ],
+        "size": 1
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "crs"
+    },
+    "total_nobs": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 0.0,
+        "long_name": "Count of the total number of observations contributing to this bin cell",
+        "orig_data_type": "float32",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "total_nobs"
+    },
+    "water_class1": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 1 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class1"
+    },
+    "water_class10": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 10 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class10"
+    },
+    "water_class11": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 11 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class11"
+    },
+    "water_class12": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 12 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class12"
+    },
+    "water_class13": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 13 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class13"
+    },
+    "water_class14": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 14 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class14"
+    },
+    "water_class2": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 2 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class2"
+    },
+    "water_class3": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 3 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class3"
+    },
+    "water_class4": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 4 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class4"
+    },
+    "water_class5": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 5 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class5"
+    },
+    "water_class6": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 6 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class6"
+    },
+    "water_class7": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 7 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class7"
+    },
+    "water_class8": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 8 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class8"
+    },
+    "water_class9": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          270,
+          270
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": 9.96921e+36,
+        "long_name": "Normalised water class 9 membership, as determined by the fuzzy classification algorithm adapted from Tim Moore (2009) and custom-developed classes to best represent the CCI merged data (Jackson et al. 2017) with OLCI updates (Jackson et al. in prep)",
+        "orig_data_type": "float32",
+        "paper_ref": "Thomas Jackson, Shubha Sathyendranath, Frederic Melin, (2017) An improved optical classification scheme for the Ocean Colour Essential Climate Variable and its applications, Remote Sensing of Environment, Available online 5 April 2017, ISSN 0034-4257, http://doi.org/10.1016/j.rse.2017.03.036.",
+        "ref": "http://dx.doi.org/10.1016/j.rse.2009.07.016",
+        "shape": [
+          9224,
+          4320,
+          8640
+        ],
+        "size": "344283955200"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "water_class9"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "lat": 4320,
+    "lon": 8640,
+    "time": 9224
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "1997-09-04",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2022-12-31",
+            "minDate": "1997-09-04",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "MERIS_nobs",
+            "MODISA_nobs",
+            "OLCI-A_nobs",
+            "OLCI-B_nobs",
+            "Rrs_412",
+            "Rrs_412_bias",
+            "Rrs_412_rmsd",
+            "Rrs_443",
+            "Rrs_443_bias",
+            "Rrs_443_rmsd",
+            "Rrs_490",
+            "Rrs_490_bias",
+            "Rrs_490_rmsd",
+            "Rrs_510",
+            "Rrs_510_bias",
+            "Rrs_510_rmsd",
+            "Rrs_560",
+            "Rrs_560_bias",
+            "Rrs_560_rmsd",
+            "Rrs_665",
+            "Rrs_665_bias",
+            "Rrs_665_rmsd",
+            "SeaWiFS_nobs",
+            "VIIRS_nobs",
+            "crs",
+            "total_nobs",
+            "water_class1",
+            "water_class10",
+            "water_class11",
+            "water_class12",
+            "water_class13",
+            "water_class14",
+            "water_class2",
+            "water_class3",
+            "water_class4",
+            "water_class5",
+            "water_class6",
+            "water_class7",
+            "water_class8",
+            "water_class9"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.041666666666666664,
+  "time_period": "1D",
+  "time_range": [
+    "1997-09-04",
+    "2022-12-31"
+  ]
+}

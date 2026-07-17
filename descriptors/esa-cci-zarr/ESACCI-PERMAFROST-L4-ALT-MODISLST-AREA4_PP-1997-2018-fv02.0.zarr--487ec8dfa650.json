@@ -1,0 +1,138 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.9",
+    "catalogue_url": "https://catalogue.ceda.ac.uk/uuid/29c4af5986ba4b9c8a3cfc33ca8d7c85",
+    "cdm_data_type": "Grid",
+    "comment": "These data were produced at ESA CCI as part of the ESA Permafrost CCI+ project Contract No 4000123681-18-I-NB. They are part of the 2nd Climate Research Data Package release.",
+    "creator_name": "University of Oslo",
+    "creator_url": "https://www.uio.no/english/",
+    "date_created": "2020-10-19T11:39:19+0000",
+    "format_version": "CCI Data Standards v2.2",
+    "geospatial_lat_max": 90.0,
+    "geospatial_lat_min": 30.0,
+    "geospatial_lat_resolution": "variable",
+    "geospatial_lat_units": "none",
+    "geospatial_lon_max": 180.0,
+    "geospatial_lon_min": -180.0,
+    "geospatial_lon_resolution": "variable",
+    "geospatial_lon_units": "none",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "2020-10-19 11:39:19",
+    "id": "ESACCI-PERMAFROST-L4-ALT-MODISLST_CRYOGRID-AREA4_PP-2018-fv02.0.nc",
+    "institution": "University of Oslo",
+    "key_variables": "permafrost active layer thickness",
+    "keywords": "permafrost, active layer thickness",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD)  Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming authority": "no.uio",
+    "platform": "Aqua, Terra, ENVISAT, SPOT, PROBA-V, NOAA-<15,16,17>",
+    "polar_stereographic": -2147483647,
+    "product_version": "01.0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/Permafrost, https://doi.org/10.5194/gmd-9-523-2016",
+    "sensor": "MODIS, MERIS, ASAR, AVHRR/3, SPOT, SAR-X",
+    "source": "MODIS MOD11A1 and MYD11A1 level 3 Collection 6, ESA CCI Land Cover dataset v1.6.1, ERA5 Reanalysis",
+    "spatial_resolution": "926.62543305 m",
+    "standard_name_vocabulary": "CF Standard Name Table v73",
+    "summary": "ESA CCI Permafrost product level 4",
+    "time_coverage_duration": "P1Y",
+    "time_coverage_end": "19700101T000000Z",
+    "time_coverage_resolution": "P1Y",
+    "time_coverage_start": "19700101T000000Z",
+    "title": "CCI Permafrost active layer thickness",
+    "tracking_id": "0e30e422-7b47-451f-bf29-038b272145d8"
+  },
+  "bbox": [
+    -6111938.535111316,
+    -5477994.701867972,
+    7566906.108876757,
+    4115358.40741319
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "time",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "actual_range": [
+          -6111938.535111316,
+          7566906.108876757
+        ],
+        "axis": "X",
+        "long_name": "x coordinate of projection",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "actual_range": [
+          -5477994.701867972,
+          4115358.40741319
+        ],
+        "axis": "Y",
+        "long_name": "y coordinate of projection",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "ESACCI-PERMAFROST-L4-ALT-MODISLST-AREA4_PP-1997-2018-fv02.0.zarr",
+  "data_type": "dataset",
+  "data_vars": {
+    "ALT": {
+      "attrs": {
+        "actual_max": 8.0,
+        "actual_min": 0.01,
+        "conversion": "to metres: x*0.01",
+        "grid_mapping": "polar_stereographic",
+        "standard_name": "permafrost_active_layer_thickness",
+        "units": "metres",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "chunks": [
+        1,
+        3451,
+        7381
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "ALT"
+    }
+  },
+  "dims": {
+    "time": 22,
+    "x": 14762,
+    "y": 10353
+  },
+  "spatial_res": 926.625433138106,
+  "time_range": [
+    "1997-01-01",
+    "2018-01-01"
+  ]
+}

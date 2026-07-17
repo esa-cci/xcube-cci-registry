@@ -1,0 +1,144 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "Title": "GIS_cci Gravimetric Mass Balance Gridded Product - 5-year trends",
+    "contact": "martin.horwath@tu-dresden.de",
+    "date_created": "2018-06-13",
+    "gia_model": "ICE-6G_C (VM5a) (http://doi.org/10.1002/2014JB011176)",
+    "institution": "TU Dresden, Chair of Geodetic Earth System Research",
+    "latitude_max": "82.151646",
+    "latitude_min": "60.629319",
+    "longitude_max": "-20.556045",
+    "longitude_min": "-72.552812",
+    "netCDF_version": "netCDF-4_classic",
+    "product_version": "1.3",
+    "project": "Greenland_Ice_Sheet_cci",
+    "source": "GRACE monthly solutions provided by CSR (RL06)",
+    "summary": "Gridded GRACE-derived 5-year trends in Greenland ice mass changes",
+    "time_coverage_end": "2016-08-22",
+    "time_coverage_start": "2003-01-17",
+    "time_resolution": "5-year trends"
+  },
+  "bbox": [
+    -69.80701724688797,
+    69.88190729529737,
+    -23.650211753112032,
+    76.84346370470263
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "long_name": "latitude",
+        "standard_name": "latitude",
+        "units": "degrees_north"
+      },
+      "chunks": [
+        724
+      ],
+      "dims": [
+        "meas_ind"
+      ],
+      "dtype": "float64",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "long_name": "longitude",
+        "standard_name": "longitude",
+        "units": "degrees_east"
+      },
+      "chunks": [
+        724
+      ],
+      "dims": [
+        "meas_ind"
+      ],
+      "dtype": "float64",
+      "name": "longitude"
+    }
+  },
+  "data_id": "CCI_GMB_GIS_TUDR_fv1.3_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "GMB_trend": {
+      "attrs": {
+        "long_name": "mass trend for time span",
+        "source": "GRACE - CSR RL06",
+        "standard_name": "tendency_of_change_in_land_ice_amount",
+        "units": "kg m-2 yr-1",
+        "units_comments": "kg m-2 yr-1 corresponds to mm water equivalent per year"
+      },
+      "chunks": [
+        10,
+        724
+      ],
+      "dims": [
+        "time",
+        "meas_ind"
+      ],
+      "dtype": "float64",
+      "name": "GMB_trend"
+    },
+    "crs": {
+      "attrs": {
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": "298.257223563",
+        "longitude_of_prime_meridian": "0",
+        "semi_major_axis": "6378137.",
+        "spatial_ref": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.01745329251994328,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "dims": [],
+      "dtype": "object",
+      "name": "crs"
+    },
+    "end_time": {
+      "attrs": {
+        "long_name": "end of time span"
+      },
+      "chunks": [
+        10
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "end_time"
+    },
+    "start_time": {
+      "attrs": {
+        "long_name": "start of time span"
+      },
+      "chunks": [
+        10
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "start_time"
+    },
+    "t": {
+      "attrs": {
+        "axis": "T",
+        "long_name": "average time for time slice",
+        "standard_name": "time"
+      },
+      "chunks": [
+        10
+      ],
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "t"
+    }
+  },
+  "dims": {
+    "meas_ind": 724,
+    "time": 10
+  },
+  "time_range": [
+    "2003-01-16",
+    "2016-08-21"
+  ]
+}

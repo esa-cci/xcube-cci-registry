@@ -1,0 +1,480 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains permafrost ground temperature data produced as part of the European Space Agency's (ESA) Climate Change Initiative (CCI) Permafrost project. It forms part of the second version of their Climate Research Data Package (CRDP v2). It is derived from a thermal model driven and constrained by satellite data. Grid products of CDRP v2 are released in annual files, covering the start to the end of the Julian year. This corresponds to average annual ground temperatures and is provided for specific depths (surface, 1m, 2m, 5m , 10m).\n\nCase A: This covers the Northern Hemisphere (north of 30\u00b0) for the period 2003-2019 based on MODIS Land Surface temperature merged with downscaled ERA5 reanalysis near-surface air temperature data.\nCase B: This covers the Northern Hemisphere (north of 30\u00b0) for the period 1997-2002 based on downscaled ERA5 reanalysis near-surface air temperature data which are bias-corrected with the Case A product for the overlap period 2003-2019 using a pixel-specific statistics for each day of the year.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/b25d4a6174de4ac78000d034f500a268",
+    "cci_project": "PERMAFROST",
+    "comment": "These data were produced at ESA CCI as part of the ESA Permafrost CCI+ project Contract No 4000123681-18-I-NB. They are part of the 2nd Climate Research Data Package release.",
+    "data_type": "GTD",
+    "ecv": "PERMAFROST",
+    "history": "2021-02-24 10:13:04",
+    "institute": "Department of Geosciences, University of Oslo",
+    "platform_id": "multi-platform",
+    "processing_level": "L4",
+    "product_string": "ERA5_MODISLST_BIASCORRECTED",
+    "product_version": "03-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2021-06-25T16:59:05",
+    "references": "http://cci.esa.int/Permafrost, https://doi.org/10.5194/gmd-9-523-2016",
+    "sensor_id": "multi-sensor",
+    "source": "ERA5 Ranalysis, MODIS MOD11A1 and MYD11A1 level 3 Collection 6, ESA CCI Land Cover dataset v1.6.1",
+    "title": "ESA Permafrost Climate Change Initiative (Permafrost_cci):   Permafrost Ground Temperature for the Northern Hemisphere, v3.0",
+    "uuid": "b25d4a6174de4ac78000d034f500a268"
+  },
+  "bbox": [
+    -180.0,
+    30.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "axis": "T",
+        "calendar": "standard",
+        "chunk_sizes": 1,
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": null,
+        "long_name": "time",
+        "orig_data_type": "float64",
+        "shape": [
+          6
+        ],
+        "size": "6",
+        "standard_name": "time",
+        "units": "hours since 1950-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "actual_range": [
+          -6111938.535111316,
+          7566906.108876757
+        ],
+        "axis": "X",
+        "chunk_sizes": [
+          14762
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "x"
+        ],
+        "file_chunk_sizes": [
+          14762
+        ],
+        "file_dimensions": [
+          "x"
+        ],
+        "fill_value": null,
+        "long_name": "x coordinate of projection",
+        "orig_data_type": "float64",
+        "shape": [
+          14762
+        ],
+        "size": 14762,
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "actual_range": [
+          -5477994.701867972,
+          4115358.40741319
+        ],
+        "axis": "Y",
+        "chunk_sizes": [
+          10353
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "y"
+        ],
+        "file_chunk_sizes": [
+          10353
+        ],
+        "file_dimensions": [
+          "y"
+        ],
+        "fill_value": null,
+        "long_name": "y coordinate of projection",
+        "orig_data_type": "float64",
+        "shape": [
+          10353
+        ],
+        "size": 10353,
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "crs": "WGS 84 / Arctic Polar Stereographic",
+  "data_id": "esacci.PERMAFROST.yr.L4.GTD.multi-sensor.multi-platform.ERA5_MODISLST_BIASCORRECTED.03-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "GST": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_max": 27.76,
+        "actual_min": -22.8,
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 0,
+        "grid_mapping": "polar_stereographic",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          10353,
+          14762
+        ],
+        "size": "916985916",
+        "standard_name": "surface_temperature",
+        "units": "degrees celsius",
+        "valid_max": -28221,
+        "valid_min": 17315
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "uint16",
+      "name": "GST"
+    },
+    "T10m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_max": 28.19,
+        "actual_min": -21.38,
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 0,
+        "grid_mapping": "polar_stereographic",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          10353,
+          14762
+        ],
+        "size": "916985916",
+        "standard_name": "solid_earth_subsurface_temperature",
+        "units": "degrees celsius",
+        "valid_max": -28221,
+        "valid_min": 17315
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "uint16",
+      "name": "T10m"
+    },
+    "T1m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_max": 27.71,
+        "actual_min": -22.24,
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 0,
+        "grid_mapping": "polar_stereographic",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          10353,
+          14762
+        ],
+        "size": "916985916",
+        "standard_name": "solid_earth_subsurface_temperature",
+        "units": "degrees celsius",
+        "valid_max": -28221,
+        "valid_min": 17315
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "uint16",
+      "name": "T1m"
+    },
+    "T2m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_max": 27.7,
+        "actual_min": -22.12,
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 0,
+        "grid_mapping": "polar_stereographic",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          10353,
+          14762
+        ],
+        "size": "916985916",
+        "standard_name": "solid_earth_subsurface_temperature",
+        "units": "degrees celsius",
+        "valid_max": -28221,
+        "valid_min": 17315
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "uint16",
+      "name": "T2m"
+    },
+    "T5m": {
+      "attrs": {
+        "_Unsigned": "true",
+        "actual_max": 27.85,
+        "actual_min": -21.71,
+        "add_offset": -273.15,
+        "chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "conversion": "to degrees celsius: x*0.01-273.15",
+        "data_type": "uint16",
+        "dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1151,
+          1641
+        ],
+        "file_dimensions": [
+          "time",
+          "y",
+          "x"
+        ],
+        "fill_value": 0,
+        "grid_mapping": "polar_stereographic",
+        "orig_data_type": "uint16",
+        "scale_factor": 0.01,
+        "shape": [
+          6,
+          10353,
+          14762
+        ],
+        "size": "916985916",
+        "standard_name": "solid_earth_subsurface_temperature",
+        "units": "degrees celsius",
+        "valid_max": -28221,
+        "valid_min": 17315
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "uint16",
+      "name": "T5m"
+    },
+    "polar_stereographic": {
+      "attrs": {
+        "GeoTransform": "-8679599.425969256 926.6254331383326 0 4120958.560533902 0 -926.6254331383326 ",
+        "chunk_sizes": [
+          1
+        ],
+        "crs_wkt": "PROJCS[\\\"WGS 84 / Arctic Polar Stereographic\\\",GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0,AUTHORITY[\\\"EPSG\\\",\\\"8901\\\"]],UNIT[\\\"degree\\\",0.0174532925199433,AUTHORITY[\\\"EPSG\\\",\\\"9122\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]],PROJECTION[\\\"Polar_Stereographic\\\"],PARAMETER[\\\"latitude_of_origin\\\",71],PARAMETER[\\\"central_meridian\\\",0],PARAMETER[\\\"scale_factor\\\",1],PARAMETER[\\\"false_easting\\\",0],PARAMETER[\\\"false_northing\\\",0],UNIT[\\\"metre\\\",1,AUTHORITY[\\\"EPSG\\\",\\\"9001\\\"]],AXIS[\\\"X\\\",EAST],AXIS[\\\"Y\\\",NORTH],AUTHORITY[\\\"EPSG\\\",\\\"3995\\\"]]",
+        "data_type": "int64",
+        "dimensions": [],
+        "esri_wkt": "PROJCS[\\\"WGS_84_Arctic_Polar_Stereographic\\\",GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137,298.257223563]],PRIMEM[\\\"Greenwich\\\",0],UNIT[\\\"Degree\\\",0.017453292519943295]],PROJECTION[\\\"Stereographic_North_Pole\\\"],PARAMETER[\\\"standard_parallel_1\\\",71],PARAMETER[\\\"central_meridian\\\",0],PARAMETER[\\\"false_easting\\\",0],PARAMETER[\\\"false_northing\\\",0],UNIT[\\\"Meter\\\",1]]",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "fill_value": 9223372036854775807,
+        "grid_mapping_name": "polar_stereographic",
+        "inverse_flattening": 298.257223563,
+        "latitude_of_projection_origin": 90.0,
+        "longitude_of_prime_meridian": 0.0,
+        "orig_data_type": "int32",
+        "semi_major_axis": 6378137.0,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "spatial_ref": "GEOGCS[\\\"WGS 84\\\",DATUM[\\\"WGS_1984\\\",SPHEROID[\\\"WGS 84\\\",6378137,298.257223563,AUTHORITY[\\\"EPSG\\\",\\\"7030\\\"]],AUTHORITY[\\\"EPSG\\\",\\\"6326\\\"]],PRIMEM[\\\"Greenwich\\\",0],UNIT[\\\"degree\\\",0.0174532925199433],AUTHORITY[\\\"EPSG\\\",\\\"4326\\\"]],PROJECTION[\\\"Polar_Stereographic\\\"],PARAMETER[\\\"latitude_of_origin\\\",45],PARAMETER[\\\"central_meridian\\\",-170],PARAMETER[\\\"scale_factor\\\",1],PARAMETER[\\\"false_easting\\\",0],PARAMETER[\\\"false_northing\\\",0],UNIT[\\\"metre\\\",1,AUTHORITY[\\\"EPSG\\\",\\\"9001\\\"]]",
+        "standard_parallel": 71.0,
+        "straight_vertical_longitude_from_pole": 0.0
+      },
+      "dims": [],
+      "dtype": "int64",
+      "name": "polar_stereographic"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 6,
+    "x": 14762,
+    "y": 10353
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2019-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2019-12-31",
+            "minDate": "1997-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "polar_stereographic",
+            "GST",
+            "T1m",
+            "T2m",
+            "T5m",
+            "T10m"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 926.62543305,
+  "time_period": "1Y",
+  "time_range": [
+    "1997-01-01",
+    "2019-12-31"
+  ]
+}

@@ -1,0 +1,925 @@
+{
+  "attrs": {
+    "abstract": "This dataset contains monthly-averaged land surface temperatures (LSTs) and their uncertainty estimates from the Advanced Along-Track Scanning Radiometer (AATSR) on Environmental Satellite (Envisat). Satellite land surface temperatures are skin temperatures, which means, for example, the temperature of the ground surface in bare soil areas, the temperature of the canopy over forests, and a mix of the soil and leaf temperature over sparse vegetation. The skin temperature is an important variable when considering surface fluxes of, for instance, heat and water.\n\nDaytime and night-time temperatures are provided in separate files corresponding to the morning and evening Envisat equator crossing times which are 10:00 and 22:00 local solar time. Per pixel uncertainty estimates are given in two forms, first, an estimate of the total uncertainty for the pixel and second, a breakdown of the uncertainty into components by correlation length. Also provided in the files, on a per pixel basis, are the observation time, the satellite viewing and solar geometry angles, a quality flag, and land cover class.\n\nThe dataset coverage is global over the land surface. LSTs are provided on a global equal angle grid at a resolution of 0.01\u00b0 longitude and 0.01\u00b0 latitude. AATSR achieves full Earth coverage in 3 days so the daily files have gaps where the surface is not covered by the satellite swath on that day. Furthermore, LSTs are not produced where clouds are present since under these circumstances the IR radiometer observes the cloud top which is usually much colder than the surface.\n\nDataset coverage for the monthly dataset starts from August 2002 and ends March 2012. There is a twelve day gap in the underlying data due to Envisat mission extension orbital manoeuvres from 21st October 2010 to 1st November 2010. There are minor interruptions (1-2 days) during satellite/instrument maintenance periods.\n\nThe dataset was produced by the University of Leicester (UoL) and LSTs were retrieved using the (UoL) LST retrieval algorithm and data were processed in the UoL processing chain.\n\nThe dataset was produced as part of the ESA Land Surface Temperature Climate Change Initiative which strives to improve satellite datasets to Global Climate Observing System (GCOS) standards.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/2ac9a3e7bdeb41b58b226a2fa612a4a3",
+    "cci_project": "LST",
+    "comment": "These data were produced as part of the ESA LST CCI project.",
+    "data_type": "LST",
+    "ecv": "LST",
+    "history": "Created using software developed at University of Leicester",
+    "institute": "University of Leicester",
+    "platform_id": "Envisat",
+    "processing_level": "L3C",
+    "product_string": "ATSR_3",
+    "product_version": "3-00",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2022-06-27T15:19:47",
+    "references": "https://climate.esa.int/en/projects/land-surface-temperature",
+    "sensor_id": "AATSR",
+    "source": "ESA LST CCI ATSR_3 L3U V3.00",
+    "title": "ESA Land Surface Temperature Climate Change Initiative (LST_cci): Monthly land surface temperature from AATSR (Advanced Along-Track Scanning Radiometer), level 3 collated (L3C) global product (2002-2012), version 3.00",
+    "uuid": "2ac9a3e7bdeb41b58b226a2fa612a4a3"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "channel": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": 2,
+        "data_type": "int16",
+        "dimensions": [
+          "channel"
+        ],
+        "file_chunk_sizes": 2,
+        "file_dimensions": [
+          "channel"
+        ],
+        "fill_value": -32768,
+        "long_name": "channel wavelength in microns",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          2
+        ],
+        "size": 2,
+        "units": "microns",
+        "valid_max": 15000,
+        "valid_min": 0
+      },
+      "dims": [
+        "channel"
+      ],
+      "dtype": "int16",
+      "name": "channel"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": 1000,
+        "data_type": "float32",
+        "dimensions": [
+          "lat"
+        ],
+        "file_chunk_sizes": 1000,
+        "file_dimensions": [
+          "lat"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "latitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          18000
+        ],
+        "size": 18000,
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 90.0,
+        "valid_min": -90.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": 1000,
+        "data_type": "float32",
+        "dimensions": [
+          "lon"
+        ],
+        "file_chunk_sizes": 1000,
+        "file_dimensions": [
+          "lon"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "longitude_coordinates",
+        "orig_data_type": "float32",
+        "reference_datum": "geographical coordinates, WGS84 projection",
+        "shape": [
+          36000
+        ],
+        "size": 36000,
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "gregorian",
+        "chunk_sizes": [
+          116
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "reference time of file",
+        "orig_data_type": "float64",
+        "shape": [
+          116
+        ],
+        "size": "116",
+        "standard_name": "time",
+        "units": "seconds since 1981-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "float64",
+      "name": "time"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.LST.mon.L3C.LST.AATSR.Envisat.ATSR_3.3-00.DAY",
+  "data_type": "dataset",
+  "data_vars": {
+    "dtime": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "float32",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768.0,
+        "long_name": "time difference from reference time",
+        "orig_data_type": "float32",
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "seconds",
+        "valid_max": 2678400.0,
+        "valid_min": 0.0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "dtime"
+    },
+    "lcc": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "flag_meanings": "cropland_rainfed cropland_rainfed_herbaceous_cover cropland_rainfed_tree_or_shrub_cover cropland_irrigated mosaic_cropland mosaic_natural_vegetation tree_broadleaved_evergreen_closed_to_open tree_broadleaved_deciduous_closed_to_open tree_broadleaved_deciduous_closed tree_broadleaved_deciduous_open tree_needleleaved_evergreen_closed_to_open tree_needleleaved_evergreen_closed tree_needleleaved_evergreen_open tree_needleleaved_deciduous_closed_to_open tree_needleleaved_deciduous_closed tree_needleleaved_deciduous_open tree_mixed mosaic_tree_and_shrub mosaic_herbaceous shrubland shrubland_evergreen shrubland_deciduous grassland lichens_and_mosses sparse_vegetation sparse_tree sparse_shrub sparse_herbaceous tree_cover_flooded_fresh_or_brakish_water tree_cover_flooded_saline_water shrub_or_herbaceous_cover_flooded urban Bare_areas_of_soil_types_not_contained_in_biomes_203_to_207 Unconsolidated_bare_areas_of_soil_types_not_contained_in_biomes_203_to_207 Consolidated_bare_areas_of_soil_types_not_contained_in_biomes_203_to_207 Bare_areas_of_soil_type_Entisols_Orthents Bare_areas_of_soil_type_Shifting_sand Bare_areas_of_soil_type_Aridisols_Calcids Bare_areas_of_soil_type_Aridisols_Cambids Bare_areas_of_soil_type_Gelisols_Orthels water snow_and_ice Sea_ice",
+        "flag_values": [
+          10,
+          11,
+          12,
+          20,
+          30,
+          40,
+          50,
+          60,
+          61,
+          62,
+          70,
+          71,
+          72,
+          80,
+          81,
+          82,
+          90,
+          100,
+          110,
+          120,
+          121,
+          122,
+          130,
+          140,
+          150,
+          151,
+          152,
+          153,
+          160,
+          170,
+          180,
+          190,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207,
+          210,
+          220,
+          230
+        ],
+        "long_name": "land cover class",
+        "orig_data_type": "int16",
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "1",
+        "valid_max": 230,
+        "valid_min": 10
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lcc"
+    },
+    "lst": {
+      "attrs": {
+        "add_offset": 273.15,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "land surface temperature",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "kelvin",
+        "valid_max": 7685,
+        "valid_min": -8315
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst"
+    },
+    "lst_unc_loc_atm": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from locally correlated errors on atmospheric scales",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_loc_atm"
+    },
+    "lst_unc_loc_sfc": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from locally correlated errors on surface scales",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_loc_sfc"
+    },
+    "lst_unc_ran": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from uncorrelated errors",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_ran"
+    },
+    "lst_unc_sys": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": 1,
+        "data_type": "int16",
+        "dimensions": [
+          "length_scale"
+        ],
+        "file_chunk_sizes": 1,
+        "file_dimensions": [
+          "length_scale"
+        ],
+        "fill_value": -32768,
+        "long_name": "uncertainty from large-scale systematic errors",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "length_scale"
+      ],
+      "dtype": "int16",
+      "name": "lst_unc_sys"
+    },
+    "lst_uncertainty": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "land surface temperature total uncertainty",
+        "orig_data_type": "int16",
+        "scale_factor": 0.001,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "lst_uncertainty"
+    },
+    "n": {
+      "attrs": {
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "number of clear-sky pixels",
+        "orig_data_type": "int16",
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "valid_max": 18750,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "n"
+    },
+    "sataz": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "satellite azimuth angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "sataz"
+    },
+    "satze": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "satellite zenith angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "satze"
+    },
+    "solaz": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "solar azimuth angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": -18000
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "solaz"
+    },
+    "solze": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "solar zenith angle",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "degrees",
+        "valid_max": 18000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "solze"
+    },
+    "variance": {
+      "attrs": {
+        "add_offset": 0.0,
+        "chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "coordinates": "lon lat",
+        "data_type": "int16",
+        "dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "file_chunk_sizes": [
+          1,
+          1000,
+          1000
+        ],
+        "file_dimensions": [
+          "time",
+          "lat",
+          "lon"
+        ],
+        "fill_value": -32768,
+        "long_name": "land surface temperature variance",
+        "orig_data_type": "int16",
+        "scale_factor": 0.01,
+        "shape": [
+          116,
+          18000,
+          36000
+        ],
+        "size": "75168000000",
+        "units": "kelvin",
+        "valid_max": 10000,
+        "valid_min": 0
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int16",
+      "name": "variance"
+    }
+  },
+  "dims": {
+    "channel": 2,
+    "lat": 18000,
+    "length_scale": 1,
+    "lon": 36000,
+    "time": 116
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2012-03-31",
+            "minDate": "2002-08-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2012-03-31",
+            "minDate": "2002-08-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "dtime",
+            "satze",
+            "sataz",
+            "solze",
+            "solaz",
+            "lst",
+            "lst_uncertainty",
+            "lst_unc_ran",
+            "lst_unc_loc_atm",
+            "lst_unc_loc_sfc",
+            "lst_unc_sys",
+            "lcc",
+            "n",
+            "variance"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.01,
+  "time_period": "1M",
+  "time_range": [
+    "2002-08-01",
+    "2012-03-31"
+  ]
+}

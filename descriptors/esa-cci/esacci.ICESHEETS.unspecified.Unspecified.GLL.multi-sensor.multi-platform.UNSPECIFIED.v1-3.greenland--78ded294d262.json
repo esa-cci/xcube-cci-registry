@@ -1,0 +1,320 @@
+{
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "crs": "WGS84",
+  "data_id": "esacci.ICESHEETS.unspecified.Unspecified.GLL.multi-sensor.multi-platform.UNSPECIFIED.v1-3.greenland",
+  "data_type": "geodataframe",
+  "feature_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "Dhf": {
+        "properties": {},
+        "type": "object"
+      },
+      "RC_ID": {
+        "properties": {},
+        "type": "object"
+      },
+      "acq_time_1": {
+        "properties": {},
+        "type": "object"
+      },
+      "acq_time_2": {
+        "properties": {},
+        "type": "object"
+      },
+      "acq_time_3": {
+        "properties": {},
+        "type": "object"
+      },
+      "acq_time_4": {
+        "properties": {},
+        "type": "object"
+      },
+      "airpresrc": {
+        "properties": {},
+        "type": "object"
+      },
+      "category": {
+        "properties": {},
+        "type": "object"
+      },
+      "cor_otl_t1": {
+        "properties": {},
+        "type": "object"
+      },
+      "cor_otl_t2": {
+        "properties": {},
+        "type": "object"
+      },
+      "cor_otl_t3": {
+        "properties": {},
+        "type": "object"
+      },
+      "cor_otl_t4": {
+        "properties": {},
+        "type": "object"
+      },
+      "dem": {
+        "properties": {},
+        "type": "object"
+      },
+      "det_mode": {
+        "properties": {},
+        "type": "object"
+      },
+      "dh1": {
+        "properties": {},
+        "type": "object"
+      },
+      "dh2": {
+        "properties": {},
+        "type": "object"
+      },
+      "geometry": {
+        "pattern": "POINT(* *)",
+        "type": "string"
+      },
+      "glac_id": {
+        "properties": {},
+        "type": "object"
+      },
+      "glac_name": {
+        "properties": {},
+        "type": "object"
+      },
+      "gllsrc": {
+        "properties": {},
+        "type": "object"
+      },
+      "glob_unc_x": {
+        "properties": {},
+        "type": "object"
+      },
+      "glob_unc_y": {
+        "properties": {},
+        "type": "object"
+      },
+      "loc_unc_x": {
+        "properties": {},
+        "type": "object"
+      },
+      "loc_unc_y": {
+        "properties": {},
+        "type": "object"
+      },
+      "lookdir": {
+        "properties": {},
+        "type": "object"
+      },
+      "mission": {
+        "properties": {},
+        "type": "object"
+      },
+      "nap_t1": {
+        "properties": {},
+        "type": "object"
+      },
+      "nap_t2": {
+        "properties": {},
+        "type": "object"
+      },
+      "nap_t3": {
+        "properties": {},
+        "type": "object"
+      },
+      "nap_t4": {
+        "properties": {},
+        "type": "object"
+      },
+      "orig_id": {
+        "properties": {},
+        "type": "object"
+      },
+      "otl_t1": {
+        "properties": {},
+        "type": "object"
+      },
+      "otl_t2": {
+        "properties": {},
+        "type": "object"
+      },
+      "otl_t3": {
+        "properties": {},
+        "type": "object"
+      },
+      "otl_t4": {
+        "properties": {},
+        "type": "object"
+      },
+      "passdir": {
+        "properties": {},
+        "type": "object"
+      },
+      "proc_date": {
+        "properties": {},
+        "type": "object"
+      },
+      "proc_desc": {
+        "properties": {},
+        "type": "object"
+      },
+      "proc_fac": {
+        "properties": {},
+        "type": "object"
+      },
+      "proc_soft": {
+        "properties": {},
+        "type": "object"
+      },
+      "quality": {
+        "properties": {},
+        "type": "object"
+      },
+      "relorb": {
+        "properties": {},
+        "type": "object"
+      },
+      "rp_lat": {
+        "properties": {},
+        "type": "object"
+      },
+      "rp_lon": {
+        "properties": {},
+        "type": "object"
+      },
+      "sensor": {
+        "properties": {},
+        "type": "object"
+      },
+      "soft_ver": {
+        "properties": {},
+        "type": "object"
+      },
+      "tidesrc": {
+        "properties": {},
+        "type": "object"
+      },
+      "time": {
+        "format": "date",
+        "type": "string"
+      },
+      "v_removed": {
+        "properties": {},
+        "type": "object"
+      }
+    },
+    "type": "object"
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": -10.0,
+            "minimum": -80.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": 60.0,
+            "type": "number"
+          },
+          {
+            "maximum": -10.0,
+            "minimum": -80.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": 60.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2017-03-16",
+            "minDate": "1995-08-27",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2017-03-16",
+            "minDate": "1995-08-27",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "RC_ID",
+            "proc_fac",
+            "proc_date",
+            "mission",
+            "sensor",
+            "lookdir",
+            "passdir",
+            "relorb",
+            "proc_desc",
+            "v_removed",
+            "dem",
+            "proc_soft",
+            "soft_ver",
+            "orig_id",
+            "category",
+            "glac_name",
+            "glac_id",
+            "acq_time_1",
+            "acq_time_2",
+            "acq_time_3",
+            "acq_time_4",
+            "rp_lat",
+            "rp_lon",
+            "otl_t1",
+            "otl_t2",
+            "otl_t3",
+            "otl_t4",
+            "nap_t1",
+            "nap_t2",
+            "nap_t3",
+            "nap_t4",
+            "cor_otl_t1",
+            "cor_otl_t2",
+            "cor_otl_t3",
+            "cor_otl_t4",
+            "dh1",
+            "dh2",
+            "Dhf",
+            "tidesrc",
+            "airpresrc",
+            "gllsrc",
+            "det_mode",
+            "quality",
+            "loc_unc_x",
+            "loc_unc_y",
+            "glob_unc_x",
+            "glob_unc_y"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "1995-08-27",
+    "2017-03-16"
+  ]
+}

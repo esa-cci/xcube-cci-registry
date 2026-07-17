@@ -1,0 +1,247 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.5",
+    "calibration_method": "Control points on ice-free rock",
+    "date_created": "2018-04-18",
+    "institution": "DTU Space - Microwaves and Remote Sensing",
+    "methods_used": "Offset-tracking",
+    "product_version": "1.0",
+    "project": "Greenland Icesheet_CCI",
+    "sensors_used": "COSMO-SkyMed 1,COSMO-SkyMed 2,COSMO-SkyMed 4",
+    "summary": "Timeseries of Jakobshavn Ice Velocity 2012-2014 using 4-day COSMO-SkyMed offset-tracking pairs",
+    "time_coverage_end": "2014-12-25",
+    "time_coverage_start": "2012-06-02",
+    "title": "Jakobshavn 2012-2014 IV timeseries from COSMO-SkyMed data",
+    "tracking_id": "57fb8e29-845f-47d9-988f-95a34c1c446f",
+    "velocity_projection_method": "Surface Parallel Flow"
+  },
+  "bbox": [
+    -215875.0,
+    -2303625.0,
+    -164375.0,
+    -2244625.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "Midpoint time of acquisitons used",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    },
+    "x": {
+      "attrs": {
+        "axis": "X",
+        "long_name": "x coordinate of projection",
+        "standard_name": "projection_x_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float64",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "axis": "Y",
+        "long_name": "y coordinate of projection",
+        "standard_name": "projection_y_coordinate",
+        "units": "m"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float64",
+      "name": "y"
+    }
+  },
+  "data_id": "greenland_iv_250m_csk_20120604_20141223_jakobshavn_timeseries_v1.0_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "polar_stereographic",
+        "inverse_flattening": 298.257223563,
+        "latitude_of_projection_origin": 90.0,
+        "longitude_of_prime_meridian": 0.0,
+        "semi_major_axis": 6378137.0,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0
+      },
+      "dims": [],
+      "dtype": "object",
+      "name": "crs"
+    },
+    "land_ice_surface_easting_velocity": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "easting ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_easting_velocity"
+    },
+    "land_ice_surface_easting_velocity_std": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "easting ice velocity error estimate ",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_easting_velocity_std"
+    },
+    "land_ice_surface_northing_velocity": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "northing ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_northing_velocity"
+    },
+    "land_ice_surface_northing_velocity_std": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "northing ice velocity error estimate",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_northing_velocity_std"
+    },
+    "land_ice_surface_velocity_magnitude": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "magnitude of horizontal ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_velocity_magnitude"
+    },
+    "land_ice_surface_velocity_magnitude_std": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "horizontal ice velocity error magnitude estimate",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_velocity_magnitude_std"
+    },
+    "land_ice_surface_vertical_velocity": {
+      "attrs": {
+        "cell_methods": "time: mean (weighted average (based on error estimates) over contributing acquisitons)",
+        "description": "vertical ice velocity",
+        "grid_mapping": "crs",
+        "units": "m/day"
+      },
+      "chunks": [
+        13,
+        236,
+        206
+      ],
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "land_ice_surface_vertical_velocity"
+    },
+    "time_bnds": {
+      "chunks": [
+        13,
+        2
+      ],
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 13,
+    "x": 206,
+    "y": 236
+  },
+  "spatial_res": 250.0,
+  "time_range": [
+    "2012-06-02",
+    "2014-12-25"
+  ]
+}

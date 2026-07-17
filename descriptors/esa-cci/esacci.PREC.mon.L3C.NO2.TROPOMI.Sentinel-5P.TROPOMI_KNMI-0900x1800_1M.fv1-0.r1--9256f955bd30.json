@@ -1,0 +1,1360 @@
+{
+  "attrs": {
+    "abstract": "The dataset was produced as part of the European Space Agency (ESA) Climate Change Initiative+ (CCI+) precursors for aerosols and ozone project by the Royal Netherlands Meteorological Institute (KNMI). \n\nTROPOspheric Monitoring Instrument (TROPOMI) global tropospheric nitrogen dioxide (NO2) spatiotemporally averaged per month over a standard grid from May 2018 to December 2021. The dataset is provided in four different spatial resolutions: 0.2x0.2 (900x1800 grid cells), 0.5x0.5 (360x720), 1x1 (180x360), 2x2.5 (91x144) and includes auxilliary variables (e.g. cloud and surface properties, propagated level 3 uncertainties, averaging kernels). The data are provided in monthly netCDF files for each spatial resolution.\n\nThe version number is 1.0. Data are available in NetCDF format. https://doi.org/10.5194/essd-17-4627-2025",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/a2ac22ae97a34b51a81c8f53d414ec6b",
+    "cci_project": "PREC",
+    "comment": "These data were produced as part of the European Space Agency Climate Change Initiative+ Precursors for Aerosols and Ozone Essential Climate Variable project",
+    "data_type": "NO2",
+    "ecv": "PREC",
+    "history": "Wed Jul 30 10:50:43 2025: ncatted -a units,longitude_bounds,o,c,degree_east v1_26/ESACCI-PREC-L3C-NO2-S5P_TROPOMI_KNMI-0900x1800_1M-201807-fv1.0.nc\nWed Jul 30 10:50:43 2025: ncatted -a units,latitude_bounds,o,c,degree_north v1_26/ESACCI-PREC-L3C-NO2-S5P_TROPOMI_KNMI-0900x1800_1M-201807-fv1.0.nc",
+    "institute": "Royal Netherlands Meteorological Institute",
+    "platform_id": "Sentinel-5P",
+    "processing_level": "L3C",
+    "product_string": "TROPOMI_KNMI-0900x1800_1M",
+    "product_version": "fv1-0",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2026-04-01T14:48:07",
+    "references": "",
+    "sensor_id": "TROPOMI",
+    "source": "TROPOMI L1B v2.0, TROPOMI L2 v2.3.1",
+    "title": "ESA Precursors for Aerosols and Ozone Climate Change Initiative (Precursors_cci): TROPOMI monthly mean level 3 tropospheric nitrogen dioxide (NO2) version 1.0",
+    "uuid": "a2ac22ae97a34b51a81c8f53d414ec6b"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "latitude": {
+      "attrs": {
+        "bounds": "latitude_bounds",
+        "chunk_sizes": [
+          900
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "latitude"
+        ],
+        "file_chunk_sizes": [
+          900
+        ],
+        "file_dimensions": [
+          "latitude"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          900
+        ],
+        "size": 900,
+        "standard_name": "latitude",
+        "units": "degree_north"
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "latitude_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          900,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "latitude",
+          "independent_2"
+        ],
+        "file_chunk_sizes": [
+          900,
+          2
+        ],
+        "file_dimensions": [
+          "latitude",
+          "independent_2"
+        ],
+        "fill_value": null,
+        "long_name": "grid latitude bounds",
+        "orig_data_type": "float64",
+        "shape": [
+          900,
+          2
+        ],
+        "size": 1800,
+        "units": "degree_north"
+      },
+      "dims": [
+        "latitude",
+        "independent_2"
+      ],
+      "dtype": "float64",
+      "name": "latitude_bounds"
+    },
+    "longitude": {
+      "attrs": {
+        "bounds": "longitude_bounds",
+        "chunk_sizes": [
+          1800
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1800
+        ],
+        "file_dimensions": [
+          "longitude"
+        ],
+        "fill_value": null,
+        "orig_data_type": "float32",
+        "shape": [
+          1800
+        ],
+        "size": 1800,
+        "standard_name": "longitude",
+        "units": "degree_east"
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "longitude_bounds": {
+      "attrs": {
+        "chunk_sizes": [
+          1800,
+          2
+        ],
+        "data_type": "float64",
+        "dimensions": [
+          "longitude",
+          "independent_2"
+        ],
+        "file_chunk_sizes": [
+          1800,
+          2
+        ],
+        "file_dimensions": [
+          "longitude",
+          "independent_2"
+        ],
+        "fill_value": null,
+        "long_name": "grid longitude bounds",
+        "orig_data_type": "float64",
+        "shape": [
+          1800,
+          2
+        ],
+        "size": 3600,
+        "units": "degree_east"
+      },
+      "dims": [
+        "longitude",
+        "independent_2"
+      ],
+      "dtype": "float64",
+      "name": "longitude_bounds"
+    },
+    "time": {
+      "attrs": {
+        "calendar": "standard",
+        "chunk_sizes": [
+          176
+        ],
+        "data_type": "int64",
+        "description": "start date of monthly mean",
+        "dimensions": [
+          "time"
+        ],
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [
+          "time"
+        ],
+        "fill_value": 9223372036854775807,
+        "orig_data_type": "int32",
+        "shape": [
+          176
+        ],
+        "size": "176",
+        "standard_name": "time",
+        "units": "days since 1995-01-01 00:00:00"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "vertical": {
+      "attrs": {
+        "chunk_sizes": [
+          34
+        ],
+        "data_type": "int64",
+        "dimensions": [
+          "vertical"
+        ],
+        "file_chunk_sizes": [
+          34
+        ],
+        "file_dimensions": [
+          "vertical"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "vertical dimension index",
+        "orig_data_type": "int32",
+        "shape": [
+          34
+        ],
+        "size": 34,
+        "units": "1"
+      },
+      "dims": [
+        "vertical"
+      ],
+      "dtype": "int64",
+      "name": "vertical"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.PREC.mon.L3C.NO2.TROPOMI.Sentinel-5P.TROPOMI_KNMI-0900x1800_1M.fv1-0.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "NO2_averaging_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800,
+          34
+        ],
+        "data_type": "float32",
+        "description": "NO2 full column averaging kernel",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "vertical"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800,
+          34
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude",
+          "vertical"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 averaging kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          176,
+          900,
+          1800,
+          34
+        ],
+        "size": "9694080000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "vertical",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "NO2_averaging_kernel"
+    },
+    "NO2_slant_column_number_density": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "NO2 slant column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 SCD",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "NO2_slant_column_number_density"
+    },
+    "NO2_slant_column_number_density_troposphere": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "Tropospheric NO2 slant column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 trop SCD",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "NO2_slant_column_number_density_troposphere"
+    },
+    "NO2_slant_column_number_density_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "NO2 slant column number density component of tropospheric column uncertainty",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 SCDE",
+        "orig_data_type": "float32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "NO2_slant_column_number_density_uncertainty"
+    },
+    "cloud_fraction": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "effective cloud fraction",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "cloud fraction",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cloud_fraction"
+    },
+    "cloud_pressure": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "cloud pressure at optical centroid",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "cloud_pressure",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "hPa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "cloud_pressure"
+    },
+    "eff_date": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "effective date of observation",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective date",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "days since 2018-07-01 00:00:00"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "eff_date"
+    },
+    "eff_frac_day": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "effective fractional day in local solar time. UTC = local_solar_time - longitude/180",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "effective fractional day",
+        "orig_data_type": "float32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "eff_frac_day"
+    },
+    "land_water_mask": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "int64",
+        "description": "0:water, 1:land, 2:land water transition",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "land sea mask",
+        "orig_data_type": "int32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int64",
+      "name": "land_water_mask"
+    },
+    "no_observations": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "int64",
+        "description": "Total number of superobservations used to create temporal mean",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "number of superobservations",
+        "orig_data_type": "int32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "int64",
+      "name": "no_observations"
+    },
+    "qa_L3": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "uint16",
+        "description": "Gridded data quality assurance value (0: not valid, 1: valid)",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "dtype": "bool",
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 65535,
+        "long_name": "data quality assurance value",
+        "orig_data_type": "uint8",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "qa_L3"
+    },
+    "stratospheric_NO2_column_number_density": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "Stratospheric NO2 vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 stratospheric VCD",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "stratospheric_NO2_column_number_density"
+    },
+    "surface_albedo": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "surface LER (440 nm)",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface LER (440nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "surface_albedo"
+    },
+    "surface_pressure": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "surface pressure",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "surface pressure",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "hPa"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "surface_pressure"
+    },
+    "tm5_sigma_a": {
+      "attrs": {
+        "chunk_sizes": [
+          34,
+          2
+        ],
+        "data_type": "float32",
+        "description": "tm5 sigma-values a, pressure = tm5_sigma_a +surface_pressure * tm5_sigma_b",
+        "dimensions": [
+          "vertical",
+          "independent_2"
+        ],
+        "file_chunk_sizes": [
+          34,
+          2
+        ],
+        "file_dimensions": [
+          "vertical",
+          "independent_2"
+        ],
+        "fill_value": null,
+        "long_name": "tm5 sigma-values a",
+        "orig_data_type": "float32",
+        "shape": [
+          34,
+          2
+        ],
+        "size": 68,
+        "units": "hPa"
+      },
+      "dims": [
+        "vertical",
+        "independent_2"
+      ],
+      "dtype": "float32",
+      "name": "tm5_sigma_a"
+    },
+    "tm5_sigma_b": {
+      "attrs": {
+        "chunk_sizes": [
+          34,
+          2
+        ],
+        "data_type": "float32",
+        "description": "tm5 sigma-values b, pressure = tm5_sigma_a + surface_pressure * tm5_sigma_b",
+        "dimensions": [
+          "vertical",
+          "independent_2"
+        ],
+        "file_chunk_sizes": [
+          34,
+          2
+        ],
+        "file_dimensions": [
+          "vertical",
+          "independent_2"
+        ],
+        "fill_value": null,
+        "long_name": "tm5 sigma-values b",
+        "orig_data_type": "float32",
+        "shape": [
+          34,
+          2
+        ],
+        "size": 68,
+        "units": "1"
+      },
+      "dims": [
+        "vertical",
+        "independent_2"
+      ],
+      "dtype": "float32",
+      "name": "tm5_sigma_b"
+    },
+    "total_NO2_column_number_density_amf": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "total air mass factor",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 total AMF (440nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "total_NO2_column_number_density_amf"
+    },
+    "tropopause_layer_index": {
+      "attrs": {
+        "_Unsigned": "false",
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "uint16",
+        "description": "TM5 pressure layer index of the tropopause",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": 65535,
+        "long_name": "TM5 tropopause layer index",
+        "orig_data_type": "uint8",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "uint16",
+      "name": "tropopause_layer_index"
+    },
+    "tropospheric_NO2_column_number_density": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "NO2 tropospheric vertical column number density",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 tropospheric vertical column number density",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "standard_name": "troposphere_mole_content_of_nitrogen_dioxide",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "tropospheric_NO2_column_number_density"
+    },
+    "tropospheric_NO2_column_number_density_amf": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "tropospheric air mass factor",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 tropospheric AMF (440nm)",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "tropospheric_NO2_column_number_density_amf"
+    },
+    "tropospheric_NO2_column_number_density_count": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "Effective number of observations per cell/ fractional coverage (coverage divided by number of days)",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 tropospheric vertical column number density count",
+        "orig_data_type": "float32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "1"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_NO2_column_number_density_count"
+    },
+    "tropospheric_NO2_column_number_density_temporal_std": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "Temporal standard deviation in the NO2 tropospheric vertical column",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "temporal standard deviation",
+        "orig_data_type": "float32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_NO2_column_number_density_temporal_std"
+    },
+    "tropospheric_NO2_column_number_density_total_uncertainty": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float64",
+        "description": "Total uncertainty on the NO2 tropospheric vertical column number density associated with time-averaged propagated uncertainty of L2 input data and temporal representativity",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 VCD total uncertainty",
+        "orig_data_type": "float64",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "tropospheric_NO2_column_number_density_total_uncertainty"
+    },
+    "tropospheric_NO2_column_number_density_total_uncertainty_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          176,
+          900,
+          1800
+        ],
+        "data_type": "float32",
+        "description": "Total uncertainty on the NO2 tropospheric vertical column number density associated with time-averaged propagated uncertainty of L2 input data and temporal representativity, without the profile uncertainty contribution",
+        "dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "file_chunk_sizes": [
+          1,
+          900,
+          1800
+        ],
+        "file_dimensions": [
+          "time",
+          "latitude",
+          "longitude"
+        ],
+        "fill_value": null,
+        "long_name": "NO2 VCD total uncertainty kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          176,
+          900,
+          1800
+        ],
+        "size": "285120000",
+        "units": "molec/cm^2"
+      },
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "tropospheric_NO2_column_number_density_total_uncertainty_kernel"
+    }
+  },
+  "dims": {
+    "independent_2": 2,
+    "lat": 900,
+    "lon": 1800,
+    "time": 176,
+    "vertical": 34
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2021-12-31",
+            "minDate": "2018-05-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2021-12-31",
+            "minDate": "2018-05-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "tropospheric_NO2_column_number_density",
+            "surface_pressure",
+            "surface_albedo",
+            "NO2_slant_column_number_density",
+            "tropospheric_NO2_column_number_density_amf",
+            "total_NO2_column_number_density_amf",
+            "stratospheric_NO2_column_number_density",
+            "cloud_fraction",
+            "cloud_pressure",
+            "tropopause_layer_index",
+            "NO2_averaging_kernel",
+            "NO2_slant_column_number_density_troposphere",
+            "tropospheric_NO2_column_number_density_count",
+            "qa_L3",
+            "no_observations",
+            "tropospheric_NO2_column_number_density_temporal_std",
+            "tropospheric_NO2_column_number_density_total_uncertainty_kernel",
+            "tropospheric_NO2_column_number_density_total_uncertainty",
+            "NO2_slant_column_number_density_uncertainty",
+            "eff_date",
+            "eff_frac_day",
+            "tm5_sigma_a",
+            "tm5_sigma_b",
+            "land_water_mask"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 0.2,
+  "time_period": "1M",
+  "time_range": [
+    "2018-05-01",
+    "2021-12-31"
+  ]
+}

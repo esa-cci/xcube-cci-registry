@@ -1,0 +1,185 @@
+{
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "crs": "WGS84",
+  "data_id": "esacci.ICESHEETS.unspecified.Unspecified.CFL.multi-sensor.multi-platform.UNSPECIFIED.v3-0.greenland",
+  "data_type": "geodataframe",
+  "feature_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "3d_desc": {
+        "properties": {},
+        "type": "object"
+      },
+      "ID": {
+        "properties": {},
+        "type": "object"
+      },
+      "RC_ID": {
+        "properties": {},
+        "type": "object"
+      },
+      "acq_time": {
+        "properties": {},
+        "type": "object"
+      },
+      "analy_time": {
+        "properties": {},
+        "type": "object"
+      },
+      "category": {
+        "properties": {},
+        "type": "object"
+      },
+      "data_src": {
+        "properties": {},
+        "type": "object"
+      },
+      "geometry": {
+        "pattern": "POINT(* *)",
+        "type": "string"
+      },
+      "glob_unc_x": {
+        "properties": {},
+        "type": "object"
+      },
+      "glob_unc_y": {
+        "properties": {},
+        "type": "object"
+      },
+      "imgctrlat": {
+        "properties": {},
+        "type": "object"
+      },
+      "imgctrlon": {
+        "properties": {},
+        "type": "object"
+      },
+      "inst_name": {
+        "properties": {},
+        "type": "object"
+      },
+      "label": {
+        "properties": {},
+        "type": "object"
+      },
+      "loc_unc_x": {
+        "properties": {},
+        "type": "object"
+      },
+      "loc_unc_y": {
+        "properties": {},
+        "type": "object"
+      },
+      "orig_id": {
+        "properties": {},
+        "type": "object"
+      },
+      "orthocorre": {
+        "properties": {},
+        "type": "object"
+      },
+      "pro_mat": {
+        "properties": {},
+        "type": "object"
+      },
+      "proc_desc": {
+        "properties": {},
+        "type": "object"
+      },
+      "time": {
+        "format": "date",
+        "type": "string"
+      },
+      "type": {
+        "properties": {},
+        "type": "object"
+      }
+    },
+    "type": "object"
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": -10.0,
+            "minimum": -80.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": 60.0,
+            "type": "number"
+          },
+          {
+            "maximum": -10.0,
+            "minimum": -80.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": 60.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2020-12-31",
+            "minDate": "2014-10-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2020-12-31",
+            "minDate": "2014-10-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "RC_ID",
+            "analy_time",
+            "data_src",
+            "proc_desc",
+            "3d_desc",
+            "inst_name",
+            "orig_id",
+            "acq_time",
+            "imgctrlon",
+            "imgctrlat",
+            "category",
+            "ID",
+            "type",
+            "loc_unc_x",
+            "loc_unc_y",
+            "glob_unc_x",
+            "glob_unc_y",
+            "label",
+            "orthocorre",
+            "pro_mat"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_range": [
+    "2014-10-01",
+    "2020-12-31"
+  ]
+}

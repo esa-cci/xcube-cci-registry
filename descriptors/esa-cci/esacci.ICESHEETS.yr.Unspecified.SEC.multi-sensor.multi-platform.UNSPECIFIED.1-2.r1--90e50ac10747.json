@@ -1,0 +1,435 @@
+{
+  "attrs": {
+    "abstract": "This data set is part of the ESA Greenland Ice sheet CCI project. The data set provides surface elevation changes (SEC) for the Greenland Ice sheet derived from satellite (ERS\u20101, ERS\u20102, Envisat and Cryosat) radar altimetry.   The ice mask is based on the GEUS/GST land/ice/ocean mask provided as part of national mapping projects, and based on 1980\u2019s aerial photography. The data from ERS and Envisat are based on a 5\u2010year running average, using combined algorithms of repeat\u2010track (RT), along\u2010track (AT) or cross\u2010over (XO) algorithms, and include propagated error estimates. \n\nIt is important to note that different processing algorithms were applied to the ERS\u20101, ERS\u20102, Envisat and CryoSat data;  for details see the Product User Guide (PUG), available on the CCI website and in the documentation section here. For ERS\u20101, the radar data were processed using a cross\u2010over algorithm (XO) only. For ERS\u20102 data and Envisat data in repeat mode, a combination of RT and XO algorithms was applied, followed by filtering. For across\u2010mission (i.e. ERS\u20102\u2010Envisat) combinations, and for Envisat operating in a drifting orbit, an AT and XO combination was applied (the difference between RT and AT algorithms is that AT use reference tracks and searches for data in the vicinity of this track). For CryoSat data a binning/gridding and plane fit method has been applied, following by weak filtering (0.05 degree resolution).",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/a7b87a912c494c03b4d2fa5ab8479d1c",
+    "cci_project": "ICESHEETS",
+    "data_type": "SEC",
+    "ecv": "ICESHEETS",
+    "institute": "DTU Space",
+    "platform_id": "multi-platform",
+    "processing_level": "Unspecified",
+    "product_string": "UNSPECIFIED",
+    "product_version": "1-2",
+    "publication_date": "2016-04-15T14:38:14",
+    "sensor_id": "multi-sensor",
+    "title": "ESA Greenland Ice Sheet Climate Change Initiative (Greenland_Ice_Sheet_cci): Greenland Surface Elevation Change 1992-2014, v1.2",
+    "uuid": "a7b87a912c494c03b4d2fa5ab8479d1c"
+  },
+  "bbox": [
+    -80.0,
+    60.0,
+    -10.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          17
+        ],
+        "size": 17,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          17
+        ],
+        "size": 34,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    },
+    "x": {
+      "attrs": {
+        "chunk_sizes": [
+          301
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "x"
+        ],
+        "file_chunk_sizes": [
+          301
+        ],
+        "file_dimensions": [
+          "x"
+        ],
+        "fill_value": null,
+        "long_name": "Cartesian x-coordinate - easting",
+        "orig_data_type": "float32",
+        "shape": [
+          301
+        ],
+        "size": 301,
+        "standard_name": "projection_x_coordinate",
+        "units": "meters"
+      },
+      "dims": [
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "x"
+    },
+    "y": {
+      "attrs": {
+        "chunk_sizes": [
+          541
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y"
+        ],
+        "file_chunk_sizes": [
+          541
+        ],
+        "file_dimensions": [
+          "y"
+        ],
+        "fill_value": null,
+        "long_name": "Cartesian y-coordinate - northing",
+        "orig_data_type": "float32",
+        "shape": [
+          541
+        ],
+        "size": 541,
+        "standard_name": "projection_y_coordinate",
+        "units": "meters"
+      },
+      "dims": [
+        "y"
+      ],
+      "dtype": "float32",
+      "name": "y"
+    }
+  },
+  "crs": "Polar Stereographic (variant B)",
+  "data_id": "esacci.ICESHEETS.yr.Unspecified.SEC.multi-sensor.multi-platform.UNSPECIFIED.1-2.r1",
+  "data_type": "dataset",
+  "data_vars": {
+    "SEC": {
+      "attrs": {
+        "Bias_correction": "None",
+        "Comment": "Combination of along-track and crossovers",
+        "Contributor": "DTU-GDK & NERSC",
+        "Gridding_method": "Kriging / collocation",
+        "Source": "ERS-2 RA and Envisat RA-2",
+        "Time": "January 2001 - December 2005",
+        "Units": "m/yr",
+        "backscatter_corrections": "Sigma 0",
+        "chunk_sizes": [
+          541,
+          301
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          541,
+          301
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": 9999.99,
+        "geophysical_corrections": "dry tropo, wet tropo, ionos, geoc. pole, sol. Earth",
+        "grid_mapping": "grid_projection",
+        "level1_source": "ICE1",
+        "long_name": "Surface elevation changes, filtered",
+        "orig_data_type": "float32",
+        "shape": [
+          541,
+          301
+        ],
+        "size": 162841,
+        "slope_correction": "POCA + GIMP"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "SEC"
+    },
+    "SEC_error": {
+      "attrs": {
+        "Bias_correction": "None",
+        "Comment": "Combination of along-track and crossovers",
+        "Contributor": "DTU-GDK & NERSC",
+        "Gridding_method": "Kriging / collocation",
+        "Source": "ERS-2 RA and Envisat RA-2",
+        "Time": "January 2001 - December 2005",
+        "Units": "m/yr",
+        "backscatter_corrections": "Sigma 0",
+        "bias_correction": "None",
+        "chunk_sizes": [
+          541,
+          301
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          541,
+          301
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": 9999.0,
+        "geophysical_corrections": "dry tropo, wet tropo, ionos, geoc. pole, sol. Earth",
+        "grid_mapping": "grid_projection",
+        "level1_source": "ICE1",
+        "long_name": "Error estimates associated with surface elevation changes",
+        "orig_data_type": "float32",
+        "shape": [
+          541,
+          301
+        ],
+        "size": 162841,
+        "slope_correction": "POCA + GIMP"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "SEC_error"
+    },
+    "grid_projection": {
+      "attrs": {
+        "DODS": {
+          "strlen": 0
+        },
+        "chunk_sizes": [
+          1
+        ],
+        "data_type": "bytes1024",
+        "dimensions": [],
+        "ellipsoid": "WGS84",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "file_chunk_sizes": [
+          1
+        ],
+        "file_dimensions": [],
+        "grid_mapping_name": "polar_stereographic",
+        "latitude_of_projection_origin": 90.0,
+        "orig_data_type": "bytes1024",
+        "shape": [
+          1
+        ],
+        "size": 1,
+        "standard_parallel": 70.0,
+        "straight_vertical_longitude_from_pole": -45.0
+      },
+      "dims": [],
+      "dtype": "bytes1024",
+      "name": "grid_projection"
+    },
+    "landtype": {
+      "attrs": {
+        "Bias_correction": "None",
+        "Comment": " Ocean: 1, Land: 2, Outlying ice caps: 3, Ice sheet: 4",
+        "Contributor": "GEUS and DTU-S",
+        "Gridding_method": "",
+        "Source": "Willy Weng (GEUS), Simon Ekholm, Arne Olesen (DTU-S)",
+        "Time": "None",
+        "backscatter_corrections": "None",
+        "bias_correction": "None",
+        "chunk_sizes": [
+          541,
+          301
+        ],
+        "data_type": "int16",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          541,
+          301
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": 9999,
+        "geophysical_corrections": "None",
+        "grid_mapping": "grid_projection",
+        "ice_sheet": 4,
+        "land": 2,
+        "level1_source": "None",
+        "long_name": "Land type definition.",
+        "ocean": 1,
+        "orig_data_type": "int16",
+        "outlying_ice_caps": 3,
+        "shape": [
+          541,
+          301
+        ],
+        "size": 162841,
+        "slope_correction": "None"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "int16",
+      "name": "landtype"
+    },
+    "lat": {
+      "attrs": {
+        "chunk_sizes": [
+          541,
+          301
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          541,
+          301
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "grid_projection",
+        "long_name": "Latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          541,
+          301
+        ],
+        "size": 162841,
+        "units": "degrees north"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "chunk_sizes": [
+          541,
+          301
+        ],
+        "data_type": "float32",
+        "dimensions": [
+          "y",
+          "x"
+        ],
+        "file_chunk_sizes": [
+          541,
+          301
+        ],
+        "file_dimensions": [
+          "y",
+          "x"
+        ],
+        "fill_value": null,
+        "grid_mapping": "grid_projection",
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          541,
+          301
+        ],
+        "size": 162841,
+        "units": "degrees east"
+      },
+      "dims": [
+        "time",
+        "y",
+        "x"
+      ],
+      "dtype": "float32",
+      "name": "lon"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "time": 17,
+    "x": 301,
+    "y": 541
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2014-12-31",
+            "minDate": "1992-01-01",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2014-12-31",
+            "minDate": "1992-01-01",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "grid_projection",
+            "lat",
+            "lon",
+            "landtype",
+            "SEC",
+            "SEC_error"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "time_period": "1Y",
+  "time_range": [
+    "1992-01-01",
+    "2014-12-31"
+  ]
+}

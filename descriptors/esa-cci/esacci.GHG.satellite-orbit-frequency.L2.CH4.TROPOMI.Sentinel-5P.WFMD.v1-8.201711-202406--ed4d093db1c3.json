@@ -1,0 +1,1193 @@
+{
+  "attrs": {
+    "abstract": "This product is the column-average dry-air mole fraction of atmospheric methane, denoted XCH4. It has been retrieved from radiance measurements from the TROPOspheric Monitoring Instrument (TROPOMI) on the Sentinel-5 Precursor satellite in the 2.3 \u00b5m spectral range of the solar spectral range, using the Weighting Function Modified Differential Optical Absorption Spectroscopy (WFM-DOAS or WFMD) retrieval algorithm. This dataset is also referred to as CH4_S5P_WFMD. This version of the product is version 1.8, and covers the period from November 2017 - June 2024. \n\nThe WFMD algorithm is based on iteratively fitting a simulated radiance spectrum to the measured spectrum using a least-squares method. The algorithm is very fast as it is based on a radiative transfer model based look-up table scheme. The product is limited to cloud-free scenes on the Earth's day side.\n\nThese data were produced as part of the European Space Agency's (ESA) Greenhouse Gases (GHG) Climate Change Initiative (CCI) project.\n\nWhen citing this dataset, please also cite the following peer-reviewed publication:  \nSchneising, O., Buchwitz, M., Hachmeister, J., Vanselow, S., Reuter, M., Buschmann, M., Bovensmann, H., and Burrows, J. P.: Advances in retrieving XCH4 and XCO from Sentinel-5 Precursor: improvements in the scientific TROPOMI/WFMD algorithm, Atmos. Meas. Tech., 16, 669\u2013694, https://doi.org/10.5194/amt-16-669-2023, 2023.",
+    "catalog_url": "https://catalogue.ceda.ac.uk/uuid/2b8c6a8f1abd40a6b0ce07c40b1c57ff",
+    "cci_project": "GHG",
+    "comment": "These data were produced at the University of Bremen in the framework of the ESA GHG-CCI project",
+    "data_type": "CH4",
+    "ecv": "GHG",
+    "history": "2022 - product generated with WFMD",
+    "institute": "University of Bremen",
+    "platform_id": "Sentinel-5P",
+    "processing_level": "L2",
+    "product_string": "WFMD",
+    "product_version": "v1-8",
+    "project": "Climate Change Initiative - European Space Agency",
+    "publication_date": "2025-03-12T10:08:02",
+    "sensor_id": "TROPOMI",
+    "source": "TROPOMI L1B version 01.00.00",
+    "title": "ESA Greenhouse Gases Climate Change Initiative (GHG_cci): Column-averaged methane from Sentinel-5P, generated with the WFM-DOAS algorithm, version 1.8,  November 2017 - June 2024",
+    "uuid": "2b8c6a8f1abd40a6b0ce07c40b1c57ff"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "time": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2378
+        ],
+        "size": 2378,
+        "standard_name": "time",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "int64",
+      "name": "time"
+    },
+    "time_bnds": {
+      "attrs": {
+        "calendar": "proleptic_gregorian",
+        "shape": [
+          2,
+          2378
+        ],
+        "size": 4756,
+        "standard_name": "time_bnds",
+        "units": "seconds since 1970-01-01T00:00:00Z"
+      },
+      "dims": [
+        "time",
+        "bnds"
+      ],
+      "dtype": "int64",
+      "name": "time_bnds"
+    }
+  },
+  "crs": "WGS84",
+  "data_id": "esacci.GHG.satellite-orbit-frequency.L2.CH4.TROPOMI.Sentinel-5P.WFMD.v1-8.201711-202406",
+  "data_type": "dataset",
+  "data_vars": {
+    "altitude": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Average surface altitude",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "altitude",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "standard_name": "altitude",
+        "units": "m"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "altitude"
+    },
+    "apparent_albedo": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Retrieved surface albedo at 2313nm",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "apparent surface albedo",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "apparent_albedo"
+    },
+    "azimuth_difference": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Relative azimuth angle between sun and sensor direction.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "azimuth difference",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "degree"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "azimuth_difference"
+    },
+    "ch4_profile_apriori": {
+      "attrs": {
+        "chunk_sizes": [
+          101090,
+          7
+        ],
+        "comment": "A priori dry-air mole fraction profile of atmospheric methane in ppb.\nAll values represent layer averages within the corresponding pressure levels.\nProfiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          101090,
+          7
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "a priori dry air mole fraction profile of atmospheric methane",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          20
+        ],
+        "size": 6065400,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "ch4_profile_apriori"
+    },
+    "cloud_parameter": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Ratio of measured to cloud-free reference radiance for selected strong water vapour lines",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "cloud parameter from strong water vapour absorption",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "cloud_parameter"
+    },
+    "co_column": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Retrieved vertical column amount of carbon monoxide",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "vertical column of carbon monoxide",
+        "multiplication_factor_to_convert_to_molecules_percm2": 6.022141e+19,
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "mol m-2"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "co_column"
+    },
+    "co_profile_apriori": {
+      "attrs": {
+        "chunk_sizes": [
+          101090,
+          7
+        ],
+        "comment": "A priori dry-air mole fraction profile of atmospheric carbon monoxide in ppb.\nAll values represent layer averages within the corresponding pressure levels.\nProfiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          101090,
+          7
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "a priori dry air mole fraction profile of atmospheric carbon monoxide",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          20
+        ],
+        "size": 6065400,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "co_profile_apriori"
+    },
+    "ground_pixel": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "This dimension variable defines the indices across track",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "across track dimension index",
+        "orig_data_type": "int32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "ground_pixel"
+    },
+    "h2o_column": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Retrieved vertical column amount of water vapour",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "vertical column of water vapour",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "g cm-2"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "h2o_column"
+    },
+    "h2o_column_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "1-sigma uncertainty of the retrieved vertical column of atmospheric water vapour",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "1-sigma uncertainty of the retrieved vertical column of atmospheric water vapour",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "g cm-2"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "h2o_column_uncertainty"
+    },
+    "land_fraction": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Land fraction of the observed scene in percent",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "land fraction",
+        "orig_data_type": "int32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1e-2",
+        "valid_range": [
+          0,
+          100
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "land_fraction"
+    },
+    "latitude": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Center latitude of the measurement",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "standard_name": "latitude",
+        "units": "degree_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "latitude_corners": {
+      "attrs": {
+        "chunk_sizes": [
+          151635,
+          2
+        ],
+        "comment": "Corner latitudes of the measurement",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "corners_dim"
+        ],
+        "file_chunk_sizes": [
+          151635,
+          2
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "corners_dim"
+        ],
+        "fill_value": null,
+        "long_name": "latitude_corners",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          4
+        ],
+        "size": 1213080,
+        "units": "degree_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "sounding_dim",
+        "corners_dim"
+      ],
+      "dtype": "float32",
+      "name": "latitude_corners"
+    },
+    "longitude": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Center longitude of the measurement",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "standard_name": "longitude",
+        "units": "degree_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    },
+    "longitude_corners": {
+      "attrs": {
+        "chunk_sizes": [
+          151635,
+          2
+        ],
+        "comment": "Corner longitudes of the measurement",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "corners_dim"
+        ],
+        "file_chunk_sizes": [
+          151635,
+          2
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "corners_dim"
+        ],
+        "fill_value": null,
+        "long_name": "longitude_corners",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          4
+        ],
+        "size": 1213080,
+        "units": "degree_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "sounding_dim",
+        "corners_dim"
+      ],
+      "dtype": "float32",
+      "name": "longitude_corners"
+    },
+    "orbit_number": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Orbit number",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "orbit number",
+        "orig_data_type": "int32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "orbit_number"
+    },
+    "pressure_levels": {
+      "attrs": {
+        "chunk_sizes": [
+          101090,
+          7
+        ],
+        "comment": "Pressure levels define the boundaries of the averaging kernel and a priori profile layers.\nLevels are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "file_chunk_sizes": [
+          101090,
+          7
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "level_dim"
+        ],
+        "fill_value": null,
+        "long_name": "pressure levels",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          21
+        ],
+        "size": 6368670,
+        "units": "hPa"
+      },
+      "dims": [
+        "sounding_dim",
+        "level_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_levels"
+    },
+    "pressure_weight": {
+      "attrs": {
+        "chunk_sizes": [
+          101090,
+          7
+        ],
+        "comment": "Layer dependent weights needed to apply the averaging kernels.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          101090,
+          7
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "pressure weight",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          20
+        ],
+        "size": 6065400,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "pressure_weight"
+    },
+    "satellite_altitude": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Altitude of the spacecraft relative to the WGS84 reference ellipsoid",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "satellite altitude",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "m",
+        "valid_range": [
+          700000.0,
+          900000.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "satellite_altitude"
+    },
+    "satellite_latitude": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Latitude of the spacecraft sub-satellite point on the WGS84 reference ellipsoid",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "satellite latitude",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "degrees_north",
+        "valid_range": [
+          -90.0,
+          90.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "satellite_latitude"
+    },
+    "satellite_longitude": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Longitude of the spacecraft sub-satellite point on the WGS84 reference ellipsoid",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "satellite longitude",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "degrees_east",
+        "valid_range": [
+          -180.0,
+          180.0
+        ]
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "satellite_longitude"
+    },
+    "scanline": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "This dimension variable defines the indices along track",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "long_name": "along track dimension index",
+        "orig_data_type": "int32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "scanline"
+    },
+    "sensor_zenith_angle": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Sensor zenith angle is the the angle between the line of sight to the sensor and the local vertical.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "sensor_zenith_angle",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "standard_name": "sensor_zenith_angle",
+        "units": "degree"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "sensor_zenith_angle"
+    },
+    "solar_zenith_angle": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Solar zenith angle is the the angle between the line of sight to the sun and the local vertical.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "solar_zenith_angle",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "standard_name": "solar_zenith_angle",
+        "units": "degree"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "solar_zenith_angle"
+    },
+    "surface_roughness": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Surface roughness",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "surface roughness",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "m"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "surface_roughness"
+    },
+    "xch4": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Retrieved column-averaged dry air mole fraction of atmospheric methane (XCH4) in ppb",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "column-averaged dry air mole fraction of atmospheric methane",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "standard_name": "dry_atmosphere_mole_fraction_of_methane",
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4"
+    },
+    "xch4_averaging_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          101090,
+          7
+        ],
+        "comment": "Represents the altitude sensitivity of the retrieval as a function of pressure.\nAll values represent layer averages within the corresponding pressure levels.\nProfiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          101090,
+          7
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "xch4 averaging kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          20
+        ],
+        "size": 6065400,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_averaging_kernel"
+    },
+    "xch4_quality_flag": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "0=good, 1=bad",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "flag_meanings": "good_quality potentially_bad_quality",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "quality flag for the retrieved column-averaged dry air mole fraction of atmospheric methane",
+        "orig_data_type": "int32",
+        "shape": [
+          303270
+        ],
+        "size": 303270
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "xch4_quality_flag"
+    },
+    "xch4_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "1-sigma uncertainty of the retrieved column-averaged dry air mole fraction of atmospheric methane (XCH4) in ppb",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "1-sigma uncertainty of the retrieved column-averaged dry air mole fraction of atmospheric methane",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xch4_uncertainty"
+    },
+    "xco": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "Retrieved column-averaged dry air mole fraction of atmospheric carbon monoxide (XCO) in ppb",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "column-averaged dry air mole fraction of atmospheric carbon monoxide",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xco"
+    },
+    "xco_averaging_kernel": {
+      "attrs": {
+        "chunk_sizes": [
+          101090,
+          7
+        ],
+        "comment": "Represents the altitude sensitivity of the retrieval as a function of pressure.\nAll values represent layer averages within the corresponding pressure levels.\nProfiles are ordered from surface to top of atmosphere.",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "file_chunk_sizes": [
+          101090,
+          7
+        ],
+        "file_dimensions": [
+          "sounding_dim",
+          "layer_dim"
+        ],
+        "fill_value": null,
+        "long_name": "xco averaging kernel",
+        "orig_data_type": "float32",
+        "shape": [
+          303270,
+          20
+        ],
+        "size": 6065400,
+        "units": "1"
+      },
+      "dims": [
+        "sounding_dim",
+        "layer_dim"
+      ],
+      "dtype": "float32",
+      "name": "xco_averaging_kernel"
+    },
+    "xco_quality_flag": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "0=good, 1=bad",
+        "data_type": "int64",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": 9223372036854775807,
+        "flag_meanings": "good_quality potentially_bad_quality",
+        "flag_values": [
+          0,
+          1
+        ],
+        "long_name": "quality flag for the retrieved column-averaged dry air mole fraction of atmospheric carbon monoxide",
+        "orig_data_type": "int32",
+        "shape": [
+          303270
+        ],
+        "size": 303270
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "int64",
+      "name": "xco_quality_flag"
+    },
+    "xco_uncertainty": {
+      "attrs": {
+        "chunk_sizes": 303270,
+        "comment": "1-sigma uncertainty of the retrieved column-averaged dry air mole fraction of atmospheric carbon monoxide (XCO) in ppb",
+        "data_type": "float32",
+        "dimensions": [
+          "sounding_dim"
+        ],
+        "file_chunk_sizes": 303270,
+        "file_dimensions": [
+          "sounding_dim"
+        ],
+        "fill_value": null,
+        "long_name": "1-sigma uncertainty of the retrieved column-averaged dry air mole fraction of atmospheric carbon monoxide",
+        "orig_data_type": "float32",
+        "shape": [
+          303270
+        ],
+        "size": 303270,
+        "units": "1e-9"
+      },
+      "dims": [
+        "sounding_dim"
+      ],
+      "dtype": "float32",
+      "name": "xco_uncertainty"
+    }
+  },
+  "dims": {
+    "bnds": 2,
+    "corners_dim": 4,
+    "layer_dim": 20,
+    "level_dim": 21,
+    "sounding_dim": 303270,
+    "time": 2378
+  },
+  "open_params_schema": {
+    "additionalProperties": false,
+    "properties": {
+      "bbox": {
+        "items": [
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          },
+          {
+            "maximum": 180.0,
+            "minimum": -180.0,
+            "type": "number"
+          },
+          {
+            "maximum": 90.0,
+            "minimum": -90.0,
+            "type": "number"
+          }
+        ],
+        "type": "array"
+      },
+      "normalize_data": {
+        "default": true,
+        "type": "boolean"
+      },
+      "time_range": {
+        "items": [
+          {
+            "format": "date",
+            "maxDate": "2024-06-30",
+            "minDate": "2017-10-31",
+            "type": "string"
+          },
+          {
+            "format": "date",
+            "maxDate": "2024-06-30",
+            "minDate": "2017-10-31",
+            "type": "string"
+          }
+        ],
+        "type": "array"
+      },
+      "variable_names": {
+        "items": {
+          "enum": [
+            "latitude",
+            "longitude",
+            "solar_zenith_angle",
+            "sensor_zenith_angle",
+            "azimuth_difference",
+            "xch4",
+            "xch4_uncertainty",
+            "xch4_quality_flag",
+            "xco",
+            "xco_uncertainty",
+            "xco_quality_flag",
+            "pressure_levels",
+            "pressure_weight",
+            "ch4_profile_apriori",
+            "xch4_averaging_kernel",
+            "co_profile_apriori",
+            "xco_averaging_kernel",
+            "orbit_number",
+            "scanline",
+            "ground_pixel",
+            "latitude_corners",
+            "longitude_corners",
+            "altitude",
+            "surface_roughness",
+            "apparent_albedo",
+            "land_fraction",
+            "cloud_parameter",
+            "co_column",
+            "h2o_column",
+            "h2o_column_uncertainty",
+            "satellite_altitude",
+            "satellite_latitude",
+            "satellite_longitude"
+          ],
+          "type": "string"
+        },
+        "type": "array"
+      }
+    },
+    "type": "object"
+  },
+  "spatial_res": 7.0,
+  "time_range": [
+    "2017-10-31",
+    "2024-06-30"
+  ]
+}

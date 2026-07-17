@@ -1,0 +1,184 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.6",
+    "cdm_data_type": "Grid",
+    "comment": "Sun glint and solar eclipse events were filtered out.",
+    "creator_email": "tilstra@knmi.nl",
+    "creator_name": "Royal Netherlands Meteorological Institute (KNMI)",
+    "creator_url": "http://www.knmi.nl",
+    "date_created": "See individual files for more details",
+    "description": "See individual files for more details",
+    "geospatial_lat_max": "90.0",
+    "geospatial_lat_min": "-90.0",
+    "geospatial_lat_resolution": "1.0",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180.0",
+    "geospatial_lon_min": "-180.0",
+    "geospatial_lon_resolution": "1.0",
+    "geospatial_lon_units": "degrees_east",
+    "history": "See individual files for more details\nKerchunk file created on 02/21/24",
+    "institution": "Royal Netherlands Meteorological Institute (KNMI)",
+    "kerchunk_creation_date": "210224T161949",
+    "kerchunk_revision": 1,
+    "keywords": "satellite, atmosphere, aerosols, absorbing aerosol index",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming_authority": "knmi.nl",
+    "platform": "NIMBUS-7, ERS-2, ENVISAT, AURA, METOP-A, METOP-B",
+    "product_version": "1.7",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://www.esa-aerosol-cci.org",
+    "sensor": "TOMS, GOME-1, SCIAMACHY, OMI, GOME-2",
+    "source": "TOMS AAI version 8, GOME-1 AAI version 5.0, SCIAMACHY AAI version 5.1, OMI AAI version 1.1.1, GOME-2 AAI version 1.35",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 18",
+    "summary": "This dataset contains absorbing aerosol index (AAI) data on a regular grid.",
+    "title": "ESA CCI absorbing aerosol index level 3 product",
+    "tracking_id": "610f87b0-6ac8-11e6-bdf4-0800200c9a66"
+  },
+  "bbox": [
+    -180.0,
+    -90.0,
+    180.0,
+    90.0
+  ],
+  "coords": {
+    "file_number": {
+      "attrs": {
+        "axis": "F",
+        "long_name": "file_number",
+        "standard_name": "file_number"
+      },
+      "dims": [
+        "file_number"
+      ],
+      "dtype": "int64",
+      "name": "file_number"
+    },
+    "latitude": {
+      "attrs": {
+        "long_name": "Latitudes of the centre of the grid cells",
+        "units": "degrees"
+      },
+      "dims": [
+        "latitude"
+      ],
+      "dtype": "float32",
+      "name": "latitude"
+    },
+    "longitude": {
+      "attrs": {
+        "long_name": "Longitudes of the centre of the grid cells",
+        "units": "degrees"
+      },
+      "dims": [
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "longitude"
+    }
+  },
+  "data_id": "ESACCI-AEROSOL-L3-AAI-MSAAI-39Y1m_CLIMATOLOGY-fv1.7_kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "absorbing_aerosol_index": {
+      "attrs": {
+        "long_name": "Absorbing aerosol index averaged for each grid cell",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "absorbing_aerosol_index"
+    },
+    "number_of_observations": {
+      "attrs": {
+        "long_name": "Number of observations for each grid cell",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "int32",
+      "name": "number_of_observations"
+    },
+    "number_of_positive_observations": {
+      "attrs": {
+        "long_name": "Number of positive observations for each grid cell",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "int32",
+      "name": "number_of_positive_observations"
+    },
+    "positive_absorbing_aerosol_index": {
+      "attrs": {
+        "long_name": "Positive absorbing aerosol index averaged for each grid cell",
+        "units": "1"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "positive_absorbing_aerosol_index"
+    },
+    "solar_zenith_angle": {
+      "attrs": {
+        "long_name": "Solar zenith angle averaged for each grid cell",
+        "units": "degrees"
+      },
+      "chunks": [
+        1,
+        180,
+        360
+      ],
+      "dims": [
+        "file_number",
+        "latitude",
+        "longitude"
+      ],
+      "dtype": "float32",
+      "name": "solar_zenith_angle"
+    }
+  },
+  "dims": {
+    "file_number": 12,
+    "latitude": 180,
+    "longitude": 360
+  },
+  "spatial_res": 1.0,
+  "time_range": [
+    null,
+    null
+  ]
+}

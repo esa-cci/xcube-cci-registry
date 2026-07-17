@@ -1,0 +1,207 @@
+{
+  "attrs": {
+    "Conventions": "CF-1.7",
+    "EPSG": "4326",
+    "cdm_data_type": "INT",
+    "comment": "These data were produced at ESA CCI as part of the ESA Biomass CCI project.",
+    "creator_email": "santoro@gamma-rs.ch",
+    "creator_name": "GAMMA Remote Sensing",
+    "creator_url": "www.gamma-rs.ch",
+    "date_created": "30-Jan-2026 13:30:40",
+    "format_version": "CCI Data Standards v2.1",
+    "geospatial_lat_max": "80",
+    "geospatial_lat_min": "-60",
+    "geospatial_lat_resolution": "0.00088889",
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lon_max": "180",
+    "geospatial_lon_min": "-180",
+    "geospatial_lon_resolution": "0.00088889",
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_vertical_max": "0.0",
+    "geospatial_vertical_min": "0.0",
+    "history": "AGB estimation with BIOMASAR-L,v202510, AGB estimation with BIOMASAR-C,v202510, Merging of AGB estimates,v202510, change detection, v202510",
+    "id": "ESACCI-BIOMASS-L4-AGB-CHANGE-100m-2020-2010-fv6.0.nc",
+    "institution": "GAMMA Remote Sensing",
+    "key_variables": "agb",
+    "keywords": "satellite, observation, forest, biomass",
+    "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+    "license": "ESA CCI Data Policy: free and open access",
+    "naming authority": "ch.gamma-rs",
+    "platform": "ALOS-1, ENVISAT, ALOS-2, Sentinel-1A, Sentinel-1B",
+    "product_version": "7.0",
+    "proj4": "+proj=longlat +datum=WGS84 +no_defs",
+    "project": "Climate Change Initiative - European Space Agency",
+    "references": "http://cci.esa.int/biomass",
+    "sensor": "PALSAR-1, ASAR, PALSAR-2, SAR-C",
+    "source": "ALOS-2 PALSAR-2 FB and WB mosaics, Sentinel-1 GRD",
+    "spatial_resolution": "100 m",
+    "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention version 67",
+    "summary": "This dataset contains a global map of above-ground biomass change INDICATOR (standard deviation and quality flag) for the epoch 2010-2020 obtained from L-and C-band spaceborne SAR backscatter, placed onto a regular grid.",
+    "time_coverage_duration": "P11Y",
+    "time_coverage_end": "20201231T235959Z",
+    "time_coverage_resolution": "P1Y",
+    "time_coverage_start": "20100101T000000Z",
+    "title": "ESA CCI above-ground biomass change INDICATOR level 4, years 2010-2020",
+    "tracking_id": "1AA9B124-65A9-46A2-88E3-BF7C60E381E7"
+  },
+  "bbox": [
+    -180.0,
+    -59.9999999986,
+    179.9999999964,
+    80.0
+  ],
+  "coords": {
+    "lat": {
+      "attrs": {
+        "bounds": "lat_bnds",
+        "long_name": "WGS84 latitude coordinate",
+        "standard_name": "latitude",
+        "units": "degrees_north",
+        "valid_max": 80.0,
+        "valid_min": -60.0
+      },
+      "dims": [
+        "lat"
+      ],
+      "dtype": "float64",
+      "name": "lat"
+    },
+    "lon": {
+      "attrs": {
+        "bounds": "lon_bnds",
+        "long_name": "WGS84 longitude coordinate",
+        "standard_name": "longitude",
+        "units": "degrees_east",
+        "valid_max": 180.0,
+        "valid_min": -180.0
+      },
+      "dims": [
+        "lon"
+      ],
+      "dtype": "float64",
+      "name": "lon"
+    },
+    "time": {
+      "attrs": {
+        "bounds": "time_bnds",
+        "long_name": "single-year period",
+        "standard_name": "time"
+      },
+      "dims": [
+        "time"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time"
+    }
+  },
+  "data_id": "ESACCI-BIOMASS-L4-AGB-CHANGE-100m-2020-2010-fv7.0-kr1.0",
+  "data_type": "dataset",
+  "data_vars": {
+    "crs": {
+      "attrs": {
+        "GeoTransform": "-180   0.00088888888888                  0                 80                  0  -0.00088888888888",
+        "false_easting": 0.0,
+        "false_northing": 0.0,
+        "grid_mapping_name": "latitude_longitude",
+        "inverse_flattening": 298.257223563,
+        "long_name": "CRS definition",
+        "longitude_of_prime_meridian": 0.0,
+        "semi_major_axis": 6378137.0,
+        "spatial_ref": "GEOGCS[\"WGS 84\",DATUM[\"WGS_1984\",SPHEROID[\"WGS 84\",6378137,298.257223563,AUTHORITY[\"EPSG\",\"7030\"]],AUTHORITY[\"EPSG\",\"6326\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433],AUTHORITY[\"EPSG\",\"4326\"]]"
+      },
+      "dims": [],
+      "dtype": "object",
+      "name": "crs"
+    },
+    "diff_qf": {
+      "attrs": {
+        "ancillary_variables": "agb_se",
+        "grid_mapping": "crs",
+        "long_name": "Above-ground biomass change quality flag",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        11250,
+        11250
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "diff_qf"
+    },
+    "diff_sd": {
+      "attrs": {
+        "grid_mapping": "crs",
+        "long_name": "Above-ground biomass change standard_deviation",
+        "units": "Mg/ha",
+        "valid_max": 10000.0,
+        "valid_min": 0.0
+      },
+      "chunks": [
+        1,
+        11250,
+        11250
+      ],
+      "dims": [
+        "time",
+        "lat",
+        "lon"
+      ],
+      "dtype": "float32",
+      "name": "diff_sd"
+    },
+    "lat_bnds": {
+      "chunks": [
+        157500,
+        2
+      ],
+      "dims": [
+        "lat",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lat_bnds"
+    },
+    "lon_bnds": {
+      "chunks": [
+        405000,
+        2
+      ],
+      "dims": [
+        "lon",
+        "nv"
+      ],
+      "dtype": "float64",
+      "name": "lon_bnds"
+    },
+    "time_bnds": {
+      "chunks": [
+        1,
+        2
+      ],
+      "dims": [
+        "time",
+        "nv"
+      ],
+      "dtype": "datetime64[ns]",
+      "name": "time_bnds"
+    }
+  },
+  "dims": {
+    "lat": 157500,
+    "lon": 405000,
+    "nv": 2,
+    "time": 1
+  },
+  "spatial_res": 0.0008888888888805013,
+  "time_range": [
+    "2010-01-01",
+    "2020-12-31"
+  ]
+}
